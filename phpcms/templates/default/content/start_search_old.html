@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/report.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">   
+</head>
+<body>
+    <div id="wrapper">
+    <!-- 头部 -->
+ {template "content","top"}
+	<!-- 头部结束 -->
+<!--选校报告上部-->
+<div class="reporttitle">
+<h2>选校报告</h2>
+</div>
+<!--主要内容--->
+<div class="content w-1000">
+<!--填写选校报告资料--->
+<div class="study-contents">
+<h1>请帮助我们了解你的留学需求</h1>
+<div class="studybox">
+<h2>填写你的个人信息，我们会凭借丰富的数据资源，为你推荐适合你的选校方案</h2>
+<form action="" method="get">
+<ul>
+<li><span class="s1">姓:</span><input name="" type="text" class="input1"/><span class="s2">名:</span><input name="" type="text" class="input1"/></li>
+<li><span>最近就读学校:</span><input name="" type="text" /></li>
+<li><span>就读专业</span><input name="" type="text" /></li>
+<li><span>平均成绩：</span><input name="" type="text" value=""  placeholder="0-9" class="input1"/><div class="cbox"><div class="cc">百分制平均分，计算方式是将当前学历每门课程的期中期末考试成绩转为百分制加起来以后除以总的课程数，得出平均分。</div></div></li>
+<li><span>语言成绩：</span>
+<select name="" >
+<option value="雅思">雅思</option>
+<option value="雅思">雅思</option>
+<option value="雅思">雅思</option>
+<option value="雅思">雅思</option>
+</select>
+<input name="" type="text"  value=""  placeholder="0-9" class="input1"/>
+<div class="cbox">
+<div class="cc">
+<ul>
+<li><span>TOEFL</span> 0-100,没有请预估</li>
+<li><span>GMAT</span> 0-800,没有请预估</li>
+<li><span>SAT</span> 0-2400,没有请预估</li>
+<li><span>GRE</span> 0-340,没有请预估</li>
+</ul>
+</div>
+</div>
+</li>
+<li><span>学术考试成绩</span>
+<select name="" >
+<option value="GMAT">GMAT</option>
+<option value="GMAT">GMAT</option>
+<option value="GMAT">GMAT</option>
+</select>
+<input name="" type="text" value="" placeholder="0-9" class="input1"/><div class="cbox"><div class="cc">百分制平均分，计算方式是将当前学历每门课程的期中期末考试成绩转为百分制加起来以后除以总的课程数，得出平均分。</div></div></li>
+<li><span>国家：</span>
+<select name="" >
+<option value="美国">美国</option>
+<option value="法国">法国</option>
+<option value="英国">英国</option>
+</select></li>
+<li><span>希望就读专业：</span>
+<select name="" class="select2">
+<option value="工科">工科</option>
+<option value="工科">工科</option>
+<option value="工科">工科</option>
+</select>
+<select name=""  class="select2">
+<option value="化学工程">化学工程</option>
+<option value="化学工程">化学工程</option>
+<option value="化学工程">化学工程</option>
+</select>
+</li>
+</ul>
+<p class="anniu"><a href="report2.html">提交获取选校报告</a></p>
+</form>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"}
+
+<!--遮罩层-->
+<div class="brg"></div>
+<div class="float_login">
+<a href="#" class="close1  close">关闭</a>
+<h2 class="b_b">用户登录</h2>
+<div class="login_box">
+<p class="username">注册邮箱：<input type="text" class="inputname" name="username" ></p>
+<p class="p1">输入您在“Qu去留学”上注册的Email</p>
+<p class="password">密码：<input type="password" class="inputpassword" name="password" ></p>
+<p class="p1">输入您的密码</p>
+<p class="btn"><input name="comment_btn2" type="button" value="登录" class="subscribe_btn close"/>忘记密码？</p>
+<p class="p2">没有注册？立即登录</p>
+</div>  
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/search.js"></script><!--搜索-->
+<script type="text/javascript" src="js/cover.js"></script><!--遮罩层-->
+</body>
+</html>

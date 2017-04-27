@@ -1,0 +1,18 @@
+<?php
+defined('IN_PHPCMS') or exit('No permission resources.');
+
+
+class anliApi{
+
+	public function anli() {
+		pc_base::load_sys_class('form', '', 0);
+		
+		$list=pc_base::load_model('successful_case_data_model');
+        //搜索满足筛选条件的记录
+	    
+	    $anli_list= $list ->listinfo('',$order,$_GET['page'],$pages = '9');		    
+		$pages = $list ->pages;
+		include template('content','category_free_content');
+	}
+}
+?>

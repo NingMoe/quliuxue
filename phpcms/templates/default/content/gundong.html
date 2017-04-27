@@ -1,0 +1,13 @@
+ 
+ 
+ <div class="txtScroll-top">
+      <div class="bd">
+<ul class="infoList">
+          {pc:get sql="SELECT * FROM qu_successful_case a,qu_successful_case_data b WHERE a.id=b.id ORDER BY a.id DESC" cache="3600"  num="6" return="data"}
+          {loop $data $key $val}
+          <li><a>{$val['oneju']}</a></li>
+          {/loop}
+          {/pc}
+        </ul>
+          </div>
+    </div>

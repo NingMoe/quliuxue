@@ -1,0 +1,28 @@
+
+            {loop $school1_list $key $val}
+       
+            <div class="xxbox">
+              <div class="imgbox"><a href="<?php echo bjts($val[id],url)?>"><img src="<?php echo bjts($val[id],thumb)?>"></a>
+                <p>已有<span><?php echo dianji11($val[id])?></span>人关注</p>
+              </div>
+              <div class="nrbox">
+                <ul style="line-height:30px">
+                  项目名称：<a href="<?php echo bjts($val[id],url)?>"><?php echo bjts($val[id],title)?></a>&nbsp;&nbsp;&nbsp;<br />
+                  项目类型：<span>{if $val['xiangmuleixing']==1}交流交换{elseif $val['xiangmuleixing']==2}实践项目{elseif $val['xiangmuleixing']==3}比赛竞赛{elseif $val['xiangmuleixing']==4}名企实习{elseif $val['xiangmuleixing']==5}其他{/if}</span>&nbsp;&nbsp;&nbsp;
+                  
+                  项目地点：<span>{if $val['didian']==1}美国{elseif $val['didian']==2}英国{elseif $val['didian']==3}香港{elseif $val['didian']==4}澳洲{elseif $val['didian']==5}加拿大{elseif $val['didian']==6}上海{elseif $val['didian']==7}其他{/if}</span>&nbsp;&nbsp;&nbsp;
+                  费用：<span>{$val['feiyong']}</span>&nbsp;&nbsp;&nbsp; <br />
+                  项目时间：<span>{$val['xiangmutime']}</span>&nbsp;&nbsp;&nbsp;
+                  截止时间：<span>{$val['jiezhitime']}</span>&nbsp;&nbsp;&nbsp;
+                  <li style="width:500px">主办方：<span>{$val['zhubanfang']}</span>&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="anniu"><a href="http://wpa.qq.com/msgrd?v=3&uin=3097401794&site=qq&menu=yes" target="_blank">在线咨询</a></div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+              <p class="ck"><i class="icon-caret-right"></i><a href="<?php echo bjts($val[id],url)?>">查看该项目详细信息>></a></p>
+              <div class="clear"></div>
+            </div>
+            {/loop}
+            <div class="pages"> {$pages} </div>

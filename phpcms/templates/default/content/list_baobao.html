@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/school.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 -->
+  {template "content","top"}
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>Qu去留学资讯</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    <!--当前位置-->
+    <div class="weizi">
+     {template "content","position"}
+    </div>
+    <!--背景项目提升-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="b-left">
+        <div class="news">
+          <ul>
+            {pc:content action="lists" catid="$catid" num="20" order="id DESC" page="$page"}
+            
+            
+            
+            
+            
+            {loop $data $r}
+            <li><a href="{$r[url]}">{$r[title]}</a><span>{date('Y-m-d H:i:s',$r[inputtime])}</span></li>
+            {if $n%5==0}
+          </ul>
+          <ul>
+            {/if}
+            
+            {/loop}
+          </ul>
+        </div>
+        <!--分页-->
+        <div class="pages"> {$pages}</div>
+        {/pc} </div>
+      <!--右侧-->
+      <div class="s-right">
+         {pc:get sql="SELECT * FROM qu_page where catid=31"}
+{loop $data $key $val}
+{$val[content]}
+{/loop}
+{/pc}
+       
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权-->
+ {template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--轮播图--> 
+<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+</body>
+</html>

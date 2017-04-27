@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>大力推进数字化教育资源整合和应用服务|我的网站</title>
+<meta name="description" content=" 实现教育的快速发展陈录庭 程永军,2oo6年6月第4卷第2期,110～111页 大力推进数字化教育资源整合和应用服务 发展基于教育信息化的知识服务体系 将是知识服" />
+<meta name="keywords" content="大力,推进,数字化,教育资源,整合,应用服务,实现,教育,快" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyplanplanner/" title="网通专线传奇私服">网通专线传奇私服</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/" title="网通传奇私服那找">网通传奇私服那找</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/" title="野蛮人">野蛮人</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/ezcord/" title="为网通传奇私服发布网">为网通传奇私服发布网</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/edwardianplatinumrings/" title="谁有传奇私服变态外挂">谁有传奇私服变态外挂</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easyturfrgv/" title="网通热血传奇私服中变">网通热血传奇私服中变</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/" title="赚钱攻略">赚钱攻略</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ebalkan/" title="最新开邪魔传奇私服">最新开邪魔传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echolsmack/" title="河南网通传奇私服">河南网通传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecardgreetingsworld/" title="无特戒网通传奇私服">无特戒网通传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecosavage/" title="网通传奇私服执迷古镇">网通传奇私服执迷古镇</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecobionews/" title="大庆网通传奇私服">大庆网通传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunnonothin/" title="新开六职业传奇私服">新开六职业传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efkyapi/" title="传奇私服变态免费外挂">传奇私服变态免费外挂</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e5rug/" title="天津新开网通传奇私服">天津新开网通传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edmontonfreeoffers/" title="超级变态传奇私服2013">超级变态传奇私服2013</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecochariots/" title="网通传奇私服飞龙">网通传奇私服飞龙</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwj56/" title="新开传奇私服影月版本">新开传奇私服影月版本</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/eftforsportsperformance/" title="狼版变态连击传奇私服">狼版变态连击传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etegeko/" title="网通传奇私服中变">网通传奇私服中变</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服合成版相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10967.html" target="_blank" title="因为艺术欣赏本身就是一种再创造和再评价">因为艺术欣赏本身就是一种再创造和再评价</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10612.html" target="_blank" title="但是大化县地表崎岖破碎">但是大化县地表崎岖破碎</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10524.html" target="_blank" title="使得人们在观赏时">使得人们在观赏时</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10061.html" target="_blank" title="说的情境">说的情境</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete6737.html" target="_blank" title="稳重成熟">稳重成熟</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5880.html" target="_blank" title="大力推进数字化教育资源整合和应用服务">大力推进数字化教育资源整合和应用服务</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5578.html" target="_blank" title="况且会计电算化还没有在我国普及">况且会计电算化还没有在我国普及</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5140.html" target="_blank" title="我们教学准备时">我们教学准备时</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete4894.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete4878.html" target="_blank" title="比如：学生犯了小错误">比如：学生犯了小错误</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://323944.com/data/js/kjhuy/eds2/" title="传奇私服超级变态私服">传奇私服超级变态私服</a></h3>
+<ul>
+<li><a href="http://323944.com/data/js/kjhuy/eds2/201510965.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eds2/201510257.html" title="相应管辖范围内的电力客户从提出接入需求开始">相应管辖范围内的电力客户从提出接入需求开</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eds2/20159372.html" title="第二天早上">第二天早上</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eds2/20157720.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eds2/20157676.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/" title="新开1.99十彩传奇私服">新开1.99十彩传奇私服</a></h3>
+<ul>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/contete11627.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/contete6268.html" title="关于进口青料苏麻泥青来源地的调查">关于进口青料苏麻泥青来源地的调查</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/contete5470.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/contete5443.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzwave/contete5090.html" title="它是创造心理与受众审美的统一">它是创造心理与受众审美的统一</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服合成版- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>大力推进数字化教育资源整合和应用服务</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 15:44</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5880&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5880">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       实现教育的快速发展陈录庭 程永军,2oo6年6月第4卷第2期,110～111页 大力推进数字化教育资源整合和应用服务       发展基于教育信息化的知识服务体系       将是知识服</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;实现教育的快速发展<p>陈录庭 程永军,2oo6年6月第4卷第2期,110～111页 </p><p>大力推进数字化教育资源整合和应用服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;发展基于教育信息化的知识服务体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;将是知识服务在教育上的主要应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括建立公共的现代教育知识服务平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;建设和整合优质的教育资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成开放的教育资源和教育知识服务体系等 </p><p>（1)知识服务是个性化服务知识服务是站在用户的角度<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户量身定做知识需求的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此需要个性化的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;其服务过程也体现了“以人为本”的思想在服务方式上多样化及多元化 </p><p>知识服务的发展需要不断的开拓努力,形成系统化的服务模式在技术上<BR>&nbsp; &nbsp; &nbsp; &nbsp;重点攻克知识整合与集成、知识应用与服务支撑技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;进行知识服务示范典型应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成知识服务产业<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户提供开放、 便捷、无处不在、低成本的知识服务 </p><p>知识服务是以信息技术为手段的服务随着信息技术的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分利用先进的网络技术为用户提供专业的知识信息服务为用户提供快捷、准确的解决问题的方案将是知识服务的主导充分利用数字化、网络化等现代通讯设施和技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;广泛利用网络资源来获取知识、信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;并进行加工、组织<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分体现知识服务的时效性、快捷性和准确性 </p><p>基于教育信息化的知识服务体系应用比较典型的是国内的cnki网格资源共享平台和国外的oki计划cnki网格资源共享平台是一个全面支持知识信息资源建设、增值应用、运营管理<BR>&nbsp; &nbsp; &nbsp; &nbsp;、可扩展的学习管理系统框架<BR>&nbsp; &nbsp; &nbsp; &nbsp;以解决各高校现有的软件系统的底层机构和功能接口不一致<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而导致应用软件共享困难的问题 </p><p>知识服务是基于专业化、个性化的服务知识服务要求按照专业领域实施服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;其特点主要是在专业信息内容方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;用户希望能够获得针对性更强、更省钱、更方便地基于专业内容的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;做到对用户问题和用户环境的准确把握、提高服务质量知识服务强调针对用户的特点提供个性化服务协助用户开发个人化信息资源系统<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户建立个人主页的系统界面和超级链接<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户个人搜集、定制个人需要的信息资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;以满足多元化用户的信息需求 </p><p>知识服务核心在于知识创新过程,在显性知识的加工中融入了对隐性知识的挖掘和共享,将显、隐性知识集成,形成了智力型的知识产品 </p><p>知识服务从用户实际的信息需求和所处的信息环境出发,遵循用户的信息获取途径来组织服务的流程 </p><p>包括知识整合与配送(注册、管理、推送和发布)；学习支持服务(学习、评价、考试)；学习过程管理(招生、学习过程跟踪服务)；收费与运营(收费、内部质量监控)和知识服务运营流程等 </p><p>本文介绍了知识服务的特点及内涵<BR>&nbsp; &nbsp; &nbsp; &nbsp;阐述了知识服务体系的构成<BR>&nbsp; &nbsp; &nbsp; &nbsp;给出了基于教育信息化的知识服务体系的典型应用案例 </p><p>包括教学质量的数字化监管与评估；数字化学习资源的评估与认证；数字化学习超市的监管与评估；学分存储与学分转移监管；毕业、学位等相关证书的认证管理；考试监管和公共信息服务 </p><p>知识经济时代的到来带来了大量无序知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;如不对其进行整合和创新<BR>&nbsp; &nbsp; &nbsp; &nbsp;很难被用户有效利用因此在全球范围内掀起了一股以知识创新为核心的“知识服务”研究热潮<BR>&nbsp; &nbsp; &nbsp; &nbsp;自20世纪90年代以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;众多国内外学者、机构纷纷对知识服务进行理论研究和实践探索但在开展知识服务的过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;缺乏完整的知识服务体系成为知识服务工作成效的瓶颈<BR>&nbsp; &nbsp; &nbsp; &nbsp;它不仅使得各服务机构之间因为没有一个普遍意义的体系作为参考而难以沟通和协作<BR>&nbsp; &nbsp; &nbsp; &nbsp;更在无形中削弱了知识服务效果<BR>&nbsp; &nbsp; &nbsp; &nbsp;影响了知识服务的效率 </p><p>在教育信息化的大背景下<BR>&nbsp; &nbsp; &nbsp; &nbsp;实施有效的知识服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;达到全球知识资源共享<BR>&nbsp; &nbsp; &nbsp; &nbsp;对教学资源进行合理系统的组织和利用<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进信息化教育的发展基于教育信息化的知识服务体系的最终发展目标是通过集<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/15444422Q-0.jpg" width="600px" height="400px" />成各种网络教育技术平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;整合各种异构教育资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;集成数字教育服务的业务流程<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐步建立国家知识服务体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立知识服务体系支撑下的终生教育体系 </p><p>【xzbu】郑重<p>知识服务体系的构成结构可以概括为：由政府有关部门进行监管<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照市场机制运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;实施连锁管理模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;共享教育和教学资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过不同的学习中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后达到学分互认也即：由国家行政部门负责监管<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务运营商负责运营(符合市场机制)<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校、企业和个人共同进行资源建设(公益性与市场性相结合)<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过国家攻关、企业参与技术支持<BR>&nbsp; &nbsp; &nbsp; &nbsp;标准化委员会负责标准制定<BR>&nbsp; &nbsp; &nbsp; &nbsp;网络提供者负责接入服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后的终端用户是学习者该结构各个组成部分的功能分别为： </p><p>(2)知识服务是一项增值性的服务所谓 “增值”<BR>&nbsp; &nbsp; &nbsp; &nbsp;即是结要合服务反馈信息及用户特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不局限于信息的简单罗列和堆砌对原有信息进行优化组合和加工处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;产生新的知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户提供全方位的知识服务 </p><p>如何利用现代化手段为教与学提供个性化的知识服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;才是教育信息化目标实现之所在教育部“2020年中国教育发展纲要”中明确提出：“以教育信息化为龙头<BR>&nbsp; &nbsp; &nbsp; &nbsp;带动教育现代化<BR>&nbsp; &nbsp; &nbsp; &nbsp;已成为我国教育事业发展的战略选择；建设</p><p>以连锁、加盟为主要运营方式的学习服务模式围绕学生提供学习支持服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;主要包括提供网络学习环境、资源接受与发放、为办学机构开展的教学活动和学生的学习过程服务、考试管理服务、对学生的人文关怀等 </p><p>知识服务强调专业人员和用户的共同参与,关注的重点从信息本身扩展的服务过程,是一个“一站式”的综合服务 </p><p>教育信息化是充分利用现代信息技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;深入开发和利用信息资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;全面提高教学、管理和服务的质量和效率 </p><p>(3)知识服务是知识的智能化开发服务知识服务采用智能化手段挖掘蕴藏于显性信息中的隐性知识；用先进知识技术和只能技术实现服务各个流程尤其是内容加工和开发的智能化；以简单的用户操作接口提供对大量多媒体数据的高性能、主动化、多样化的检索及信息推送服务 </p><p>知识服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;是指从各种显性和隐性信息资源中针对人们的需要<BR>&nbsp; &nbsp; &nbsp; &nbsp;将知识提炼出来的过程它是以资源建设为基础的信息服务的高级阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;是基于知识基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;为其他产业或个人提供智力支持、智力服务的高增值的服务 </p><p>在对知识服务有了进一步的认识基础上<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们对它的表述应该是：以各种网络(internet、卫星网、移动网等)为信息基础设施<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立在资源整合的标准体系和资源服务质量监控的基础上<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过服务中心提供内容服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;有规范的内部管理和外部监管机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过整合、应用和服务等技术手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用户提供符合需求知识的综合服务系统知识服务体系的构成结构如图所示 </p><p>知识服务是根据用户的问题和环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;融入用户解决问题的过程之中<BR>&nbsp; &nbsp; &nbsp; &nbsp;提供能够有效支持知识应用和知识创新的服务它以知识的搜索、重组能力为基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;其特点和优势在于： </p>  (责任编辑：admin)
+<img border="0" alt="大力推进数字化教育资源整合和应用服务" src="/images/lenfeng_5880.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5880)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5880)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5880);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5578.html'>况且会计电算化还没有在我国普及</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete6737.html'>稳重成熟</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5880" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5880&title=大力推进数字化教育资源整合和应用服务" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5880" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5880" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5880" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5880&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5880');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

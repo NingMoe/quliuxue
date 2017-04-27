@@ -1,0 +1,237 @@
+/*---------- viewbox ---------*/
+
+.dede_pages{
+	width:600px;
+	float:none;
+	overflow:hidden;
+	text-align:center;
+}
+.dede_pages ul{
+	margin:0px auto;
+	float:none;
+	clear:both;
+	overflow:hidden;
+	text-align:center;
+	white-space:nowrap;
+}
+.dede_pages ul li,.dede_pages ul li a{
+	float:none;
+	display:inline;
+}
+.boxoff{
+	height:10px;
+	overflow:hidden;
+	clear:both;
+	background:url(../images/boxoff.gif) left 15px repeat-x;
+	margin:4px auto;
+	padding-top:10px;
+}
+.boxoff strong{
+	display:block;
+	width:8px;
+	height:10px;
+	overflow:hidden;
+	font-size:0px;
+	line-height:100px;
+	background:url(../images/boxoff.gif) right -10px no-repeat;
+	float:left;
+}
+.newdigg{
+	width:406px;
+	height:51px;
+	margin:8px auto;
+	clear:both;
+	overflow:hidden;
+	padding-left:8px;
+}
+.diggbox{
+	width:195px;
+	height:51px;
+	float:left;
+	margin-right:8px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.diggbox .digg_act{
+	font-size:14px;
+	float:left;
+	line-height:31px;
+	text-indent:32px;
+	height:29px;
+	overflow:hidden;
+	font-weight:bold;
+}
+.diggbox .digg_num{
+	float:left;
+	line-height:29px;
+	text-indent:5px;
+}
+.diggbox .digg_percent{
+	width:180px;
+	clear:both;
+	padding-left:10px;
+	overflow:hidden;
+}
+.diggbox .digg_percent .digg_percent_bar{
+	width:100px;
+	height:7px;
+	background:#E8E8E8;
+	border-right:1px solid #CCC;
+	float:left;
+	overflow:hidden;
+	margin-top:3px;
+}
+.diggbox .digg_percent .digg_percent_num{
+	font-size:10px;
+	float:left;
+	padding-left:10px;
+}
+.diggbox .digg_percent .digg_percent_bar span{
+	display:block;
+	height:5px;
+	overflow:hidden;
+	background:#000;
+}
+.newdigg .digg_good{
+	background:url(../images/newdigg-bg.png) left top no-repeat;
+}
+.newdigg .digg_bad{
+	background:url(../images/newdigg-bg.png) right top no-repeat;
+}
+.newdigg .digg_good .digg_act{
+	color:#C30;	
+}
+.newdigg .digg_good .digg_num{
+	color:#C63;
+}
+.newdigg .digg_bad .digg_act{
+	color:#36C;	
+}
+.newdigg .digg_bad .digg_num{
+	color:#39C;
+}
+.newdigg .digg_good .digg_percent .digg_percent_bar span{
+	border:1px solid #E37F24;
+	background:#FFC535;
+}
+.newdigg .digg_bad .digg_percent .digg_percent_bar span{
+	border:1px solid #689ACC;
+	background:#94C0E4;
+}
+.handle{
+	height:59px;
+	padding-top:12px;
+	margin-bottom:15px;
+	overflow:hidden;
+	clear:both;
+}
+.handle .digg{
+	width:59px;
+	height:59px;
+	float:left;
+	background:url(../images/digg-bg.gif) no-repeat;
+	margin-right:12px;
+}
+.handle .digg .digg_num{
+	width:56px;
+	height:34px;
+	font-size:20px;
+	text-align:center;
+	line-height:34px;
+	overflow:hidden;
+	color:#6B9169;
+}
+.handle .digg .digg_act{
+	width:56px;
+	height:22px;
+	line-height:23px;
+	overflow:hidden;
+}
+.handle .digg .digg_act a{
+	margin-left:11px;
+	color:#666;
+	float:left;
+}
+.handle .context{
+	float:left;
+}
+.handle .context ul li{
+	line-height:28px;
+	color:#888;
+}
+.actbox{
+	width:260px;
+	text-align:center;
+	float:right;
+	padding-top:20px;
+	padding-right:10px;
+}
+.actbox ul li{
+	display:inline;
+	padding-left:22px;
+	background-image:url(../images/actbox-ico.gif);
+	background-repeat:no-repeat;
+	margin-right:2px;
+}
+.actbox ul li a{
+	font-size:12px;
+	color:#666;
+}
+.actbox ul li#act-fav{
+	background-position:4px 0px;
+}
+.actbox ul li#act-err{
+	background-position:4px -37px;
+}
+.actbox ul li#act-pus{
+	background-position:4px -73px;
+}
+.actbox ul li#act-pnt{
+	background-position:4px -109px;
+}
+.feixiangjia{ background-color:#FFC; font-size:12px; border:solid #F93 1px; width:620px; height:35px;}
+.feixiangjias{ margin:10px auto 10px 10px;}
+/* ´úÂë¸ßÁÁ */
+pre{font-family:'Courier New' , Monospace; font-size:12px; width:99%; overflow:auto; margin:0 0 1em 0; background:#F7F7F7; }
+pre ol, pre ol li, pre ol li span{margin:0 0; padding:0; border:none}
+pre a, pre a:hover{background:none; border:none; padding:0; margin:0}
+pre ol{list-style:decimal; background:#F7F7F7; margin:0px 0px 1px 3em !important; padding:5px 0; color:#5C5C5C; border-left:3px solid #146B00;}
+pre ol li{list-style:decimal-leading-zero; list-style-position:outside !important; color:#5C5C5C; padding:0 3px 0 10px !important; margin:0 !important; line-height:1.3em}
+pre ol li.alt{color:inherit}
+pre ol li span{color:black; background-color:inherit}
+pre .comment, pre .comments{color:#008200; background-color:inherit}
+pre .string{color:blue; background-color:inherit}
+pre .keyword{color:#069; font-weight:bold; background-color:inherit}
+pre .preprocessor{color:gray; background-color:inherit}
+pre .dp-xml .cdata{color:#ff1493}
+pre .dp-xml .tag, pre .dp-xml .tag-name{color:#069; font-weight:bold}
+pre .dp-xml .attribute{color:red}
+pre .dp-xml .attribute-value{color:blue}
+pre .dp-sql .func{color:#ff1493}
+pre .dp-sql .op{color:#808080}
+pre .dp-rb .symbol{color:#a70}
+pre .dp-rb .variable{color:#a70; font-weight:bold}
+pre .dp-py .builtins{color:#ff1493}
+pre .dp-py .magicmethods{color:#808080}
+pre .dp-py .exceptions{color:brown}
+pre .dp-py .types{color:brown; font-style:italic}
+pre .dp-py .commonlibs{color:#8A2BE2; font-style:italic}
+pre .dp-j .annotation{color:#646464}
+pre .dp-j .number{color:#C00000}
+pre .dp-delphi .number{color:blue}
+pre .dp-delphi .directive{color:#008284}
+pre .dp-delphi .vars{color:#000}
+pre .dp-css .value{color:black}
+pre .dp-css .important{color:red}
+pre .dp-c .vars{color:#d00}
+pre .dp-cpp .datatypes{color:#2E8B57; font-weight:bold}
+
+#commetpages {
+	text-align:center;
+	line-height:28px;
+}
+
+#commetpages a {
+	border:1px solid #BADAA1;
+	padding:0 3px 0 3px;
+}

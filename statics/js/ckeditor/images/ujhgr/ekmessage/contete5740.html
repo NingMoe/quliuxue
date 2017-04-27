@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>任何一个服务接触|我的网站</title>
+<meta name="description" content=" 无法进行提单核对最后 顾客也试图控制服务接触 以便获得更多的利益 顾客总是提出各种各样的要求 以使自身利益最大化国际货运代理企业则以成本收" />
+<meta name="keywords" content="任何,一个,服务,接触,无法,进行,提单,核对,最后,顾客," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecomanvan/" title="新开网通万劫传奇私服">新开网通万劫传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebzvdhfgyuiwe/" title="网通灭世传奇私服">网通灭世传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/editingkeyboards/" title="韩版靓妆变态传奇私服">韩版靓妆变态传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easyturfhillcountry/" title="2012最新网通传奇私服">2012最新网通传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwilawyersminneapolis/" title="4月15号新开传奇私服">4月15号新开传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/ea8zq/" title="网通传奇私服家族">网通传奇私服家族</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/effervesence/" title="传奇私服变态合击1.95">传奇私服变态合击1.95</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efragua/" title="最新网通变态传奇私服">最新网通变态传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/" title="乌瑟尔">乌瑟尔</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhxbx/" title="4月1日新开的传奇私服">4月1日新开的传奇私服</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dypnisa/" title="3000ok新开传奇私服">3000ok新开传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebookvirtualtour/" title="传奇私服网通玩电信">传奇私服网通玩电信</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e500da0/" title="沈阳新开网通传奇私服">沈阳新开网通传奇私服</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/effectentertainment/" title="合击传奇私服变态私服">合击传奇私服变态私服</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/effaireselite/" title="道士变态传奇私服">道士变态传奇私服</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egeanimasyon/" title="盛大变态传奇私服">盛大变态传奇私服</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/eddyllc/" title="超级变态传奇私服网">超级变态传奇私服网</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecqpu/" title="网通变态合击传奇私服">网通变态合击传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/eatyaselfhealthy/" title="网通1.76极品传奇私服">网通1.76极品传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/" title="赚钱攻略">赚钱攻略</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服十点开的相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete12240.html" target="_blank" title="知识转移是知识管理的重要内容">知识转移是知识管理的重要内容</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete11856.html" target="_blank" title="本文着重讨论了光纤通信的独特优点">本文着重讨论了光纤通信的独特优点</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete8377.html" target="_blank" title="JD)是一种人工合成的无机非金属胶凝材料">JD)是一种人工合成的无机非金属胶凝材料</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete6329.html" target="_blank" title="年度十佳发动机评选是一个非常优秀的平台">年度十佳发动机评选是一个非常优秀的平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete5740.html" target="_blank" title="任何一个服务接触">任何一个服务接触</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete5542.html" target="_blank" title="教材内容对学生来说">教材内容对学生来说</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete5133.html" target="_blank" title="而民主社会主义则始终反对无产阶级专政">而民主社会主义则始终反对无产阶级专政</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete4157.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete881.html" target="_blank" title="《语言迁移与二语习得》">《语言迁移与二语习得》</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete102.html" target="_blank" title="在一定的温度范围内">在一定的温度范围内</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/" title="网通传奇私服至尊邪龙">网通传奇私服至尊邪龙</a></h3>
+<ul>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/qq12305.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/qq12270.html" title="人性和人的本质是涵义不同的两个概念">人性和人的本质是涵义不同的两个概念</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/qq11699.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/qq10894.html" title="科技信息(科学教研)">科技信息(科学教研)</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ecademosofhigherenlightenment/qq6410.html" title="没想到借着这次参加竞赛的机会">没想到借着这次参加竞赛的机会</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/" title="天界变态连击传奇私服">天界变态连击传奇私服</a></h3>
+<ul>
+<li><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/20159789.html" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/20159756.html" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/20159396.html" title="伴随着人类改造世界的进程">伴随着人类改造世界的进程</a></li>
+<li><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/20156806.html" title="在过去两年追逐萨博失败后">在过去两年追逐萨博失败后</a></li>
+<li><a href="http://www.yatjyy.com/images/tree/hgjy/educationhowto/20153434.html" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服十点开的- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>任何一个服务接触</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 15:15</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5740&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5740">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       无法进行提单核对最后       顾客也试图控制服务接触       以便获得更多的利益       顾客总是提出各种各样的要求       以使自身利益最大化国际货运代理企业则以成本收</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;无法进行提单核对<p>最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客也试图控制服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便获得更多的利益<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客总是提出各种各样的要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;以使自身利益最大化国际货运代理企业则以成本收益理论为指导<BR>&nbsp; &nbsp; &nbsp; &nbsp;力图以最小成本获得最大利益只有当满足顾客需求所得到的利益大于因此而付出的成本时<BR>&nbsp; &nbsp; &nbsp; &nbsp;国际货运代理企业才会满足顾客需求；否则<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业组织的利益就会受到损害 </p><p>2、与顾客接触的员工国际货运代理业提供的服务产品是一种极为专业的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;要求与顾客接触的员工不仅要具有扎实的业务知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要具有良好的人际沟通能力业务知识可以经过学习、培训而获得<BR>&nbsp; &nbsp; &nbsp; &nbsp;人际沟通能力却与人的先天个性有着更为密切的关系与顾客直接接触的员工应该具有灵活性、对顾客言辞含糊的宽容以及根据情景监督并改变行为的能力他们还应具备设身处地为顾客着想等个人品质<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种品质比年龄、培训和才智更重要因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何选择合适的员工<BR>&nbsp; &nbsp; &nbsp; &nbsp;是国际货运代理企业无法回避的问题 </p><p>国际货运代理业是一个知识密集性行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;员工的素质相对较高<BR>&nbsp; &nbsp; &nbsp; &nbsp;都具有强烈的实现自我的心愿对员工授权<BR>&nbsp; &nbsp; &nbsp; &nbsp;尤其是对与顾客接触的员工进行有效授权<BR>&nbsp; &nbsp; &nbsp; &nbsp;是企业组织对员工的一种极大的信任<BR>&nbsp; &nbsp; &nbsp; &nbsp;员工会因此而受到鼓舞<BR>&nbsp; &nbsp; &nbsp; &nbsp;增强员工的工作动力当与顾客接触的员工拥有了自主决定权和对行动后果负责的权利后<BR>&nbsp; &nbsp; &nbsp; &nbsp;再加上组织进行有效、及时的培训和技术上的支持<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些员工会更出色地完成任务 </p><p> 顾客与国际货运代理企业员工产生交互作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;是国际货运代理服务的特征之一顾客通过对这些短暂接触的评价<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成对服务质量的评价但由于服务的无形性以及服务的生产与消费同时发生的特性<BR>&nbsp; &nbsp; &nbsp; &nbsp;使顾客无法对某一个国际货运代理企业提供的服务进行观察、评价<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而给顾客的选择带来困难<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且使国际货运代理企业无法在事前对服务质量进行监测<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能保持服务质量的稳定性因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务接触管理是国际货运代理业服务运营管理的重要内容之一 </p><p>其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为与顾客直接接触的员工也试图控制接触过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也希望获得更大的授权<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便使整个服务过程符合员工本人的需要<BR>&nbsp; &nbsp; &nbsp; &nbsp;使工作容易进行假如员工因获得过多的授权而在接触过程中处于支配地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;肯定会引起顾客的强烈不满；同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;整个国际货运代理企业组织的利益也会受到损害 </p><p>常用的挑选员工的方法是面试和笔试相结合的方法在挑选与顾客高度接触的员工时<BR>&nbsp; &nbsp; &nbsp; &nbsp;面试更为重要虽然目前还没有一种可靠的测试人的服务导向的方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;但许多面试技术被证明是有用的如抽象提问<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个优秀的员工会注意到他个人生活和工作中的细节同样<BR>&nbsp; &nbsp; &nbsp; &nbsp;能对周围事件进行考虑并能解释它们意义的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般会较快地学到更多东西再如<BR>&nbsp; &nbsp; &nbsp; &nbsp;情景小品式的面试<BR>&nbsp; &nbsp; &nbsp; &nbsp;要求求职者回答有关特定情景的问题设定一个特殊的情景<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以揭示出有关求职者的本能、人际关系能力、常识及判断力方面的信息 </p><p>首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为服务组织的国际货运代理企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;其目标是利润最大化为此<BR>&nbsp; &nbsp; &nbsp; &nbsp;国际货运代理企业为提高自己的服务传递效率<BR>&nbsp; &nbsp; &nbsp; &nbsp;往往会采取标准化的服务程序来要求员工严格执行但这些程序并不一定能够适合所有的顾客<BR>&nbsp; &nbsp; &nbsp; &nbsp;总有一些顾客需要一些比较特殊的服务作为与顾客直接接触的员工<BR>&nbsp; &nbsp; &nbsp; &nbsp;并不拥有更改这些服务程序的权利<BR>&nbsp; &nbsp; &nbsp; &nbsp;即使这些员工及时向上级反映<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般情况下也很难得到上级及时的回复这就带来两方面的危害：一方面对员工来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于其提出的建议没有得到积极有效的回应<BR>&nbsp; &nbsp; &nbsp; &nbsp;其主动积极性就会受到压抑和打击；另一方面对顾客来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于其自认为合理的需求没有得到满足<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客对企业的评价随之降低<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终可能会抬腿走人 </p><p>国际货运代理业的产品是服务在服务过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;存在着哪些服务接触呢？现以国际海运集装箱代理为例<BR>&nbsp; &nbsp; &nbsp; &nbsp;对整个服务过程进行分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;将所产生的服务接触进行分类<BR>&nbsp; &nbsp; &nbsp; &nbsp;其结果如图1所示： </p><p>组织文化是组织成员共同遵循的信仰或共同的理想<BR>&nbsp; &nbsp; &nbsp; &nbsp;它成为有力地约束组织中个体或群体行为的准则；组织文化是一个组织区别于其他组织的传统和信仰<BR>&nbsp; &nbsp; &nbsp; &nbsp;它赋予组织活力；组织文化是能够产生凝聚力<BR>&nbsp; &nbsp; &nbsp; &nbsp;并赋予组织鲜明个性的共有的导向系统当管理层持续一致的沟通时<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织的价值理念可赋予与顾客接触的员工很大的自主权<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为他们的判断根植于共有的价值观组织得益于共有的价值观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为与顾客接触的员工有权自己决策而不需要传统的监督层次<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而使服务更能满足顾客需要 </p><p>1、国际货运代理企业组织的作用任何一个服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是发生在国际货运代理企业这个具体的组织环境中的国际货运代理<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/151510FG-0.jpg" width="600px" height="400px" />企业会通过种种方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;来控制服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如制定一系列规章制度、操作规定等但真正能根本上持久调动员工积极性的<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有两种方法：一种是培育组织文化；另一种是有效授权 </p><p>国际货运代理业的管理者应该按照更好地满足顾客需要对员工和服务接触进行管理但在国际货运代理业中<BR>&nbsp; &nbsp; &nbsp; &nbsp;最了解顾客需要的是直接与顾客接触的员工<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此管理者应更多地听取与顾客直接接触的员工的意见<BR>&nbsp; &nbsp; &nbsp; &nbsp;确定员工中的服务导向<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而使顾客能够观察、体验到一流的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也符合员工对待顾客的处理方式创建服务导向须借助于一系列的相关因素的利润服务链<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终实现组织的目标如图3所示： </p><p>服务接触三元组合中三个主体之间冲突分析服务接触体现的是服务组织、与顾客接触的员工之间的关系理想的情况是三者之间协同配合、积极协作<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而创造出更大的利益但实际中往往是三者均强调自身利益最大化<BR>&nbsp; &nbsp; &nbsp; &nbsp;为自身利益而试图控制整个服务接触过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;由此引发三者之间的冲突 </p><p>【xzbu】郑重<p>服务利润链理论认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;在利润、顾客忠诚、提供给顾客的产品和服务的价值、满意、忠诚及效率之间存在着直接相关关系服务利润链建立了一种关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种关系把服务企业的利润率、顾客的忠诚度和企业内部员工的满意度、忠诚度和生产力联系在一起<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们之间互相联系的机理是：企业的利润和回报的增长来自于忠诚的顾客<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客的忠诚是顾客满意的一种直接结果<BR>&nbsp; &nbsp; &nbsp; &nbsp;而顾客的满意度很大程度也受企业所能提供给顾客价值的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务所提供的价值是由满意忠诚和有高度生产力的企业员工所创造的<BR>&nbsp; &nbsp; &nbsp; &nbsp;创建顾客服务导向对国际货运代理企业具有十分重要的作用 </p><p>由此可见<BR>&nbsp; &nbsp; &nbsp; &nbsp;单纯强调三个主体中任何一方的利益<BR>&nbsp; &nbsp; &nbsp; &nbsp;都会损害整体利益理想的状态是三者之间相互协调<BR>&nbsp; &nbsp; &nbsp; &nbsp;达到一个理想状态<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客的利益得到适度尊重<BR>&nbsp; &nbsp; &nbsp; &nbsp;员工得到适当授权和培训<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业组织的服务效率才会得到有效传递<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业的经济目标才能得到很好的实现 </p><p>3、顾客国际货运代理业面对的顾客是复杂多样每一位顾客都在试图控制服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;以达到自己的期望比如<BR>&nbsp; &nbsp; &nbsp; &nbsp;当国际货运代理业员工在主动与一位顾客进行提单核对时<BR>&nbsp; &nbsp; &nbsp; &nbsp;这位顾客可能盼望着尽量推迟此项工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为此项贸易的信用证还没有收到当顾客期望不能达到满足时<BR>&nbsp; &nbsp; &nbsp; &nbsp;就说明顾客未能控制服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客满意度就会相应降低不同类型的顾客对服务过程的控制要素是不一样的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但一般来说主要包括：花费的时间、对他人的依赖程度等如何识别顾客对服务过程的控制要素<BR>&nbsp; &nbsp; &nbsp; &nbsp;并进行相应的管理<BR>&nbsp; &nbsp; &nbsp; &nbsp;是国际货运代理业必须重视的问题 </p><p>通过对图1进行分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;在国际货运代理向顾客提供服务的过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照发生的先后顺序<BR>&nbsp; &nbsp; &nbsp; &nbsp;共有9类主要接触点具体到某个业务中<BR>&nbsp; &nbsp; &nbsp; &nbsp;接触点可能有相应的增加或减少例如<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果顾客自己办理报关、陆运等业务<BR>&nbsp; &nbsp; &nbsp; &nbsp;则3、4项接触点就可能不存在；如果要求增加服务项目时<BR>&nbsp; &nbsp; &nbsp; &nbsp;接触点就可能增多顾客通过对这些接触的评价<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而影响其对服务质量的评价和满意度的高低每类接触点中<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客与员工接触的次数是不固定的<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时只有几次<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时则可达数十次按此推算<BR>&nbsp; &nbsp; &nbsp; &nbsp;每完成一次服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾客与员工的接触次数可达上百次<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至更多如此繁多的接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;使国际货运代理企业实现对服务接触的有效管理变得十分困难那么<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何对服务接触实现有效管理呢？服务接触三元组合为我们提供了理论指导 </p><p>在国际货运代理业中<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务接触主要发生在基层员工与顾客之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;基层员工的能力、品质对服务接触的影响是相当大的但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有的服务接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是发生在国际货运代理企业的组织环境中的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是受组织环境所制约的因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何协调国际货运代理企业、顾客三者之间的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;是做好服务接触管理的核心 </p>  (责任编辑：admin)
+<img border="0" alt="任何一个服务接触" src="/images/lenfeng_5740.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5740)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5740)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5740);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete5542.html'>教材内容对学生来说</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekmessage/contete6329.html'>年度十佳发动机评选是一个非常优秀的平台</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5740" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5740&title=任何一个服务接触" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5740" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5740" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5740" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5740&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5740');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

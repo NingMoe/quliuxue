@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选校报告_{L('member','','member').L('manage_center')}</title>
+<link rel="stylesheet" href="/style/css/report_new.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部 --> 
+{template "member","person_top"} 
+<!-- 头部结束 --> 
+<!--选校报告上部-->
+<div class="reporttitle">
+  <h2>我的选校报告</h2>
+</div>
+<!--主要内容--->
+<div class="content w-1000"> 
+  <!--我的选校报告--->
+  <div class="r-1"> 
+    <!--左侧-->
+    <div class="r-left">
+      <div class="r-c">
+        <div class="contry"> 
+        <a href="#">澳洲硕士</a> 
+        <a href="#">英国硕士</a> 
+        <a href="#">美国工科硕士</a> 
+        <a href="#">美国商科硕士</a> 
+        <a href="#">美国本科</a> 
+      </div>
+        <div class="clear"></div>
+        <div class="sa ss">
+          <div class="c-1">
+            <h2>我的澳洲硕士留学选校报告</h2>
+            <p>以下是我们根据你填写的个人信息及院校期望为你推荐的院校报告 </p>
+          </div>
+          <!--第二部分选项卡-->
+          <div class="c-2">
+            <ul class="gl">
+              <li><a href="javascript:navigate_tabs3('a','first-tab');" id="first-tab">冲刺学校</a></li>
+              <li><a href="javascript:navigate_tabs3('b','second-tab');" id="second-tab">核心学校</a></li>
+              <li><a href="javascript:navigate_tabs3('c','third-tab');" id="third-tab">保底学校</a></li>
+            </ul>
+            
+            <div class="a rr rrr">
+            
+            {loop $a_sid1 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+              
+              <div class="clear"></div>
+            </div>
+            <div class="b rr">
+         
+             {loop $a_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+             
+              <div class="clear"></div>
+            </div>
+            <div class="c rr">
+             {loop $a_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="sb ss">
+          <div class="c-1">
+            <h2>我的英国硕士留学选校报告</h2>
+            <p>以下是我们根据你填写的个人信息及院校期望为你推荐的院校报告</p>
+          </div>
+          <!--第二部分选项卡-->
+          <div class="c-2">
+            <ul class="gl">
+              <li><a href="javascript:navigate_tabs4('d','four-tab');" id="four-tab">冲刺学校</a></li>
+              <li><a href="javascript:navigate_tabs4('e','five-tab');" id="five-tab">核心学校</a></li>
+              <li><a href="javascript:navigate_tabs4('f','six-tab');" id="six-tab">保底学校</a></li>
+            </ul>
+            <div class="d rr rrr">
+             {loop $b_sid1 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="e rr">
+              {loop $b_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="f rr">
+              {loop $b_sid3 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="sc ss">
+          <div class="c-1">
+            <h2>我的美国工科硕士留学选校报告</h2>
+            <p>以下是我们根据你填写的个人信息及院校期望为你推荐的院校报告</p>
+          </div>
+          <!--第二部分选项卡-->
+          <div class="c-2">
+            <ul class="gl">
+              <li><a href="javascript:navigate_tabs5('g','serven-tab');" id="serven-tab">冲刺学校</a></li>
+              <li><a href="javascript:navigate_tabs5('h','eight-tab');" id="eight-tab">核心学校</a></li>
+              <li><a href="javascript:navigate_tabs5('i','nine-tab');" id="nine-tab">保底学校</a></li>
+            </ul>
+            <div class="g rr rrr">
+             {loop $c_sid1 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="h rr">
+             {loop $c_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="i rr">
+              {loop $c_sid3 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="sd ss">
+          <div class="c-1">
+            <h2>我的美国商科硕士选校报告</h2>
+            <p>以下是我们根据你填写的个人信息及院校期望为你推荐的院校报告</p>
+          </div>
+          <!--第二部分选项卡-->
+          <div class="c-2">
+            <ul class="gl">
+              <li><a href="javascript:navigate_tabs6('j','ten-tab');" id="ten-tab">冲刺学校</a></li>
+              <li><a href="javascript:navigate_tabs6('k','eleven-tab');" id="eleven-tab">核心学校</a></li>
+              <li><a href="javascript:navigate_tabs6('l','twelve-tab');" id="twelve-tab">保底学校</a></li>
+            </ul>
+            <div class="j rr rrr">
+             {loop $d_sid1 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="k rr">
+               {loop $d_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="l rr">
+               {loop $d_sid3 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+         <div class="se ss">
+          <div class="c-1">
+            <h2>我的美国本科留学选校报告</h2>
+            <p>以下是我们根据你填写的个人信息及院校期望为你推荐的院校报告</p>
+          </div>
+          <!--第二部分选项卡-->
+          <div class="c-2">
+            <ul class="gl">
+              <li><a href="javascript:navigate_tabs7('m','thirteen-tab');" id="thirteen-tab">冲刺学校</a></li>
+              <li><a href="javascript:navigate_tabs7('n','fourteen-tab');" id="fourteen-tab">核心学校</a></li>
+              <li><a href="javascript:navigate_tabs7('o','fifteen-tab');" id="fifteen-tab">保底学校</a></li>
+            </ul>
+            <div class="m rr rrr">
+              {loop $e_sid1 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+            </div>
+            <div class="n rr">
+              {loop $e_sid2 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+
+            </div>
+            <div class="o rr">
+               {loop $e_sid3 $k $v}
+             {if $v!=''}
+              <div class="xxbox">
+                <div class="imgbox"><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><img src="<?php echo jiamian_school($v,logo)?>" /></a></div>
+                <div class="nrbox">
+                  <h2><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank"><?php echo jiamian_school($v,enname)?>(<?php echo jiamian_school($v,cnname)?>）</a></h2>
+                  <p>位于<?php echo jiamian_school($v,location)?></p>
+                  <ul>
+                    <li>学校排名：<span>英国学校排名-<?php echo jiamian_school($v,rank)?></span></li>
+                    <li>学校网址：<a href="<?php echo jiamian_school($v,weburl)?>"><span><?php echo jiamian_school($v,weburl)?></span></a></li>
+                    <li><a>托福要求</a><span><?php echo jiamian_school($v,toefl_scores)?></span></li>
+                    <li><a>雅思要求</a><span><?php echo jiamian_school($v,ielts_score)?></span></li>
+                  </ul>
+                  <div class="clear"></div>
+                </div>
+                <div class="plbox"> <a href="#"><i class="icon-ok"></i>录取几率免费评估</a>
+                  <p>已有<span>xx</span>人评估</p>
+                </div>
+                <div class="clear"></div>
+                <p class="ck"><i class="icon-caret-right"></i><a href="/index.php?m=school&c=show&id=<?php echo jiamian_school($v,id)?>" target="_blank">查看更多该校信息>></a></p>
+                <div class="clear"></div>
+              </div>
+              {/if}
+              {/loop}
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        
+        
+        <div class="clear"></div>
+      </div>
+       
+      <div class="clear"></div>
+    </div>
+    <!--右侧-->
+    <div class="r-right">
+      <h1>选校报告使用指南</h1>
+      <ul>
+        <li>选校原理：
+          <p>根据GPA成绩、学术考试成绩、语言成绩本校背景做关键参考值。</p>
+        </li>
+        <li>学校共分三类：</li>
+        <ol>
+          <li><i class="icon-circle"></i><strong>冲刺学校：</strong>被录取的几率较低，请谨慎申请。</li>
+          <li><i class="icon-circle"></i><strong>核心学校：</strong>被录取的可能性很大，且排名比较靠前，建议用心申请。</li>
+          <li><i class="icon-circle"></i><strong>保底学校：</strong>确保成功留学的后备选项，不妨申请几所。</li>
+        </ol>
+        <li>Qu QQ群/微信
+          <p>申请硕士（美国）</p>
+          <p>申请硕士（英国）</p>
+          <p>申请硕士（澳洲）</p>
+          <p>申请硕士（香港）</p>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+
+<!--遮罩层--> 
+{template "content","login"} 
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/tab_new.js"></script><!--选项卡--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层-->
+</body>
+</html>

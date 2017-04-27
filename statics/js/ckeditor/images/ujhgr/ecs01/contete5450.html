@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>信任是以怀疑为基础的|我的网站</title>
+<meta name="description" content=" 并促进社会资本更有效地发挥在公共政策领域中的作用脱集体困境并减少公共政策的运行成本 另一方面也使公共政策沦为特殊个人和集团损害公共利益而谋取私利的工具 并通过对“" />
+<meta name="keywords" content="信任,是以,怀疑,为基础,促进,社会,资本,有效地,发挥,公" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/edadolanay/" title="超级变态传奇私服满级">超级变态传奇私服满级</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxy25/" title="新开传奇私服雪域">新开传奇私服雪域</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/eddacentrum/" title="变态传奇私服加速外挂">变态传奇私服加速外挂</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatderby/" title="北方网通单线传奇私服">北方网通单线传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/" title="迪亚布罗">迪亚布罗</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonyamatuerxxx/" title="网通雷霆3合1传奇私服">网通雷霆3合1传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duorlipaper/" title="新开合击传奇私服网">新开合击传奇私服网</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/" title="阿尔萨斯">阿尔萨斯</a></li><li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/eastlothianproperties/" title="新开网通靓装传奇私服">新开网通靓装传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuscards/" title="9点开网通传奇私服">9点开网通传奇私服</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eggharborcityrealestate/" title="传奇私服道士宝宝变态">传奇私服道士宝宝变态</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dyzxlt/" title="15号新开传奇私服">15号新开传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwilawyersminneapolis/" title="4月15号新开传奇私服">4月15号新开传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwyanewadeheat/" title="新开微变盛大传奇私服">新开微变盛大传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earlycareers/" title="网通超变传奇私服网站">网通超变传奇私服网站</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/eexerciseequipment/" title="变态传奇私服网页游戏">变态传奇私服网页游戏</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dynafootball/" title="新开战火屠龙传奇私服">新开战火屠龙传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edirectmailing/" title="超级变态靓装传奇私服">超级变态靓装传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efunkids/" title="新开仿天心传奇私服">新开仿天心传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e5rug/" title="天津新开网通传奇私服">天津新开网通传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开2.90心法传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete11360.html" target="_blank" title="以严复的达为标准">以严复的达为标准</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete10447.html" target="_blank" title="本刊经过多年努力">本刊经过多年努力</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete9762.html" target="_blank" title="网点布局不合理">网点布局不合理</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5989.html" target="_blank" title="即说疑虑说困惑">即说疑虑说困惑</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5450.html" target="_blank" title="信任是以怀疑为基础的">信任是以怀疑为基础的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5393.html" target="_blank" title="在十八大新闻中心举行的第四场记者招待会上">在十八大新闻中心举行的第四场记者招待会上</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete4778.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete4644.html" target="_blank" title="文章末尾注明详细的通讯地址电子邮箱等">文章末尾注明详细的通讯地址电子邮箱等</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete1414.html" target="_blank" title="随着拉链形态的不断创新">随着拉链形态的不断创新</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete800.html" target="_blank" title="当中国的地主阶级洋务派官员李鸿章等人搞洋务运动时">当中国的地主阶级洋务派官员李鸿章等人搞洋务</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/" title="变态格斗传奇私服">变态格斗传奇私服</a></h3>
+<ul>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/201512293.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/201511993.html" title="为了掩饰自己的真实身份">为了掩饰自己的真实身份</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/201510292.html" title="在心灵的价值天平上">在心灵的价值天平上</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/20159860.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egcrea/20159429.html" title="主要临床表现有:发热全身不适干咳">主要临床表现有:发热全身不适干咳</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/" title="传奇私服刚开一秒网通">传奇私服刚开一秒网通</a></h3>
+<ul>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq11433.html" title="题目关键词单位等同时译成英文">题目关键词单位等同时译成英文</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq11223.html" title="对其进行研究">对其进行研究</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq10418.html" title="在材料进工地时">在材料进工地时</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq9384.html" title="中国科技期刊全文收据库全文收录">中国科技期刊全文收据库全文收录</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq9251.html" title="文稿一经发表">文稿一经发表</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开2.90心法传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>信任是以怀疑为基础的</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 14:19</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5450&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5450">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       并促进社会资本更有效地发挥在公共政策领域中的作用脱集体困境并减少公共政策的运行成本       另一方面也使公共政策沦为特殊个人和集团损害公共利益而谋取私利的工具       并通过对“</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;并促进社会资本更有效地发挥在公共政策领域中的作用<p>脱集体困境并减少公共政策的运行成本<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一方面也使公共政策沦为特殊个人和集团损害公共利益而谋取私利的工具<BR>&nbsp; &nbsp; &nbsp; &nbsp;并通过对“弱势”群体的排斥破环了公民参与公共政策的热情社会资本的功能主义矛盾给我们应用社会资本解决公共政策领域中的问题带来了巨大障碍<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为社会资本功能的发挥受其主体、存量和应用的空间、时间等多因素的联合影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;并不是社会资本的储量越丰裕<BR>&nbsp; &nbsp; &nbsp; &nbsp;其正向功能就越强大<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们之间不存在必然的正相关而我们在现实的研究中往往忽略甚至很难解决这一问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;提出的一些措施和途径并不能真正的使社会资本的培育促进公共政策的民主性、有效性的运行 </p><p>改进社会资本在公共政策领域中应用的信任格局过去<BR>&nbsp; &nbsp; &nbsp; &nbsp;有些学者笼统地认为提高社会信任的总量就会有利于公共政策的有效运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而提出了一些有利于社会信任总量提高的路径但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有像预计的那样促进了公共政策的有效运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;反而阻碍了公共政策的有效发展我们认为不应该盲目的致力于社会信任总量的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;而应该改变社会资本应用的信任格局这种信任格局是由狭隘的信任与广泛的信任、弱势群体的信任与精英群体的信任构成的这也就决定了我们所要努力的两个方向：如何将狭隘的信任转变为广泛的信任？如何提高弱势群体的信任<BR>&nbsp; &nbsp; &nbsp; &nbsp;监督精英群体的信任？针对第一个努力方向<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们认为：一方面必须提高公共政策领域的透明度以便抑制狭隘信任的负面效应；另一方面必须大力培育非营利组织<BR>&nbsp; &nbsp; &nbsp; &nbsp;鼓励公民更多的参与社团<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而通过自发性社群组织的粘合作用激发公民精神<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高公民的公民意识和参与意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进广泛信任资本存量的提升<BR>&nbsp; &nbsp; &nbsp; &nbsp;改变现有的信任格局<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现社会资本与公共政策的良性互动针对第二个努力方向<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们认为：首先要提高弱势群体的经济收入<BR>&nbsp; &nbsp; &nbsp; &nbsp;增强其抵御失信风险的能力我国学者胡荣在其实证研究中证明了“社会经济地位越高者对他人的信任度也越高”因为社会经济地位</p><p>越高的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;其拥有的权力就越大<BR>&nbsp; &nbsp; &nbsp; &nbsp;占有的社会资源也就越多<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而其抵御风险的能力也就越强吉登斯也认为：“占有大量资源可以使人具有一种更加开放乐观<BR>&nbsp; &nbsp; &nbsp; &nbsp;更富有同情心和更自在的人生态度<BR>&nbsp; &nbsp; &nbsp; &nbsp;而这种人生态度可以增强对他人的信任感”同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过制度设计使精英群体的信任在阳光下运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;接受群众的监督现代化的互联网平台为监督提供了巨大的技术支撑 </p><p>要：社会资本是具有争鸣的多学科领域研究的变量和范式<BR>&nbsp; &nbsp; &nbsp; &nbsp;近20多年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;它已由社会学、经济学等领域延伸至政治学和公共政策领域该理论是以信任为核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;以公民参与网络为基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;以互利互惠的规范为保障的一种资源集合体在公共政策过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本的应用虽然具有有效性但仍面临着四种困境：功能困境、网络困境及测量评估困境为了克服这四种困境以便实现社会资本与公共政策运行的良性互动<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须不断改进社会资本应用的逻辑思路、网络格局及测量评估方式 </p><p>改进社会资本在公共政策领域中应用的测量评估方式目前<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会上至少存在两种常用的测量评估方式：一种是在某一社会中对群体和群体成员数量进行普查<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一种是利用有关信任、公民参与和互利互惠规范的社会调查资料这两种测量评估方式都存在一定的缺陷：如前者中群体及其成员的数量与社会资本的关系问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;后者中测量评估过程的主观能动性问题如何改进公共政策过程中社会资本应用的测量评估方式？这一问题是目前学术界面临的最大难点之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔者在此尝试从以下几点加以探讨<BR>&nbsp; &nbsp; &nbsp; &nbsp;希望对改进工作有所助益首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过测量评估公共政策的效果来间接反映社会资本的存量因为公共政策是社会资本直接的作用对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;公共政策的绩效评估比社会资本的测量评估更成熟所以笔者认为这种方式可以一试其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立测量评估信息系统<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证测量评估的准确和有效完备的测量评估资料和数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;是开展社会资本测量评估的基础社会资本的测量涉及的主体多<BR>&nbsp; &nbsp; &nbsp; &nbsp;信息量大所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;临时去收集相关资料难以保障测量评估的准确性和有效性再次<BR>&nbsp; &nbsp; &nbsp; &nbsp;获得参与个人和组织的支持和承诺因为个人和组织的支持和承诺是开展测量评估活动的前提<BR>&nbsp; &nbsp; &nbsp; &nbsp;能够保证活动的顺利进行最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用电子网络技术来</p><p>罗伯特?d? 列<BR>&nbsp; &nbsp; &nbsp; &nbsp;：江西人民出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;2001. </p><p>改善测量评估的结果电子网络不仅为社会资本的测量评估提供了良好的物质基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且日益成为社会资本集聚的场所总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;公共政策过程中社会资本测量评估的改善还有待越来越多的学者去研究和探索 </p><p>朱旭峰. 中国政策精英群体的社会资本：基于结构主义视角的分析社会学研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;2006：89. </p><p>虽然社会资本在一定的程度上有助于公共政策民主化、科学化和透明化的运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是它在公共政策的实际运行中却存在着四种不可忽视的应用困境这四种应用困境主要是指：社会资本应用的功能困境、社会资本应用的信任困境、社会资本应用的网络困境和社会资本应用的测量评估困境 </p><p>社会资本的基础公民参与网络是指社会成员为了实现某种共同利益而在相互交往过程中形成的平等、自由的关系网络在社会资本三个方面的内容中<BR>&nbsp; &nbsp; &nbsp; &nbsp;公民参与网络是最基础的<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为有了广泛的网络才可以形成普遍的互惠规范<BR>&nbsp; &nbsp; &nbsp; &nbsp;才可以建立起广泛的社会信任<BR>&nbsp; &nbsp; &nbsp; &nbsp;才可能进行有关共同利益的合作为什么公民参与网络可以形成普遍的互惠规范、增进信任并建立合作呢？帕特南认为：“公民参与网络增加了人们在任何单独交易中进行欺骗的潜在成本投机者要面临这样的风险：既无法从未来的交易中获益<BR>&nbsp; &nbsp; &nbsp; &nbsp;也不能从他目前参与的其他交易中得到他所期望的利益；公民参与网络培育了强大的互惠规范；公民参与网络促进了交往<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进了有关个人品行的信息的沟通参与者之间的交往越多<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们之间的互信程度也越高<BR>&nbsp; &nbsp; &nbsp; &nbsp;合作也就更容易；公民参与网络体现的是以往合作的成功<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以把它作为一种具有文化内涵的模板<BR>&nbsp; &nbsp; &nbsp; &nbsp;未来的合作在此基础上进行”203-204 </p><p>而我国对社会资本在公共政策领域应用的研究仍存在很多问题其中<BR>&nbsp; &nbsp; &nbsp; &nbsp;最重要的一点是<BR>&nbsp; &nbsp; &nbsp; &nbsp;如我国学者王立敏对社会资本与农村妇女参与政策关系的研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及学者胡荣对社会资本与地方治理关系的探索等他们普遍认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;公共政策在运行过程中极易出现寻租、集体困境及精英群体专横的现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;而社会资本能够有效地解决公共政策运行过程中存在的这些困难和障碍因为“社会资本具有明显的政治功能<BR>&nbsp; &nbsp; &nbsp; &nbsp;是公共政策过程科学性、准确性和公众参与性的前提<BR>&nbsp; &nbsp; &nbsp; &nbsp;是产生自由民主制度和保持政治稳定的必要条件”这一点<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经被许多案例所证实<BR>&nbsp; &nbsp; &nbsp; &nbsp;国内外学者也已达成共识 </p><p>笔者并不否认社会资本作为一种团体资本可以通过非正式网络建立起来的信任、互惠和规范来促进公民参与社会公共事务的治理只是想另辟蹊径通过对公共政策领域中社会资本应用的困境研究来完善其研究视角通过社会资本的内涵来透析社会资本在公共政策领域中应用的困境<BR>&nbsp; &nbsp; &nbsp; &nbsp;并相应地提出解决这些困境的途径 </p><p>社会资本在公共政策领域中应用的测量评估困境社会资本的应用离不开对社会资本的测量评估<BR>&nbsp; &nbsp; &nbsp; &nbsp;但目前社会资本的测量评估仍存在巨大的困境这种困境主要源于以下几个方面：首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本的属性决定了其测量评估的困难社会资本是社会主体（包括个人、社会甚至国家）间紧密联系的状态及特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;它往往表现为社会网络、权威、行动的共识以及社会道德等这就决定了社会资本是一种非物质的隐性的资源集合体<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而导致社会资本自身难以量化<BR>&nbsp; &nbsp; &nbsp; &nbsp;其测量评估标准和指标难以确定其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本的功能困境也给其测量评估带来了困难社会资本与经济资本、人力资本相比<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有更多的外部性<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且其外部性包括正外部性和负外部性两种所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们在测量评估社会资本时就需要着重考虑其外部性的实际效用净值<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是社会资本效用的重复性和间接性导致了实际效用净值测量的困难再次<BR>&nbsp; &nbsp; &nbsp; &nbsp;测量评估人员的主观性影响了测量评估结果的准确性社会资本储量的变化和社会资本效应的好坏很可能只是测量评估人员的主观估计<BR>&nbsp; &nbsp; &nbsp; &nbsp;测量评估的标准和指标的变化可能是由其他因素所引起的最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;测量口径缺乏统一的规范给测量评估活动带来了混乱正如弗朗西斯?福山所言：“社会资本概念最</p><p>社会资本在公共政策领域中应用的信任困境信任是以怀疑为基础的<BR>&nbsp; &nbsp; &nbsp; &nbsp;并不是所有的信任都可以促进公共事务的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为社会资本的信任也不可能完全有利于公共政策的运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;这主要取决于信任的程度福山在《信任：社会美德与创造经济繁荣》一书中把社会信任分为高度信任和低度信任两个层次<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国学者胡荣在《城市居民信任的构成及影响因素》一文中把中国城市居民的社会信任分为特殊信任、一般信任和普遍信任三个基本结构<BR>&nbsp; &nbsp; &nbsp; &nbsp;而肯尼斯?纽顿为了解释社会资本与现代社会的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;将信任归纳为两种模式：深度信任的迪尔凯姆模型和浅度信任的托克维尔模型笔者认为信任分为狭隘的信任和广泛的信任两种<BR>&nbsp; &nbsp; &nbsp; &nbsp;狭隘的信任（即深度信任包括特殊信任和一般信任）是以血缘、地缘和利益为基础建立的信任<BR>&nbsp; &nbsp; &nbsp; &nbsp;而广泛的信任（即浅度信任、普遍信任）则是以非营利组织为基础建立的信任狭隘的信任将便于特殊利益集团或个人对公共政策过程的垄断<BR>&nbsp; &nbsp; &nbsp; &nbsp;使他们的活动游离于正式制度之外<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终导致公共政策偏离其公共价值取向而成为他们谋取私利的工具而广泛的信任则有利于维护弱势群体的权利<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进公共政策运行的民主性、科学性和有效性总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种内外有别、亲疏不同的信任“差序格局”的存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;给我们在</p><p>改进社会资本在公共政策领域中应用的逻辑思路过去<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究社会资本理论的学者们在应用社会资本解决公共政策问题前习惯运用这种逻辑思<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1419264344-0.jpg" width="600px" height="400px" />路：“当他们抽象某种网络时<BR>&nbsp; &nbsp; &nbsp; &nbsp;事先要甄别某一网络成员对指定功能是否起作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后将那些对功能有贡献的成员纳入网络中在这种逻辑下<BR>&nbsp; &nbsp; &nbsp; &nbsp;既然在考察网络成分时学者们已经精心挑选了那些确实对网络功能有贡献的成员<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么这些成员所构成的网络具有这样的功能就成为不言自明的<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为那些不起作用的东西已经被排除在社会自卑感的定义之外了”这种逻辑思路造成了社会资本应用路径的选择在逻辑体系内“自问自答”的现象为了破解这种“自问自答”的现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们可以采取结构主义的逻辑视角<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而有效规避功能主义的社会资本在概念上的逻辑缺陷社会资本的结构主义视角认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有网络结构对旨在获得任何一种功能回报的行动成功都具有直接的、间接的或潜在的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样就摆脱了社会资本的功能困境 </p><p>社会资本的核心社会资本是特定的社区或共同体所拥有的公共物品<BR>&nbsp; &nbsp; &nbsp; &nbsp;是一种可再生的团体资本<BR>&nbsp; &nbsp; &nbsp; &nbsp;它的产生、增长和维持必须以信任为核心作为一种道德资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;它可以通过信任、合作得以产生、加强和延续正如有的学者所言：“社会资本是从社会或其特征部分盛行的信任中产生的能力它可以表现在最小和最基础的社会团体如家庭中<BR>&nbsp; &nbsp; &nbsp; &nbsp;也可以存在于所有最大的团体如国家中<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及其他处于二者之间的团体中<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本不同于所有其他形式的人类资本<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为它总是来源于文化决定的信任”帕特南通过对意大利南北地方政府的实证研究也证明：信任是社会资本必不可少的组成部分对于信任的来源<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会信任能够从两个相互联系的方面产生：“互惠规范和公民参与网络”204 </p><p>改进社会资本在公共政策领域中应用的网络格局由于精英群体的社会资本网络与弱势群体的社会资本网络的固化<BR>&nbsp; &nbsp; &nbsp; &nbsp;致使公民参与网络对抗格局的产生为了使这两种社会资本网络不断走向互信融合（互信融合过程如下图所示）<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而提高公民参与网络的活力和作用我们必须做到以下两点：一方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;在政策程序设计上<BR>&nbsp; &nbsp; &nbsp; &nbsp;约束精英群体网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;创造条件保护弱势群体网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;为两者的平等对话提供平台听证会就是这种平等对话沟通的有效场所<BR>&nbsp; &nbsp; &nbsp; &nbsp;听证作为一种程序规定和制度安排<BR>&nbsp; &nbsp; &nbsp; &nbsp;要求公共决策过程中依法直接听取与该决策有利害关系的各方当事人的意见<BR>&nbsp; &nbsp; &nbsp; &nbsp;防止出现强势集团对政策过程的垄断各级人民代表大会也为两种网络之间的利益表达和互动提供了沟通渠道另一方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高两种网络之间的信任度信任是两种网络走向融合的基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;是两者之间关系摩擦的润滑剂精英群体在两者之间的关系中处于优势地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以应该主动走群众路线<BR>&nbsp; &nbsp; &nbsp; &nbsp;倾听弱势群体的声音<BR>&nbsp; &nbsp; &nbsp; &nbsp;了解弱势群体的诉求主动帮助弱势群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;让利于弱势群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而获得弱势群体的信任精英群体还可以通过网络新闻媒介宣传自己的政策主张<BR>&nbsp; &nbsp; &nbsp; &nbsp;接受弱势群体的批评和监督这种合作、共赢的公民参与网络格局的形成可以提高两种网络之间的共识<BR>&nbsp; &nbsp; &nbsp; &nbsp;增</p><p> 詹姆斯?：社会科学文献出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;1990：330. </p><p>社会资本在公共政策领域中应用的网络困境虽然公民参与网络有利于公共政策的良性运行<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是这种参与网络格局的形成存在着很大的阻力因为公共政策过程中蕴藏着两种对立的社会资本网络：精英群体的社会资本网络和弱势群体的社会资本网络精英群体在公共政策过程中处于核心地带<BR>&nbsp; &nbsp; &nbsp; &nbsp;主导着公共政策的运行过程；而弱势群体则处于公共政策的边缘地带<BR>&nbsp; &nbsp; &nbsp; &nbsp;对公共政策的影响甚微因为<BR>&nbsp; &nbsp; &nbsp; &nbsp;相对于弱势群体网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;精英群体网络有更优越的自身条件和强烈的意愿来影响公共政策：首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;精英群体具有知识方面的优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们掌握着人类最优秀的文化<BR>&nbsp; &nbsp; &nbsp; &nbsp;并运用这些先进的知识来开发政策共同体中与官员的连接和网络；其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;精英群体具有资本方面的优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们不需要为生计担忧<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们把大量的金钱和时间投资于社交网络只为影响公共政策再次<BR>&nbsp; &nbsp; &nbsp; &nbsp;精英群体具有地位方面的优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;政策精英群体一般都具有较高的行政地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;而“行政级别越高<BR>&nbsp; &nbsp; &nbsp; &nbsp;政策精英的社会资本网络规模也越高<BR>&nbsp; &nbsp; &nbsp; &nbsp;”对公共政策的影响也就越大两者之间的现实差距必然导致以信任为基础的平等对话、互助合作网络的缺失精英群体的社会资本网络与弱势群体的社会资本网络是两种相互排斥和对抗的网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;这给公民参与网络的形成带来了巨大的阻力<BR>&nbsp; &nbsp; &nbsp; &nbsp;也</p><p>纵观社会资本理论的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本作为学术概念被提出可以追溯到二十世纪七十年代后期<BR>&nbsp; &nbsp; &nbsp; &nbsp;而作为一种解释社会问题的理论范式只是发轫于二十世纪九十年代中后期目前<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本已经演变为具有争鸣的多学科领域研究的变量和范式<BR>&nbsp; &nbsp; &nbsp; &nbsp;并由社会学、经济学等领域延伸到了政治学领域而真正将社会资本首次引入政治发展、民主治理和公共政策研究领域的是美国哈佛大学教授罗伯特?d?帕特南（robertputnam） </p><p>对社会资本内涵的界定可谓是仁者见仁智者见智经济学家格伦?卢里（glenn loury）认为“社会资本是诸种资源之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;存在于家庭关系与社区的社会组织之中<BR>&nbsp; &nbsp; &nbsp; &nbsp;对儿童或青年的心理与社会化发展至关重要”法国学者皮埃尔?布尔迪厄（pierre bourdieu）则把社会资本界定为“实际或潜在资源的集合<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些资源与由相互默认或承担的关系所组成的持久网络有关<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且这些关系或多或少是制度化的”而科尔曼则认为“社会资本的定义由其功能而来<BR>&nbsp; &nbsp; &nbsp; &nbsp;它不是某种单独的实体<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是具有各种形式的不同实体其共同特征有两个：它们由构成社会结构的各个要素所组成；它们为结构内部的个人行动提供便利和其他形式的资本一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会资本是生产性的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是否拥有社会资本<BR>&nbsp; &nbsp; &nbsp; &nbsp;决定了人们是否可能实现某些既定目标”美国哈佛大学教授罗伯特?d?帕特南（robertputnam）则从政治学的角度把社会资本定义为“社会组织中诸如信任、规范以及网络等特点<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们可以通过促进合作的行动而提高社会的效率”综合上述的观点<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔者把社会资本界定为：以信任为核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;以公民参与网络为基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;以互利互惠的规范为保障的一种资源集合体社会资本涵盖了三个方面的内容</p><p>大的弱点之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是对于如何测量社会资本缺乏共识”而这种共识的缺乏引起了学者彼此间的怀疑和批判<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而增加了测量评估口径选择的困难总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种测量评估的困境影响了社会资本培育政策的设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而束缚了公共政策科学化、法治化的发展步伐 </p><p>社会资本在公共政策领域中应用的功能困境我们“无法保证创造社会资本就一定能增加社会福利<BR>&nbsp; &nbsp; &nbsp; &nbsp;”因为社会资本在应用的过程中存在正、负效应双向功能社会资本在公共政策领域中的应用也存在这种功能主义矛盾这种功能主义矛盾的存在是由社会资本所具有的内聚性和外溢性共同决定的由于社会资本强调合作、团结与信任<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而培育出公民为实现公共利益而进行合作的公共精神<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种公共精神为集体行动提供了强大的凝聚力而这种凝聚力既为个人及组织获取自身的合法利益提供了保障<BR>&nbsp; &nbsp; &nbsp; &nbsp;“人类社区中的群体团结常常是以对非群体成员的敌意为代价来换取的人类好像存在一种自然的倾向<BR>&nbsp; &nbsp; &nbsp; &nbsp;即把世界分为敌友两个部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;并以此作为所有政治策略的基础”<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成一种更大范围的互利互惠规范社会资本在公共政策领域中的功能困境主要表现在：一方面社会资本能够帮助公共政策在运行中摆</p><p>【xzbu】郑重<p>社会资本的保障互利互惠的规范是一种共识性规范<BR>&nbsp; &nbsp; &nbsp; &nbsp;所谓共识性规范是指社会中个体与个体、由此可知<BR>&nbsp; &nbsp; &nbsp; &nbsp;互利互惠的规范有别于正式制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是一种非正式的社会控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;通常是不成文的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但被社会成员普遍理解和接受互利互惠是共识性规范的要义<BR>&nbsp; &nbsp; &nbsp; &nbsp;帕特南把互惠互利分为均衡的互惠互利和普遍的互惠互利：前者指人们同时交换价值相等的东西；后者则是在特定的时间里是无报酬的和不均衡的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但在将来能够期望获得回报的持续交换关系互惠互利的规范可以促进群体内的合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为“非正式的制度确实为信任、忠诚和合作创造必要条件起着非常重要的作用”从产生来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;互利互惠的规范是被灌输出来的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是由模式、社会化（包括公民教育）和惩罚来维系的换言之<BR>&nbsp; &nbsp; &nbsp; &nbsp;互惠互利的规范既需要内在道德约束的维系<BR>&nbsp; &nbsp; &nbsp; &nbsp;也重视外部惩罚等制度的作用 </p>  (责任编辑：admin)
+<img border="0" alt="信任是以怀疑为基础的" src="/images/lenfeng_5450.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5450)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5450)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5450);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5393.html'>在十八大新闻中心举行的第四场记者招待会上</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5989.html'>即说疑虑说困惑</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5450" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5450&title=信任是以怀疑为基础的" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5450" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5450" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5450" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5450&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5450');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*****************************************************
+ * Website：http://www.mobantianxia.cn QQ：48894503  *
+ *    This Style Design Based On DedeCMS v5.7 GBK    *
+ * Name: Style.Css  Finish Time:  2011.05.08  18:36  *
+ *   尊重知识产权，使用、转载请务必保留以上信息      *
+ *****************************************************/
+
+/*首页*/
+.itop { width: 100%; height: 432px; overflow: hidden; }
+ .rtag { width: 320px; height: 170px; overflow: hidden; }
+ .topnews { width: 380px; height: 435px;}
+  .topnews h3 { color: #f60; font-size: 14px; height: 34px; margin: 0 0 0 30px; padding-top: 6px; }
+  .top-one { height: 75px; margin-bottom: 15px; }
+   .top-one p{ line-height: 2.1; padding: 3px 10px; text-indent: 2em; }
+ .newnews { width: 240px; overflow: hidden; }
+ .right{ float:right; font-size:10px; padding-top:5px; padding-right:5px;}
+
+
+/*热点滚动*/
+.top_hotGame {margin:10px auto 0 auto; background:url(../img/rd_mde_bg.gif) no-repeat; padding:0; overflow:hidden; width:960px; height:132px; }
+.top_hotGame .top_hotGame_B { float:left; background:; height:112px; overflow:hidden;overflow: hidden;  margin:10px 0 0 34px;_ margin:5px 0 0 17px; zoom: 1; position: relative; width:922px;}
+.top_hotGame_B ul {margin:0 0 0 30px;_margin:6px 0 0 30px;}
+.top_hotGame_B ul li { float:left; margin:0 8px 0 0; display:block; width:136px; height:128px; overflow:hidden; background:url(../img/photo_view.gif) no-repeat;}
+.top_hotGame_B ul li img { width:120px; height:90px; margin:8px 0 0 8px;}
+.top_hotGame_B h3 { font-size:12px; font-weight:500; height:18px; line-height:18px; overflow:hidden;
+width:120px; text-align:center; margin:-21px 0 0 8px;_margin:-21px 0 0 4px; color:#fff; background:#000;filter:alpha(opacity=80);opacity:0.5; float:left;}
+.top_hotGame_B a:hover { text-decoration:none;}
+.LeftBotton { background: url(../img/arrow_L.gif) no-repeat 0px 0px;float:left; width:21px;height:80px; cursor: pointer; position: absolute;margin:0; LEFT:8px;right:0; TOP:40px;}
+.RightBotton {background: url(../img/arrow_R.gif) no-repeat 0px;
+float: right; width:21px;height:80px; cursor: pointer; position:absolute; margin:0;TOP:10px;RIGHT:10px; }
+
+
+ /*++++++++首页第二屏++++++++*/
+#mcent{width:960px;margin:10px auto 0px;overflow:hidden;}
+#mcent_left{width:230px;float:right;}
+#mc_bibei{border:1px solid #e4e4e4; border-top:0; width:228px;margin-bottom:10px;}
+
+#mc_game{border:1px solid #e4e4e4; border-top:none;width:228px;margin-bottom:10px;}
+#mc_game ul{overflow:hidden;display:block;width:216px;margin:12px auto 0px;}
+#mc_game ul li{width:206px;height:185px;display:inline;float:left;margin:0px 5px;text-align:center;overflow:hidden;line-height:28px;}
+#mc_game ul li img{width:200px;height:155px;border:1px solid #d7d7d7;padding:2px;display:block;}
+
+#mcent_right{width:730px;float:left;}
+.h_sort{width:353px;border:1px solid #e0e0e0; float:left; border-top:0;margin:0px 10px 10px 0;display:inline;}
+.h_sort h2{padding:0px 10px 0px 3px;}
+.h_sort h2 p{background:url(h_sort_bg.gif);float:left;width:84px;height:34px;line-height:34px;padding-right:8px;text-align:center;color:#fff;margin-top:2px;}
+.h_sort h2 strong{float:right;font-weight:normal;font-size:12px;}
+.h_sort h2 .TR_jiao{_right:-2px;}
+.h_sort .BR_jiao{_right:-2px;}
+.h_sort h2 strong a:link,.h_sort h2 strong a:visited{color:#666;}
+.h_sort h2 strong a:hover{color:#ff4800;}
+
+.h_sort_box{height:222px;padding:12px 10px 0px;}
+.h_sort_box dl{overflow:hidden;height:63px;}
+.h_sort_box dl dd{width:68px;height:63px;float:left;padding:0px 20px 0px 8px;}
+.h_sort_box dl dd img{width:68px;height:63px;display:block;}
+.h_sort_box dl dt{width:237px;float:left;}
+.h_sort_box dl dt .title{font-size:14px;width:237px;height:23px;line-height:23px;overflow:hidden;}
+.h_sort_box dl dt .content{color:#999;line-height:20px;text-indent:25px;}
+
+.h_sort_box ul{overflow:hidden;padding-top:8px;}
+.h_sort_box ul li{height:24px;line-height:24px;color:#6f6f6f;overflow:hidden;}
+.h_sort_box ul li font{font-size:14px;padding-left:2px;}
+.h_sort_box ul li span{float:right;color:#999;}

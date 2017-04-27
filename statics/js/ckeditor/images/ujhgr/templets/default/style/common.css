@@ -1,0 +1,189 @@
+/*****************************************************
+ * Website：http://www.mobantianxia.cn QQ：48894503  *
+ *  This Style Designed By Hilele, QQ: 2205 980098   *
+ *    This Style Design Based On DedeCMS v5.7 GBK    *
+ * Name: Common.Css  Finish Time:  2011.05.08 18:36  *
+ *   尊重知识产权，使用、转载请务必保留以上信息      *
+ *****************************************************/
+
+/*---------- import ---------*/
+@import url("lanmu.css");
+@import url("ymmb.css");
+
+/*全局*/
+* { padding: 0px; margin: 0px; }
+html { background: #fff url(../img/bg.gif) repeat-x 0 0; }
+body { font: 12px Verdana,Arial,Tahoma,"宋体"; color: #454545; line-height: 20px; }
+ins{display:none;}
+img { border: none; }
+a { color: #454545; text-decoration: none; blr: expression(this.onFocus=this.blur()); outline: none; }
+a:hover { color: #c63800; text-decoration: underline; }
+ul,li { list-style: none; }
+.clear{font-size:0px;line-height:0px;display:block;clear:both;}
+.clear:after { content: ""; display: block; clear: both; }
+
+/*布局*/
+.w960 { width: 960px; }
+.mt5 { margin-top: 5px; }
+.mt8 { margin-top: 8px; }
+.ml5 { margin-left: 5px; }
+.ml8 { margin-left: 8px; }
+.pl5 { padding-left: 5px; }
+.pl8 { padding-left: 8px; }
+.p5 { padding: 5px; }
+.center { margin: 0 auto; }
+.fl { float: left; }
+.fr { float: right; }
+
+/*颜色*/
+.c1 { color: #f00; }
+.c2 { color: #669; }
+.c3 { color: #236bbb; }
+.c7 { color:#f60; }
+.c5 { color: #f33; }
+
+
+/*标签*/
+.tag { color: #634; font-weight: bold; }
+.tag1 {	color: #02e; font-weight: bold; } 
+.tag2 {	color: #c6s; font-weight: bold; } 
+.tag3 { color: #0da; } 
+.tag4 {	color: #f00; font-weight: bold; }
+.tag5 { color: #60C; font-weight: bold; }
+.tag6 { color: #908; }
+.tag7 { color: #0c0; font-weight: bold; }
+.tag8 { color: #969; font-weight: bold; }
+
+/*-----------网站公用样式----------*/
+.mbody{width:960px;margin:0px auto;}
+
+/*-----------广告样式----------*/
+#baidu_640x60ad{width:640px;height:60px;margin:10px auto 0px;}
+#baidu_640x60ad_soft{width:640px;height:60px;margin:0px auto 10px;}
+#baidu_300x250ad{width:280px;height:250px;overflow:hidden;text-align:center;margin-bottom:10px;}
+
+ve{ color:#fb801c; font-weight:bold; position: relative;  display:block; border:3px solid #fb801c;text-decoration:none;}
+
+/*背景 边框*/
+#navMenu, #HotSearch, .homepage a:hover, .channel a:hover { background-image: url(../img/nav.png); background-
+repeat: no-repeat; }
+.box-t1, .box-t2, .box-t3, .t1, .t2, .t3, .t4, .t5, .li2 li, .li3 li, .hoveri, .hoverc { background-image: url(../img/btn.gif); background-repeat: no-repeat; }
+.topnews { background-image: url(../img/comm.gif); background-repeat: no-repeat; }
+.box-m1, .box-m2 { background-image: url(../img/btn2.gif); background-repeat: repeat-x; }
+
+.nobt { border: #dedede 1px solid; border-top: none; }
+
+/*盒子标题*/
+.box-t1 { height: 30px; }
+.box-m1 { background-position: 0 -184px; padding: 9px; }
+.t1, .t2, .t3 , .t4 , .t5{ font-size: 12px; margin: 5px 0 0 8px; line-height: 23px\9; padding-left: 15px;}
+.t1 { background-position: -93px -71px; }
+.t2 { background-position: -93px -126px; }
+.t3 { background-position: -93px -184px; }
+.t4 { background-position: -93px -216px; }
+.t5 { background-position: -93px -154px; }
+.t9 { font-size: 16px; line-height: 24px; text-align: center; color: #c00; }
+
+/*li样式*/
+.li1 { height: 122px; overflow: hidden }
+.li1 li { display: inline; line-height: 16px; }
+.li2 { padding: 10px 15px 0; }
+.li2 li { background-position: 3px -288px; background-position: 3px -290px\9; font-size: 14px; height: 20px; overflow: hidden; padding: 2px 0 2px 12px; }
+.li3 li { background-position: 3px -313px; width: 207px; height: 19px; overflow: hidden; padding: 0 0 2px 12px;}
+.li4 { padding: 0 5px 0; background-image: url(../img/btn.gif); background-repeat: no-repeat; background-position: -363px -65px;}
+.li4 li {font-size: 12px; height: 26px; overflow: hidden; padding: 0 0 0 20px; }
+
+
+
+/*广告*/
+.a234 { width: 240px; height: 60px; overflow: hidden; }
+.a960 { width: 960px; height: 90px; overflow: hidden; border: 1px solid #999; }
+
+/*头部*/
+ /*顶栏*/
+.topnav{ height: 30px; line-height: 30px; }
+ .topnav .link a { padding-right: 5px;}
+ /*L B*/
+.header{ height: 61px; overflow: hidden; }
+ .logo{ width: 242px; height:60px; }
+ .banner1 { width: 468px; height: 60px; overflow: hidden;}
+ .banner2 { width: 234px; height: 60px; overflow: hidden;}
+ /*导航*/
+#navMenu { height: 38px; width: 925px; padding: 0 0 0 35px; }
+ #navMenu ul li { float: left; }
+  #navMenu ul li a { font: bold 14px Arial,"宋体"; text-decoration: none; line-height: 38px; display: block;}
+   .homepage { width: 74px; text-indent: 18px; }
+     .homepage a:hover { background-position: -94px -76px; }
+   .channel { width: 94px; text-indent: 20px; background: url(../img/smallt.gif) no-repeat;}
+     .channel a:hover { background-position: 0 -76px; }
+   .hoveri { background-position: -147px -61px; width: 74px; text-indent: 17px;}
+   .hoverc { background-position: -147px -95px; width: 94px; text-indent: 14px; }
+   .hoveri, .hoverc{ height: 34px; margin-top: 4px; line-height: 34px; }
+   .homepage a, .channel a { color: #fff;}   .homepage a:hover, .channel a:hover { color: #deff01; }  .hoveri a, .hover a { color: #mmm; }
+   
+/*-------- 下拉菜单 --------------*/
+.dropMenu {
+	position:absolute;
+	top: 0;
+	z-index:100;
+	width: 120px;
+	visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA, direction=135, strength=4);
+	margin-top: -1px;
+	border: 1px solid #93E1EB;
+	border-top: 0px solid #3CA2DC;
+	background-color: #FFF;
+	background:url(../img/mmenubg.gif);
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.dropMenu li {
+	margin-top:2px;
+	margin-bottom:4px;
+	padding-left:6px;
+}
+.dropMenu a {
+	width: auto;
+	display: block;
+	color: black;
+	padding: 2px 0 2px 1.2em;
+}
+* html .dropMenu a {
+	width: 100%;
+}
+.dropMenu a:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+ /*热搜*/
+#HotSearch { width: 960px; height: 38px; background-position: 0 -38px; }
+#HotSearch h3 { float: left;font-size: 12px; line-height: 19px; padding-left:20px; *_padding-left:5px; _padding-left:5px; line-height: 22px\9; color: #222; }
+#HotSearch .hot { height: 22px; margin: 9px 0 0 22px; width: 525px; overflow: hidden; }
+#HotSearch .hot ul li { display: inline; }
+#HotSearch .hot a { padding-right: 8px; }
+#HotSearch .search { line-height: 22px; line-height: 20px\9; margin: 8px 20px 0 0; }
+#HotSearch .search h3 { line-height: 28px\9; }
+.form {
+	PADDING-left: 5px; DISPLAY: inline;  WIDTH: 370px; HEIGHT: 26px
+}
+.scbtn { BORDER-RIGHT: #da720e 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #da720e 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../img/sbtn.gif) #febd5f repeat-x left center; PADDING-BOTTOM: 0px; BORDER-LEFT: #da720e 1px solid; WIDTH: 64px; CURSOR: pointer; COLOR: #262626; LINE-HEIGHT: 22px; PADDING-TOP: 0px; BORDER-BOTTOM: #da720e 1px solid; HEIGHT: 24px; margin-left:5px;}
+.scsel { FONT-SIZE: 14px; COLOR: #222; LINE-HEIGHT: 22px; HEIGHT: 22px }
+.sckey { BORDER-RIGHT: #95b4d6 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #95b4d6 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; BORDER-LEFT: #95b4d6 1px solid; WIDTH: 133px; COLOR: #222; LINE-HEIGHT: 22px; PADDING-TOP: 0px; BORDER-BOTTOM: #95b4d6 1px solid; HEIGHT: 22px }
+
+
+/*友链*/
+.flink { border: 1px #dedede solid; }
+ .flink .title { height: 30px; background: #fff url(../img/smallt.gif) 0 -40px repeat-x;}
+ .flink .data { padding: 8px; }
+  .flink .data ul li { display: inline; }
+   .flink .data ul li a { padding-right: 8px;}
+   
+/*底部*/
+.footer { color: #555; border-top: 3px #c00 solid; text-align: center; }
+ .footer .link { background: #ffc; border: 1px solid #fc9;}
+  .footer .link a { line-height: 30px; color: #555; padding: 0 10px; }
+   .footer .link a:hover { color: #c63800; }
+ .footer .copyright a { height: 20px; line-height: 20px; color: #555; text-decoration: none;  }
+  .footer .copyright a:hover { color: #c63800; }

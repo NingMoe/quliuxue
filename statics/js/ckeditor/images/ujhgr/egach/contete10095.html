@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>外生租金取决于自然禀赋和价值链外部条件|我的网站</title>
+<meta name="description" content="全球价值链一般包括开发设计、物流配送、品牌营销和销售服务等各个环节价值链的全球化使收益分配在全球范围内扩散 参与国际产业分工不同环节的企业、地区和国家在全球价值链上的地位和收益水平也不同(" />
+<meta name="keywords" content="外生,租金,取决于,自然,禀赋,价值链,外部,条件,全球,价" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyroyaltrip/" title="网通英雄合击传奇私服">网通英雄合击传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/eds2/" title="传奇私服超级变态私服">传奇私服超级变态私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earnhardtwebs/" title="网通传奇私服1.76精品">网通传奇私服1.76精品</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/dvdb2c/" title="明日新开传奇私服网站">明日新开传奇私服网站</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/" title="采集系统">采集系统</a></li><li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyrentarizona/" title="网通传奇私服176合击">网通传奇私服176合击</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecobel/" title="新开网通传奇私服英雄">新开网通传奇私服英雄</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etegeko/" title="网通传奇私服中变">网通传奇私服中变</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekitakara/" title="网通传奇私服发布网">网通传奇私服发布网</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dumpaccounting/" title="新开特色传奇私服">新开特色传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/effektivtannblekning/" title="无补丁变态传奇私服">无补丁变态传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/eftiched/" title="传奇私服功变态版">传奇私服功变态版</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e91cafe/" title="传奇私服网通发布网">传奇私服网通发布网</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwighthowardrealtor/" title="新开一秒热血传奇私服">新开一秒热血传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebookiq/" title="东北网通传奇私服发布">东北网通传奇私服发布</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastsidewakeupmoney/" title="网通传奇私服轻变">网通传奇私服轻变</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egpro/" title="超变态天咧传奇私服">超变态天咧传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duplicatuempresa/" title="最新开的传奇私服">最新开的传奇私服</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eglobalmac/" title="超变态传奇私服65535">超变态传奇私服65535</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dzrjy/" title="新开完美封挂传奇私服">新开完美封挂传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服90级封顶相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete10095.html" target="_blank" title="外生租金取决于自然禀赋和价值链外部条件">外生租金取决于自然禀赋和价值链外部条件</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete9031.html" target="_blank" title="此对大采高工作面卸压瓦斯的安全高效治理具有理论">此对大采高工作面卸压瓦斯的安全高效治理具有</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete7868.html" target="_blank" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序排</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete6069.html" target="_blank" title="一直奋斗在教育教学的岗位上">一直奋斗在教育教学的岗位上</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete5642.html" target="_blank" title="企业要保持可持续发展">企业要保持可持续发展</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete3756.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete2969.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete1901.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete1833.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete1604.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/" title="新开传奇私服2合一">新开传奇私服2合一</a></h3>
+<ul>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/contete9350.html" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/contete8002.html" title="本文选择其中有代表性的文本">本文选择其中有代表性的文本</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/contete7654.html" title="在天文建筑物附近安放两个微温传感器">在天文建筑物附近安放两个微温传感器</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/contete7624.html" title="PANDA框架具有普通软件框架的一些重要特征">PANDA框架具有普通软件框架的一些重要特征</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/contete7481.html" title="常数数字运算符号和函数符号采用正体">常数数字运算符号和函数符号采用正体</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/" title="纯网通传奇私服发布网">纯网通传奇私服发布网</a></h3>
+<ul>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/contete12106.html" title="详细联系地址邮编等信息">详细联系地址邮编等信息</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/contete11432.html" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/contete11103.html" title="为更好地适应市场经济形势的需要">为更好地适应市场经济形势的需要</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/contete7895.html" title="六枝特区还大打商标富农战略">六枝特区还大打商标富农战略</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/etosun/contete7185.html" title="会议把依托办好乡镇流通协会">会议把依托办好乡镇流通协会</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服90级封顶- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>外生租金取决于自然禀赋和价值链外部条件</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 06:43</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10095&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10095">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:全球价值链一般包括开发设计、物流配送、品牌营销和销售服务等各个环节价值链的全球化使收益分配在全球范围内扩散       参与国际产业分工不同环节的企业、地区和国家在全球价值链上的地位和收益水平也不同(</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            全球价值链一般包括开发设计、物流配送、品牌营销和销售服务等各个环节<p>价值链的全球化使收益分配在全球范围内扩散<BR>&nbsp; &nbsp; &nbsp; &nbsp;参与国际产业分工不同环节的企业、地区和国家在全球价值链上的地位和收益水平也不同(kaplinsky&morris<BR>&nbsp; &nbsp; &nbsp; &nbsp;2001)价值链治理者主导 </p><p>在开放的经济体系中<BR>&nbsp; &nbsp; &nbsp; &nbsp;代工客户既可以是国外的品牌商<BR>&nbsp; &nbsp; &nbsp; &nbsp;也可以是本地投资的跨国企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;还可以是本地领先企业品牌商外包方式有多种：其一<BR>&nbsp; &nbsp; &nbsp; &nbsp;将产品设计或制造过程直接外包到中国的代工企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些企业既可以是内资企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;也可以是港澳台资企业或外资企业其中<BR>&nbsp; &nbsp; &nbsp; &nbsp;民营企业主要承接oem业务<BR>&nbsp; &nbsp; &nbsp; &nbsp;少数承接odm业务；港澳台和外资企业既承接oem业务<BR>&nbsp; &nbsp; &nbsp; &nbsp;也承接odm业务其二<BR>&nbsp; &nbsp; &nbsp; &nbsp;将产品设计和制造过程整体外包给台湾等新兴市场国家或地区的企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;再由这些企业将组装制造过程转包给中国企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;以民营企业为主体其三<BR>&nbsp; &nbsp; &nbsp; &nbsp;外包给其在中国的子公司随着价值链分工的细化<BR>&nbsp; &nbsp; &nbsp; &nbsp;第三种形式已经比较少见 </p><p>第一<BR>&nbsp; &nbsp; &nbsp; &nbsp;深度融入全球价值链<BR>&nbsp; &nbsp; &nbsp; &nbsp;走“引进消化吸收再创新”的自主创新之路价值链已形成全球产业内分工网络体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;嵌入其中的各国企业的成长受到这一网络体系整体成长性的制约<BR>&nbsp; &nbsp; &nbsp; &nbsp;融入全球价值链是代工企业发挥自身优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;在互利合作中加强学习的前提条件中国代工企业通过发展和深化与跨国公司或国际买家的代工合作融入全球价值链体系有实力的大企业可以适度引进客户更先进的产品、设备和技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;参与更深层的合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;如参与odm同时还可以发展多元化的代工客户<BR>&nbsp; &nbsp; &nbsp; &nbsp;增加价值链上的合作机会 </p><p>方议价能力而定(3)obm模式交易标的也是完整功能的产品或服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;但交易内容由厂商自行决定obm厂商以自主品牌和渠道推广销售其所制造的产品<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有的特定资产投资由厂商自行支配<BR>&nbsp; &nbsp; &nbsp; &nbsp;交易利益的分配可由厂商自行支配 </p><p>融入经济全球化中的企业总是处于全球产业价值链的某个或某些环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且外包或承包价值链上的业务活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业在价值关系和外包关系上的复杂化和网络化使国际分工呈现出一个基本特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;即全球价值链的外包体系价值链的深度切割使外包商与供应商的关系变得更加细微<BR>&nbsp; &nbsp; &nbsp; &nbsp;价值链全球化最终形成了全球范围内价值链片断的地理集聚和跨国公司的外包网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业的成长(无论是外包商或供应商)也融入到产业价值链的全球化过程(胡军、陈建林<BR>&nbsp; &nbsp; &nbsp; &nbsp;2005) </p><p>全球价值链分工是当代国际分工的典型特征改革开放30年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国通过参与全球价值链分工发展“代工制造”<BR>&nbsp; &nbsp; &nbsp; &nbsp;已成为全球代工制造大国代工制造模式普遍存在于it、纺织服装和玩具等各类产业<BR>&nbsp; &nbsp; &nbsp; &nbsp;但长期以来代工制造业的国际竞争力并没有随规模扩张实现同步提升在要素成本全面上升和金融危机后国际新贸易保护主义加剧的背景下<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国代工制造业已进入转型发展的关键时期全球价值链理论为研究国际分工和产业竞争战略提供了一个有效的分析框架本文基于全球价值链分工的视角<BR>&nbsp; &nbsp; &nbsp; &nbsp;深入分析代工制造模式的基本类型、组织特征和技术追赶过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;以期有助于中国代工制造业的技术追赶和竞争力提升 </p><p>求自行生产<BR>&nbsp; &nbsp; &nbsp; &nbsp;或者把生产过程进一步分解为不同环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;分包给不同企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;产品完成后加贴发包企业品牌出售<BR>&nbsp; &nbsp; &nbsp; &nbsp;并认为oem是企业间实现产品内分工的一种重要形式 </p><p>价值链理论的奠基人迈克尔?波特(porter<BR>&nbsp; &nbsp; &nbsp; &nbsp;1985)认为企业内一系列相互联系的价值创造活动(设计、交货等)构成了企业的价值链<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业内各经营环节所创造的价值量并不是等同的<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业的价值创造主要由价值链上的某些战略环节决定<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些战略环节是企业核心竞争力和持久竞争优势的来源kogut(1985)gereffi(1999)进一步将价值链分析扩展到“全球价值链”<BR>&nbsp; &nbsp; &nbsp; &nbsp;全球价值链的分析方法已将战略规划的视野扩展到全球范围内整个行业上游的研发、设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;中游的零部件制造与组装<BR>&nbsp; &nbsp; &nbsp; &nbsp;下游的营销、品牌和服务此后<BR>&nbsp; &nbsp; &nbsp; &nbsp;全球价值链理论在国际分工和公司战略研究领域中得到了广泛的运用施振荣(1996)将全球价值链各环节的价值关系形象地描述为一条所谓的“微笑曲线”：曲线低端的加工组装附加价值最低<BR>&nbsp; &nbsp; &nbsp; &nbsp;沿着曲线向上移动<BR>&nbsp; &nbsp; &nbsp; &nbsp;上游的研发、设计和下游的营销、品牌附加值最高例如pc产业的全球价值链(见图1)综合现有文献<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文认为全球价值链是指在全球范围内<BR>&nbsp; &nbsp; &nbsp; &nbsp;把某一项产品或服务从概念开始<BR>&nbsp; &nbsp; &nbsp; &nbsp;经过研发和生产的不同阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;交付给</p><p> 摘要：代工制造是跨国公司主导全球价值链治理和资源优化配置的重要形式中国已成为全球代工制造大国<BR>&nbsp; &nbsp; &nbsp; &nbsp;但长期以来代工制造业的国际竞争力并没有随规模扩张实现同步提升文章概述了全球价值链理论的核心内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;并基于全球价值链分工的视角<BR>&nbsp; &nbsp; &nbsp; &nbsp;分析了代工制造模式的主要类型、价值链分工位置、产业组织特征和技术追赶过程最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;提出了中国代工制造业技术追赶的几点建议 </p><p>文献标识码：a文章编号：1002-0594(2011)0508收稿日期： </p><p>代工模式是我国制造业参与国际分工和市场竞争的主要模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;有必要深入分析该模式的产业组织特征我们可以引入经典的scp范式来分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;scp范式由产业组织理论的哈佛学派创建<BR>&nbsp; &nbsp; &nbsp; &nbsp;它提供了一个既能深入具体环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;又有系统逻辑体系的市场结构(structure)</p><p>【xzbu】郑重<p>第三<BR>&nbsp; &nbsp; &nbsp; &nbsp;构建国家价值链<BR>&nbsp; &nbsp; &nbsp; &nbsp;增强产业发展的技术根植性和市场根植性传统的代工制造模式(以oem为主体)“两头在外”<BR>&nbsp; &nbsp; &nbsp; &nbsp;位于全球价值链的“底部”<BR>&nbsp; &nbsp; &nbsp; &nbsp;在全球价值链分工体系中处于被俘获和被压榨的弱势地位来自发达国家大买家的订单的变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;像一个中枢神经指挥系统一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;牢牢地控制着中国制造业的命运<BR>&nbsp; &nbsp; &nbsp; &nbsp;在很大程度上弱化了中国经济独立自主发展的主动性(刘志彪、张杰<BR>&nbsp; &nbsp; &nbsp; &nbsp;2009)为此<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国代工制造业应基于国内市场需求和技术条件建立国家价值链一方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;要增强技术根植性<BR>&nbsp; &nbsp; &nbsp; &nbsp;重点是加强工业园区和产业集群内企业的技术关联<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过改善信用体系、知识产权制度等技术发展环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;推动产学研合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成区域创新体系；另一方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;要增强市场根植性<BR>&nbsp; &nbsp; &nbsp; &nbsp;重点是改革收入分配机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;培育中等收入阶层<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进国内市场规模扩张和消费结构升级 </p><p>对价值链租金的理解有助于我们分析企业绩效或利润的来源(1)企业内部的资源和能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括技术实力、组织结构和市场营销能力是决定企业经营绩效的重要因素随着知识经济的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;知识逐渐成为企业最重要的经济资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何积累知识成为企业创新和增长的关键(2)企业在价值链上的社会关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;如供应商关系和客户关系是企业获取外部信息和资源的重要途径<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是有利于在全球价值链上的知识溢出和学习因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织关系是影响知识积累和企业绩效的重要因素(3)企业的外部环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是自然资源、融资服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;基础设施和产业政策是企业创新和增长的外部条件 </p><p>低成本竞争”的负面效应<BR>&nbsp; &nbsp; &nbsp; &nbsp;在我国知识产权保护制度或执行机制缺位情形下<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于多数本土企业来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;最为切实可行的生存方法就是选择为国外品牌商贴牌或代工的加工贸易出口<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不是技术创新 </p><p>市场行为主要包括价格策略、产量和差异化等非价格策略；市场绩效主要包括资源配置效率、技术进步等 </p><p>东亚和东南亚国家或地区发展代工制造的成功经验表明<BR>&nbsp; &nbsp; &nbsp; &nbsp;代工模式在一定程度上促进了发展中国家和地区的技术追赶在代工联盟中<BR>&nbsp; &nbsp; &nbsp; &nbsp;跨国公司的知识或技术转移在代工企业技术创新活动中发挥了重要作用从知识理论和组织学习的角度来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;合作协议是企业通过知识交换和融合创造价值的最好形式(grant和baden-fuller<BR>&nbsp; &nbsp; &nbsp; &nbsp;2004)可见<BR>&nbsp; &nbsp; &nbsp; &nbsp;在韩国、中国台湾等国家和地区参与全球价值链分工过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;代工合作协议实际上发挥了知识转移的作用 </p><p>odm厂商与客户合作制定产品规格或根据客户的规范自行设计产品<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过客户认证后接单生产0dm厂商控制产品设计使其产品与同行相比具有异质性<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而可以实行差别性定价odm业务要求制造商具有较高的产品开发设计能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及较强的人力资源和资本规模实力<BR>&nbsp; &nbsp; &nbsp; &nbsp;以致提高了进入壁垒加之<BR>&nbsp; &nbsp; &nbsp; &nbsp;odm厂商须负责产品开发设计及制造所需的特定资产投资<BR>&nbsp; &nbsp; &nbsp; &nbsp;存在一定的沉没成本<BR>&nbsp; &nbsp; &nbsp; &nbsp;厂商退出壁垒也相应提高因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;odm模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;厂商数目相对较少<BR>&nbsp; &nbsp; &nbsp; &nbsp;市场集中度提高odm厂商往往同时维持与多家品牌商的odm业务关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;品牌商也会同时维持与多家制造商的odm业务关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;厂商间既竞争又合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有在交易双方对价值链的贡献能够维持均衡<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能使交易关系持续稳定因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;交易价格或利益分配由买卖双方协定 </p><p>价值链治理者通常是欧美发达国家的跨国公司或国际买家<BR>&nbsp; &nbsp; &nbsp; &nbsp;要么控制行业内的关键核心技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;要么拥有优质的品牌和渠道资源这些跨国公司或国际买家具有强大的市场势力<BR>&nbsp; &nbsp; &nbsp; &nbsp;主导全球价值链上的收益分配(gereffi<BR>&nbsp; &nbsp; &nbsp; &nbsp;1999)而发展中国家或地区<BR>&nbsp; &nbsp; &nbsp; &nbsp;如中国沿海地区企业则主要参与出口产品的组装制造过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;往往处于弱势地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;收益被压榨特别是在发展中国家进行到高端工业化进程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;广泛地出现了被“俘获”现象(张杰、张少军<BR>&nbsp; &nbsp; &nbsp; &nbsp;2008)从价值链驱动类型来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;全球价值链治理可分为两类(gereffi<BR>&nbsp; &nbsp; &nbsp; &nbsp;1999)：一类是由产业资本主导的生产者治理型价值链<BR>&nbsp; &nbsp; &nbsp; &nbsp;以计算机、航空和手机等高技术产业最为典型<BR>&nbsp; &nbsp; &nbsp; &nbsp;比较强调技术的研究和开发、生产工艺改进和产品更新等价值链环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;如intel、波音、诺基亚等跨国公司是行业价值链的治理者；一类是由商业资本主导的购买者治理型价值链<BR>&nbsp; &nbsp; &nbsp; &nbsp;以服装、制鞋和玩具等传统产业最为典型<BR>&nbsp; &nbsp; &nbsp; &nbsp;比较强调市场营销、渠道和品牌等流通环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;如沃尔玛、耐克和芭比娃娃等国际买家或品牌商是行业价值链的治理者但随着商业模式的变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;全球价值链已经兼具购买者和生产者协同治理的特征(gereffi<BR>&nbsp; &nbsp; &nbsp; &nbsp;2001)</p><p>结合以上的论述<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文认为oem是一种外包制造的合同安排<BR>&nbsp; &nbsp; &nbsp; &nbsp;即品牌商根据一定设计标准向专业制造商下订单<BR>&nbsp; &nbsp; &nbsp; &nbsp;后者依照产品设计标准自行组装制造<BR>&nbsp; &nbsp; &nbsp; &nbsp;产品完成后加贴发包企业品牌出售oem厂商在全球价值链外包体系中只涉及生产组装等低端价值活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;而oem买主则提供产品技术与市场品牌等高端价值活动即oem业务关系建立在oem买主维持高度的产品技术领先与充分的市场营销优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;而oem厂商则提供持续的生产低成本与营运高效率对厂商而言<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem业务具有扩大生产规模经济、提升技术水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;并学习发包商的国际营运管理能力等优点；但其缺点也很明显<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括业务来源不稳定、产品附加价值低、容易产生恶性价格竞争<BR>&nbsp; &nbsp; &nbsp; &nbsp;厂商会疏于自创品牌与研究发展(r&d)等oem供应商处于产业价值链的最低端<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是全球外包体系的最低层次因而<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem是发展中国家企业参与国际分工的典型形式 </p><p>不同制造模式在全球价值链上的分工位置具有明显的差异oem厂商只负责组装制造活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;而产品技术与市场皆由oem买主提供<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem厂商产品附加值低odm厂商负责产品开发设计及生产组装<BR>&nbsp; &nbsp; &nbsp; &nbsp;买主则负责产品概念、销售服务与品牌推广；odm产品附加值较高obm厂商负责往上延伸至产品开发设计、向下连结营销渠道的完整价值链活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;获得最高的产品附加值<BR>&nbsp; &nbsp; &nbsp; &nbsp;并能控制和优化附加值的分配(见图2)odm和obm是oem企业在价值链上升级的两个主要方向(陶锋、李诗田<BR>&nbsp; &nbsp; &nbsp; &nbsp;2008) </p><p>厂商在价值链上的不同分工是由厂商的资源能力和所在区域要素禀赋决定的厂商倾向于将有限的资源用于核心的能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;以创造出最大化的价值不同的资源和能力使厂商选择了不同的价值链环节(kaplinsky和morris<BR>&nbsp; &nbsp; &nbsp; &nbsp;2001)技术差异和要素禀赋是决定国际分工方式与贸易结构的主要因素(鞠建东、王勇<BR>&nbsp; &nbsp; &nbsp; &nbsp;2004)因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;技术水平低、劳动密集型的0em企业主要分布在发展中国家<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem模式成为发展中国家或地区参与国际分工的主要形式资本和技术密集度较高的odm企业主要分布在新兴工业化国家或地区而具有较强的原始创新能力和市场营销能力的跨国品牌商(obm)主要分布在美、欧盟等发达国家或地区 </p><p>产业市场结构是指企业市场关系的特征和形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;它反映市场竞争与垄断及规模经济的关系产业价值链由相互关联的价值环节链接而成<BR>&nbsp; &nbsp; &nbsp; &nbsp;价值链环节的市场结构是指同一价值环节的厂商之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;或上下游价值环节的供应商和客户之间的市场关系的特征和形式oem和odm两种价值链分工模式或外包模式具有不同的市场结构特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;前者接近竞争性市场结构<BR>&nbsp; &nbsp; &nbsp; &nbsp;而后者接近垄断竞争性市场结构市场结构的决定因素主要包括产品差别化、进入和退出壁垒、市场集中度等<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文可根据这些决定因素具体分析oem、odm两种模式的市场结构特征(见表3) </p><p>营边界延展到海外市场；扩充产能<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成规模经济<BR>&nbsp; &nbsp; &nbsp; &nbsp;以降低产品单位成本；专注于<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0643036117-0.jpg" width="600px" height="400px" />熟悉的领域<BR>&nbsp; &nbsp; &nbsp; &nbsp;构建核心能力等 </p><p>全球价值链分工推动国际外包加快发展外包是指企业将其核心竞争力外围的部分或全部功能委托给外部供应商执行(ouinn<BR>&nbsp; &nbsp; &nbsp; &nbsp;即企业将资源和目标集中于核心业务<BR>&nbsp; &nbsp; &nbsp; &nbsp;而将非核心业务全部或部分转为外部供应核心业务一般是企业在产业价值链上具有比较优势的战略环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;它对企业的持续成长具有关键性意义因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;国际外包已成为跨国公司推动价值链全球化和资源优化配置的关键战略 </p><p>例如it行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;其公认的核心竞争能力来源于cpu和操作系统等典型的生产环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;戴尔等企业在流通环节的出色表现<BR>&nbsp; &nbsp; &nbsp; &nbsp;说明该行业也存在购买者驱动的特征(张辉<BR>&nbsp; &nbsp; &nbsp; &nbsp;2006) </p><p>第二<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强全球价值链代工联盟内的组织学习和知识吸收价值链的全球化推动了知识的国际扩散<BR>&nbsp; &nbsp; &nbsp; &nbsp;知识积累水平成为企业参与全球价值链分工的决定因素企业拥有的知识存量越大<BR>&nbsp; &nbsp; &nbsp; &nbsp;则越能参与更高水平的价值链分工环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业赚取的经济收益也越高跨国公司正是凭借技术或市场方面的知识存量优势成为全球价值链的治理者<BR>&nbsp; &nbsp; &nbsp; &nbsp;并主导价值链收益分配代工模式为国际知识溢出创造了一种有效的实现机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;既包括专利、生产流程、质量控制和原材料采购标准等显性知识溢出<BR>&nbsp; &nbsp; &nbsp; &nbsp;又包括思维模式、直觉以及技巧手艺或know-how等隐性知识溢出(陶锋<BR>&nbsp; &nbsp; &nbsp; &nbsp;2011)为此<BR>&nbsp; &nbsp; &nbsp; &nbsp;代工制造业应围绕代工合作项目建立和完善组织学习和知识管理等方面的制度和规则 </p><p>原始设备制造)俗称代工或贴牌生产porter(1985)最早把oem厂商理解为把某个产品组合进它们产品然后再转卖给其它企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一定义比较模糊陈振祥(1997)认为oem业务是指厂商依据买主所提供的产品规格与完整的细部设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;由oemv商进行产品代工组装<BR>&nbsp; &nbsp; &nbsp; &nbsp;并依据oem买主指定的形式交货的厂商间交易方式zysman和schwartz(1998)认为oem是一种合同制造商<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们被当地企业家或政府建立来实施生产一系列由跨国公司最终产品定义的部件和子系统；这些企业不断努力通过前向或后向拓展<BR>&nbsp; &nbsp; &nbsp; &nbsp;延伸其在价值链上的特定生产区段gereffi(1999)认为oem具有以下特点：供应商依据买方设计制造产品；产品以买方品牌出售；供应商和买方都是独立的企业；供应商缺乏对流通过程的控制力sturgeon(2002)认为在模块化生产网络的背景下<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem是美国企业对产品定义失去控制后<BR>&nbsp; &nbsp; &nbsp; &nbsp;将品牌贴在日本企业定义和制造的产品上出售的一种合同安排卢锋(2004)认为oem是发达国家品牌商按照一定设计要求向国外制造商下订单<BR>&nbsp; &nbsp; &nbsp; &nbsp;后者依照产品设计要</p><p>由于分工位置不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem、odm和obm模式的交易特征也存在明显差异(见表2)(1)oem模式交易标的为零组件、半成品或成品<BR>&nbsp; &nbsp; &nbsp; &nbsp;交易内容(包括价格、交易方式等)由oem买主决定oem买主提供产品组装及制造所需的特定资产整个交易活动主导权及利益分配都由oem买主决定<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem厂商议价能力较弱<BR>&nbsp; &nbsp; &nbsp; &nbsp;价值创造空间有限(2)odm模式交易标的为完整功能的产品或服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;交易内容由买卖双方议定odm买主负责产品销售渠道与服务的相关特定资产投资；odm厂商负责产品开发设计及制造所需的特定资产投资能力互补性的合作型态提高了odm厂商供应关系的不可替代性与议价能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;利益分配视合作双 </p><p>价值链制造环节外包是国际外包业务的主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;对发包商和专业制造商(或承包商)具有不同意义(1)发包商外包有利于成本节约<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括生产成本和治理成本有研究表明<BR>&nbsp; &nbsp; &nbsp; &nbsp;外包可以节约20％～30％的生产成本影响外包治理成本的主要因素是产品的复杂性、市场的可争夺性和资产专用性(李雷鸣、陈俊芳<BR>&nbsp; &nbsp; &nbsp; &nbsp;2004)更重要的是<BR>&nbsp; &nbsp; &nbsp; &nbsp;价值链上的知识溢出加速了创新<BR>&nbsp; &nbsp; &nbsp; &nbsp;如杜邦公司90％的有价值的创意是通过业务外包获得的<BR>&nbsp; &nbsp; &nbsp; &nbsp;它从供应商处获得的创新仅相当于其内部研发成本的1/3(刘景江<BR>&nbsp; &nbsp; &nbsp; &nbsp;2003)(quinn<BR>&nbsp; &nbsp; &nbsp; &nbsp;1999)外包动机大致可以分为两类：生产性动机和战略性动机前者在于降低运营成本、提高生产效率和弹性及创造高附加价值产品等；后者在于将供应商纳入供应链战略管理体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使品牌商高效率的响应市场需求(2)专业制造商gereffi(1996)研究发现东南亚国家承接欧美大厂外包业务的主要动机在于：学习国外买主专业技能<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括技术、营销及经营规划等；成为国外买主产销体系成员<BR>&nbsp; &nbsp; &nbsp; &nbsp;以稳定业务来源<BR>&nbsp; &nbsp; &nbsp; &nbsp;降低经营风险；通过国外买主营销渠道<BR>&nbsp; &nbsp; &nbsp; &nbsp;将自身经</p><p>在obm模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;台湾公司进行生产和创新的所有阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括制造、新产品和新材料研发、渠道建设和品牌营销等服务环节 </p><p>全球价值链理论为研究国际分工和产业竞争战略提供了一个有效的分析框架中国已成为全球代工制造大国<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国本土企业参与国际代工的原因是复杂的<BR>&nbsp; &nbsp; &nbsp; &nbsp;除了成本节约和技术学习等因素外<BR>&nbsp; &nbsp; &nbsp; &nbsp;制度扭曲是最关键的因素(张杰、张少军<BR>&nbsp; &nbsp; &nbsp; &nbsp;主要包括两个方面：(1)社会信用体系缺失国内市场货款“恶意”拖欠现象非常严重和普遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;严重干扰中国本土企业资金流运转和正常生产由于出口贸易信用证和fob贸易方式可以保证货款回收的安全和效率<BR>&nbsp; &nbsp; &nbsp; &nbsp;多数本土企业偏向于选择出口；(2)知识产权保护制度缺位为了避免“技术模仿</p><p>资料来源：作者根据kaplinsky和morris(2001)整理收益分配<BR>&nbsp; &nbsp; &nbsp; &nbsp;而发展中国家的企业则往往处于弱势地位价值环节的收益差异取决于经济租金<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济租金由要素生产力差异和进入障碍决定<BR>&nbsp; &nbsp; &nbsp; &nbsp;要素生产力越高<BR>&nbsp; &nbsp; &nbsp; &nbsp;进人障碍越高<BR>&nbsp; &nbsp; &nbsp; &nbsp;则获利能力越强经济租金包括内生性租金和外生性租金两类(见表1)内生租金主要由企业自身创造<BR>&nbsp; &nbsp; &nbsp; &nbsp;取决于企业内部资源和能力其中<BR>&nbsp; &nbsp; &nbsp; &nbsp;关系租金则由价值链上的组织间关系决定外生租金取决于自然禀赋和价值链外部条件<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府对外生租金的创造具有重要影响经济租金也是动态的<BR>&nbsp; &nbsp; &nbsp; &nbsp;现有的租金可能被竞争侵蚀<BR>&nbsp; &nbsp; &nbsp; &nbsp;新的租金也会因变化而生成价值链参与者的地位也是动态变化的<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种变化主要取决于创新能力的不平衡发展</p><p>oem模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;制造商缺乏定价自主权<BR>&nbsp; &nbsp; &nbsp; &nbsp;其定价行为是被动的；生产的产量及各种产品标准也只依照订单市场充分竞争使制造商获得零经济利润和正常的资本收益率市场充分竞争和全球价值链上的国际分工使各国充分发挥自身比较优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;优化资源配置价值链“片断化”形成散布全球的产业集群；集群内分工的细化和优化可以促进创新<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高生产率和竞争力(porter<BR>&nbsp; &nbsp; &nbsp; &nbsp;1998)；特定行业的oem企业进入集群<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以获得外部经济等诸多好处竞争压力使oem企业具有很强的技术进步动力和外部学习的意愿<BR>&nbsp; &nbsp; &nbsp; &nbsp;但限于自身资本和技术实力<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem企业的创新行为和创新效果有限 </p><p>odm模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;制造商拥有定价自主权<BR>&nbsp; &nbsp; &nbsp; &nbsp;与买主协议定价自主的产品开发设计能力也允许制造商实行产品设计的差异化战略<BR>&nbsp; &nbsp; &nbsp; &nbsp;产品差异化势必提高报价<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而获得更高的资本收益率odm厂商主要参与全球价值链的产品内水平分工<BR>&nbsp; &nbsp; &nbsp; &nbsp;既能发挥比较优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;又能发挥竞争优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而提高了行业内资源配置的效率行业内竞争压力和自身的技术实力使odm厂商兼具强烈的创新意愿和相当的创新实力制造商和品牌商之间更多的互补和互动也有利于新知识溢出和创新传递<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此odm模式更有利于技术创新 </p><p>但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;以代工模式参与全球价值链分工也给中国产业发展带来了沉重的负担实际上<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国沿海地区出口型制造业整体上仍处于全球价值链的低端环节<BR>&nbsp; &nbsp; &nbsp; &nbsp;附加值和技术含量都比较低特别是在要素成本全面上升和金融危机后国际新贸易保护主义加剧的背景下<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国代工制造业进入转型升级的关键时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;而转型升级的关键是自主创新和技术追赶综合来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国代工制造业的技术追赶要重视以下几点： </p><p>oem厂商根据品牌商制定的产品标准(如特定的材质、加工程序、检验标准及品牌或标示等)进行生产<BR>&nbsp; &nbsp; &nbsp; &nbsp;标准化产品具有较强的同质性厂商从事oem生产的技术要求、资本规模等相关进入壁垒较低另外<BR>&nbsp; &nbsp; &nbsp; &nbsp;产品组装及制造所需的特定资产往往由oem买主提供<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem厂商的进入壁垒也相对较低因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;oem模式使厂商容易进入<BR>&nbsp; &nbsp; &nbsp; &nbsp;行业内存在大量的oem供应商<BR>&nbsp; &nbsp; &nbsp; &nbsp;市场集中度很低<BR>&nbsp; &nbsp; &nbsp; &nbsp;供应商之间为争夺订单<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至出现恶性压价竞争<BR>&nbsp; &nbsp; &nbsp; &nbsp;以致形成竞争性市场价格另外<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于买主较少<BR>&nbsp; &nbsp; &nbsp; &nbsp;买主在签订oem供货合同时具有较强的市场势力<BR>&nbsp; &nbsp; &nbsp; &nbsp;即买主具有很强的合同议价实力实际上<BR>&nbsp; &nbsp; &nbsp; &nbsp;买主已严格规定材料选用和相应的出货量和良品率<BR>&nbsp; &nbsp; &nbsp; &nbsp;对生产过程的费用也会有清晰的了解<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且也在事实上规定了厂商的毛利率许多oem厂商只能获得一般的工缴费<BR>&nbsp; &nbsp; &nbsp; &nbsp;坊间盛传买主所定价格使oem厂商“饿不死<BR>&nbsp; &nbsp; &nbsp; &nbsp;也吃不饱”近年来的用地、能源等价格上涨使形势更为严峻<BR>&nbsp; &nbsp; &nbsp; &nbsp;这也迫使厂商通过努力改善内部管理<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高效率以获得更好的收益率 </p><p>最终消费者的一系列价值创造过程 </p><p>另一种更高层级的代工模式是原始设计制造)<BR>&nbsp; &nbsp; &nbsp; &nbsp;即专业制造商自行设计产品<BR>&nbsp; &nbsp; &nbsp; &nbsp;争取买主订单并使用买主品牌出货的交易方式(陈振祥<BR>&nbsp; &nbsp; &nbsp; &nbsp;1997)；品牌也被买主控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;仍具有贴牌生产特点(卢锋<BR>&nbsp; &nbsp; &nbsp; &nbsp;2004)但与oem相比<BR>&nbsp; &nbsp; &nbsp; &nbsp;odm厂商涉及产业价值链上游的产品开发设计等高端价值活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;相应地创造出更高的附加值与oem和odm两种代工模式相对应的是自有品牌<BR>&nbsp; &nbsp; &nbsp; &nbsp;即制造商通过自主建立的产品品牌与营销渠道<BR>&nbsp; &nbsp; &nbsp; &nbsp;在市场推广销售其所生产的产品(陈振祥<BR>&nbsp; &nbsp; &nbsp; &nbsp;1997)obm厂商整合整条价值链活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据自己的产品概念进行设计、品牌经营、销售及售后服务等价值活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;需要企业运用更多资源与能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;相应地整体附加值更高 </p><p>代工是跨国公司主导全球价值链资源优化配置的战略选择<BR>&nbsp; &nbsp; &nbsp; &nbsp;而发展中国家或地区是被动的纳入全球价值链制造体系现有文献大都比较关注代工模式与发展中国家的技术追赶<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是关注东亚和东南亚国家或地区发展代工制造的经验hobday(1995)和hobday和perini(2005)研究了韩国和中国台湾地区电子产业发展代工制造的经验<BR>&nbsp; &nbsp; &nbsp; &nbsp;发现oem代工制造体系迅速发展和扩张<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为当地企业获取国外先进技术和进入出口营销渠道的重要机制(见表4)电子产品的oem代工制造开始于20世纪50年代和60年代初<BR>&nbsp; &nbsp; &nbsp; &nbsp;在oem模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;跨国公司充分利用亚洲当地劳动力和生产运营的低成本优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;并对当地代工企业的工人、工程师和管理人员进行了现代技术和新的管理方法的培训这样<BR>&nbsp; &nbsp; &nbsp; &nbsp;当地企业不仅获得了规模经济<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且学到了一些基本的生产运营技能从20世纪80年代开始台湾的oem制造商开始向odm转变根据odm<BR>&nbsp; &nbsp; &nbsp; &nbsp;台湾公司执行了跨国公司整体产品设计方案中的大部分具体的产品设计过程(johnstone<BR>&nbsp; &nbsp; &nbsp; &nbsp;1989)而跨国公司则继续在自有品牌下进行市场营销和分销过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而继续获得大部分的增值20世纪90年代<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些领先的odm制造</p>  (责任编辑：admin)
+<img border="0" alt="外生租金取决于自然禀赋和价值链外部条件" src="/images/lenfeng_10095.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10095)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10095)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10095);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egach/contete9031.html'>此对大采高工作面卸压瓦斯的安全高效治理具有理论</a> </li>
+                                        <li>下一篇：没有了 </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10095" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10095&title=外生租金取决于自然禀赋和价值链外部条件" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10095" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10095" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10095" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10095&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10095');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

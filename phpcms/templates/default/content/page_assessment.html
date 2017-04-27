@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>录取几率评估</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/form.css" type="text/css"><script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 -->
+ {template "content","top"} 
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>录取几率评估</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    
+    <!--我要吐嘈黑中介-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="b-left">
+        <div class="m-form">
+          <h1>录取几率评估</h1>
+          <p>您只需填写以下信息，负责相应国家的Qu去留学老师，将会在2个工作日内与您联系，并根据您的详细信息为您提供准确的留学建议。</p>
+           <form action="/index.php?m=school&c=school&a=online_jilv&t=1" name="form1" id="form1" method="post"  onsubmit="return checkData()">
+            <ul>
+              <li><span>留学意向：</span>
+                <p class="fx">
+                  <label>
+                    <input type="checkbox" name="yixiang" value="美国" id="CheckboxGroup1_0" />
+                    美国</label>
+                  <label>
+                    <input type="checkbox" name="yixiang" value="英国" id="CheckboxGroup1_1" />
+                    英国</label>
+                  <label>
+                    <input type="checkbox" name="yixiang" value="加拿大" id="CheckboxGroup1_2" />
+                    加拿大</label>
+                </p>
+                <p class="fx fx1">
+                  <label>
+                    <input type="checkbox" name="yixiang" value="澳洲" id="CheckboxGroup1_3" />
+                    澳洲</label>
+                  <label>
+                    <input type="checkbox" name="yixiang" value="香港" id="CheckboxGroup1_4" />
+                    香港</label>
+                  <label>
+                    <input type="checkbox" name="yixiang" value="其他" id="CheckboxGroup1_5" />
+                    其他</label>
+                </p>
+                <div class="clear"></div>
+              </li>
+              <li><span>出国就读：</span>
+                <select name="jiudu">
+                  <option value="">请选择学历</option>
+                  <option value="本科">本科</option>
+                  <option value="硕士">硕士</option>
+                  <option value="博士">博士</option>
+                </select>
+                <div class="clear"></div>
+              </li>
+              <li><span>出国时间：</span>
+                <select name="chuguotime" >
+                  <option value="">请选择出国时间</option>
+                  <option value="2015-9">2015-09</option>
+                  <option value="2016-9">2016-09</option>
+				  <option value="2017-9">2017-09</option>
+                  <option value="2018-9">2018-09</option>
+                </select>
+                <div class="clear"></div>
+              </li>
+              <li><span>姓名：</span>
+                <input type="text" name="name" />
+                <div class="clear"></div>
+              </li>
+              <li><span>邮箱：</span>
+                <input type="text" name="email" />
+                <div class="clear"></div>
+              </li>
+              <li><span>电话：</span>
+                <input type="text" name="phone" />
+                <div class="clear"></div>
+              </li>
+              <li><span>验证码：</span>
+                <input type="text" name="code"  class="input1"/>
+                <a class="anniu">{form::checkcode('code_img', '4', '14', 150, 33)}</a>
+                <div class="clear"></div>
+              </li>
+              <li class="l1"><input type="submit" value="提交" id="dosubmit" name="dosubmit" onclick="return checkData()"  class="button">
+            
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--右侧-->
+      <div class="s-right">
+         {pc:get sql="SELECT * FROM qu_page where catid=29"}
+{loop $data $key $val}
+{$val[content]}
+{/loop}
+{/pc}
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--轮播图--> 
+
+<script type="text/javascript">
+function checkData() {
+    for (var i = 0; i < document.form1.length; i++) {
+        if (document.form1.elements[i].type == "text" && document.form1.elements[i].value == "") {
+            alert("请完善所要填写的信息!");
+          			 return false;
+        }
+    }
+    }
+</script> 
+
+
+
+
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+</script>
+</body>
+</html>

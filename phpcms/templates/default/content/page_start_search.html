@@ -1,0 +1,1255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Qu留学_选校报告</title>
+
+    <meta name="keywords" content="{$SEO['keyword']}">
+
+    <meta name="description" content="{$SEO['description']}">
+
+    <link rel="stylesheet" href="/style/css/report.css" type="text/css">
+
+    <link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <script type="text/javascript" src="/style/js/jsxx.js"></script>
+
+    <script type="text/javascript" src="/style/js/js.js"></script>
+
+    <style type="text/css">
+
+.search {
+
+	left: 0;
+
+	position: relative;
+
+}
+
+#auto_div1,#auto_div2,#auto_div3,#auto_div4,#auto_div5 {
+
+	display: none;
+
+	width: 280px;
+
+	max-height: 250px;
+
+	overflow: hidden;
+
+	border: 1px #A7A7A7 solid;
+
+	background: #FFF;
+
+	position: absolute;
+
+	top: 28px;
+
+	left: 0;
+
+	color: #323232;
+
+	margin-left: 130px;
+
+	z-index: 999;
+
+}
+
+</style>
+
+    <script type="text/javascript">
+
+
+
+
+
+
+
+        //测试用的数据
+
+         var old_value = "";
+
+       var highlightindex = -1;   //高亮
+
+
+
+        //自动完成
+
+        function AutoComplete(auto, search, mylist) {
+
+            if ($("#" + search).val() != old_value || old_value == "") {
+
+                var autoNode = $("#" + auto);   //缓存对象（弹出框）
+
+                var carlist = new Array();
+
+                var n = 0;
+
+                old_value = $("#" + search).val();
+
+
+
+                for (i in mylist) {
+
+                    if (mylist[i].indexOf(old_value) >= 0) {
+
+                        carlist[n++] = mylist[i];
+
+                    }
+
+                }
+
+                if (carlist.length == 0) {
+
+                    autoNode.hide();
+
+                    return;
+
+                }
+
+                autoNode.empty();  //清空上次的记录
+
+                for (i in carlist) {
+
+                    var wordNode = carlist[i];   //弹出框里的每一条内容
+
+
+
+                    var newDivNode = $("<div>").attr("id", i);    //设置每个节点的id值
+
+                    newDivNode.attr("style", "font:14px/25px arial;height:25px;padding:0 8px;cursor: pointer;");
+
+
+
+                    newDivNode.html(wordNode).appendTo(autoNode);  //追加到弹出框
+
+
+
+                    //鼠标移入高亮，移开不高亮
+
+                    newDivNode.mouseover(function () {
+
+                        if (highlightindex != -1) {        //原来高亮的节点要取消高亮（是-1就不需要了）
+
+                            autoNode.children("div").eq(highlightindex).css("background-color", "white");
+
+                        }
+
+                        //记录新的高亮节点索引
+
+                        highlightindex = $(this).attr("id");
+
+                        $(this).css("background-color", "#ebebeb");
+
+                    });
+
+                    newDivNode.mouseout(function () {
+
+                        $(this).css("background-color", "white");
+
+                    });
+
+
+
+                    //鼠标点击文字上屏
+
+                    newDivNode.click(function () {
+
+                        //取出高亮节点的文本内容
+
+                        var comText = autoNode.hide().children("div").eq(highlightindex).text();
+
+                        highlightindex = -1;
+
+                        //文本框中的内容变成高亮节点的内容
+
+                        $("#" + search).val(comText);
+
+                    })
+
+                    if (carlist.length > 0) {    //如果返回值有内容就显示出来
+
+                        autoNode.show();
+
+                    } else {               //服务器端无内容返回 那么隐藏弹出框
+
+                        autoNode.hide();
+
+                        //弹出框隐藏的同时，高亮节点索引值也变成-1
+
+                        highlightindex = -1;
+
+                    }
+
+                }
+
+            }
+
+
+
+            //点击页面隐藏自动补全提示框
+
+            document.onclick = function (e) {
+
+                var e = e ? e : window.event;
+
+                var tar = e.srcElement || e.target;
+
+                if (tar.id != search) {
+
+                    if ($("#" + auto).is(":visible")) {
+
+                        $("#" + auto).css("display", "none")
+
+                    }
+
+                }
+
+            }
+
+
+
+        }
+
+
+
+        $(function () {
+
+		    
+
+			$.getJSON('?m=school&c=school&a=hightschool', function(json){
+
+	        console.log(json);
+
+	        /*第一个*/
+
+			old_value = $("#search_text1").val();
+
+            $("#search_text1").focus(function () {
+
+                if ($("#search_text1").val() == "") {
+
+                    AutoComplete("auto_div1", "search_text1", json);
+
+                }
+
+            });
+
+
+
+            $("#search_text1").keyup(function () {
+
+				
+
+                AutoComplete("auto_div1", "search_text1", json);
+
+            });
+
+			});
+
+			/*第二个*/
+
+			$.getJSON('?m=school&c=school&a=hightschool', function(json){
+
+	        console.log(json);
+
+			old_value = $("#search_text2").val();
+
+            $("#search_text2").focus(function () {
+
+                if ($("#search_text2").val() == "") {
+
+                    AutoComplete("auto_div2", "search_text2", json);
+
+                }
+
+            });
+
+
+
+            $("#search_text2").keyup(function () {
+
+                AutoComplete("auto_div2", "search_text2", json);
+
+            });
+
+			});
+
+            /*第三个*/
+
+			$.getJSON('?m=school&c=school&a=hightschool', function(json){
+
+			 old_value = $("#search_text3").val();
+
+            $("#search_text3").focus(function () {
+
+                if ($("#search_text3").val() == "") {
+
+                    AutoComplete("auto_div3", "search_text3", json);
+
+                }
+
+            });
+
+
+
+            $("#search_text3").keyup(function () {
+
+                AutoComplete("auto_div3", "search_text3", json);
+
+            });
+
+			});
+
+			/*第四个*/
+
+			$.getJSON('?m=school&c=school&a=hightschool', function(json){
+
+			old_value = $("#search_text4").val();
+
+            $("#search_text4").focus(function () {
+
+                if ($("#search_text4").val() == "") {
+
+                    AutoComplete("auto_div4", "search_text4", json);
+
+                }
+
+            });
+
+
+
+            $("#search_text4").keyup(function () {
+
+                AutoComplete("auto_div4", "search_text4", json);
+
+            });
+
+			});
+
+			/*第五个*/
+
+			$.getJSON('?m=school&c=school&a=hightschool', function(json){
+
+			 old_value = $("#search_text5").val();
+
+            $("#search_text5").focus(function () {
+
+                if ($("#search_text5").val() == "") {
+
+                    AutoComplete("auto_div5", "search_text5", json);
+
+                }
+
+            });
+
+
+
+            $("#search_text5").keyup(function () {
+
+                AutoComplete("auto_div5", "search_text5", json);
+
+            });
+
+			});
+
+        });
+
+</script>
+
+    </head>
+
+    <body>
+
+<div id="wrapper">
+
+<!-- 头部 --> 
+
+{template "content","top"} 
+
+<!-- 头部结束 --> 
+
+<!--选校报告上部-->
+
+<div class="reporttitle">
+
+      <h2>选校报告</h2>
+
+    </div>
+
+ <!-- 主要内容  -->
+
+<div class="content w-1000"> 
+
+        <!-- 填写选校报告资料 -->
+      <div class="study-contents">
+
+    <h1>请帮助我们了解你的留学需求</h1>
+
+    <div class="studybox">
+
+          <h2>填写你的个人信息，我们会凭借丰富的数据资源，为你推荐适合你的选校方案</h2>
+
+          <ul>
+
+        <li><span>国家：</span>
+
+            <select name="select1" id="select1" >
+
+            <option name="option1" id="option1" value="英国硕士">英国硕士</option>
+
+            <option name="option2" id="option2" value="澳洲硕士">澳洲硕士</option>
+
+            <option name="option3" id="option3" value="美国工科硕士">美国硕士（非商科）</option>
+
+            <option name="option4" id="option4" value="美国商科硕士">美国商科硕士</option>
+
+            <option name="option5" id="option5" value="美国本科">美国本科</option>
+
+          </select>
+
+            </li>
+
+      </ul>
+
+          <ol id="type1">
+<!-- 英国选校 -->
+        <form action="/index.php?m=member&c=index&a=s1&t=1" method="post" >
+
+              <li><span>最近就读学校:</span>
+
+            <div class="search">
+
+                  <input  name="oldschool"  type="text" id="search_text1" autocomplete="off"  placeholder="请输入学校官方完整名称"/>
+
+                  <div id="auto_div1"> </div>
+
+                </div>
+
+          </li>
+
+      <li><span>平均成绩：</span>
+
+             <input name="gpa"  onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text" id="gpa"  value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">百分制平均分，计算方式：课程分数乘以该课程学分除以总学分。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+
+
+		   <li><span>雅思：</span>
+
+            <input name="ielts" onkeyup="value=value.replace(/[^\d.]/g,'')"   type="text" id="yasi" value=""  class="input1"/>
+
+            <div class="cbox">
+
+                   <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+
+          </li>
+
+              <li><span>GMAT：</span>
+
+            <input name="gmat" onkeyup="value=value.replace(/[^\d.]/g,'')"   type="text" id="GMAT"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                   <div class="cc">如果不打算参加该考试，可以不填，如果已经计划该考试，可先填写预估成绩。</div>
+
+                </div><span class="s1"><b>&nbsp;</b>(选填)</span>
+
+          </li>
+
+            
+
+              <li><span>GRE：</span>
+
+            <input name="gre" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text" id="gre"  value="" class="input1"/>
+
+            <div class="cbox">
+
+                   <div class="cc">如果不打算参加该考试，可以不填，如果已经计划该考试，可先填写预估成绩。</div>
+
+                </div><span class="s1"><b>&nbsp;</b>(选填)</span>
+
+          </li>
+
+             
+
+            
+
+              <li><span>希望就读专业：</span>
+
+            <input name="zhuanye" type="text" />
+
+          </li>
+
+              <p class="anniu">
+
+            <input type="submit" value="提交获取选校报告" class="button" id="dosubmit1"   name="dosubmit1"/>
+
+          </p>
+
+            </form>
+
+      </ol>
+
+          <ol id="type2">
+<!-- 澳洲选校  -->
+        <form action="/index.php?m=member&c=index&a=s2&t=1" method="post">
+
+              <li><span>最近就读学校:</span>
+
+            <div class="search">
+
+                  <input  name="oldschool"  type="text" id="search_text2" autocomplete="off"  placeholder="请输入学校官方完整名称" />
+
+                  <div id="auto_div2"> </div>
+
+                </div>
+
+          </li>
+
+              <li><span>平均成绩：</span>
+
+            <input name="average" id="gpa2" onkeyup="value=value.replace(/[^\d.]/g,'')" type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">百分制平均分，计算方式：课程分数乘以该课程学分除以总学分。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+		    <li><span>雅思：</span>
+
+            <input name="ielts" id="yasi2" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"  value=""  class="input1"/>
+
+            <div class="cbox">
+
+		
+
+                  <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+
+          </li>
+
+            
+             
+            
+
+              <li><span>希望就读专业：</span>
+
+            <input name="zhuanye" type="text" />
+
+          </li>
+
+              <p class="anniu">
+
+            <input type="submit" value="提交获取选校报告" class="button" id="dosubmit2"  name="dosubmit2"/>
+
+          </p>
+
+            </form>
+
+      </ol>
+
+          <ol id="type3">
+<!--   美国工科-->
+        <form action="/index.php?m=member&c=index&a=s3&t=1" method="post">
+
+               <li><span>最近就读学校:</span>
+
+            <div class="search">
+
+                  <input  name="oldschool"  type="text" id="search_text3" autocomplete="off"  placeholder="请输入学校官方完整名称" />
+
+                  <div id="auto_div3"> </div>
+
+                </div>
+
+          </li>
+
+              <li><span>平均成绩：</span>
+
+            <input name="gpa" id="gpa3" onkeyup="value=value.replace(/[^\d.]/g,'')" type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">百分制平均分，计算方式：课程分数乘以该课程学分除以总学分。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>GRE：</span>
+
+            <input name="gre" id="GRE3" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>托福：</span>
+
+            <input name="toefl" id="tuofu3" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"  value=""  class="input1"/>
+
+            <div class="cbox">
+
+                 <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>希望就读专业：</span>
+
+            <input name="zhuanye" type="text" />
+
+          </li>
+
+              <p class="anniu">
+
+            <input type="submit" value="提交获取选校报告" class="button" id="dosubmit3"  name="dosubmit3"/>
+
+          </p>
+
+            </form>
+
+      </ol>
+
+          <ol id="type4">
+<!-- 美国商科-->
+        <form action="/index.php?m=member&c=index&a=s4&t=1" method="post">
+
+              <li><span>最近就读学校:</span>
+
+            <div class="search">
+
+                  <input  name="oldschool"  type="text" id="search_text4" autocomplete="off"  placeholder="请输入学校官方完整名称" />
+
+                  <div id="auto_div4"> </div>
+
+                </div>
+
+          </li>
+
+<li><span>平均成绩：</span>
+
+            <input name="gpa" id="gpa4" onkeyup="value=value.replace(/[^\d.]/g,'')" type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">百分制平均分，计算方式：课程分数乘以该课程学分除以总学分。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+
+
+              <li><span>GMAT：</span>
+
+            <input name="gmat" id="GMAT4" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"    value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              
+
+              <li><span>托福：</span>
+
+            <input name="toefl" id="tuofu4" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"  value=""  class="input1"/>
+
+            <div class="cbox">
+
+                 <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>希望就读专业：</span>
+
+            <input name="zhuanye" type="text" />
+
+          </li>
+
+              <p class="anniu">
+
+            <input type="submit" value="提交获取选校报告" class="button" id="dosubmit4"  name="dosubmit4"/>
+
+          </p>
+
+            </form>
+
+      </ol>
+
+          <ol id="type5">
+<!-- 美国本科-->
+        <form action="/index.php?m=member&c=index&a=s5&t=1" method="post">
+
+              <li><span>最近就读学校:</span>
+
+            <div class="search">
+
+                  <input  name="oldschool"  type="text" id="search_text5" autocomplete="off"  placeholder="请输入学校官方完整名称" />
+
+                  <div id="auto_div5"> </div>
+
+                </div>
+
+          </li>
+
+              <li><span>平均成绩：</span>
+
+            <input name="average" id="gpa5" onkeyup="value=value.replace(/[^\d.]/g,'')" type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                 <div class="cc">百分制平均分，计算方式：课程分数乘以该课程学分除以总学分。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>SAT：</span>
+
+            <input name="sat" id="SAT5" onkeyup="value=value.replace(/[^\d.]/g,'')" type="text"   value=""  class="input1"/>
+
+            <div class="cbox">
+
+                  <div class="cc">如果不打算参加该考试，可以不填，如果已经计划该考试，可先填写预估成绩。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>托福：</span>
+
+            <input name="toefl" id="tuofu5" onkeyup="value=value.replace(/[^\d.]/g,'')"  type="text"  value="" class="input1"/>
+
+            <div class="cbox">
+
+                 <div class="cc">填写已经获得的最高分数，或者填写一个预估分数。</div>
+
+                </div><span class="s1"><b>*</b>必填</span>
+
+          </li>
+
+              <li><span>希望就读专业：</span>
+
+            <input name="zhuanye" type="text" />
+
+          </li>
+
+              <p class="anniu">
+
+            <input type="submit" value="提交获取选校报告" class="button" id="dosubmit5"  name="dosubmit5"/>
+
+          </p>
+
+            </form>
+
+      </ol>
+
+          <div class="clear"></div>
+
+        </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+      <div class="clear"></div>
+
+    </div>
+
+<!--尾部版权--> 
+
+{template "content","bot"} 
+
+<!--遮罩层--> 
+
+{template "content","login"} 
+
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层-->
+
+</body>
+
+    <script><!--选校报告按国家选择专业-->
+
+	
+
+	var select = document.getElementById("select1");
+
+    select.onchange = function(){
+
+		var options = select.getElementsByTagName("option");
+
+		for(var i = 0; i < options.length; i++){
+
+			if(options[i].selected){
+
+				var divid = options[i].id.replace("option","type");
+
+				var divs = document.getElementsByTagName("ol");
+
+				for(var j = 0; j < divs.length; j++){
+
+					if(divid == divs[j].id){
+
+						divs[j].style.display = "block";
+
+					}else{
+
+						divs[j].style.display = "none";
+
+					}
+
+				}
+
+			}
+
+        }
+
+    }
+
+	
+
+	
+
+	
+
+</script>
+
+<link href="/style/artDialog/skins/blue.css" rel="stylesheet" type="text/css" />
+<script src="/style/artDialog/artDialog.js"></script>
+<script type="text/javascript">
+//英国硕士
+$(function getvalue () {
+	$("#dosubmit1").click(function(){
+		var search_text1=document.getElementById("search_text1").value;
+		if(search_text1==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '学校不能为空！'
+				});
+				return false;
+				}
+
+				
+var gpa=document.getElementById("gpa").value;
+		if(gpa==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(gpa<0 || gpa>100){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩在0-100之间！'
+				});
+				return false;}
+
+
+var yasi=document.getElementById("yasi").value;
+		if(yasi==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '雅思成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(yasi<0 || yasi>9.0){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '雅思成绩在0-9.0之间！'
+				});
+				return false;}
+
+
+
+var GMAT=document.getElementById("GMAT").value;
+		if(GMAT==''){
+			
+				return ture;
+				}
+
+else if(GMAT<0 || GMAT>800){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GMAT成绩在0-800之间！'
+				});
+				return false;}
+
+
+var GRE=document.getElementById("GRE").value;
+		if(GRE==''){
+			
+				return ture;
+				}
+
+else if(GRE<0 || GRE>800){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GRE成绩在0-340之间！'
+				});
+				return false;}
+ 
+				});
+
+				});
+
+
+//澳洲
+$(function getvalue () {
+	$("#dosubmit2").click(function(){
+		var search_text2=document.getElementById("search_text2").value;
+		if(search_text2==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '学校不能为空！'
+				});
+				return false;
+				}
+
+				
+var gpa2=document.getElementById("gpa2").value;
+		if(gpa2==''){
+			art.dialog({
+				time: 3,
+				content: '平均成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(gpa2<0 || gpa2>100){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩在0-100之间！'
+				});
+				return false;}
+
+
+var yasi2=document.getElementById("yasi2").value;
+		if(yasi2==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '雅思成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(yasi2<0 || yasi2>9.0){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '雅思成绩在0-9.0之间！'
+				});
+				return false;}
+
+
+
+ 
+				});
+
+				});
+
+
+				//美国工科
+				$(function getvalue () {
+	$("#dosubmit3").click(function(){
+		var search_text3=document.getElementById("search_text3").value;
+		if(search_text3==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '学校不能为空！'
+				});
+				return false;
+				}
+
+				
+var gpa3=document.getElementById("gpa3").value;
+		if(gpa3==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(gpa3<0 || gpa3>100){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩在0-100之间！'
+				});
+				return false;}
+
+
+var GRE3=document.getElementById("GRE3").value;
+		if(GRE3==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GRE成绩不能为空！！'
+				});
+				return false;
+				}
+
+else if(GRE3<0 || GRE3>800){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GRE成绩在0-340之间！'
+				});
+				return false;}
+
+
+var tuofu3=document.getElementById("tuofu3").value;
+		if(tuofu3==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(tuofu3<0 || tuofu3>120){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩在0-120之间！'
+				});
+				return false;}
+
+
+ 
+				});
+
+				});
+
+				//美国商科
+		
+				$(function getvalue () {
+	$("#dosubmit4").click(function(){
+		var search_text4=document.getElementById("search_text4").value;
+		if(search_text4==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '学校不能为空！'
+				});
+				return false;
+				}
+
+				
+var gpa4=document.getElementById("gpa4").value;
+		if(gpa4==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(gpa4<0 || gpa4>100){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩在0-100之间！'
+				});
+				return false;}
+
+
+var GMAT4=document.getElementById("GMAT4").value;
+		if(GMAT4==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GMAT成绩不能为空！！'
+				});
+				return false;
+				}
+
+else if(GMAT4<0 || GMAT4>800){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'GMAT成绩在0-340之间！'
+				});
+				return false;}
+
+
+var tuofu4=document.getElementById("tuofu4").value;
+		if(tuofu4==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(tuofu4<0 || tuofu4>120){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩在0-120之间！'
+				});
+				return false;}
+
+
+ 
+				});
+
+				});
+
+//美国本科
+							$(function getvalue () {
+	$("#dosubmit5").click(function(){
+		var search_text5=document.getElementById("search_text5").value;
+		if(search_text5==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '学校不能为空！'
+				});
+				return false;
+				}
+
+				
+var gpa5=document.getElementById("gpa5").value;
+		if(gpa5==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(gpa5<0 || gpa5>100){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '平均成绩在0-100之间！'
+				});
+				return false;}
+
+
+var SAT5=document.getElementById("SAT5").value;
+		if(SAT5==''){
+			
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'SAT成绩不能为空！'
+				});
+				return false;
+				}
+else if(SAT5<0 || SAT5>2400){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: 'SAT成绩在0-2400之间！'
+				});
+				return false;}
+
+
+var tuofu5=document.getElementById("tuofu5").value;
+		if(tuofu5==''){
+			art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩不能为空！'
+				});
+				return false;
+				}
+
+else if(tuofu5<0 || tuofu5>120){	
+
+		art.dialog({
+				title:"提示",
+				time: 3,
+				content: '托福成绩在0-120之间！'
+				});
+				return false;}
+
+
+ 
+				});
+
+				});
+ 
+ 
+
+ 
+ </script>
+
+
+
+
+
+
+</html>
+

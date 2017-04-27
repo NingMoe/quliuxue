@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心_修改LOGO</title>
+<link rel="stylesheet" href="/style/css/form.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+
+
+<link href="{CSS_PATH}dialog.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{JS_PATH}dialog.js"></script>
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 --> 
+  {template "member","person_top"} 
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>个人中心</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    <!--当前位置-->
+    <div class="weizi">
+      <p>当前位置：<a href="/">Qu去留学首页</a> > <a href="/index.php?m=member">个人中心</a></p>
+    </div>
+    <!--我要吐嘈黑中介-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="f-left"> 
+        <!--个人中心-->
+        <div class="p-1">
+        
+          <script language="javascript" type="text/javascript" src="{$phpsso_api_url}/statics/js/swfobject.js"></script>
+				<script type="text/javascript">
+					var flashvars = {
+						'upurl':"{$upurl}&callback=return_avatar&"
+					}; 
+					var params = {
+						'align':'middle',
+						'play':'true',
+						'loop':'false',
+						'scale':'showall',
+						'wmode':'window',
+						'devicefont':'true',
+						'id':'Main',
+						'bgcolor':'#ffffff',
+						'name':'Main',
+						'allowscriptaccess':'always'
+					}; 
+					var attributes = {
+						
+					}; 
+					swfobject.embedSWF("{$phpsso_api_url}/statics/images/main.swf", "myContent", "490", "434", "9.0.0","{$phpsso_api_url}/statics/images/expressInstall.swf", flashvars, params, attributes);
+
+					function return_avatar(data) {
+						if(data == 1) {
+							window.location.reload();
+						} else {
+							alert('failure');
+						}
+					}
+				</script> 
+          
+        <div class="col-auto">
+					<div id="myContent"> 
+					  <p>Alternative content</p> 
+					</div>
+				</div>
+         
+          <div class="clear"></div>
+        </div>
+        <!--基本信息-->
+       
+        <div class="clear"></div>
+      </div>
+      <!--右侧-->
+      <div class="f-right">
+       
+      <ul class="col-right col-avatar" id="avatarlist">
+				  {loop $avatar $k $v}
+					<li>
+						<img src="{$v}" height="{$k}" width="{$k}" onerror="this.src='{$phpsso_api_url}/statics/images/member/nophoto.gif'"><br />
+						{L('avatar')}{$k} x {$k}
+					</li>
+				  {/loop}
+				</ul>
+      
+      
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+<!--遮罩层--> 
+{template "content","login"}
+<div class="xgpassword"> <a href="#" class="close1 close">关闭</a>
+  <h2 class="b_b">修改密码</h2>
+  <div class="m-form">
+    <ul>
+    <form action="/index.php?m=member&c=index&a=account_manage_password&t=1" method="post">
+      
+      <li><span>原密码：</span>
+        <input type="text" name="info[password]" />
+        <div class="clear"></div>
+      </li>
+      <li><span>新密码：</span>
+        <input type="text" name="info[newpassword]" />
+        <div class="clear"></div>
+      </li>
+       <li><span>重复密码：</span>
+        <input type="text" name="info[renewpassword]" />
+        <div class="clear"></div>
+      </li>
+      <li class="l1">
+      <input name="dosubmit" type="submit" id="dosubmit" value="{L('submit')}" class="button close">
+      
+     
+        <div class="clear"></div>
+      </li>
+      </form>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/person.js"></script><!--个人中心-->
+</body>
+</html>

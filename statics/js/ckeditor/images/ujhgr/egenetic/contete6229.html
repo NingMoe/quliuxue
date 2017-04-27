@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>但是从另一视角看|我的网站</title>
+<meta name="description" content=" 没有寻求更没有与外地形成串联互动的现象［９］乌坎村今年２月第五届村委会换届选举整体无效 近日组织重新选举［ｎ］．广州日报 ２０１１－１２－２９ ａ４． 门等地也有" />
+<meta name="keywords" content="是从,另一,视角,没有,寻求,外地,形成,串联,互动,现象," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e8zl/" title="传奇私服网通中变">传奇私服网通中变</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/" title="江湖技能">江湖技能</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/educationalmanagementconsultancy/" title="daneducationalmanagementconsultandan">daneducationalmanagementconsultandan</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dumptrucknr/" title="新开ip传奇私服">新开ip传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecoavanza/" title="网通传奇私服精品">网通传奇私服精品</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/effervesence/" title="传奇私服变态合击1.95">传奇私服变态合击1.95</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dynaency/" title="今日新开韩版传奇私服">今日新开韩版传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydf68/" title="新开传奇私服双线">新开传奇私服双线</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earnbynetworking/" title="网通传奇私服1.85">网通传奇私服1.85</a></li><li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyfloridallc/" title="网通1.85传奇私服2合1">网通1.85传奇私服2合1</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/economicsforbeginners/" title="网通传奇私服一切靠打">网通传奇私服一切靠打</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonyaddction/" title="最新网通传奇私服1.85">最新网通传奇私服1.85</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecstacylingerie/" title="新开变态传奇私服">新开变态传奇私服</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/edalatibearings/" title="神牛超级变态传奇私服">神牛超级变态传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastvalleyfreebies/" title="网通传奇私服刚开一秒">网通传奇私服刚开一秒</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dynamicsofbelief/" title="3000k传奇私服新开">3000k传奇私服新开</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edmontondesigners/" title="超超超超变态传奇私服">超超超超变态传奇私服</a></li><li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyordersite/" title="新开网通专线传奇私服">新开网通专线传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easytrack8/" title="东北网通火龙传奇私服">东北网通火龙传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dxb520/" title="最火新开传奇私服">最火新开传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开真龙九界传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete12112.html" target="_blank" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete10331.html" target="_blank" title="随着某一快速检测技术更加频繁的使用">随着某一快速检测技术更加频繁的使用</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete9439.html" target="_blank" title="一是希望通过承包制来实现搞活企业的目的">一是希望通过承包制来实现搞活企业的目的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete8886.html" target="_blank" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投稿</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete6229.html" target="_blank" title="但是从另一视角看">但是从另一视角看</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete6070.html" target="_blank" title="设计并应用篮球竞争性情景锻炼处方">设计并应用篮球竞争性情景锻炼处方</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete5798.html" target="_blank" title="《世界桥梁》现由中国铁路工程总公司主管">《世界桥梁》现由中国铁路工程总公司主管</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete5564.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete5205.html" target="_blank" title="在小学语文教学中">在小学语文教学中</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/egenetic/contete4026.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/" title="天界变态传奇私服发布">天界变态传奇私服发布</a></h3>
+<ul>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/201511815.html" title="随着农业结构的不断调整">随着农业结构的不断调整</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/20159047.html" title="作者需要安排版面数">作者需要安排版面数</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/20158664.html" title="而且对系统的调试">而且对系统的调试</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/20157846.html" title="这当中有很大一部分属招聘不当的问题">这当中有很大一部分属招聘不当的问题</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/20156919.html" title="它源自尖端细胞">它源自尖端细胞</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/" title="纯网通超变态传奇私服">纯网通超变态传奇私服</a></h3>
+<ul>
+<li><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/20158866.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/20156889.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/20156501.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/20155983.html" title="而如果你的朋友对你的处境很关心">而如果你的朋友对你的处境很关心</a></li>
+<li><a href="http://www.luckytrade.net/count/2/hywd/xze/edithaanselma/20155812.html" title="行政处罚的各类还有很多不一一介绍">行政处罚的各类还有很多不一一介绍</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开真龙九界传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>但是从另一视角看</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 16:54</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6229&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6229">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       没有寻求更没有与外地形成串联互动的现象［９］乌坎村今年２月第五届村委会换届选举整体无效 近日组织重新选举［ｎ］．广州日报       ２０１１－１２－２９       ａ４． 门等地也有</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;没有寻求更没有与外地形成串联互动的现象<p>［９］乌坎村今年２月第五届村委会换届选举整体无效 近日组织重新选举［ｎ］．广州日报<BR>&nbsp; &nbsp; &nbsp; &nbsp;２０１１－１２－２９<BR>&nbsp; &nbsp; &nbsp; &nbsp;ａ４． </p><p>门等地也有市民自发上街声援乌坎村村民有媒体称乌坎事件已经形成示范效应<BR>&nbsp; &nbsp; &nbsp; &nbsp;开始蔓延到整个粤东<BR>&nbsp; &nbsp; &nbsp; &nbsp;陆丰龙头村星期日有村民示威<BR>&nbsp; &nbsp; &nbsp; &nbsp;多条毗邻乌坎的农村也酝酿维权抗争”［５］上述报道也许有言过其实之处<BR>&nbsp; &nbsp; &nbsp; &nbsp;但至少有一个得到证实的事实<BR>&nbsp; &nbsp; &nbsp; &nbsp;那就是在乌坎事件高潮之时的１２月１０日<BR>&nbsp; &nbsp; &nbsp; &nbsp;在粤东地区、与汕尾市相邻的汕头市确实发生了一起较大规模的群体性事件据《汕头日报》报道：该市潮阳区海门镇“部分群众因担心正在做前期论证工作的华电发电项目对环境造成污染<BR>&nbsp; &nbsp; &nbsp; &nbsp;受一小部分人蛊惑<BR>&nbsp; &nbsp; &nbsp; &nbsp;几百名不明真相的群众聚集到海门镇政府<BR>&nbsp; &nbsp; &nbsp; &nbsp;并于中午１２时左右到深汕高速公路海门出入口聚集<BR>&nbsp; &nbsp; &nbsp; &nbsp;堵塞车辆通行<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成深汕高速公路海门路段一度堵塞”［６］据理性思维可推知<BR>&nbsp; &nbsp; &nbsp; &nbsp;海门事件或许是受到了乌坎事件的影响和示范在海门事件中<BR>&nbsp; &nbsp; &nbsp; &nbsp;民众也许并非是在刻意地与乌坎民众串联互动<BR>&nbsp; &nbsp; &nbsp; &nbsp;但在客观上确实起到了与之呼应串联同样的效果 </p><p>”［８］再后来<BR>&nbsp; &nbsp; &nbsp; &nbsp;“经深入调查取证<BR>&nbsp; &nbsp; &nbsp; &nbsp;严格按照国家的法律和省的法规政策<BR>&nbsp; &nbsp; &nbsp; &nbsp;对乌坎村第五届村委会换届选举作出整体无效认定<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽快组织开展村委会重新选举工作”［９］<BR>&nbsp; &nbsp; &nbsp; &nbsp;三名被捕的村代表也被释放了回来 </p><p>２０１１年下半年发生于广东省汕尾市的乌坎事件堪称我国近年来影响最大的群体性事件乌坎事件与以往群体性事件有所不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;它呈现出一些新的趋向<BR>&nbsp; &nbsp; &nbsp; &nbsp;探究这些新趋向<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于我们预防和应对群体性事件<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及对于我们构建社会主义和谐社会具有重要意义 </p><p>以往的群体性事件往往只是发生在一个城镇之内矛盾冲突<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有其他区域的民众参与进来比如云南孟连事件、陇南事件和石首事件<BR>&nbsp; &nbsp; &nbsp; &nbsp;这四个事件堪称我国在乌坎事件之前的标本式的群体性事件<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是之前最大规模和最大影响的四大群体性事件但由它们所引发的矛盾冲突只是在一城之内<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有牵涉到其他地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;更没有与其他地方有串联、呼应之行为比如<BR>&nbsp; &nbsp; &nbsp; &nbsp;２００８年发生的孟连事件<BR>&nbsp; &nbsp; &nbsp; &nbsp;冲突的一方是胶农<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一方是橡胶公司<BR>&nbsp; &nbsp; &nbsp; &nbsp;胶农与橡胶公司因经济利益发生冲突与打斗后来警方介入<BR>&nbsp; &nbsp; &nbsp; &nbsp;胶农进而与警方发生严重的冲突<BR>&nbsp; &nbsp; &nbsp; &nbsp;并造成两名胶农中弹身亡整个事件中<BR>&nbsp; &nbsp; &nbsp; &nbsp;都没有出现其他地方民众参与进来的现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为冲突的一方<BR>&nbsp; &nbsp; &nbsp; &nbsp;胶农也没有与外界进行串联和寻求呼应之行为瓮安事件、陇南事件和石首事件等众多群体性事件也与孟连事件一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;矛盾冲突始终在一城之内 </p><p>同样<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着见识的增长和公民意识的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;民众会组织起来进行集体维权<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至会呼吁外界给予支持与互动因为他们知道团体的力量大于个人的力量<BR>&nbsp; &nbsp; &nbsp; &nbsp;知道集体维权的胜算大于个人单打独斗当经济利益和政治利益受到侵害时<BR>&nbsp; &nbsp; &nbsp; &nbsp;民众已懂得了互相组织起来进行抗争在一些群体性事件中<BR>&nbsp; &nbsp; &nbsp; &nbsp;民众甚至还会聘请律师作为法律顾问<BR>&nbsp; &nbsp; &nbsp; &nbsp;以对事件的诉求与过程进行指导与规范<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且会呼吁外界的支持和声援以把事件的规模及影响扩大<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而给政府施加更大的压力<BR>&nbsp; &nbsp; &nbsp; &nbsp;以实现其利益最大化的目标 </p><p>以往群体性事件的参与者大多出于泄愤或者出于经济方面的诉求<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有涉及政治方面的诉求先于乌坎事件３个月发生的广东省增城事件就是泄愤型群体性事件的典型代表该事件缘起于一名四川籍孕妇占街摆地摊、阻塞通道<BR>&nbsp; &nbsp; &nbsp; &nbsp;并因此与治保人员发生争执和肢体接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;导致孕妇倒地事后<BR>&nbsp; &nbsp; &nbsp; &nbsp;该孕妇和丈夫同意了政府的调解<BR>&nbsp; &nbsp; &nbsp; &nbsp;并愿意由救护车送到医院接受检查但现场聚集的数百名无关人员起哄并坚决阻挠孕妇上车<BR>&nbsp; &nbsp; &nbsp; &nbsp;并有部分不法分子向在现场做工作的政府工作人员、警察和警车投掷石块、玻璃瓶等杂物<BR>&nbsp; &nbsp; &nbsp; &nbsp;并袭击了当地的派出所事件在当天深夜得到了初步平息<BR>&nbsp; &nbsp; &nbsp; &nbsp;现场又聚集了数百人<BR>&nbsp; &nbsp; &nbsp; &nbsp;加上围观群众超过千人不法分子不仅袭击了警察、警车<BR>&nbsp; &nbsp; &nbsp; &nbsp;还损坏了部分现场的私家车辆、银行柜员机等事件中那些不法分子绝大多数与事件并无直接关联<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们来自天南地北<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多人彼此之间并不认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们参与其中只是为了发泄心中不满</p><p>而乌坎事件从始至终都受到了外界的高度关注<BR>&nbsp; &nbsp; &nbsp; &nbsp;村民与外界体现出一定的串联与互动现象这可以从事件未升级之前汕尾市人民政府的新闻发布会中得到说明：该市市委书记在新闻发布会中认为“事件被村内外一些别有用心的人所炒作、煽动”<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且他特别强调“有境外势力对事件推波助澜<BR>&nbsp; &nbsp; &nbsp; &nbsp;致使本已平息的事件又趋于严重<BR>&nbsp; &nbsp; &nbsp; &nbsp;改变了事件的性质”［３］在事件升级之后、省工作组进村前的一天<BR>&nbsp; &nbsp; &nbsp; &nbsp;省工作组还是向外界同样宣称林祖銮、杨色茂等组织者“死心塌地为境内外敌对势力利用<BR>&nbsp; &nbsp; &nbsp; &nbsp;必当追究”［４］<BR>&nbsp; &nbsp; &nbsp; &nbsp;相信相关领导的话决非是凭空捏造的谎言我们先来分析：究竟乌坎事件被哪些村外“别有用心的人所炒作、煽动”呢？这个问题的答案至今在境内的主流媒体报道中都难以找到<BR>&nbsp; &nbsp; &nbsp; &nbsp;不过在境外媒体中可以看到不少虽然境外媒体的可信度不一定很高<BR>&nbsp; &nbsp; &nbsp; &nbsp;但也许对管窥其一斑还是有帮助的据维基百科所搜集的境外媒体报道：“广州一部分人进行了声援乌坎村民的集会<BR>&nbsp; &nbsp; &nbsp; &nbsp;１８日在广东省省会广州市发起示威活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;大约有１２人在广州市内的广场上发放传单<BR>&nbsp; &nbsp; &nbsp; &nbsp;后来传单被警方没收<BR>&nbsp; &nbsp; &nbsp; &nbsp;这也成为乌坎村抗议行动开花的首例<BR>&nbsp; &nbsp; &nbsp; &nbsp;而三名声援乌坎村民之抗议人士遭广州警方逮捕除了广州<BR>&nbsp; &nbsp; &nbsp; &nbsp;广东省其他城市以及香港澳</p><p>要］乌坎事件显现出我国群体性事件有如下主要的新趋向：由自发松散型趋向于组织严密型；由一地矛盾冲突趋向于多地串联与互动；由单纯泄愤型或经济诉求型趋向于经济政治复合诉求型这些新趋向的出现会给政府处理群体性事件带来更大的难度和挑战<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们的出现是我国经济社会发展、民众见识增长和公民意识增强的另一种体现形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而具有一定的必然性群体性事件的新趋向再次证明维权才能维稳、政府应当正确对待民众的诉求 </p><p>管子说：“仓廪实而知礼节<BR>&nbsp; &nbsp; &nbsp; &nbsp;衣食足而知荣辱”经济社会的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;民众见识的增长、法律意识和公民意识的增强是我国群体性事件呈上述新趋向的根本原因政治是经济的集中体现<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着我国社会主义经济建设的大踏步前进<BR>&nbsp; &nbsp; &nbsp; &nbsp;人民在物质文明生活上的需求得到了逐步的满足<BR>&nbsp; &nbsp; &nbsp; &nbsp;客观上会要求在精神文明生活上需求的相应提高同时精神文明建设的推进<BR>&nbsp; &nbsp; &nbsp; &nbsp;人民法律意识和公民意识也会跟着增强因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国的群体性事件由当初单纯的泄愤型或经济诉求型趋向于经济政治复合诉求型<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是自然而然的事情 </p><p>［２］“乌坎村９?２１事件”处置情况通报 打砸为首分子被拘［ｅｂ／ｏｌ］．大洋网</p><p>经由上述<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国群体性事件呈现上述新趋向具有一定的必然性<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是我国经济社会发展的必然结果可以说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一具有严密组织、多地串联呼应、经济政治复合诉求型的群体事件发生于广东并非偶然<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是广东处于改革开放的最前沿、 </p><p>［８］省工作组进驻陆丰解决乌坎事件［ｎ］．广州日报<BR>&nbsp; &nbsp; &nbsp; &nbsp;２０１１－１２－２１<BR>&nbsp; &nbsp; &nbsp; &nbsp;ａ１３版． </p><p>非法组织的工作”［２］可见<BR>&nbsp; &nbsp; &nbsp; &nbsp;乌坎事件确有明显的组织性在整个事件过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;村民的聚散进退都受到指挥者和骨干分子的操控<BR>&nbsp; &nbsp; &nbsp; &nbsp;其组织程度已具较高水平后来在乌坎事件发酵升级、省工作组进驻该村后<BR>&nbsp; &nbsp; &nbsp; &nbsp;广东省委副书记、乌坎事件特别工作组组长朱明国在与村民代表会面时达成协议之一就是承认“乌坎村村民临时代表理事会”的合法身份后来<BR>&nbsp; &nbsp; &nbsp; &nbsp;与工作组进行协商的还是林祖銮、杨色茂等“临时代表理事会”的成员<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且工作组还是依靠林、杨等人开展村民的工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;林祖銮最终还在村委选举中当选为乌坎村支部书记这说明了该理事会绝非一群乌合之众<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是具有一定组织纪律性并在村中具有较高号召力的组织 </p><p>［中图分类号］ｃ９１３ ［文献标识码］ａ ［文章编号］１６７２－２４２６０４－００９２－０４ </p><p>［３］广东省委副书记：乌坎组织者若顽固不化必追究［ｅｂ／ｏｌ］．东南网</p><p>【xzbu】郑重<p>［１１］龙树．“法律至上”就没有迈不过的“乌坎”［ｎ］．新京报<BR>&nbsp; &nbsp; &nbsp; &nbsp;２０１１－１２－２２<BR>&nbsp; &nbsp; &nbsp; &nbsp;ａ０２． </p><p>我们再来分析：乌坎事件中是否有“境外势力的推波助澜”呢？现在看来<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有证据表明乌坎事件得到了境外势力的支持<BR>&nbsp; &nbsp; &nbsp; &nbsp;不过乌坎事件受到了境外媒体的深度关注<BR>&nbsp; &nbsp; &nbsp; &nbsp;并对事件进行持续的跟踪报道<BR>&nbsp; &nbsp; &nbsp; &nbsp;由此引发了海内外的舆论<BR>&nbsp; &nbsp; &nbsp; &nbsp;大大增加了政府处理事件的压力<BR>&nbsp; &nbsp; &nbsp; &nbsp;这点是不言而喻的不少境外媒体派记者进驻村内<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中包括ｂｂｃ、ｎｈｋ、台湾的东森电视以及香港的多家电视台与报纸等<BR>&nbsp; &nbsp; &nbsp; &nbsp;互联网上也出现很多境外媒体对该事件报道的信息据说<BR>&nbsp; &nbsp; &nbsp; &nbsp;村民对境内外的媒体都持非常欢迎的态度<BR>&nbsp; &nbsp; &nbsp; &nbsp;村内还设有媒体开放室<BR>&nbsp; &nbsp; &nbsp; &nbsp;以供记者采访对于境外媒体的报道<BR>&nbsp; &nbsp; &nbsp; &nbsp;在没有证明其是故意的歪曲的报道之前<BR>&nbsp; &nbsp; &nbsp; &nbsp;当然不能认为这是境外势力在支持村民对抗政府<BR>&nbsp; &nbsp; &nbsp; &nbsp;也不能说这是境外势力对事件的干预据了解<BR>&nbsp; &nbsp; &nbsp; &nbsp;官方及主流媒体还没有发布任何认为境外媒体有不实报道方面的信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;这相当于默认境外媒体的报道境外媒体的报道客观上使国内外加深了对乌坎事件的了解、增加了人们对事件的关注或者同情甚至可以说<BR>&nbsp; &nbsp; &nbsp; <img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1A41aS6-0.jpg" width="600px" height="400px" />&nbsp;因为国内主流�

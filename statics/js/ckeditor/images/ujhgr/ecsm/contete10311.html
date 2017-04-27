@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>在旋喷过程中|我的网站</title>
+<meta name="description" content="在插管过程中1）钻机操作人员应具有熟练操作技能 并持有相关特种作业资格证高压泥浆泵、高压清水泵必须指定专人操作 压力表应定期检修检定 以保证正常工作 检验数量：同一" />
+<meta name="keywords" content="旋喷,过程中,插管,过程中,钻机,操作,人员,具有,熟练,技" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dutchlifedmv/" title="新开心法传奇私服军鼓">新开心法传奇私服军鼓</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/" title="巫医">巫医</a></li><li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthlaw/" title="网通变态热血传奇私服">网通变态热血传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebayretired/" title="新开网通180传奇私服">新开网通180传奇私服</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/" title="魔神超级变态传奇私服">魔神超级变态传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eacreativestudio/" title="东北网通传奇私服网站">东北网通传奇私服网站</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastcoastsettlementservices/" title="山东传奇私服发布网通">山东传奇私服发布网通</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonyivoryproject/" title="网通vip传奇私服">网通vip传奇私服</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustandlightsheredo/" title="新开传奇私服ip地址">新开传奇私服ip地址</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustwalker/" title="新开神途传奇私服">新开神途传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastsidepropertygroup/" title="网通传奇私服1.80复古">网通传奇私服1.80复古</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/" title="怒风">怒风</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastofkabul/" title="新开东北网通传奇私服">新开东北网通传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dulishop/" title="新开倚天辟地传奇私服">新开倚天辟地传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbids/" title="新开网通1.95传奇私服">新开网通1.95传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/" title="999好传奇私服新开">999好传奇私服新开</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easytoscriptwrite/" title="千兆网通超变传奇私服">千兆网通超变传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastonandhardy/" title="辽宁东北网通传奇私服">辽宁东北网通传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunasconstruction/" title="新开龙腾传奇私服">新开龙腾传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/easyimportfromjp/" title="不卡东北网通传奇私服">不卡东北网通传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开蛊惑版本传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11832.html" target="_blank" title="凡采用他人学说">凡采用他人学说</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11691.html" target="_blank" title="在我国潮州汕头地区比较流行">在我国潮州汕头地区比较流行</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11483.html" target="_blank" title="针对不同专业学生采取以人为本的柔性化方式方法">针对不同专业学生采取以人为本的柔性化方式方</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10616.html" target="_blank" title="组织学与胚胎学虽然是一门医学基础的基础课程">组织学与胚胎学虽然是一门医学基础的基础课程</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10311.html" target="_blank" title="在旋喷过程中">在旋喷过程中</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10033.html" target="_blank" title="提高学生的创新意识和创新能力是我们面临的重要课题">提高学生的创新意识和创新能力是我们面临的重</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete9338.html" target="_blank" title="表图内文字统一用楷体">表图内文字统一用楷体</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete7191.html" target="_blank" title="也许红土场是费德勒最不愿意面对也是最为难的赛场">也许红土场是费德勒最不愿意面对也是最为难的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete7059.html" target="_blank" title="因为中国的汽车增长的太快">因为中国的汽车增长的太快</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete5656.html" target="_blank" title="那时候看电影的机会不是特别多">那时候看电影的机会不是特别多</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/" title="超级变态传奇私服网页">超级变态传奇私服网页</a></h3>
+<ul>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/201511966.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/201511216.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/20158587.html" title="以负荷削减类电力需求侧响应项目为例">以负荷削减类电力需求侧响应项目为例</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/20157931.html" title="最重要的是">最重要的是</a></li>
+<li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efishingshop/20157810.html" title="机电工业刊物">机电工业刊物</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/" title="东北网通传奇私服">东北网通传奇私服</a></h3>
+<ul>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/contete11885.html" title="所引文献必须是作者直接阅读参考过的公开出版文献">所引文献必须是作者直接阅读参考过的公开出</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/contete11004.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/contete10755.html" title="融资分为广义融资和狭义融资">融资分为广义融资和狭义融资</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/contete10593.html" title="出台鼓励发展生态高效农业的政策">出台鼓励发展生态高效农业的政策</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/evenementiel/contete9703.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开蛊惑版本传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>在旋喷过程中</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 07:59</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10311&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10311">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:在插管过程中1）钻机操作人员应具有熟练操作技能       并持有相关特种作业资格证高压泥浆泵、高压清水泵必须指定专人操作       压力表应定期检修检定       以保证正常工作 检验数量：同一</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            在插管过程中<p>1）钻机操作人员应具有熟练操作技能<BR>&nbsp; &nbsp; &nbsp; &nbsp;并持有相关特种作业资格证高压泥浆泵、高压清水泵必须指定专人操作<BR>&nbsp; &nbsp; &nbsp; &nbsp;压力表应定期检修检定<BR>&nbsp; &nbsp; &nbsp; &nbsp;以保证正常工作 </p><p>检验数量：同一产地、批号的水泥和外加剂<BR>&nbsp; &nbsp; &nbsp; &nbsp;袋装水泥每200t为一批、散装水泥500t为一批<BR>&nbsp; &nbsp; &nbsp; &nbsp;当袋装水泥及外加剂不足200t或散装水泥不足500t时也按一批计施工单位每批抽样检验1组监理单位按施工单位抽样数量的20%见证检验 </p><p>9）补浆喷射注浆作业完成后<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于浆液的析水作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般均有不同程度的收缩<BR>&nbsp; &nbsp; &nbsp; &nbsp;使固结体顶部出现凹穴<BR>&nbsp; &nbsp; &nbsp; &nbsp;要及时用水泥浆补灌 </p><p>实践证明<BR>&nbsp; &nbsp; &nbsp; &nbsp;高压旋喷桩在顶管工程施工中发挥了其优越的辅助功能提高了地基承载力<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而满足了沉井预制的施工需要；形成了止水帷幕<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而保证了沉井的顺利下沉；提高了管道与沉井接口处土质的抗渗透性<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而保证了管道运行的安全其设备是用履带行走<BR>&nbsp; &nbsp; &nbsp; &nbsp;适用于各种复杂土质高压旋喷桩施工简单<BR>&nbsp; &nbsp; &nbsp; &nbsp;在防渗、地基处理中得到了广泛的应用 </p><p>冶金工业部建筑研究总院. : 冶金工业出版社,1-31 </p><p>3）喷射浆自喷嘴喷出时<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有很高的能量<BR>&nbsp; &nbsp; &nbsp; &nbsp;应保持安全距离<BR>&nbsp; &nbsp; &nbsp; &nbsp;防止施工过程中人员受伤 </p><p>本工程采用单管法高压喷射注浆施工旋喷桩<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据地质报告和施工要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;经过试验验证旋喷桩施工技术参数如下：桩径50cm；浆液压力为25~30mpa；；；水泥用量为150kg/m；喷管提速为20~25cm/min；流量为30~40l/min </p><p>本工程恰是利用了旋喷桩具有“加固地基”、“止水防渗”的特性<BR>&nbsp; &nbsp; &nbsp; &nbsp;其一来改善地基的承载力<BR>&nbsp; &nbsp; &nbsp; &nbsp;其二防止下沉过程中流沙的涌入和改善管道和沉井接口处土体的渗透性现场旋喷桩的布设方案如下： </p><p>高压旋喷桩是利用钻机将带有喷嘴的注浆管钻进土层的设计深度后<BR>&nbsp; &nbsp; &nbsp; &nbsp;以高压设备使水泥浆成为高压浆液流从喷嘴中喷射出来<BR>&nbsp; &nbsp; &nbsp; &nbsp;破坏、冲切土体<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时钻杆以预定速度逐渐提升<BR>&nbsp; &nbsp; &nbsp; &nbsp;使浆液与土体强制搅拌混合<BR>&nbsp; &nbsp; &nbsp; &nbsp;便在土中形成旋喷桩<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有加固地基、止水防渗的作用 </p><p>1） 钻机定位移动旋喷桩机到指定桩位<BR>&nbsp; &nbsp; &nbsp; &nbsp;将钻头对准孔位中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时整平钻机<BR>&nbsp; &nbsp; &nbsp; &nbsp;放置平稳、水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;%就位后<BR>&nbsp; &nbsp; &nbsp; &nbsp;首先进行低压射水试验<BR>&nbsp; &nbsp; &nbsp; &nbsp;用以检查喷嘴是否畅通<BR>&nbsp; &nbsp; &nbsp; &nbsp;压力是否正常 </p><p>4） 插管当采用旋喷注浆管进行钻孔作业时<BR>&nbsp; &nbsp; &nbsp; &nbsp;钻孔和插管二道工序可合而为一当第一阶段贯入土中时<BR>&nbsp; &nbsp; &nbsp; &nbsp;可借助喷射管本身的喷射或振动贯入其过程为：启动钻机<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时开启高压泥浆泵低压输送水泥浆液<BR>&nbsp; &nbsp; &nbsp; &nbsp;使钻杆沿导向架振动、射流成孔下沉；直到桩底设计标高<BR>&nbsp; &nbsp; &nbsp; &nbsp;观察工作电流不应大于额定值<BR>&nbsp; &nbsp; &nbsp; &nbsp;为防止泥砂堵塞喷嘴<BR>&nbsp; &nbsp; &nbsp; &nbsp;可用较小压力边下管边射水 </p><p>改善管道跟沉井接口处土体的渗透性这个部位在管道使用过程中出现问题的可能性最大在本人经历的众多管道抢修事件中<BR>&nbsp; &nbsp; &nbsp; &nbsp;多数管道下沉的原因是管道与沉井接口的部位涌入流沙<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着水流基础的土体流空<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而导致下沉此处的旋喷桩布设可将管道的下沉隐患消失在萌芽中 </p><p>6）桩头部分处理当旋喷管提升接近桩顶时<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;慢速提升旋喷<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;直至桩顶停浆面 </p><p>7）清洗向浆液罐中注入适量清水<BR>&nbsp; &nbsp; &nbsp; &nbsp;清洗全部管路中残存的水泥浆<BR>&nbsp; &nbsp; &nbsp; &nbsp;直至基本干净并将粘附在喷浆管头上的土清洗干净 </p><p>无锡市某过河顶管工程<BR>&nbsp; &nbsp; &nbsp; &nbsp;管道规格为d1200f型混凝土管<BR>&nbsp; &nbsp; &nbsp; &nbsp;长度约175米<BR>&nbsp; &nbsp; &nbsp; &nbsp;壁厚60cm<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据地质报告显示<BR>&nbsp; &nbsp; &nbsp; &nbsp;沉井所处位置的土质力学特性较差<BR>&nbsp; &nbsp; &nbsp; &nbsp;承载力仅为45kpa深度5~<BR>&nbsp; &nbsp; &nbsp; &nbsp;力学特性较好<BR>&nbsp; &nbsp; &nbsp; &nbsp;土质的力学特性较好<BR>&nbsp; &nbsp; &nbsp; &nbsp;但土质的渗透系数较大<BR>&nbsp; &nbsp; &nbsp; &nbsp;处于流沙层内我施工方在进行技术准备阶段发现<BR>&nbsp; &nbsp; &nbsp; &nbsp;原状土质在沉井预制、下沉阶段存在着承载力不足的现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;传统施工方法也不足以满足施工要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0K93612N-0.jpg" width="600px" height="400px" />采取辅助措施改善土质的力学性能经召开专题会议<BR>&nbsp; &nbsp; &nbsp; &nbsp;业主、监理等各方形成统一意见<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用高压旋喷桩辅助施工 </p><p>1、沉井预制施工阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;于拟建沉井刃脚正下部<BR>&nbsp; &nbsp; &nbsp; &nbsp;沿沉井一周范围布设分离式单排装<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;桩径50cm<BR>&nbsp; &nbsp; &nbsp; &nbsp;用来改善基础土体承载力不足的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;满足沉井预制阶段的施工要求 </p><p>结合工程实例<BR>&nbsp; &nbsp; &nbsp; &nbsp;简述高压旋喷桩的特性及应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;对其施工工艺进行了简单介绍经实践证明<BR>&nbsp; &nbsp; &nbsp; &nbsp;高压旋喷桩在复杂地质条件下的顶管工程中可充分发挥其优良的辅助功能<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证了工程的顺利进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高了管道使用期内的安全性 </p><p>5）提升喷浆管、搅拌喷浆管下沉到达设计深度后<BR>&nbsp; &nbsp; &nbsp; &nbsp;旋转不停<BR>&nbsp; &nbsp; &nbsp; &nbsp;高压泥浆泵压力增到施工设计值25~30mpa<BR>&nbsp; &nbsp; &nbsp; &nbsp;坐底喷浆约30s后<BR>&nbsp; &nbsp; &nbsp; &nbsp;边旋转<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时严格按照设计和试桩确定的提升速度提升钻杆钻杆旋转和提升必须连续不中断<BR>&nbsp; &nbsp; &nbsp; &nbsp;拆卸接长钻杆或继续旋喷时要保持钻杆有10～20cm的搭接长度<BR>&nbsp; &nbsp; &nbsp; &nbsp;避免出现断桩在旋喷过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;如因机械出现故障中断旋喷<BR>&nbsp; &nbsp; &nbsp; &nbsp;应重新钻至桩底设计标高后<BR>&nbsp; &nbsp; &nbsp; &nbsp;重新旋喷旋喷过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;冒浆量小于注浆量的20%为正常现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;若超过20%或完全不冒浆时<BR>&nbsp; &nbsp; &nbsp; &nbsp;调整旋喷参数或改变喷嘴直径 </p><p>2）制备水泥浆桩机移位时<BR>&nbsp; &nbsp; &nbsp; &nbsp;即开始按设计确定的配合比拌制水泥浆水灰比要按设计严格控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;不得随意改变首先将水加入桶中<BR>&nbsp; &nbsp; &nbsp; &nbsp;再将水泥和外掺剂倒入<BR>&nbsp; &nbsp; &nbsp; &nbsp;开动搅拌机搅拌15分钟左右<BR>&nbsp; &nbsp; &nbsp; &nbsp;而后拧开搅拌桶底部阀门<BR>&nbsp; &nbsp; &nbsp; &nbsp;过滤后流入浆液桶中<BR>&nbsp; &nbsp; &nbsp; &nbsp;待压浆时备用在旋喷过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;应防止泥浆沉淀<BR>&nbsp; &nbsp; &nbsp; &nbsp;浓度降低不得使用受潮或过期的水泥过滤筛孔要小于喷嘴直径1/2为宜 </p><p> 检验方法：完工后28d<BR>&nbsp; &nbsp; &nbsp; &nbsp;在每根检测桩桩径方向1/4处、桩长范围内垂直钻孔取芯<BR>&nbsp; &nbsp; &nbsp; &nbsp;观察其完整性、均匀性<BR>&nbsp; &nbsp; &nbsp; &nbsp;拍摄取出芯样的照片<BR>&nbsp; &nbsp; &nbsp; &nbsp;取不同深度的三个试样作无侧限抗压强度试验钻芯后的孔洞采用水泥砂浆灌注封闭 </p><p>2、在沉井外围距离沉井单倍桩径的位置开始<BR>&nbsp; &nbsp; &nbsp; &nbsp;布设两排封闭式排桩<BR>&nbsp; &nbsp; &nbsp; &nbsp;桩径50cm<BR>&nbsp; &nbsp; &nbsp; &nbsp;桩中心间距35cm<BR>&nbsp; &nbsp; &nbsp; &nbsp;平面呈梅花形布置其作用有以下2点：</p><p>【xzbu】郑重<p>4）喷射注浆的浆液目前一般以水泥浆为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;当加入其他化学填加剂<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般说浆液硬化后对人畜均无害<BR>&nbsp; &nbsp; &nbsp; &nbsp;但硬化前的液体进到眼睛里时<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须立即进行充分清洗<BR>&nbsp; &nbsp; &nbsp; &nbsp;并及时到医院治疗 </p><p>2）施工前应检查设备和管路系统<BR>&nbsp; &nbsp; &nbsp; &nbsp;压力和流量应满足施工要求同时还应检查管道的耐久性以及管道连接是否可靠<BR>&nbsp; &nbsp; &nbsp; &nbsp;泵体、注浆管及喷嘴内不得有任何杂物<BR>&nbsp; &nbsp; &nbsp; &nbsp;各类密封圈必须良好<BR>&nbsp; &nbsp; &nbsp; &nbsp;否则接头断开、软管破裂<BR>&nbsp; &nbsp; &nbsp; &nbsp;将会导致浆液、高压水流飞散、软管甩出等安全事故安全阀中的安全销要进行试压检验<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须确保在达到规定压力时能断销卸压<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝不能轻易安装未经试压检验的自制安全销 </p>  (责任编辑：admin)
+<img border="0" alt="在旋喷过程中" src="/images/lenfeng_10311.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10311)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10311)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10311);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10033.html'>提高学生的创新意识和创新能力是我们面临的重要课题</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10616.html'>组织学与胚胎学虽然是一门医学基础的基础课程</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10311" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10311&title=在旋喷过程中" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10311" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10311" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10311" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10311&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10311');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

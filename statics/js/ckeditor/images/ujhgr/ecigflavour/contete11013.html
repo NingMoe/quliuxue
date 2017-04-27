@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>奈何迫物累|我的网站</title>
+<meta name="description" content=" 在长安困守了十年“穷年忧黎元 叹息肠内热”诗人关心同情劳动人民的思想情感是一贯的天旱时 他想到了“雨降不润物 良田起黄埃”；洪水泛滥成灾之时 " />
+<meta name="keywords" content="奈何,迫物,长安,困守,十年,穷年忧黎元,叹息,内热,诗人," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustandlightshereand/" title="新开网通传奇私服ip">新开网通传奇私服ip</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustandlightshereoks/" title="网通合计传奇私服新开">网通合计传奇私服新开</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dyy4/" title="15点新开传奇私服">15点新开传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/educationalgamesradar/" title="新开变态神鬼传奇私服">新开变态神鬼传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earlypaycheckonlinetoday/" title="北方网通中变传奇私服">北方网通中变传奇私服</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/edditstatic/" title="刚开超变态传奇私服">刚开超变态传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e9du/" title="网通经典传奇私服">网通经典传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecorebelprojects/" title="网通传奇私服万劫版">网通传奇私服万劫版</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonyaddction/" title="最新网通传奇私服1.85">最新网通传奇私服1.85</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duplicatuempresa/" title="最新开的传奇私服">最新开的传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxy5656/" title="新开传奇私服新版地图">新开传奇私服新版地图</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efirsaturunleri/" title="新开月卡版传奇私服">新开月卡版传奇私服</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dzhaixing/" title="新开超变传奇私服发布">新开超变传奇私服发布</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/econoptimist/" title="传奇私服网通变态版">传奇私服网通变态版</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echowho/" title="河南网通1.76传奇私服">河南网通1.76传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhaotai/" title="最新开传奇私服1.96">最新开传奇私服1.96</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/ea65/" title="新开网通轻变传奇私服">新开网通轻变传奇私服</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dyxgtea/" title="新开御龙传奇私服">新开御龙传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecolifelawncare/" title="网通合计传奇私服新开">网通合计传奇私服新开</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eaglemediasolutions/" title="新开网通传奇私服合击">新开网通传奇私服合击</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇1.76传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete12280.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete11013.html" target="_blank" title="奈何迫物累">奈何迫物累</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete5234.html" target="_blank" title="社会排斥理论被引入中国以后">社会排斥理论被引入中国以后</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete4720.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete4178.html" target="_blank" title="办刊宗旨：回眸世纪风云">办刊宗旨：回眸世纪风云</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete3424.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete1703.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/" title="传奇私服新开服发部网">传奇私服新开服发部网</a></h3>
+<ul>
+<li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/contete11086.html" title="除了早期诊断">除了早期诊断</a></li>
+<li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/contete6892.html" title="不谋全局者">不谋全局者</a></li>
+<li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/contete6266.html" title="面临这样的窘境">面临这样的窘境</a></li>
+<li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/contete6093.html" title="李大经代表北京家政服务协会">李大经代表北京家政服务协会</a></li>
+<li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durablenesshyip/contete5023.html" title="他们往往不能正视自己的生理残疾">他们往往不能正视自己的生理残疾</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/" title="新开佣兵传奇私服">新开佣兵传奇私服</a></h3>
+<ul>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/contete11840.html" title="透过其诗词以及其他文献">透过其诗词以及其他文献</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/contete10490.html" title="中华民居(下旬刊)">中华民居(下旬刊)</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/contete7997.html" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/contete7612.html" title="中国是陶瓷的发源地">中国是陶瓷的发源地</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dycwzj/contete6945.html" title="他们的父母师长对他们说:孩子">他们的父母师长对他们说:孩子</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇1.76传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>奈何迫物累</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 10:36</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=11013&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=11013">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       在长安困守了十年“穷年忧黎元       叹息肠内热”诗人关心同情劳动人民的思想情感是一贯的天旱时       他想到了“雨降不润物       良田起黄埃”；洪水泛滥成灾之时     </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;在长安困守了十年<p>“穷年忧黎元<BR>&nbsp; &nbsp; &nbsp; &nbsp;叹息肠内热”诗人关心同情劳动人民的思想情感是一贯的天旱时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他想到了“雨降不润物<BR>&nbsp; &nbsp; &nbsp; &nbsp;良田起黄埃”；洪水泛滥成灾之时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他想到了“应沉数州没<BR>&nbsp; &nbsp; &nbsp; &nbsp;如听万室哭”诗人自己“三年奔走空皮骨”<BR>&nbsp; &nbsp; &nbsp; &nbsp;由梓州回到成都草堂的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;生活稍有安定好转<BR>&nbsp; &nbsp; &nbsp; &nbsp;他却忧念那些比自己更苦的农民<BR>&nbsp; &nbsp; &nbsp; &nbsp;“敢为故林主<BR>&nbsp; &nbsp; &nbsp; &nbsp;黎民犹未康”就在诗人临终前一年<BR>&nbsp; &nbsp; &nbsp; &nbsp;自己早已是病魔缠身、生活无着之时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他还强忍病痛<BR>&nbsp; &nbsp; &nbsp; &nbsp;沿着“右樵路”去一个小山村亲自造访比自己更苦的农民诗人看到了“罢人不在村<BR>&nbsp; &nbsp; &nbsp; &nbsp;野圃泉自注柴扉虽芜没<BR>&nbsp; &nbsp; &nbsp; &nbsp;农器尚牢固”的一片残破荒凉景象叛军余孽还没根除<BR>&nbsp; &nbsp; &nbsp; &nbsp;各路藩将拥兵割据<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人不禁大声疾呼：“谁能扣军门<BR>&nbsp; &nbsp; &nbsp; &nbsp;下令减征赋？”但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人这些美好善良的愿望<BR>&nbsp; &nbsp; &nbsp; &nbsp;在黑暗现实面前<BR>&nbsp; &nbsp; &nbsp; &nbsp;是不可能实现的 </p><p>这时朝政已由杨国忠执政<BR>&nbsp; &nbsp; &nbsp; &nbsp;依旧是泥牛入海他怀着出仕从政的迫切愿望这时期诗人亲眼目睹了达官显贵的专横、贪婪<BR>&nbsp; &nbsp; &nbsp; &nbsp;而荒淫昏聩的玄宗<BR>&nbsp; &nbsp; &nbsp; &nbsp;一面开边扩土<BR>&nbsp; &nbsp; &nbsp; &nbsp;发动侵略战争<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成了人民骨肉离散<BR>&nbsp; &nbsp; &nbsp; &nbsp;“君不闻汉家山东二百州<BR>&nbsp; &nbsp; &nbsp; &nbsp;千山万落生荆杞”“边庭流血成海水<BR>&nbsp; &nbsp; &nbsp; &nbsp;武皇开边意未已”另一面<BR>&nbsp; &nbsp; &nbsp; &nbsp;加紧对农民进行敲骨吸髓的剥削<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成千村万户“空村惟见鸟<BR>&nbsp; &nbsp; &nbsp; &nbsp;落日未逢人”的破败景象在贪官污吏巧取豪夺之下<BR>&nbsp; &nbsp; &nbsp; &nbsp;人民的生活 临绝境<BR>&nbsp; &nbsp; &nbsp; &nbsp;真所谓“高马达官厌酒肉<BR>&nbsp; &nbsp; &nbsp; &nbsp;此辈杼柚茅茨空”越是见到这一切<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人越是希望有机会能一展鸿图<BR>&nbsp; &nbsp; &nbsp; &nbsp;为国为民出把力但是当朝廷任命他为河西县尉时<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人又不愿做直接鞭挞百姓的官<BR>&nbsp; &nbsp; &nbsp; &nbsp;后来改任右卫率府兵曹参军<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于忧国忧民、胸怀大志的诗人来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这无疑是一个极大的嘲弄 </p><p>纵观诗人的一生<BR>&nbsp; &nbsp; &nbsp; &nbsp;他嫉恶怀柔肠<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔锋刺向国蠹民贼、蒙上视听的宦官尤物<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及拥军叛乱的藩镇军阀<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人总以“豺虎”隐喻揭露他们<BR>&nbsp; &nbsp; &nbsp; &nbsp;把他们的丑行暴露于光天化日之中如 “萧条四海内<BR>&nbsp; &nbsp; &nbsp; &nbsp;人少豺虎多”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“上天铄金石<BR>&nbsp; &nbsp; &nbsp; &nbsp;群盗乱豺虎”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“狐狸何足道<BR>&nbsp; &nbsp; &nbsp; &nbsp;豺虎正纵横”<BR>&nbsp; &nbsp; &nbsp; &nbsp;等等他又“穷年忧黎元<BR>&nbsp; &nbsp; &nbsp; &nbsp;叹息肠内热”<BR>&nbsp; &nbsp; &nbsp; &nbsp;始终关怀民生疾苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;一身忠贞正气义薄云天这一切虽不为朝廷所纳<BR>&nbsp; &nbsp; &nbsp; &nbsp;但诗人一腔孤愤<BR>&nbsp; &nbsp; &nbsp; &nbsp;上射斗牛<BR>&nbsp; &nbsp; &nbsp; &nbsp;与日月星辰一样辉映天地之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;真可谓：一腔君国<BR>&nbsp; &nbsp; &nbsp; &nbsp;满眼江山命运多舛<BR>&nbsp; &nbsp; &nbsp; &nbsp;穷忧黎元世上疮痍<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔底波澜民生疾苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗中圣贤 </p><p>要：依据历史发展的进程<BR>&nbsp; &nbsp; &nbsp; &nbsp;分析了杜诗被称为“诗史”的产生过程；剖析了杜甫在命运多舛的境遇下<BR>&nbsp; &nbsp; &nbsp; &nbsp;仍然有如圣哲<BR>&nbsp; &nbsp; &nbsp; &nbsp;谱写出一篇篇具有深刻的社会内容、鲜明的时代特色和强烈的政治倾向的壮丽篇章<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而奠定了杜甫诗歌的“诗史”地位 </p><p>【xzbu】郑重<p>作 者：丁雪昭<BR>&nbsp; &nbsp; &nbsp; &nbsp;辽宁省经济管理干部学院基础部讲师<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究方向：大学语文、应用文写作 </p><p>天宝十四年<BR>&nbsp; &nbsp; &nbsp; &nbsp;“安史之乱”爆发次年<BR>&nbsp; &nbsp; &nbsp; &nbsp;皇帝携贵妃、大臣<BR>&nbsp; &nbsp; &nbsp; &nbsp;向四川仓惶避窜这时诗人回奉先携妻儿向白水避难是年八月<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人只身北上灵武去投奔新即位的肃宗李亨<BR>&nbsp; &nbsp; &nbsp; &nbsp;以期报效朝廷但诗人刚启程<BR>&nbsp; &nbsp; &nbsp; &nbsp;就被叛军俘获<BR>&nbsp; &nbsp; &nbsp; &nbsp;押送至沦陷的京师长安<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直在这里被囚困了八个多月“中宵焚九庙<BR>&nbsp; &nbsp; &nbsp; &nbsp;银汉为之红”长安在燃烧；“是时嫔妃戮<BR>&nbsp; &nbsp; &nbsp; &nbsp;连为粪土丛”长安在流血；“野旷天清无战声<BR>&nbsp; &nbsp; &nbsp; &nbsp;四万义军同日死群胡归来血洗箭<BR>&nbsp; &nbsp; &nbsp; &nbsp;仍唱胡歌饮都市”人民惨死<BR>&nbsp; &nbsp; &nbsp; &nbsp;敌人在狂欢诗人亲眼目睹了京师沦陷后的惨状、敌人烧杀抢掠的暴行<BR>&nbsp; &nbsp; &nbsp; &nbsp;亲身体验了国破家亡的哀痛 </p><p>在这次大动乱的前夜<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人踏上长安求仕的艰难旅途天宝五年诗人来到了京师长安<BR>&nbsp; &nbsp; &nbsp; &nbsp;准备参加玄宗的特科考试但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;这次考试在奸相李林甫的操纵之下<BR>&nbsp; &nbsp; &nbsp; &nbsp;以欺下瞒上的伎俩大搞政治骗局<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有一个人中选<BR>&nbsp; &nbsp; &nbsp; &nbsp;杜甫当然也不能例外这次落第<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于关心政治、爱国爱民的诗人来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;无疑是一次沉重的打击接着<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人的生活也达到穷困潦倒、挨饿受冻的地步“朝扣富儿门<BR>&nbsp; &nbsp; &nbsp; &nbsp;暮随肥马尘残杯与冷炙<BR>&nbsp; &nbsp; &nbsp; &nbsp;到处潜悲辛”</p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人被誉为“诗圣”<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝非过誉“致君尧舜上”<BR>&nbsp; &nbsp; &nbsp; &nbsp;是诗人一贯的政治理想；“穷年忧黎元”<BR>&nbsp; &nbsp; &nbsp; &nbsp;是诗人人生理想的核心；“济时肯杀身”<BR>&nbsp; &nbsp; &nbsp; &nbsp;是诗人坚持的一贯精神正因为这永不衰退的政治热情<BR>&nbsp; &nbsp; &nbsp; &nbsp;使杜甫成为中国文学史上具有强烈政治色彩的诗人 </p><p>里<BR>&nbsp; &nbsp; &nbsp; &nbsp;广泛而深刻地反映了那个时代的重大事件和社会矛盾诗人对安史叛乱给人民带来的深重灾难愤笔声讨；对酿成“安史之乱”的最高统治者进行无情的揭露<BR>&nbsp; &nbsp; &nbsp; &nbsp;谴责他们种种祸国殃民的罪行笔锋所向<BR>&nbsp; &nbsp; &nbsp; &nbsp;下至后妃、宦官、将帅<BR>&nbsp; &nbsp; &nbsp; &nbsp;乃至贪官、暴吏<BR>&nbsp; &nbsp; &nbsp; &nbsp;等等正是这些“掌握有权柄<BR>&nbsp; &nbsp; &nbsp; &nbsp;衣马自轻肥”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“翻手作云覆手雨<BR>&nbsp; &nbsp; &nbsp; &nbsp;纷纷轻薄何须数”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“攀龙附凤势莫挡<BR>&nbsp; &nbsp; &nbsp; &nbsp;天下尽化为侯王”的奸佞小人们<BR>&nbsp; &nbsp; &nbsp; &nbsp;趋炎附势<BR>&nbsp; &nbsp; &nbsp; &nbsp;把一个好端端的国家搞得破败不堪诗人亲眼看到了统治者的奢侈无度<BR>&nbsp; &nbsp; &nbsp; &nbsp;亲身经历了幼子“无食致夭折”的巨大悲痛<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此他更加理解人民的痛苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;更加同情人民的不幸遭遇诗人也自觉或不自觉地触及到阶级剥削和阶级压迫问题：“彤庭所分帛<BR>&nbsp; &nbsp; &nbsp; &nbsp;本处寒女出鞭挞其夫家<BR>&nbsp; &nbsp; &nbsp; &nbsp;聚敛贡城阙”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“子实不得吃<BR>&nbsp;<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/103611DM-0.jpg" width="600px" height="400px" /> &nbsp; &nbsp; &nbsp;货讪送王畿尽添军旅用<BR>&nbsp; &nbsp; &nbsp; &nbsp;迫此公家威”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“朱门酒肉臭<BR>&nbsp; &nbsp; &nbsp; &nbsp;路有冻死骨”<BR>&nbsp; &nbsp; &nbsp; &nbsp;道破当时社会阶级对立的本质特征残酷的压榨<BR>&nbsp; &nbsp; &nbsp; &nbsp;使农民濒临绝境<BR>&nbsp; &nbsp; &nbsp; &nbsp;对此诗人赋予极大的同情：“默思失业徒<BR>&nbsp; &nbsp; &nbsp; &nbsp;因念远戍卒” </p><p>但现实却与诗人的理想相悖：皇帝玄宗早已不是开元盛世之初有作为的唐明皇了<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是深居宫中纵情声色、昏聩腐朽的败国之君朝政完全由李林甫、安禄山等一些奸佞权臣、悍将把持这些奸佞设藩镇、改兵制、嫉贤妒能、聚敛贪财<BR>&nbsp; &nbsp; &nbsp; &nbsp;阶级矛盾、统治阶级内部矛盾空前尖锐<BR>&nbsp; &nbsp; &nbsp; &nbsp;终于酿成“安史之乱”<BR>&nbsp; &nbsp; &nbsp; &nbsp;玄宗仓惶出逃<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成了社会急剧动荡的万方多难的政治局面 </p><p>至德二年肃宗迁驻凤翔<BR>&nbsp; &nbsp; &nbsp; &nbsp;五月诗人为了报效国家<BR>&nbsp; &nbsp; &nbsp; &nbsp;冒死从沦陷的长安<BR>&nbsp; &nbsp; &nbsp; &nbsp;投奔肃宗的抗战政府<BR>&nbsp; &nbsp; &nbsp; &nbsp;“麻鞋见天子<BR>&nbsp; &nbsp; &nbsp; &nbsp;衣袖露两肘涕泪受拾遗<BR>&nbsp; &nbsp; &nbsp; &nbsp;流离主恩厚”<BR>&nbsp; &nbsp; &nbsp; &nbsp;接任左拾遗后<BR>&nbsp; &nbsp; &nbsp; &nbsp;决心忠于职守<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进中兴大业的完成他积极推荐人才<BR>&nbsp; &nbsp; &nbsp; &nbsp;使“识度清远”的岑参能够为朝廷所用为救宰相房 罢相<BR>&nbsp; &nbsp; &nbsp; &nbsp;触怒了肃宗<BR>&nbsp; &nbsp; &nbsp; &nbsp;多亏张镐营救<BR>&nbsp; &nbsp; &nbsp; &nbsp;但为肃宗墨制放还 州<BR>&nbsp; &nbsp; &nbsp; &nbsp;变相贬斥了他如此等等<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分表现他忠公谋国的优良品质 </p><p> 钱谦益笺注：《新编中国名人年谱集成第四辑：唐杜少陵先生甫年谱》<BR>&nbsp; &nbsp; &nbsp; &nbsp;台湾商务印书馆1978年版 </p><p>但穷困并没有吓住诗人为了实现“致君尧舜上<BR>&nbsp; &nbsp; &nbsp; &nbsp;再使风俗淳”的政治理想<BR>&nbsp; &nbsp; &nbsp; &nbsp;他甚至忍辱献诗韦济、张埴等权贵<BR>&nbsp; &nbsp; &nbsp; &nbsp;以求援引提携<BR>&nbsp; &nbsp; &nbsp; &nbsp;但毫无结果天宝十年前后<BR>&nbsp; &nbsp; &nbsp; &nbsp;又直接向唐玄宗献赋自荐<BR>&nbsp; &nbsp; &nbsp; &nbsp;玄宗惊异诗人的才华<BR>&nbsp; &nbsp; &nbsp; &nbsp;命他待制集贤院第二年“召试文章<BR>&nbsp; &nbsp; &nbsp; &nbsp;送隶有司、参列选序”</p><p>仕途的艰辛<BR>&nbsp; &nbsp; &nbsp; &nbsp;生活的磨难考验了诗人；社会的动乱<BR>&nbsp; &nbsp; &nbsp; &nbsp;教育了诗人杜甫拿起了现实主义的诗笔<BR>&nbsp; &nbsp; &nbsp; &nbsp;把“安史之乱”前后自己的亲身经历、对时局的看法等都写入了他诗章诸如《咏怀五百字》《北征》《羌村》《三吏》《三别》《悲陈陶》《述怀》《丽人行》《兵车行》等在这些闪烁着现实主义光芒的诗篇 </p><p>不久<BR>&nbsp; &nbsp; &nbsp; &nbsp;洛阳、长安相继收复<BR>&nbsp; &nbsp; &nbsp; &nbsp;肃宗驾幸长安杜甫也携家小赶回京师<BR>&nbsp; &nbsp; &nbsp; &nbsp;继续任职左拾遗这时他本想在朝中发挥政治作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;对国家和人民有所贡献<BR>&nbsp; &nbsp; &nbsp; &nbsp;但终因房 罢相一事<BR>&nbsp; &nbsp; &nbsp; &nbsp;被肃宗逐出京师<BR>&nbsp; &nbsp; &nbsp; &nbsp;改任华州司功参军这一打击<BR>&nbsp; &nbsp; &nbsp; &nbsp;使其政治理想完全破灭了为了生计<BR>&nbsp; &nbsp; &nbsp; &nbsp;他弃官携家踏上了漂泊西南的旅途“无食向乐土<BR>&nbsp; &nbsp; &nbsp; &nbsp;无衣思南州”<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后到达四川成都“奈何迫物累<BR>&nbsp; &nbsp; &nbsp; &nbsp;一岁四行役”这几年<BR>&nbsp; &nbsp; &nbsp; &nbsp;逃难<BR>&nbsp; &nbsp; &nbsp; &nbsp;饱尝忧患政治上遭受冷遇<BR>&nbsp; &nbsp; &nbsp; &nbsp;但诗人并没有忘情现实<BR>&nbsp; &nbsp; &nbsp; &nbsp;脱离政治；反之<BR>&nbsp; &nbsp; &nbsp; &nbsp;其政治热情却空前高涨<BR>&nbsp; &nbsp; &nbsp; &nbsp;战乱、人祸<BR>&nbsp; &nbsp; &nbsp; &nbsp;迫使他与人民一道流浪<BR>&nbsp; &nbsp; &nbsp; &nbsp;与劳动人民的关系更加贴近<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人更希望人民不再碰到这种不幸当自己的茅草屋为秋风吹破<BR>&nbsp; &nbsp; &nbsp; &nbsp;居无定所之时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他更希望“安得广厦千万间<BR>&nbsp; &nbsp; &nbsp; &nbsp;大庇天下寒士俱欢颜”如能这样<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人情愿“吾庐独破受冻死亦足”诗人为民生奔走呼号<BR>&nbsp; &nbsp; &nbsp; &nbsp;几乎达到忘我的程度 </p><p>诗人理想中的政治蓝图是：“主将晓逆顺<BR>&nbsp; &nbsp; &nbsp; &nbsp;元元归始终一朝自罪己<BR>&nbsp; &nbsp; &nbsp; &nbsp;万里车书通锋镝供锄犁<BR>&nbsp; &nbsp; &nbsp; &nbsp;征戍听所从冗官各复业<BR>&nbsp; &nbsp; &nbsp; &nbsp;土著还力农君臣节俭足<BR>&nbsp; &nbsp; &nbsp; &nbsp;朝野欢呼同中兴似国初<BR>&nbsp; &nbsp; &nbsp; &nbsp;继力如太宗端拱纳谏诤<BR>&nbsp; &nbsp; &nbsp; &nbsp;和风日冲融”</p><p>唐代宗大历五年<BR>&nbsp; &nbsp; &nbsp; &nbsp;早已是重病缠身的诗人<BR>&nbsp; &nbsp; &nbsp; &nbsp;在耳聋失听、周身不能转动的情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;伏枕写成绝笔之诗《风疾舟中伏枕书怀三十六韵奉呈湖南亲友》<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后抒发了“战血流依旧<BR>&nbsp; &nbsp; &nbsp; &nbsp;军声动至今”的世事感慨<BR>&nbsp; &nbsp; &nbsp; &nbsp;叙述了自己贫病交加的悲惨处境<BR>&nbsp; &nbsp; &nbsp; &nbsp;不久便与世长辞<BR>&nbsp; &nbsp; &nbsp; &nbsp;结束了他伟大而悲剧的一生 </p><p>正是通过对这些昏君、佞臣的口诛笔伐<BR>&nbsp; &nbsp; &nbsp; &nbsp;诗人深刻揭示了国家动乱衰败的根源<BR>&nbsp; &nbsp; &nbsp; &nbsp;充满了忧国忧民的思想情感杜甫这一时期的诗歌成为诗人现实主义创作的高峰 </p><p>杜甫是我国文学史上最伟大的现实主义诗人诗人生逢乱世<BR>&nbsp; &nbsp; &nbsp; &nbsp;大唐由盛转衰<BR>&nbsp; &nbsp; &nbsp; &nbsp;民不聊生<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家和民族都处在风雨飘摇之中尽管诗人个人举步维艰<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是他有如圣哲巍然耸立在黑暗现实之中他以永不衰退的政治热情、忧国忧民的高尚情怀<BR>&nbsp; &nbsp; &nbsp; &nbsp;时刻关注时代的风云变幻<BR>&nbsp; &nbsp; &nbsp; &nbsp;关心国道的兴衰、人民的苦难<BR>&nbsp; &nbsp; &nbsp; &nbsp;把一腔忠诚孤愤都凝聚在其如椽巨笔之端<BR>&nbsp; &nbsp; &nbsp; &nbsp;其诗歌不但具有广阔而深刻的社会内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也具有极其鲜明的时代特色和强烈的政治倾向<BR>&nbsp; &nbsp; &nbsp; &nbsp;充满震撼人心的巨大艺术感染力自唐以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;杜诗被公认为“诗史”</p>  (责任编辑：admin)
+<img border="0" alt="奈何迫物累" src="/images/lenfeng_11013.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',11013)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',11013)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(11013);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete5234.html'>社会排斥理论被引入中国以后</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigflavour/contete12280.html'>以提供梗概为目的</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=11013" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=11013&title=奈何迫物累" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=11013" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=11013" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="11013" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=11013&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '11013');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

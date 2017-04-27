@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>聚集经济作为与经济增长相伴而生的经济现象|我的网站</title>
+<meta name="description" content=" 大批学者通过理论与经验分析得出了很多有益的结论经济增长对聚集经济的影响主要是通过技术外溢效应来实现的 其基础是内生经济增长理论内生经济增长理论强调知识外溢和技术外部性在经济增" />
+<meta name="keywords" content="聚集,经济,作为,增长,相伴,生的,现象,大批,学者,通过," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/eddiesgermancarservice/" title="超超超变态传奇私服">超超超变态传奇私服</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/eddacentrum/" title="变态传奇私服加速外挂">变态传奇私服加速外挂</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustinfoxen/" title="新开内功传奇私服">新开内功传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecashare7/" title="网通仿嘟嘟传奇私服">网通仿嘟嘟传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/educationatworld/" title="超级变态传奇私服电信">超级变态传奇私服电信</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dumprunnerwaste/" title="新开1 76特色传奇私服">新开1 76特色传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastcoaststrippers/" title="30ok网通传奇私服1.76">30ok网通传奇私服1.76</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/ea65/" title="新开网通轻变传奇私服">新开网通轻变传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecolampsrl/" title="新开网通传奇私服ip">新开网通传奇私服ip</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/eddyllc/" title="超级变态传奇私服网">超级变态传奇私服网</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earntosuccess/" title="千兆网通热血传奇私服">千兆网通热血传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/educaexpert/" title="变态我本沉默传奇私服">变态我本沉默传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efreestandingbaths/" title="天界变态传奇私服发布">天界变态传奇私服发布</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edinborofloristtoday/" title="中等变态合击传奇私服">中等变态合击传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e589/" title="新开网通传奇私服1.76">新开网通传奇私服1.76</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eggredients/" title="传奇私服无英雄超变态">传奇私服无英雄超变态</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebestbathrooms/" title="沈阳网通传奇私服网">沈阳网通传奇私服网</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/easyboat/" title="网通专线传奇私服刚开">网通专线传奇私服刚开</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/eclecticpeace/" title="网通长期稳定传奇私服">网通长期稳定传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebsservicesfl/" title="存网通专线传奇私服">存网通专线传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开卓越传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete11624.html" target="_blank" title="文章以特定期间微利企业的财务报表为研究对象">文章以特定期间微利企业的财务报表为研究对象</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete11329.html" target="_blank" title="杂志尊重服务读者的全部激情和梦想">杂志尊重服务读者的全部激情和梦想</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete10599.html" target="_blank" title="水彩画带有不确定因素">水彩画带有不确定因素</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete10110.html" target="_blank" title="外文字符必须分清大白体">外文字符必须分清大白体</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete9708.html" target="_blank" title="在语文课堂教学中">在语文课堂教学中</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete8308.html" target="_blank" title="（摘自《海南日报》">（摘自《海南日报》</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete7775.html" target="_blank" title="整个侏罗纪时期">整个侏罗纪时期</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete6721.html" target="_blank" title="也常遇这样的问题">也常遇这样的问题</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete6160.html" target="_blank" title="新课程要求我们数学教学应该树立大数学观">新课程要求我们数学教学应该树立大数学观</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete5768.html" target="_blank" title="但它同样是十分自由的时期">但它同样是十分自由的时期</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhf2009/" title="新开有内功传奇私服">新开有内功传奇私服</a></h3>
+<ul>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhf2009/contete9331.html" title="模糊限制语具有丰富的语用功能">模糊限制语具有丰富的语用功能</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhf2009/contete7903.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhf2009/contete6208.html" title="对策：分包商要与总包方建立利益共同体的观念">对策：分包商要与总包方建立利益共同体的观</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyhf2009/contete4763.html" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/" title="网通真彩传奇私服">网通真彩传奇私服</a></h3>
+<ul>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/qq11909.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/qq11572.html" title="三网融合这几年一直被热炒">三网融合这几年一直被热炒</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/qq11026.html" title="还有一名担任科研副院长的民主党派人士">还有一名担任科研副院长的民主党派人士</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/qq9020.html" title="基于光传输和光与Kerr介质相互作用理论">基于光传输和光与Kerr介质相互作用理论</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echointer/qq8811.html" title="简要介绍了中国联通WCDMA网络VPDN组网模型">简要介绍了中国联通WCDMA网络VPDN组网模型</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开卓越传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>聚集经济作为与经济增长相伴而生的经济现象</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-18 17:21</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=833&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=833">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       大批学者通过理论与经验分析得出了很多有益的结论经济增长对聚集经济的影响主要是通过技术外溢效应来实现的       其基础是内生经济增长理论内生经济增长理论强调知识外溢和技术外部性在经济增</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;大批学者通过理论与经验分析得出了很多有益的结论<p>经济增长对聚集经济的影响主要是通过技术外溢效应来实现的<BR>&nbsp; &nbsp; &nbsp; &nbsp;其基础是内生经济增长理论内生经济增长理论强调知识外溢和技术外部性在经济增长中的作用而知识外溢和技术外部性是规模经济形成的基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;伴随规模经济而来的就是聚集经济<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济增长可以通过技术外部性带来的规模效应影响到聚集经济的形成由于理论上经济增长影响聚集经济的因素已经比较成熟<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以对研究成果在此不再赘述</p><p>聚集经济对经济增长的影响研究很多聚集经济作为与经济增长相伴而生的经济现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;其形成和发展必将通过累积因果循环作用影响经济增长外国学者的研究主要是分析经济活动密度特别是人口密度对生产率的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过生产率建立聚集经济与经济增长之间联系的桥梁中国学者的研究主要是利用外国学者的已有分析框架<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过对我国经验数据的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究聚集经济对经济增长的影响其中比较有代表性的观点有：罗勇、曹丽莉以我国电子及通讯设备制造业为研究对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;选用ellison-galeaser指数作为聚集经济的分析指标<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过实证检验得出：ellison-galeaser指数与工业产值之间存在高度的正相关性张妍云从就业密度的视角<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用最小二乘法研究发现<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业的聚集可以带动全员劳动生产率的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而推动区域经济的快速发展章元、刘修岩选取我国城市1998-2004年的面板数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用工具变量对原有分析模型进行控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;得出我国历史上铁路基础设施通过影响聚集经济对我国城市的人均gdp的增长率产生显著性影响的观点</p><p>聚集经济的态势和地区差异的研究主要是通过反映聚集经济的指标<BR>&nbsp; &nbsp; &nbsp; &nbsp;来分析我国聚集经济发展的态势以及由此带来的地区差异例如：魏后凯采用我国第三次工业普查的数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过对521个制造业的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;考察了我国制造业的市场聚集状况与特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;并将分析结果进行了国际间的比较<BR>&nbsp; &nbsp; &nbsp; &nbsp;得出我国制造业集中程度相对较低的结论梁琦选用产业地方化和专业化的视角<BR>&nbsp; &nbsp; &nbsp; &nbsp;对我国制造业的集中和分散的态势做了深入研究范剑勇选用2004年我国城市的截面数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过实证分析认为：产业聚集主要是源于非农产业的规模递增地方化<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时这种地方化提高了区域的劳动生产率<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而对我国地区差异的形成有着持久的影响此外<BR>&nbsp; &nbsp; &nbsp; &nbsp;有的学者还提出了地理因素、区域经济政策和农村劳动力转移等因素对聚集经济的影响以及由此产生的地区差异的现状</p><p>论文摘要：本文以西部十省1978-2008年的数据为基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;首先计算了西部十省的三次产业区位基尼系数<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后通过协整检验确定了西部十省人均名义gdp与三次产业区位基尼系数之间的关系实证分析结果显示：变量之间并不存在明显的相关性因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府在制定政策时<BR>&nbsp; &nbsp; &nbsp; &nbsp;应注重西部地区经济内生性的培养<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时借鉴东部经济发展的经验<BR>&nbsp; &nbsp; &nbsp; &nbsp;积极推动西部地区经济的跨越式发展</p><p>经济增长理论的研究主要可以分为以下两个方面：一是研究经济体经济增长的长期趋势和推动经济增长的因素；二是通过比较<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究不同经济体经济增长的差异性<BR>&nbsp; &nbsp; &nbsp; &nbsp;两个方面共同构成了经济增长理论的基本框架聚集经济研究的理论可以按照宏观和微观层面的标准来划分聚集经济宏观<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141018/1H111F46-0.jpg" width="600px" height="400px" />层面的研究主要集中在聚集经济效果的层面<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学家通过对聚集经济效果的分析提出了聚集经济存在的合理性和实现途径微观层面的研究主要是对聚集经济如何产生做出理论上的解释随着两个理论研究的不断深入<BR>&nbsp; &nbsp; &nbsp; &nbsp;学者们开始关注两者之间的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;聚集与经济增长之间的关系成为了理论界的研究热点和焦点我们认为关于聚集经济与经济增长之间的关系的研究主要集中在以下三个方面：一是经济增长对聚集经济的影响；二是聚集经济对经济增长的影响；三是聚集经济的发展态势和地区差异</p><p>西部大开发处于十年的节点上<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家对西部大开发的重新论证和对未来十年西部大开发战略的落实和调整<BR>&nbsp; &nbsp; &nbsp; &nbsp;为西部地区经济发展注入了新的活力<BR>&nbsp; &nbsp; &nbsp; &nbsp;西部迎来了又一轮经济发展的机遇如何实现欠发达区域经济快速增长一直是理论界关注的焦点之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;西部地区作为我国的后发地区<BR>&nbsp; &nbsp; &nbsp; &nbsp;其在未来十年经济的跨越式发展是其实现经济快速增长的选择之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此如何实现西部地区经济的跨越式发展成为现在经济学界讨论最多的问题之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;而产业作为推动一个地区经济发展的主要力量<BR>&nbsp; &nbsp; &nbsp; &nbsp;其发展的广度和深度是制约区域经济发展的瓶颈之一产业聚集与经济增长之间的关系研究一直是理论界关注的热点之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是对于我国西部地区产业聚集与经济增长关系的研究相对较少<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多研究都是基于我国经济发展的大背景<BR>&nbsp; &nbsp; &nbsp; &nbsp;缺乏对西部地区单独的研究因此本文选取产业聚集作为研究的切入点<BR>&nbsp; &nbsp; &nbsp; &nbsp;以西部十省作为特定的研究对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究产业聚集与区域经济增长之间的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过研究寻找西部地区的特殊性<BR>&nbsp; &nbsp; &nbsp; &nbsp;为西部地区未来的发展提供相应的政策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;对产业聚集的判断有利于西部地区制定更符合本区域的产业发展政策<BR>&nbsp; &nbsp; &nbsp; &nbsp;为真正实现西部地区经济在未来十年的跨越式发展提供产业方面的支</p><p>为了更好的体现经济发展条件的同质性<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们选取西部十省作为一个整体来做研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;西部地区作为我国经济发展相对落后的区域<BR>&nbsp; &nbsp; &nbsp; &nbsp;其产业聚集的态势是怎么样的？产业聚集与经济增长的是否存在明显的相关性？如果存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;相关性的程度如何？如果不存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;可能的原因是什么？因此本文通过将三次产业区位基尼系数引入原有的经济增长方程<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过实证分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;对前面提到的问题做出尝试性回答<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是本文研究的目的所在<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是我们试图做出的创新之处</p><p>论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;是论文写作、论文投稿和论文发表的论文参考网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是科研人员论文检测和发表论文的理想平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p>  (责任编辑：admin)
+<img border="0" alt="聚集经济作为与经济增长相伴而生的经济现象" src="/images/lenfeng_833.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',833)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',833)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(833);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：没有了 </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edemonic/contete1061.html'>经过多年的改革</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=833" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=833&title=聚集经济作为与经济增长相伴而生的经济现象" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=833" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=833" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="833" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=833&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '833');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

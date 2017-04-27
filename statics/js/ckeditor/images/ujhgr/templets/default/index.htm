@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/js/iflash/iflash.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/myfocus.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/Scrollpic.js"></script>
+</head>
+<body class="index">
+<div class="w960 center">
+    <!-- /header -->
+    {dede:include filename="head_i.htm"/}
+    <!-- /header -->
+    <div class="clear"></div>
+    <div id="mbtx" style="margin-top:5px;">
+    </div>
+    <div class="clear"></div>
+    <div class="mt8 itop">
+        <div class="fl">
+            <!--幻灯片 开始-->
+            {dede:include filename="iflash.htm"/}
+            <!--幻灯片结束-->
+            <div class="mt8 rtag nobt">
+                <div class="box-t1">
+                    <h3 class="t1 fl c3">随机标签</h3>
+                </div>
+                <div class="box-m1">
+                    <ul class="li1">
+                        {dede:tag row='50' sort='rand'}
+                        <li><a href='[field:link/]' class="tag" target="_blank">[field:tag /]</a></li>
+                        {/dede:tag}
+                    </ul>
+                </div>
+            </div>
+            <script language="javascript">
+             <!--
+                var tag_a=document.getElementsByTagName("a");for( i in tag_a){var offset=6;var num=10;if(tag_a[i].className=="tag"){var rnd=Math.ceil((num+offset)*Math.random()); if(rnd>offset){tag_a[i].className="tag"+(rnd-offset);}}}
+            //-->
+            </script>
+        </div>
+        <!--/HuanDeng TuiJian-->
+        <div class="fl ml8 topnews">
+            <h3>热门焦点</h3>
+            <div class="top-one">
+                {dede:arclist flag='h' titlelen='40' limit='0,1' infolen='106'}
+                <a href="[field:arcurl/]" target="_blank"><h4 class="t9 c4">[field:title/]</h4></a>
+                <p>[field:info/]...<a href="[field:arcurl/]"><span class="c5">[全文]</span></a></p>
+                {/dede:arclist}
+            </div>
+            <!--/TouTiao1-->
+            <ul class="li2">
+                {dede:arclist titlelen='36' row='5' flag='c' orderby='pubdate'}
+                <li><a href="[field:typeurl/]" class="c7">[field:typename/]</a>|
+                    <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+                </li>
+                {/dede:arclist}
+            </ul>
+            <ul class="li2">
+                {dede:arclist titlelen='36' row='6' flag='c' orderby='hot'}
+                <li>[field:typelink/] |<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+            </ul>
+        </div>
+        <!--/TouTiao2-->
+        <div class="fl ml8">
+            <div class="newnews nobt">
+                <div class="box-t1">
+                    <h3 class="t2 fl c3">最新加入</h3>
+                </div>
+                <div class="box-m1">
+                    <ul class="li3">
+                        {dede:arclist row='15' titlelen='36' noflag='h'}
+                        <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+            <!--/ZuiXinJiaRu-->
+            <div class="mt8 a234">
+                <img src="{dede:global.cfg_templets_skin/}/img/a234.gif" />
+            </div>
+            <!--GuangGao234-->
+        </div>
+    </div>
+    <!--/ShouYeDingBu-->
+    <div class="clear"></div>
+    <!--滚动推荐-->
+    <div class="top_hotGame">
+        <div class="top_hotGame_B">
+            <div class="LeftBotton" id="LeftArs"></div>
+            <ul id="ISL_Cont_2" style="width: 858px; overflow-x: hidden; overflow-y: hidden; ">
+                <div style="overflow-x: hidden; overflow-y: hidden; zoom: 1; width: 9999px; ">
+                    <div style="float: left; ">
+                        <!-- 图片列表 begin -->
+                        {dede:arclist row='24' type='image.' typeid='' flag='' orderby='time'}
+                        <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" alt="[field:fulltitle/]"><h3>[field:title/]</h3></a></li>
+                        {/dede:arclist}
+                    </div>
+                </div>
+            </ul>
+            <div class="RightBotton" id="RightArs"></div>
+        </div>
+        <script language="javascript" type="text/javascript">
+                <!--
+                var scrollPic_02 = new ScrollPic();
+                scrollPic_02.scrollContId   = "ISL_Cont_2"; //内容容器ID
+                scrollPic_02.arrLeftId      = "LeftArs";//左箭头ID
+                scrollPic_02.arrRightId     = "RightArs"; //右箭头ID     
+
+                scrollPic_02.frameWidth     = 858;//显示框宽度
+                scrollPic_02.pageWidth      = 858; //翻页宽度     
+
+                scrollPic_02.speed          = 1; //移动速度(单位毫秒，越小越快)
+                scrollPic_02.space          = 50; //每次移动像素(单位px，越大越快)
+                scrollPic_02.autoPlay       = false; //自动播放 (默认为停止,去掉false则自动播放)
+                scrollPic_02.autoPlayTime   = 1; //自动播放间隔时间(秒)        
+
+                scrollPic_02.initialize(); //初始化
+
+                //-->
+        </script>
+    </div>
+    <!--滚动结束-->
+    <div id="mcent">
+        <div id="mcent_left">
+            <!--热门文章 开始-->
+            <div id="mc_bibei">
+                <div class="box-t1">
+                    <h3 class="t5 fl c3">热门文章</h3>
+                </div>
+                <div class="box-m1">
+                    <ul class="li4">
+                        {dede:arclist row='10' titlelen='' orderby='click'}
+                        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+            <!--热门文章 结束-->
+            <!--热门图片 开始-->
+            <div id="mc_game">
+                <div class="box-t1">
+                    <h3 class="t5 fl c3">热门图片</h3>
+                </div>
+                <ul>
+                    {dede:arclist row='4' type='image.' titlelen='' orderby='click'}
+                    <li><a href="[field:arcurl/]"><img src="[field:litpic/]" width="394" height="180">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+            <!--热门图片 结束-->
+        </div>
+        <!--频道栏目 开始-->
+        <div id="mcent_right">
+            {dede:channelartlist}
+            <div class="h_sort">
+                <div class="box-t1">
+                    <span class="right"><a href="{dede:field name='typeurl'/}">更多>></a></span>
+                    <h3 class="t4 fl c3">{dede:field name='typename'/}</h3>
+                </div>
+                <div class="h_sort_box">
+                    <!--推荐图文 1条开始-->
+                    {dede:arclist row='1' type='image.' flag='' titlelen='' infolen=''}
+                    <dl>
+                        <dd><a href="[field:arcurl/]"><img src="[field:litpic/]" width="68" height="63" alt="[field:fulltitle/]"></a>
+                        </dd>
+                        <dt>
+                            <p class="title"><a href="[field:arcurl/]">[field:title/]</a></p>
+                            <p class="content">[field:infos/]<a href="[field:arcurl/]">[详细]</a></p>
+                        </dt>
+                    </dl>
+                    {/dede:arclist}
+                    <!--推荐图文 1条结束-->
+                    <!--最新文章 开始-->
+                    <ul>
+                        {dede:arclist titlelen='60' row='6'}
+                        <li>
+                            <span>
+                                [field:pubdate function="MyDate('m-d',@me)"/]
+                            </span>·
+                            <font><a href="[field:arcurl /]">[field:title /]</a></font>
+                        </li>
+                        {/dede:arclist}
+                    </ul>
+                    <!--最新文章 结束-->
+                </div>
+            </div>
+            {/dede:channelartlist}
+        </div>
+    </div>
+    <!--频道栏目 结束-->
+    <div class="clear"></div>
+    <!--960 90 广告开始-->
+    <div class="mt8 a960">
+        <img src="{dede:global.cfg_templets_skin/}/img/a960.gif" />
+    </div>
+    <!--960 90 广告结束-->
+    <div class="clear"></div>
+    <!--友情链接 开始-->  
+    {dede:include filename="flink.htm"/}
+    <!--友情链接 结束-->
+    <!-- /footer -->
+    {dede:include filename="mbtxfoot.htm"/}
+    <!-- /footer -->
+</div>
+</body>
+</html>

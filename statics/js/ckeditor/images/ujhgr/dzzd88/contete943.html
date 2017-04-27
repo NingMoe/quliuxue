@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>T表示时间趋势|我的网站</title>
+<meta name="description" content="研究表明,出口对中国的就业有正的影响,进口对中国的就业有负的影响,进口依存度每增长10% ,%论文导读:：本文利用1998-2007年中国28个工业部门动态面板数据hashemzadeh、davido" />
+<meta name="keywords" content="表示,时间,趋势,研究,表明,出口,中国,就业,影响,进口," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/" title="热血传奇私服网通专区">热血传奇私服网通专区</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/" title="今日新开盛大传奇私服">今日新开盛大传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxtnet/" title="新开血色传奇私服">新开血色传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dynacom/" title="新开冥神传奇私服">新开冥神传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dumprunnerwaste/" title="新开1 76特色传奇私服">新开1 76特色传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dymegirls/" title="新开格斗元素传奇私服">新开格斗元素传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/eatrealfoodinc/" title="网通超变连击传奇私服">网通超变连击传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/edwardjewelry/" title="变态传奇私服1.85合击">变态传奇私服1.85合击</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/" title="ETC">ETC</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebookgadgets/" title="超变网通传奇私服">超变网通传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duogouwang/" title="新开热血轻变传奇私服">新开热血轻变传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonylovin/" title="纯网通微变传奇私服">纯网通微变传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efnutritionnow/" title="变态传奇私服发服">变态传奇私服发服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebookadvisor/" title="千兆纯网通传奇私服">千兆纯网通传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dybxg/" title="新开1 76合击传奇私服">新开1 76合击传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duoxii/" title="新开1.85合击传奇私服">新开1.85合击传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/eworldgroup/" title="网通传奇私服发布网wt">网通传奇私服发布网wt</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eggedalpukk/" title="七彩天意变态传奇私服">七彩天意变态传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edirc/" title="新开变态靓装传奇私服">新开变态靓装传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecomanner/" title="网通帝王传奇私服">网通帝王传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服合成版相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10967.html" target="_blank" title="因为艺术欣赏本身就是一种再创造和再评价">因为艺术欣赏本身就是一种再创造和再评价</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10612.html" target="_blank" title="但是大化县地表崎岖破碎">但是大化县地表崎岖破碎</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10524.html" target="_blank" title="使得人们在观赏时">使得人们在观赏时</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete10061.html" target="_blank" title="说的情境">说的情境</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete6737.html" target="_blank" title="稳重成熟">稳重成熟</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5880.html" target="_blank" title="大力推进数字化教育资源整合和应用服务">大力推进数字化教育资源整合和应用服务</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5578.html" target="_blank" title="况且会计电算化还没有在我国普及">况且会计电算化还没有在我国普及</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete5140.html" target="_blank" title="我们教学准备时">我们教学准备时</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete4894.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete4878.html" target="_blank" title="比如：学生犯了小错误">比如：学生犯了小错误</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/" title="180网通传奇私服发布">180网通传奇私服发布</a></h3>
+<ul>
+<li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/qq11478.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/qq11046.html" title="随着三峡电站的建成和西南一系列大型水电站的兴建">随着三峡电站的建成和西南一系列大型水电站</a></li>
+<li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/qq10619.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/qq9608.html" title="发病症状病菌主要危害葡萄叶片">发病症状病菌主要危害葡萄叶片</a></li>
+<li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthternet/qq8044.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/" title="新开超变传奇私服首区">新开超变传奇私服首区</a></h3>
+<ul>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/contete11267.html" title="作为国家非物质文化遗产">作为国家非物质文化遗产</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/contete6746.html" title="这不仅令华晨颇感尴尬">这不仅令华晨颇感尴尬</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/contete6717.html" title="生活在别人的阴影下的日子总是见不得光的">生活在别人的阴影下的日子总是见不得光的</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/contete5911.html" title="阅读给写作提供了大量地道生动的素材">阅读给写作提供了大量地道生动的素材</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dungcuykhoathanhphat/contete5383.html" title="每一类活动过程的实现方式是多种多样的">每一类活动过程的实现方式是多种多样的</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服合成版- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>T表示时间趋势</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-18 17:44</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=943&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=943">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:研究表明,出口对中国的就业有正的影响,进口对中国的就业有负的影响,进口依存度每增长10% ,%论文导读:：本文利用1998-2007年中国28个工业部门动态面板数据hashemzadeh、davido</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            研究表明,出口对中国的就业有正的影响,进口对中国的就业有负的影响,进口依存度每增长10% ,%</p><p>论文导读:：本文利用1998-2007年中国28个工业部门动态面板数据<p>hashemzadeh、davidon和matusz等都认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;美国制造业就业的下降<BR>&nbsp; &nbsp; &nbsp; &nbsp;是美国经济增长本身特征的一部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;与贸易关系不大</p><p>高文书利用全国省级动态面板数据,采用系统广义矩估计方法,对中国对外贸易的就业效应进行实证研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用系统广义矩估计方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;对中国工业行业贸易的就业效应进行整体和分部门两个层面上的实证研究整体估计结果表明：工业品出口能够促进就业<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业品进口会减少劳动需求分部门估计结果表明：进出口贸易对不同技术水平工业部门就业的影响程度上存在着不同：工业品出口在中高技术部门具有较强的促进作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;在中低技术部门作用较小；工业品进口对工业行业就业的替代作用在中低技术部门表现的更强上期就业、工业行业产出的增长对就业具有显著的正向影响；而资本的增长对工业行业的就业产生显著的负向影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业行业存在资本替代劳动的现象文章最后阐述了实证发现的政策含义</p><p>第一种观点认为国际贸易能够促进就业messerlin分析了1977-1992年间对外贸易对法国劳动力市场的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;认为其对法国就业的净效应为正<BR>&nbsp; &nbsp; &nbsp; &nbsp;将导致法国年就业量净增长8%左右</p><p>当前受到全球性金融危机的冲击<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国正面临着严峻的就业形势<BR>&nbsp; &nbsp; &nbsp; &nbsp;截至2009年底<BR>&nbsp; &nbsp; &nbsp; &nbsp;全国城镇登记失业人数为921万人<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;从统计数据上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国的城镇登记失业率并不高<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国存在着三种失业人员：一是登记失业人员<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是最明显的失业；二是下岗无业人员<BR>&nbsp; &nbsp; &nbsp; &nbsp;是转轨时期失业从隐性状态走向显性状态的一种过渡；三是在岗的隐性失业人员<BR>&nbsp; &nbsp; &nbsp; &nbsp;表现为部分国有部门富余人员过多但仍难以在短期内解决的状态</p><p>因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;准确认识对外贸易的就业效应并提出相应的建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为摆在我们面前的一个重大课题<BR>&nbsp; &nbsp; &nbsp; &nbsp;尤其是金融危机的爆发<BR>&nbsp; &nbsp; &nbsp; &nbsp;使我国出口贸易增速放缓<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国的贸易部门的产出下降<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而有可能拖累整个国民经济的稳定增长</p><p>greeway、hine和wright对英国的研究表明<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论是出口还是进口毕业论文开题报告<BR>&nbsp; &nbsp; &nbsp; &nbsp;都减少了该国的劳动力需求</p><p>本文以内生经济增长理论中贸易开放主要通过加快本国技术进步、提高要素生产率促进经济增长<BR>&nbsp; &nbsp; &nbsp; &nbsp;参考greenway,hine和wright(1999)等人研究英国贸易与就业关系的实证模型<BR>&nbsp; &nbsp; &nbsp; &nbsp;把贸易作为技术进步变量引入包含技术进步的c-d生产函数中<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立开放条件下进出口贸易影响就业的模型</p><p>近年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;围绕对外贸易与就业关系问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;国内外学者都对具体的地区做了一定程度上的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;不同地区、不同方法得出的结论也有所差异<BR>&nbsp; &nbsp; &nbsp; &nbsp;主要有三种观点论文网站大全</p><p>%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业品进口的比例在这一期间也基本稳定在80%以上<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于工业品贸易的就业效应大体上能够反映我国对外贸易部门对就业的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文选择工业品贸易作为考察的对象</p><p>胡昭玲<BR>&nbsp; &nbsp; &nbsp; &nbsp;刘旭利用中国32 个工业行业1998 &mdash;2003 年的面板数据对工业品贸易的就业效应进行实证研究结果表明,出口对就业有正向拉动作用,进口对就业的总体影响是不确定的,存在行业差异</p><p>盛斌<BR>&nbsp; &nbsp; &nbsp; &nbsp;牛蕊利用1997-年中国28 个工业部门的面板数据从贸易流量和贸易政策两个方面检验其对劳动力就业的影响研究表明<BR>&nbsp; &nbsp; &nbsp; &nbsp;贸易自由化会减少中高技术部门的就业<BR>&nbsp; &nbsp; &nbsp; &nbsp;但促进了中低技术部门的就业以进出口额为代表的贸易流量指标对不同技术水平的工业部门的影响作用是相同<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141018/1J3542336-0.jpg" width="600px" height="400px" />的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但贸易流量对中低技术部门的冲击均大于其对中高技术部门的冲击</p><p>分别表示资本与劳动力的产出弹性式中m为进口渗透率<BR>&nbsp; &nbsp; &nbsp; &nbsp;用行业进口额与行业产值之比表示；x为出口导向率<BR>&nbsp; &nbsp; &nbsp; &nbsp;即用行业出口贸易额与行业产值之比表示t表示时间趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>第三种观点认为国际贸易对就业的影响甚微kojirosakurai分析了20世纪80年代<BR>&nbsp; &nbsp; &nbsp; &nbsp;贸易对日本制造业不同技术水平劳动需求的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此贸易的快速增长对日本制造业影响有限</p><p>上一篇论文：中国传统文化价值观对游客购物决策风格的影响研究&#8212;以西安市国内游客为例</p><p> 从理论上讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业品进口会替代国内部分产品的生产<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而减少对劳动力的需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;对就业的影响预期为负；工业品出口会增加国内生产<BR>&nbsp; &nbsp; &nbsp; &nbsp;产出的扩大会增加对劳动力的需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;对就业的影响预期为正下面结合中国工业行业的具体数据加以分析</p><p>论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;是论文写作、论文投稿和论文发表的论文参考网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是科研人员论文检测和发表论文的理想平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>该模型是静态模型<BR>&nbsp; &nbsp; &nbsp; &nbsp;即本期就业只受到本期进口、出口和实际产出等的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;但在实际经济中<BR>&nbsp; &nbsp; &nbsp; &nbsp;本期就业不仅受到这些变量当期的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;还受到各自变量前期的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时还会受到以前时期就业的影响因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文将模型动态化<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用行业动态面板模型进行估计<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文待估计计量经济模型为：</p><p>国内也有不少学者对国际贸易与就业进行了深入的研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且较多的集中在贸易对中国工业就业的影响杨玉华利用协整方法分析了工业品贸易对工业就业的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;证实了工业品贸易对就业的拉动作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中出口是拉动就业的主要因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;进口对就业的影响不明显</p><p>中国是一个发展中的人口大国毕业论文开题报告<BR>&nbsp; &nbsp; &nbsp; &nbsp;就业问题已经成为中国经济发展中的首要问题而对外贸易对中国的就业有着重要影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据劳工组织(lo)的数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;2006年中国直接在出口加工企业就业的人员达4000万人</p><p>第二种观点则认为国际贸易对就业带来负面影响revenga使用美国38个制造业部门的季度面板数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;运用回归分析法分析了1977-1987年间进口竞争对美国制造业就业和工资的影响分析结果表明<BR>&nbsp; &nbsp; &nbsp; &nbsp;进口竞争导致美国制造业就业下降</p><p>国内现有文献在考察对外贸易的就业效应时<BR>&nbsp; &nbsp; &nbsp; &nbsp;主要关注了贸易的静态就业效应<BR>&nbsp; &nbsp; &nbsp; &nbsp;对就业的动态效应的研究较少<BR>&nbsp; &nbsp; &nbsp; &nbsp;忽视了关键变量之间的动态关联较为深入的研究是高文书采用省级动态面板数据<BR>&nbsp; &nbsp; &nbsp; &nbsp;说明了贸易对全国就业的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;而针对工业行业细分层面上的贸易就业动态效应的研究未有所涉及论文网站大全为此<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文将采用动态模型对中国工业行业贸易的就业效应进行实证研究</p>  (责任编辑：admin)
+<img border="0" alt="T表示时间趋势" src="/images/lenfeng_943.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',943)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',943)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(943);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete293.html'>请老师指点指导</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzzd88/contete1272.html'>在教学过程中的放</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=943" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=943&title=T表示时间趋势" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=943" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=943" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="943" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=943&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '943');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

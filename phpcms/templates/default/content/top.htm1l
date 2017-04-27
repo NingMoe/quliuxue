@@ -1,0 +1,191 @@
+<!-- 头部 -->
+
+
+
+<div  class="header clear">
+
+  <div class="section"> 
+
+    <!-- 友情链接 -->
+
+    <div class="friendlink">
+
+      <p class="wrapper">
+
+       {if $_username}<font color="#fff">会员:</font><a href="{APP_PATH}index.php?m=member&siteid={$siteid}">{get_nickname()}</a> {/if}
+
+      <a href="{$CATEGORYS[43]['url']}">美国大学排名</a><a href="{$CATEGORYS[44]['url']}">英国大学排名</a><a href="{$CATEGORYS[42]['url']}">世界大学排名</a></p>
+
+    </div>
+
+    <!-- 友情链结束 -->
+
+    <div class="wrapper"> 
+
+      <!-- logo -->
+
+      <h1><a href="index.html">Qu去留学</a></h1>
+
+      <!-- 搜索开始-->
+
+      <div class="search">
+
+      
+
+       
+
+      
+
+       <form action="{APP_PATH}index.php" method="get">
+
+        <input type="hidden" name="m" value="content"/>
+
+        <input type="hidden" name="c" value="index"/>
+
+        <input type="hidden" name="a" value="lists"/>
+
+ 
+
+     
+
+          <div id="searchTxt" class="searchTxt" >
+
+            <div class="searchMenu">
+
+              <div class="searchSelected" id="searchSelected">搜大学</div>
+
+              <div style="display:none;" class="searchTab" id="searchTab">
+
+                <ul>
+
+                  <li class="" val="22" val2="1">搜大学</li>
+
+                  <li val="22" val2="2">搜专业</li>
+
+                  <li val="13" val2="0">搜中介</li>
+
+                </ul>
+
+                
+
+                <select name="type" style="display:none;" class="type">
+
+                <option value="1" >搜大学</option>
+
+                <option value="2" >搜专业</option>
+
+                <option value="0" >搜中介</option>
+
+                </select> 
+
+                <select name="catid" style="display:none;" class="catid">
+
+                <option value="22" >搜大学</option>
+
+                <option value="22" >搜专业</option>
+
+                <option value="13" >搜中介</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <input type="text" placeholder="请输入您要查找的学校或专业" name="keyword"  class="keyword"  value="" />
+
+            
+
+           <button type="submit" value="搜 索" id="searchbtn" /><span>Search</span><i class="fa-search"></i></button>
+
+            </div>
+
+        </form>
+
+        <!-- 搜索结束- --> 
+
+      </div>
+
+      <div class="about">
+
+        <ul>
+
+          {pc:content action="category" catid="1" num="25" siteid="$siteid" order="listorder ASC"}
+
+          {loop $data $r}{if $n>1}{/if}<li><a  href="{$r[url]}">{$r[catname]}</a></li>{/loop}
+
+          {/pc}
+
+          <li>{if $_username}<a class="a1" href="{APP_PATH}index.php?m=member&siteid={$siteid}">会员</a><a href="{APP_PATH}index.php?m=member&c=index&a=logout&forward={urlencode($_GET['forward'])}&siteid={$siteid}" target="_top">退出</a>{else}<a class="a1 denglu" href="#" target="_top">登陆</a><a href="{APP_PATH}index.php?m=member&c=index&a=register&siteid={$siteid}" target="_blank">注册</a>
+
+    {/if} 
+
+     </li>
+
+        </ul>
+
+      </div>
+
+      <!-- END MAIN NAVIGATION --> 
+
+    </div>
+
+    <!-- 头部导航 -->
+
+    <div id="second">
+
+      <div class="wrapper">
+
+        <div id="secondnav">
+
+          <ul class="clear">
+
+            <li{if !$catid && !$jiamian} class="active"{/if} ><a href="/">首页</a>
+
+            </li>
+
+            {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+
+            {loop $data $r}
+
+            <li {if $catid==$r[catid]|| $jiamian==$r[catid] || $top_parentid==$r[catid]} class="active"{/if}  ><a href="{$r[url]}">{$r[catname]}</a></li>
+
+            {/loop}
+
+            {/pc}
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 头部导航结束 --> 
+
+  </div>
+
+</div>
+
+<!-- 头部结束 --> tive"{/if}  ><a href="{$r[url]}">{$r[catname]}</a></li>
+
+            {/loop}
+
+            {/pc}
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 头部导航结束 --> 
+
+  </div>
+
+</div>
+
+<!-- 头部结束 --> �束 --> 

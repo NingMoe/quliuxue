@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$show1[enname]}（{$show1[cnname]}）-专业详细</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/search.css" type="text/css"><script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">   
+</head>
+<body>
+    <div id="wrapper">
+    <!-- 头部 -->
+  {template "content","top"} 
+	<!-- 头部结束 -->
+<!--选校报告上部-->
+<div class="reporttitle">
+<h2>专业详细</h2>
+</div>
+<!--主要内容--->
+<div class="content w-1000">
+<!--第一部分-->
+<div class="z-1">
+<div class="zybox">
+<div class="imgbox"><img src="{$show1[logo]}" /><p>本月已有<span>1{$show1['dianji']}</span>人评估</p></div>
+<div class="nrbox">
+<h2><a href="/index.php?m=school&c=show&id={$show1[id]}">{$show1[enname]}（{$show1[cnname]}）</a></h2>
+<p>位于{$show1[location]}</p><p>专业名称：<span>{$show2[direction_cnname]}({$show2[direction_enname]})</span></a></p>
+<p>项目网址：<a href="{$show2[direction_weburl]}" target="_BLANK"><span>{$show2[direction_weburl]}</span></a></p>
+<ul>
+
+
+
+<!--<li>学校排名：<span>{$show1[rank]}</span></li>-->
+
+<li>专业排名：<span>{$show2[direction_rank]}</span>　托福成绩：<a><span>{$show1[toefl_scores]}</span></a>　雅思成绩：<a><span>{$show1[ielts_score]}</span></a></li>
+
+</ul>
+<div class="clear"></div>
+</div>
+<div class="plbox">
+<ul>
+<li>
+{$show2[baomingtime]}
+</li>
+</ul>
+<a href="/index.php?m=content&c=index&a=lists&catid=40"><i class="icon-ok"></i>录取几率免费评估</a>
+<div class="clear"></div>
+<p style="float:right;">本月已有<span>1{$show1['dianji']}</span>人评估</p>
+</div>
+<div class="clear"></div>
+</div>
+<!--框架集-->
+<div class="z-2">
+<h2 class="h-2">专业详情<span style="float:right;font-size:12px;">如果加载不成功，请点击项目网址查看</span></h2>
+<div class="xqing">
+ <iframe id="college_homepage" src="{$show2[direction_weburl]}" scrolling="auto" height="600px" width="100%" frameborder="0" style="border:none"></iframe>
+ </div>
+</div>
+</div>
+<!--第二部分七嘴八舌-->
+<div class="z-3">
+<h2 class="h-2">七嘴八舌</h2>
+<div class="imgbox"><a href="{$CATEGORYS[38]['url']}"><img src="/style/picture/zy-2.png" /></a></div>
+<div class="nrbox">
+<ul>
+ 
+  {pc:get sql="SELECT * FROM qu_qiba a, qu_qiba_data b where a.id=b.id and zid = $zid order by inputtime desc"   num="16" }
+         {loop $data $key $val}
+         <li><a href="{$val['url']}">{str_cut($val['title'],50)}</a><span >{date('Y-m-d',$val[inputtime])}</span> </li>
+        
+         {if $n==8}</ul>
+<ul>{/if}
+         {/loop}
+        {/pc} 
+
+
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"} 
+<!--遮罩层-->
+{template "content","login"} 
+
+</body>
+</html>

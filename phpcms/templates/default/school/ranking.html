@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/replay.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部 --> 
+{template "content","top"} 
+<!-- 头部结束 --> 
+
+<!--主要内容--->
+<div class="content w-1000"> 
+  <!--轮播--> 
+  
+  {template "content","lunbo16"} 
+  <!--滚动--> 
+  
+  {template "content","gundong"} 
+  <!--当前位置-->
+  <div class="weizi">
+    <p>当前位置：<a href="/">Qu去留学首页</a> > <a href="/index.php?m=school&c=index&a=ranking&country=0">大学排名</a><a name="ranking" id="rangking"></a></p>
+  </div>
+  <!--左侧-->
+  <div class="p-left">
+    <div class="p-leftnr">
+      <h1>{if $_GET['country']==0}世界{elseif $_GET['country']==1}美国{elseif $_GET['country']==2}英国{elseif $_GET['country']==3}加拿大{elseif $_GET['country']==4}澳大利亚{elseif $_GET['country']==5}新加坡{elseif $_GET['country']==6}香港{/if}大学排名</h1>
+      
+      <?php
+        pc_base::load_sys_class('form', '', 0);
+		$list=pc_base::load_model('school_data_model');
+        $country=$_GET["country"];
+        $where="";
+        if($country>0&&$country!=''){
+        	$where="where country ='$country'";	
+		}
+      ?>
+      
+      {pc:get sql="SELECT * FROM qu_school_data  $where ORDER BY rank desc" num="5" page="$page"   return="data"}
+      
+       {loop $data $key $val}
+      <div class="p-box">
+        <div class="imgbox"><a href="/index.php?m=school&c=show&id={$val['id']}"><img src="{$val['logo']}" /></a></div>
+        <div class="nrbox">
+          <h2><a href="/index.php?m=school&c=show&id={$val['id']}">{$val['cnname']}({$val['enname']})</a></h2>
+          <p>{str_cut($val[school_profile],360)}</p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+      {/loop}
+      
+      
+      
+    </div>
+    <!--分页-->
+    <div class="pages">{$pages}  </div>
+  </div>{/pc}
+  <!--右侧-->
+  
+  <div class="p-right">
+    <div class="an-7">
+      <ul>
+        <li><span style="line-height: 35px;
+color: #003a6c;
+border-bottom: 1px solid #ccc;
+padding-bottom:4px;
+font-size: 16px;"> 世界大学排名　　　　　　</span></li>
+        <li {if $_GET['country']==1} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=1#rangking"><i class="icon-caret-right"></i>美国大学排名</a></li>
+        <li {if $_GET['country']==2} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=2#rangking"><i class="icon-caret-right"></i>英国大学排名</a></li>
+        <li {if $_GET['country']==3} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=3#rangking"><i class="icon-caret-right"></i>加拿大大学排名</a></li>
+        <li {if $_GET['country']==4} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=4#rangking"><i class="icon-caret-right"></i>澳洲大学排名</a></li>
+        <li {if $_GET['country']==5} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=5#rangking"><i class="icon-caret-right"></i>新加坡大学排名</a></li>
+        <li {if $_GET['country']==6} class="active"{/if}><a href="/index.php?m=school&c=index&a=ranking&country=6#rangking"><i class="icon-caret-right"></i>香港大学排名</a></li>
+      </ul>
+    </div>
+    <div class="imgbox"><img src="/style/picture/600.jpg" /></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+
+<!--遮罩层-->
+{template "content","login"} 
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--消息滚动--> 
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,delayTime:700});
+</script>
+</body>
+</html>

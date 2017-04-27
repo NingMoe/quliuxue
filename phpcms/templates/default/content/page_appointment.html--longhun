@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/form.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 -->
+ {template "content","top"}
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>免费预约中介顾问</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    <!--当前位置-->
+    <div class="weizi">
+      {template "content","position"}
+    </div>
+    <!--我要吐嘈黑中介-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="b-left">
+        <div class="m-form">
+         <h1>免费预约中介顾问</h1>
+<p>您正在通过"Qu去留学“网预约<span>XXXXXXX　</span>中介顾问</p>
+<form action="/index.php?m=school&c=school&a=online_guwen&t=1" method="post">
+<ul>
+<!-- <li><span>选择中介：</span>
+ {pc:content  action="lists" catid="13" order="id DESC" num="20"} 
+                  <select name="zhongjie">
+                  {loop $data $key $val}
+                     <option value="{$val['title']}">{$val['title']}</option>
+                   {/loop}
+      
+              </select>
+             {/pc}
+-->
+<div class="clear"></div></li>
+<li><span>申请类型：</span>
+<select  name="leixing">
+  <option value="1">英国硕士</option>
+  <option value="2">澳洲硕士</option>
+  <option value="3">美国商科硕士</option>
+  <option value="4">美国工科硕士</option>
+  <option value="5">美国本科</option>
+</select><div class="clear"></div></li>
+
+<li><span>咨询内容：</span><textarea name="zixun" id="textarea" cols="45" rows="5" ></textarea><div class="clear"></div></li>
+<li><span>姓名：</span><input type="text" name="name" value="{get_nickname()}" /><div class="clear"></div></li>
+<li><span>邮箱：</span><input type="text" name="email"  /><div class="clear"></div></li>
+<li><span>电话：</span><input type="text" name="phone" /><div class="clear"></div></li>
+<li><span>验证码：</span><input type="text" name=""  class="input1"/><a href="#" class="anniu">验证码</a><div class="clear"></div></li>
+<li class="l1">
+<input type="submit" value="立即预约" id="dosubmit" name="dosubmit" class="button">
+<div class="clear"></div></li>
+</ul>
+</form> 
+        
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--右侧-->
+      <div class="s-right">
+        <ul>
+          <li><a href="#">"Qu去留学"</a></li>
+          <li><a href="#">QQ群/微信</a></li>
+          <li><a href="#">申请留学</a></li>
+          <li><a href="#">快速联系我们</a></li>
+          <li><a href="#">去留学</a></li>
+          <li><a href="#">关注微博微信</a></li>
+          <li><img src="/style/picture/ewm.png" /></li>
+        </ul>
+        <div class="imgbox"><img src="/style/picture/x-1.jpg" /></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--轮播图--> 
+<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+</body>
+</html>

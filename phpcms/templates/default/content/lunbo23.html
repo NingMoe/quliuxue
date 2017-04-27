@@ -1,0 +1,16 @@
+
+    
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+          <ul>
+           {pc:get sql="SELECT * FROM qu_freebanner where catid= '23' ORDER BY id DESC"  cache="3600"  num="6" return="data"}
+          {loop $data $key $val}
+          <li><a><img src="{$val['thumb']}"  /></a></li>
+          {/loop}
+          {/pc}
+          </ul>
+        </div>
+ <!-- 下面是前/后按钮代码，如果不需要删除即可 --> 
+        <a class="prev" href="javascript:void(0)"></a> 
+		<a class="next" href="javascript:void(0)"></a> 
+		</div>        

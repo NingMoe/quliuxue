@@ -1,0 +1,152 @@
+<?php
+defined('IN_PHPCMS') or exit('No permission resources.');
+
+
+class selectSchoolApi{
+
+	public function selectSchool() {
+
+
+pc_base::load_sys_class('form', '', 0);
+		
+
+        $list1=pc_base::load_model('professional_data_model');
+
+		$school_db = pc_base::load_model('school_data_model');
+		$country_ids= implode(',',$_POST[country_ids]);//提交过来的国家id由数组转换为字符串
+		$degree_ids= implode(',',$_POST[degree_ids]);//提交过来的学历id由数组转换为字符串
+		$where ="";
+        if($country_ids=='0') $country_ids='';
+        if($degree_ids=='0') $degree_ids='';
+
+        //国家的拼接条件
+	    if ($country_ids) {
+            $where .= $where ?  " AND country in($country_ids)" : " country in($country_ids)";
+	    }
+	    //排名的拼接条件
+	    if ($_POST[rank_left]) {
+            $where .= $where ?  " AND (rank>='$_POST[rank_left]' and rank<='$_POST[rank_right]')" : " (rank>='$_POST[rank_left]' and rank<='$_POST[rank_right]')";
+	    }
+	    //学历的拼接条件
+	    if ($degree_ids) {
+	    foreach ($_POST[degree_ids] as $k=> $v) {	    	
+	    	if($k==0){
+	    		 $where_degree="degree LIKE '%$v%'";
+	    	}else{
+	    		$where_degree .=" or degree LIKE '%$v%'";
+	    	}	    		
+	    }
+            $where .= $where ?  " AND ($where_degree)" : "  ($where_degree)";
+	    }
+//从地址栏中获取专业
+	    if ($_POST[type]==1) {
+            $where .= $where ?  " AND cnname LIKE '%$_POST[keyword]%'" : " cnname LIKE '%$_POST[keyword]%'";
+	    }
+		
+	    if ($_POST[type]==2) {
+	    	$where0=" content like '%$_POST[keyword]%'";
+            //$r=$list1->get_one($where0); 
+            $r= $list1 ->listinfo($where0,$order);		    
+		   
+            foreach ( $r as $k => $v) {
+              	$r_id[]=$v[id];
+            }  
+			
+			
+		}
+
+         //专业和方向的拼接条件
+	    //$new_professional是所有专业和方向的一维数组
+	    if($_POST[professional_fangxiang_ids]!=''){
+	    	 $idss=$_POST[professional_fangxiang_ids];
+			
+	    }else{
+	        $idss=$r_id;
+	    }
+		 
+		//print_r($_POST[professional_fangxiang_ids]);
+        $new_professional='';
+	    foreach ($idss as $key => $value) {
+	    	if(strstr($value,",")){
+              $new_arr_professional_fangxiang_ids=explode(',',$value);
+              foreach ( $new_arr_professional_fangxiang_ids as $k => $v) {
+              	$new_professional[]=$v;
+              }
+	    	}else{
+               $new_professional[]=$value;
+	    	}
+
+	    }
+
+
+	    if ($new_professional) {
+	    		foreach ($new_professional as $k=> $v) {	    	
+	    			if($k==0){
+	    				$where_professional="professional LIKE '%$v%'";
+	    			}
+	    			else{
+	    				$where_professional .=" or professional LIKE '%$v%'";
+	    			}
+	    	     }
+			//print_r($where_professional);  
+            $where .= $where ?  " AND ($where_professional)" : "  ($where_professional)";
+	    }
+       //print_R($where);exit;
+
+
+         	if($_POST[paixu_rank]==1 and ($_POST[paixu_recommend]==0 or  $_POST[paixu_recommend]=='')){
+
+         	$order="rank asc";
+            }elseif($_POST[paixu_recommend]==1 and ($_POST[paixu_rank]==0 or  $_POST[paixu_rank]=='')){
+             $order="recommend desc";
+            }elseif($_POST[paixu_recommend]==1 and $_POST[paixu_rank]==1){
+             $order="rank,recommend asc";
+            }else{
+             $order="rank asc";
+            }
+
+        
+
+        //搜索满足筛选条件的记录
+	    if($where=='' && $_POST[type]!=2){
+	    	//$school_db->query("SELECT * FROM `qu_school_data`");
+	    	$school_list= $school_db ->listinfo('',$order,$_GET['page'],$pages = '6');	
+	    	$pages = $school_db ->pages;
+           
+            $rs = $school_db->query("select id from qu_school_data  order by rank asc"); 
+		    $data = $school_db->fetch_array($rs);
+		    $num=count($data);
+		  
+	    }
+		elseif($where=='' && $_POST[type]==2){
+	    	//$school_db->query("SELECT * FROM `qu_school_data`");
+	    
+		    $num=0;
+		  
+	    }
+		else{
+	    	//$school_db->query("SELECT * FROM `qu_school_data` where ".$where.$order);
+	        $school_list= $school_db ->listinfo($where,$order,$_GET['page'],$pages = '6');		    
+			
+			$pages = $school_db ->pages;
+
+			$rs = $school_db->query("select id from qu_school_data where ".$where."  order by rank asc"); 
+		    $data = $school_db->fetch_array($rs);
+		    $num=count($data);
+			/*if($num<1){
+				$school_list= $school_db ->listinfo('',$order,$_GET['page'],$pages = '6');	
+	    	    $pages = $school_db ->pages;
+			    $rs = $school_db->query("select id from qu_school_data  order by rank asc"); 
+		        $data = $school_db->fetch_array($rs);
+		        $num=count($data);
+			}*/
+	    }
+
+	    	
+
+		
+		//$school_list = $school_db->fetch_array();
+        include template('content','list_school_search_content');
+	}
+}
+?>

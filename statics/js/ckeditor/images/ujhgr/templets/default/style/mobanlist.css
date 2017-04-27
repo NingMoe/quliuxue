@@ -1,0 +1,133 @@
+/*****************************************************
+ * Website：http://www.mobantianxia.cn QQ：48894503  *
+ *    This Style Design Based On DedeCMS v5.7 GBK    *
+ * Name: mobanlist.Css  Finish Time:  2011.05.08     *
+ *   尊重知识产权，使用、转载请务必保留以上信息      *
+ *****************************************************/
+ 
+#new_yuanmas_nr{ float:right; width:654px;}
+#new_yuanmas_nr li{width:148px;float:left;position:relative;padding:15px 5px 0 10px; height:270px; overflow:hidden}
+#new_yuanmas_nr  li div.oo a{ border:1px solid #b5b5b5; margin:1px 0 0 1px;width:144px;*width:144px;_width:140px; text-align:center; display:block; height:124px;*height:124px;_height:120px;}
+#new_yuanmas_nr  li div.oo a:hover{border:1px solid #09C; margin:1px 0 0 1px;width:144px;*width:144px;_width:140px;text-align:center;m:expression(this.onmouseout =  new Function("this.className = 'link';"));height:124px;*height:124px;_height:120px;}
+#new_yuanmas_nr  li div.oo a img{ padding:2px;}
+#new_yuanmas_nr li .oo span{position:absolute;left:11px;top:118px;*top:118px;_top:118px;color:#fff;display:block; width:138px; background: url(../img/bg.png); height:21px; line-height:21px; margin:0px 0 0 3px; font-size:12px; padding:0 0 0 2px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+#new_yuanmas_nr li .oo span b{ float:right; background:url(../img/zhongwen.png) no-repeat; width:40px; height:15px; padding:2px 0 0 0;*padding:4px 0 0 0;_padding:4px 0 0 0; line-height:11px; text-align:center; margin:3px 2px 0 0; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+.ccc{font-size:12px; color:#898989;}
+#new_yuanmas_nr li .oo span strong{ font-family:Arial; font-size:18px; font-weight:normal;}
+#new_yuanmas_nr li .oo span strong em{ font-style:normal; font-size:12px; padding-left:5px;}
+#new_yuanmas_nr li .oo p{}
+#new_yuanmas_nr li .oo p.new{ position:absolute;left:9px; background:url(../img/zuixin.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.dedecms{ position:absolute;left:9px; background:url(../img/dedecms.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.discuz{ position:absolute;left:9px; background:url(../img/discuz.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.phpcms{ position:absolute;left:9px; background:url(../img/phpcms.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.php168{ position:absolute;left:9px; background:url(../img/php168.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.qita{ position:absolute;left:9px; background:url(../img/qita.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.tuijian{ position:absolute;left:9px; background:url(../img/tuijianmb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.geili{ position:absolute;left:9px; background:url(../img/geili.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.yuanchuang{ position:absolute;left:9px; background:url(../img/yuanchuangmb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.yiceshi{ position:absolute;left:9px; background:url(../img/yiceshimb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.mianfei{ position:absolute;left:9px; background:url(../img/mianfeimb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.shoufei{ position:absolute;left:9px; background:url(../img/shoufeimb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr li .oo p.jingpin{ position:absolute;left:9px; background:url(../img/jingpinmb.png)  no-repeat; width:72px; height:25px;top:19px;*top:18px;_top:18px; azimuth: expression(
+this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "/templets/mobantx/img/bg.png"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true);}
+
+#new_yuanmas_nr .ccc p{ width:148px; overflow:hidden; font-size:12px; color:#5d5d5d;}
+#new_yuanmas_nr .ccc .titles{  line-height:29px;}
+#new_yuanmas_nr .ccc p strong{ display:block; padding-top:5px; overflow:hidden}
+#new_yuanmas_nr .ccc p strong a{font-size:12px; font-weight:normal; color:#006ca4; text-decoration:none; line-height:18px; display:block; text-align:center; border:none; overflow:hidden}
+#new_yuanmas_nr .ccc p strong a:hover{ text-decoration:underline; border:none; }
+#new_yuanmas_nr .ccc span em{background:url(../img/douhao02.gif) no-repeat; margin:0 0 0 5px;}
+#new_yuanmas_nr .ccc span{ line-height:18px; display:block; padding:3px; width:150px; overflow:hidden; margin:0 0 3px 0;background:url(../img/douhao01.gif) no-repeat 3px 2px; text-indent:15px; height:36px;  color:#999}
+#new_yuanmas_nr .ccc span img{ padding:2px 0;}
+
+.bengin_yuanmas:hover,.bengin_yuanma:hover,.bengin_yuanma1:hover{text-decoration:none}
+.bengin_yuanma{background:url(../img/buttons.gif) no-repeat scroll -88px -130px transparent;color:#FFF;display:inline-block;height:23px;line-height:23px;text-align:center;width:71px;float:left;margin:8px 0 0px;}
+.bengin_yuanma1{background:url(../img/buttons.gif) no-repeat scroll -88px -106px transparent;color:#FFF;display:inline-block;height:23px;line-height:23px;text-align:center;width:71px;float:left;margin:8px 0 0px;}
+.bengin_yuanma1:hover{background:url(../img/buttons.gif) no-repeat scroll -166px -106px transparent}
+.bengin_yuanmas{background:url(../img/buttons.gif) no-repeat scroll -88px -130px transparent;color:#FFF;display:inline-block;height:23px;line-height:23px;text-align:center;width:71px;margin-right:5px}

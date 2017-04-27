@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>通过制定并得以完全执行的内部控制制度|我的网站</title>
+<meta name="description" content="企业只有在市场竞争中取得优势地位在企业中 财务人员的业务素质对企业的正常业务运作起决定性作用正确的会计记录及其他的财务信息 可以为企业提供正确的管理或生产经营决策 " />
+<meta name="keywords" content="通过,制定,得以,完全,行的,内部控制,制度,企业,只有,市" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echoesreviews/" title="网通传奇私服星王版">网通传奇私服星王版</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxy5656/" title="新开传奇私服新版地图">新开传奇私服新版地图</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaylikeaboss/" title="180网通战神传奇私服">180网通战神传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earncashpro/" title="网通1.76合击传奇私服">网通1.76合击传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/educatioku/" title="65535超变态传奇私服">65535超变态传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/" title="巫医">巫医</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/efulian/" title="传奇私服1.90变态版">传奇私服1.90变态版</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estayholiday/" title="30ok网通传奇私服">30ok网通传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duplicatuempresa/" title="最新开的传奇私服">最新开的传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebayjpy/" title="传奇私服网通轻变">传奇私服网通轻变</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/eajg/" title="7点新开传奇私服">7点新开传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwyanewadeheat/" title="新开微变盛大传奇私服">新开微变盛大传奇私服</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/eeofeds/" title="2012变态网页传奇私服">2012变态网页传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecoki/" title="新开传奇私服网通">新开传奇私服网通</a></li><li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthnocturnal/" title="1.95网通合击传奇私服">1.95网通合击传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eagalnews/" title="最新网通传奇私服">最新网通传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edjofsanity/" title="韩版梦幻变态传奇私服">韩版梦幻变态传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/ea00/" title="网通传奇私服英雄合击">网通传奇私服英雄合击</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dynastyatparade/" title="新开传奇私服1.96">新开传奇私服1.96</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eaf988/" title="网通传奇私服网站1.76">网通传奇私服网站1.76</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">网通传奇私服网站大全相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete12208.html" target="_blank" title="在社会科学领域">在社会科学领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete11512.html" target="_blank" title="本刊是建设部归口管理工程建设标准化工作的窗口">本刊是建设部归口管理工程建设标准化工作的窗</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete11431.html" target="_blank" title="通过制定并得以完全执行的内部控制制度">通过制定并得以完全执行的内部控制制度</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete10817.html" target="_blank" title="将提高经济效益作为经营理念">将提高经济效益作为经营理念</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete8638.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete7951.html" target="_blank" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete7237.html" target="_blank" title="请挂号邮寄：广西桂林雁山《广西植物》编辑部收">请挂号邮寄：广西桂林雁山《广西植物》编辑部</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete6418.html" target="_blank" title="纵观紫砂艺术的古秀新葩">纵观紫砂艺术的古秀新葩</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete6006.html" target="_blank" title="在现有的制度框架下">在现有的制度框架下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete4195.html" target="_blank" title="更值得关注的是">更值得关注的是</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/" title="魔神超级变态传奇私服">魔神超级变态传奇私服</a></h3>
+<ul>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/201510429.html" title="断开钢筋的位置">断开钢筋的位置</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/20152664.html" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/20151630.html" title="中医诊断不仅要具备整体观念和辨证论治的特点">中医诊断不仅要具备整体观念和辨证论治的特</a></li>
+<li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egiftdeliver/2015794.html" title="例如一种配电器">例如一种配电器</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/" title="热血传奇私服网通专区">热血传奇私服网通专区</a></h3>
+<ul>
+<li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/qq12275.html" title="随着内镜诊疗技术的不断发展">随着内镜诊疗技术的不断发展</a></li>
+<li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/qq9877.html" title="建设单位要严格控制设计变更">建设单位要严格控制设计变更</a></li>
+<li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/qq7258.html" title="通过将金黄色葡萄球菌肠毒素基因进行定点突变">通过将金黄色葡萄球菌肠毒素基因进行定点突</a></li>
+<li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/qq7087.html" title="英格兰早期由于信仰天主教而禁止离婚">英格兰早期由于信仰天主教而禁止离婚</a></li>
+<li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaya3/qq5291.html" title="白白净净当然看起来干净利索">白白净净当然看起来干净利索</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 网通传奇私服网站大全- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>通过制定并得以完全执行的内部控制制度</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 11:59</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=11431&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=11431">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:企业只有在市场竞争中取得优势地位在企业中       财务人员的业务素质对企业的正常业务运作起决定性作用正确的会计记录及其他的财务信息       可以为企业提供正确的管理或生产经营决策       </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            企业只有在市场竞争中取得优势地位<p>在企业中<BR>&nbsp; &nbsp; &nbsp; &nbsp;财务人员的业务素质对企业的正常业务运作起决定性作用正确的会计记录及其他的财务信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以为企业提供正确的管理或生产经营决策<BR>&nbsp; &nbsp; &nbsp; &nbsp;也可以为企业外部的有关单位、上级主管部门提供相关的决策依据而良好的内部控制制度可以在财务人员处理相关业务的时<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证相关会计信息及财务信息来源的真实、可靠例如：财务人员在处理报销业务时<BR>&nbsp; &nbsp; &nbsp; &nbsp;应该审核其有无相关文件支撑<BR>&nbsp; &nbsp; &nbsp; &nbsp;有无报销人员所在部门的领导审核签字认可<BR>&nbsp; &nbsp; &nbsp; &nbsp;是否经过主管领导的审核批准<BR>&nbsp; &nbsp; &nbsp; &nbsp;有无财务主管或财务部长的审核签字认可如果该报销单据有相关文件支撑<BR>&nbsp; &nbsp; &nbsp; &nbsp;并经过了各部门领导的审核签字认可<BR>&nbsp; &nbsp; &nbsp; &nbsp;就可以认为所报销的单据真实性较高<BR>&nbsp; &nbsp; &nbsp; &nbsp;正确性和可靠性值得信赖因此可以看出一个良好的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;是保证财务活动正确性、合法性的重要手段 </p><p>在企业的生产经营过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果内部控制制度不健全<BR>&nbsp; &nbsp; &nbsp; &nbsp;就难免会出现这样那样的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如：对国家各项方针政策及财经法规的执行和落实<BR>&nbsp; &nbsp; &nbsp; &nbsp;国有资产的安全完整<BR>&nbsp; &nbsp; &nbsp; &nbsp;财产物资的毁损、浪费<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及个别人利用手中职权弄虚作假套取非法利益中饱私囊等违法乱纪现象这样的行为会给企业资产、国有资产造成无法避免的损失 </p><p>综上所述<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个企业必须有良好的、健全的并得以完全执行的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能使企业健康发展良好的内部控制制度能够为企业带来最大化的经济效益<BR>&nbsp; &nbsp; &nbsp; &nbsp;避免在管理或生产经营过程中出现各种形式的违法违纪现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;堵塞在管理或生产经营过程中出现的漏洞<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证会计信息和其他财务信息的真实性、合法性<BR>&nbsp; &nbsp; &nbsp; &nbsp;保护企业财产的安全完整和有效使用 </p><p> 良好的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以对企业内部的各职能部门、相关人员开展的业务活动情况进行监督、检查<BR>&nbsp; &nbsp; &nbsp; &nbsp;内部控制还可以为企业的管理及生产经营情况提供安全可靠的屏障<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业的管理水平、生产效率得到提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证管理、生产经营活动合法有序地进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业能够健康、持久地发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业在市场竞争中拥有良好的声誉<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也保证企业管理、生产经营目标的实现 </p><p>内部控制制度可以评价本企业所有人员的道德价值观<BR>&nbsp; &nbsp; &nbsp; &nbsp;反映企业员工的诚实状况、业务知识的全面性、创新能力等方面的优劣<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业的人才选拔提供有价值信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业在管理、人才使用方面得到进一步优化 </p><p>在当今社会中<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业的经营手段多种多样<BR>&nbsp; &nbsp; &nbsp; &nbsp;业务处理越来越复杂内部控制是现代企业管理的重要手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要企业从事管理或从事生产经营活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;就需要有相应的内部控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;内部控制可以保护企业资产的完整<BR>&nbsp; &nbsp; &nbsp; &nbsp;防止和发现管理或生产经营过程中的错误及人为的弄虚作假可以帮助企业经营活动的规范化、合法化<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证财务信息的真实性、合法性<BR>&nbsp; &nbsp; &nbsp; &nbsp;还可以为企业提供及时可靠的财务信息 </p><p>二、良好的内部控制制度可以保护企业资产的安全完整不受损失<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且能得以有效、合理地发挥最大的作用 </p><p>良好的内部控制制度还可以在本企业的管理或生产经营之前就进行控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;例如：对外的销售计划、各项指标计划、产品质量控制目标等进行预防性、指令性的控制也可以在管理或生产经营过程中对产品生产程序控制、工程施工的质量控制、会计业务处理的真实性、合法性控制、对入库的库存商品的完整性控制、对购入材料物资的验收、结存控制、对固定资产累计折旧、无形资产的累计摊销的检查控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;还可以在管理或生产经营业务发生后实施控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;如：产品入库完工合格率检查、工程项目的决算等方面进行控制通过对管理或生产经营中的事前控制、事后控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以对企业的发展规划、提高企业的生产效率、产品效益等方面带来良好收益为企业在市场竞争中取得优势地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能更好地为企业的健康良性发展奠定坚实基础 </p><p>在当今社会中<BR>&nbsp; &nbsp; &nbsp; &nbsp;每一个优秀的企业都有一套良好的、健全的并能得以有效运行的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为企业管理的好坏是企业生存发展的前提如果一个企业没有一套良好的管理制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;也就谈不上健康的生产经营了而健全的内部控制制度是企业良性管理的前提<BR>&nbsp; &nbsp; &nbsp; &nbsp;是现代企业管理的重要手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使企业的各职能部门及相关人员的行为更符合本企业的管理方针<BR>&nbsp; &nbsp; &nbsp; &nbsp;更符合企业发展的理念可以使企业既定的方针政策得到完全的落实和执行 </p><p>良好的内部控制可以对企业的组织机构进行合理优化<BR>&nbsp; &nbsp; &nbsp; &nbsp;使之成为精干的、高效率的组织<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以把企业各职能部门及各业务人员进行合理的权利、责任划分<BR>&nbsp; &nbsp; &nbsp; &nbsp;使各职能部门、各业务人员都各司其职、各负其责<BR>&nbsp; &nbsp; &nbsp; &nbsp;达到各职能部门既能相互协调又能相互制约<BR>&nbsp; &nbsp; &nbsp; &nbsp;既能相互促进又能相互监督<BR>&nbsp; &nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/11593551B-0.jpg" width="600px" height="400px" />sp; &nbsp;既能相互学习又能相互勉励<BR>&nbsp; &nbsp; &nbsp; &nbsp;既能相互帮助又能相互竞争<BR>&nbsp; &nbsp; &nbsp; &nbsp;既能相互检查又能相互借鉴的良好局面从而达到共同进步、共商大计<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业进入良性的发展轨道 </p><p>【xzbu】郑重<p>一、建立健全良好的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;能对遵守国家的各项方针政策及相关的财经法规起到促进作用 </p><p>要：内部控制是现代企业管理的重要手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以帮助企业经营活动的规范化、合法化保证财务信息的真实性、合法性<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以为企业提供及时可靠的财务信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使企业在社会竞争中取得良好的声誉<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使企业在社会竞争中取得优势地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业品牌的树立做好基垫<BR>&nbsp; &nbsp; &nbsp; &nbsp;为实现国家对企业的宏观调控作出贡献 </p><p>在我国不管是哪种所有制形式的企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;首先都要遵守我国制定的各项方针政策及相关的财经法规这是每个企业从事管理或从事生产经营的前提条件如果一个企业连最起码的条件都无法做到的话<BR>&nbsp; &nbsp; &nbsp; &nbsp;也就无法做到长久的持续经营而一个良好的内部控制制度可以为这个前提条件提供首个保护屏障<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是该前提实现的重要手段通过良好的内部控制制度可以及时发现并纠正企业中存在的一些违法违纪现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;也可以及时地将问题向企业领导层或上级主管部门进行反映让违法违纪现象得以纠正<BR>&nbsp; &nbsp; &nbsp; &nbsp;让违法违纪人员得到惩罚<BR>&nbsp; &nbsp; &nbsp; &nbsp;让每个职员工能够踏实地工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;让企业得以良好的持续经营<BR>&nbsp; &nbsp; &nbsp; &nbsp;避免企业资产受到损失特别是国有企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以避免国有资产流失<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证国有资产的保值增值建立健全内部控制制度可以为企业营造一个良好的生存发展空间<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业的规模化发展提供良好的平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以为企业的持续经营提供无穷的动力<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业在社会竞争中取得良好的声誉<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业品牌的树立做好基垫<BR>&nbsp; &nbsp; &nbsp; &nbsp;为实现国家对企业的宏观调控作出贡献 </p><p>有的企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是国有企业当中经常会出现资产的非正常毁损、浪费、变卖等现象这其实是少数人为了自己的一己私利中饱私囊作出的可耻行径建立健全内部控制制度可以对企业的各个环节形成内部牵制关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;对各个不相兼容的职务进行相互分离<BR>&nbsp; &nbsp; &nbsp; &nbsp;对各项资产的采购、登记、清查、报废处理形成有效的监督和制约<BR>&nbsp; &nbsp; &nbsp; &nbsp;对各项资产的收、用进行严密控制可以堵塞每个环节容易出现的漏洞<BR>&nbsp; &nbsp; &nbsp; &nbsp;杜绝不相关人员的交叉工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;分散员工的权限<BR>&nbsp; &nbsp; &nbsp; &nbsp;避免某些人利用手中的特权违法违纪内部控制的建立和有效使用<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以在很大程度上有效地防止和减少企业财产物资的毁损、盗窃等现象的发生<BR>&nbsp; &nbsp; &nbsp; &nbsp;有利于维护企业的财产不受损失<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业的利益得到保护；有利于企业资产的保值增值；有利于企业健康、持久的发展；有利于提高企业资产的使用效率；有利于企业对其经营运作作出正确判断可以使企业得到正常的生产经营<BR>&nbsp; &nbsp; &nbsp; &nbsp;使企业的管理、生产经营目标得以实现 </p><p>我国独立审计准则对内部控制的定义为：内部控制是指企业为了保证业务活动的有效进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;保护资产的安全完整<BR>&nbsp; &nbsp; &nbsp; &nbsp;防止、纠正错误与舞弊<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证会计资料的真实、合法完整<BR>&nbsp; &nbsp; &nbsp; &nbsp;而制定和实施的政策和程序笔者认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以从以下几个方面来理解内部控制对企业的重要性 </p><p>企业建立一个良好的并能够得以正常运作的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;能使于企业的会计资料真实反映出企业管理或生产经营的真实运作情况通过制定并得以完全执行的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以对有关的会计业务及其他财务信息进行合理的、科学的职责划分<BR>&nbsp; &nbsp; &nbsp; &nbsp;让不兼容岗位（如：现金业务和银行业务的分人员管理）得到明确的划分可以使不同岗位的人员相对地遵纪守法<BR>&nbsp; &nbsp; &nbsp; &nbsp;用以避免岗位漏洞<BR>&nbsp; &nbsp; &nbsp; &nbsp;堵塞其可能发生的舞弊现象企业用良好的并能够得以正常运作的内部控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立起既能相互协调又能相互制约机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使企业的财务活动有效地、合法地运营<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以及时发现并及时纠正相关的错误和漏洞防止有关人员营私舞弊、弄虚作假等行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而提高本企业财务信息的真实性、可靠性、合法性<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业的管理、对外投融资提供真实可靠的依据 </p>  (责任编辑：admin)
+<img border="0" alt="通过制定并得以完全执行的内部控制制度" src="/images/lenfeng_11431.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',11431)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',11431)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(11431);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete10817.html'>将提高经济效益作为经营理念</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekwik/contete11512.html'>本刊是建设部归口管理工程建设标准化工作的窗口</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=11431" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=11431&title=通过制定并得以完全执行的内部控制制度" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=11431" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=11431" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="11431" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=11431&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '11431');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>我喜欢朴实简单的|我的网站</title>
+<meta name="description" content=" 其实他也很花心思李欣：it公司一般高几届的男生都会盯着新进来的女生 这个行业的女生还比较容易嫁出去 杜蓓蓓：我们宿舍有个女生特别理工科 但情商不太高老公更是全年级" />
+<meta name="keywords" content="我喜欢,朴实,简单,其实,他也,心思,李欣,公司,一般,高几" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.luckytrade.net/count/2/hywd/xze/edjofsanity/" title="韩版梦幻变态传奇私服">韩版梦幻变态传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dumprunnerwaste/" title="新开1 76特色传奇私服">新开1 76特色传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxhjd/" title="新开狂神刀客传奇私服">新开狂神刀客传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/eazistop/" title="网通合击1.80传奇私服">网通合击1.80传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecdlimited/" title="网通传奇私服1.95合计">网通传奇私服1.95合计</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/egfrtest/" title="传奇私服变态">传奇私服变态</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebzvdhfgyuiwe/" title="网通灭世传奇私服">网通灭世传奇私服</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eglobalmac/" title="超变态传奇私服65535">超变态传奇私服65535</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dutytheirs/" title="新疆新开传奇私服">新疆新开传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/" title="猎魔人">猎魔人</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatfruit/" title="大极品网通传奇私服">大极品网通传奇私服</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dynamitedesignstudio/" title="新开八彩传奇私服">新开八彩传奇私服</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/" title="地精">地精</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/easterdresssale/" title="辽宁传奇私服网通轻变">辽宁传奇私服网通轻变</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebonyamatuerxxx/" title="网通雷霆3合1传奇私服">网通雷霆3合1传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebikeshowcase/" title="网通新开传奇私服">网通新开传奇私服</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/duyanhstudio/" title="新开吸血传奇私服">新开吸血传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatdrinkreflect/" title="网通单线传奇私服网站">网通单线传奇私服网站</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/easternvacuumpumps/" title="新开网通传奇私服30ok">新开网通传奇私服30ok</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dylansway/" title="新开斗破传奇私服">新开斗破传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服神龙版本相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete11375.html" target="_blank" title="参考文献的编号按照正文中出现的先后顺序连续排列">参考文献的编号按照正文中出现的先后顺序连续</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete10560.html" target="_blank" title="周中建 重庆市梁平县梁山街道名豪商贸区六幢甘肃省靖远一中历史">周中建 重庆市梁平县梁山街道名豪商贸区六幢</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete10308.html" target="_blank" title="聚合物处理效果虽良好">聚合物处理效果虽良好</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete9153.html" target="_blank" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注方</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete6992.html" target="_blank" title="我喜欢朴实简单的">我喜欢朴实简单的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete6554.html" target="_blank" title="作坊主见他收益好">作坊主见他收益好</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete6181.html" target="_blank" title="这时人的社会关系才算得到了较为充分的发展">这时人的社会关系才算得到了较为充分的发展</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete6129.html" target="_blank" title="它是一切教学智慧与机智的艺术结晶">它是一切教学智慧与机智的艺术结晶</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete1520.html" target="_blank" title="玉米抽雄后吸收氮%左右">玉米抽雄后吸收氮%左右</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete1504.html" target="_blank" title="农村基层政府应该通过开展各种活动">农村基层政府应该通过开展各种活动</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/" title="网通迷失版本传奇私服">网通迷失版本传奇私服</a></h3>
+<ul>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/qq9852.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/qq9650.html" title="大家都开始做人了!可是">大家都开始做人了!可是</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/qq9362.html" title="也可将香椿放在竹篮中">也可将香椿放在竹篮中</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/qq7031.html" title="但它们经过处理可以变为再生塑料">但它们经过处理可以变为再生塑料</a></li>
+<li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecfhomebiz/qq4905.html" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/" title="网通传奇私服3000">网通传奇私服3000</a></h3>
+<ul>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/contete11859.html" title="汉语的动词分类">汉语的动词分类</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/contete11763.html" title="在一个画面中只单独使用一种色彩">在一个画面中只单独使用一种色彩</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/contete11534.html" title="以促进学术交流">以促进学术交流</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/contete11477.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/estfta/contete10602.html" title="上市公司财务报表粉饰现象是一个世界性难题">上市公司财务报表粉饰现象是一个世界性难题</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服神龙版本- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>我喜欢朴实简单的</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 19:21</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6992&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6992">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       其实他也很花心思李欣：it公司一般高几届的男生都会盯着新进来的女生       这个行业的女生还比较容易嫁出去 杜蓓蓓：我们宿舍有个女生特别理工科       但情商不太高老公更是全年级</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;其实他也很花心思<p>李欣：it公司一般高几届的男生都会盯着新进来的女生<BR>&nbsp; &nbsp; &nbsp; &nbsp;这个行业的女生还比较容易嫁出去 </p><p>杜蓓蓓：我们宿舍有个女生特别理工科<BR>&nbsp; &nbsp; &nbsp; &nbsp;但情商不太高老公更是全年级都不会做的题等着他来做的那种两个人晚上没事干就是你给我出一道题<BR>&nbsp; &nbsp; &nbsp; &nbsp;我给你出一道题<BR>&nbsp; &nbsp; &nbsp; &nbsp;互相做题 </p><p>【xzbu】郑重<p>李欣：我现在做项目管理<BR>&nbsp; &nbsp; &nbsp; &nbsp;在生活中特别受不了没有计划性也许计划会变<BR>&nbsp; &nbsp; &nbsp; &nbsp;但要提前想得很清楚<BR>&nbsp; &nbsp; &nbsp; &nbsp;每个时间段都有安排你今天约了我<BR>&nbsp; &nbsp; &nbsp; &nbsp;我心里就会打小叉叉 </p><p>曾榛：大学选修文学欣赏<BR>&nbsp; &nbsp; &nbsp; &nbsp;我旁边一个同学是学建筑设计课程结束时写一个短文<BR>&nbsp; &nbsp; &nbsp; &nbsp;我是先写好提纲<BR>&nbsp; &nbsp; &nbsp; &nbsp;往里塞内容如果有个内容虽然特别好<BR>&nbsp; &nbsp; &nbsp; &nbsp;但跟提纲不一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;会果断舍弃而那个同学交的文章和她之前给我讲的根本不是一码事 </p><p>曾榛：很多人觉得男人更果断<BR>&nbsp; &nbsp; &nbsp; &nbsp;更容易牺牲ibm的大老板也是男性居多<BR>&nbsp; &nbsp; &nbsp; &nbsp;在竞争一个职位的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择男性很可能因为考虑长期发展女生结婚了还没生孩子<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以选了男性但观察身边的同事<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有看到女性因为不果断输给男性有时候女人比男人决策快得多 </p><p>杜蓓蓓：我的朋友都是工科圈子<BR>&nbsp; &nbsp; &nbsp; &nbsp;平时我喜欢看小说、听摇滚乐<BR>&nbsp; &nbsp; &nbsp; &nbsp;有的时候在微博上看别人的生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如半夜在酒吧喝多了<BR>&nbsp; &nbsp; &nbsp; &nbsp;觉得这种生活太好玩了 </p><p>李欣：之前网上有个段子：典型的it男<BR>&nbsp; &nbsp; &nbsp; &nbsp;穿牛仔裤、t恤衫<BR>&nbsp; &nbsp; &nbsp; &nbsp;t恤衫还必须扎在牛仔裤里<BR>&nbsp; &nbsp; &nbsp; &nbsp;腰带上别一圈手机钥匙<BR>&nbsp; &nbsp; &nbsp; &nbsp;背一个双肩包<BR>&nbsp; &nbsp; &nbsp; &nbsp;里面是电脑 </p><p>李欣：我们部门在我来之前全是男生<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们一直宣称自己是纯爷们团队<BR>&nbsp; &nbsp; &nbsp; &nbsp;我来了后才改的而且见客户的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;大家说没想到工程师还有美女<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是挺开心的我是一张娃娃脸<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多人都问我是不是刚毕业我觉得性别不会让人觉得不专业<BR>&nbsp; &nbsp; &nbsp; &nbsp;面相才会 </p><p>杜蓓蓓：文科女的性别意识更强工科女则逻辑思维能力比较强<BR>&nbsp; &nbsp; &nbsp; &nbsp;传导到生活中<BR>&nbsp; &nbsp; &nbsp; &nbsp;会修下水管、修灯泡<BR>&nbsp; &nbsp; &nbsp; &nbsp;宜家的家具自己动手就装上了<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们从上大学就跟男生一起磨小锤子焊电路板<BR>&nbsp; &nbsp; &nbsp; &nbsp;性别意识不是那么强 </p><p>曾榛：我以前在ibm实验室做开发<BR>&nbsp; &nbsp; &nbsp; &nbsp;在技术上会走得深<BR>&nbsp; &nbsp; &nbsp; &nbsp;但对技术使用的场景会越来越窄每个版本都做一样的事情<BR>&nbsp; &nbsp; &nbsp; &nbsp;但不知道产品在行业里怎么用<BR>&nbsp; &nbsp; &nbsp; &nbsp;客户对它有什么期待所以现在转做售前技术专家<BR>&nbsp; &nbsp; &nbsp; &nbsp;为客户做方案介绍、产品选型、架构设计 </p><p>杜蓓蓓：记得当时找工作的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;女生更喜欢找技术性强的<BR>&nbsp; &nbsp; &nbsp; &nbsp;觉得只有做研发才没自学这个专业其实做纯研发不是特别适合女生男生分心的事情少<BR>&nbsp; &nbsp; &nbsp; &nbsp;能钻进去；女生想得多<BR>&nbsp; &nbsp; &nbsp; &nbsp;谈恋爱啊、打扮啊<BR>&nbsp; &nbsp; &nbsp; &nbsp;不如男生想法单纯所以虽然我们都是做技术的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但都不是做纯研发我是做网络规划的<BR>&nbsp; &nbsp; &nbsp; &nbsp;刚工作时特别苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;通信网络的改动不能白天做<BR>&nbsp; &nbsp; &nbsp; &nbsp;只能晚上12点以后做<BR>&nbsp; &nbsp; &nbsp; &nbsp;天亮了才下班<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个通宵连着一个通宵地熬 </p><p>曾榛：基本不讨论<BR>&nbsp; &nbsp; &nbsp; &nbsp;一讨论就有争论<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如某些开源技术对企业的应用趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;大家的想法完全不一样结婚不到一年<BR>&nbsp; &nbsp; &nbsp; &nbsp;发现每次讨论都是争论<BR>&nbsp; &nbsp; &nbsp; &nbsp;就不讨论了没必要<BR>&nbsp; &nbsp; &nbsp; &nbsp;也没什么好处 </p><p>李欣：曾溱<BR>&nbsp; &nbsp; &nbsp; &nbsp;你和你老公一个单位<BR>&nbsp; &nbsp; &nbsp; &nbsp;之间的度很难把握<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果处理得好锦上添花你跟你老公探讨技术问题吗？ </p><p>曾榛：像雅虎的ceo梅耶尔<BR>&nbsp; &nbsp; &nbsp; &nbsp;她每<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1921024593-0.jpg" width="600px" height="400px" />天工作20小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;就去生孩子了年龄大的人比年龄小的人情商好 </p><p>李欣：我是做集团产品的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是向融合通信类业务的其他行业销售产品我做售中<BR>&nbsp; &nbsp; &nbsp; &nbsp;在实施过程中进行管理原先在公司技术部是负责宏观技术方向规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;也觉得好像没有做到具体的项目现在有些机构的变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;就深入到项目当中<BR>&nbsp; &nbsp; &nbsp; &nbsp;了解流程环节 </p><p>曾榛：他们体力好啊进入技术验证时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;男性的性别优势就出现了我是不会拿自己体力来拼了 </p><p>曾榛：it公司里男性多<BR>&nbsp; &nbsp; &nbsp; &nbsp;女性会在一开始被戴有色眼镜<BR>&nbsp; &nbsp; &nbsp; &nbsp;认为你专业的精专程度不如那些没有头发的男工程师但我没有跟别人比<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直跟自己比<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要一年比一年做得好就可以 </p><p>杜蓓蓓：所有it男的打扮都一样冬天里面穿衬衫、外面穿毛背心他们不太注重外表和形象<BR>&nbsp; &nbsp; &nbsp; &nbsp;思维严谨保守些<BR>&nbsp; &nbsp; &nbsp; &nbsp;遇到文艺青年看不惯他们有严谨的逻辑思维有个笑话：老婆说买一斤包子<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果看到卖西瓜的买一个结果it男买了一个包子回来我看得笑死了（能读懂此笑话需有一定的it基础） </p><p>李欣：其实每个学科都能让人有自豪感<BR>&nbsp; &nbsp; &nbsp; &nbsp;但点不一样我们觉得我们数学好<BR>&nbsp; &nbsp; &nbsp; &nbsp;更聪明文科女觉得自己知识丰富<BR>&nbsp; &nbsp; &nbsp; &nbsp;学法律觉得自己口才好 </p><p>曾榛：我对真正扎实一直做技术人员特别有好感<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为做技术的要求个性执着it行业在起步的时候个人定位很高<BR>&nbsp; &nbsp; &nbsp; &nbsp;但成长空间不如其他行业it男可靠、专注<BR>&nbsp; &nbsp; &nbsp; &nbsp;天天面对代码<BR>&nbsp; &nbsp; &nbsp; &nbsp;整个人的想法没那么复杂让我选老公<BR>&nbsp; &nbsp; &nbsp; &nbsp;我觉得it男比较起来不会骗人我很愿意给身边未婚的朋友介绍it男<BR>&nbsp; &nbsp; &nbsp; &nbsp;但很多女孩觉得他们太呆板了 </p><p>李欣：考大学那几年<BR>&nbsp; &nbsp; &nbsp; &nbsp;最热门的专业就是计算机和通信工程<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以学习好的一般首选这两个专业 </p><p>杜蓓蓓：我老公也是it男<BR>&nbsp; &nbsp; &nbsp; &nbsp;他表达浪漫的方式不是鲜花、好听的话<BR>&nbsp; &nbsp; &nbsp; &nbsp;但我能感觉到有一年我过生日<BR>&nbsp; &nbsp; &nbsp; &nbsp;他想送个礼物<BR>&nbsp; &nbsp; &nbsp; &nbsp;定做了一个很粗糙的耳钉<BR>&nbsp; &nbsp; &nbsp; &nbsp;但结果很差可你能感觉到他的心思<BR>&nbsp; &nbsp; &nbsp; &nbsp;不是浪漫有很多花招的人我喜欢朴实简单的 </p><p>杜蓓蓓：工科女都很要强<BR>&nbsp; &nbsp; &nbsp; &nbsp;自己觉得不差<BR>&nbsp; &nbsp; &nbsp; &nbsp;但领导会先入为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;觉得男生更吃苦耐劳女生分心的事情太多了<BR>&nbsp; &nbsp; &nbsp; &nbsp;男生会一心奔事业作为女生<BR>&nbsp; &nbsp; &nbsp; &nbsp;确实得有牺牲有取舍<BR>&nbsp; &nbsp; &nbsp; &nbsp;自己得能平衡工作和家庭工科女情商高会体现在这里<BR>&nbsp; &nbsp; &nbsp; &nbsp;你看女科学家一般比女艺术家的家庭要幸福 </p><p>曾榛：我每天跟数据打交道太多<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以绝对不用安卓系统的手机<BR>&nbsp; &nbsp; &nbsp; &nbsp;生怕自己会每天想怎么把系统刷得更好如果休息<BR>&nbsp; &nbsp; &nbsp; &nbsp;我就不再动电子产品<BR>&nbsp; &nbsp; &nbsp; &nbsp;宁愿出出汗 </p><p>李欣：我们公司的男性还是很会照顾女同事的<BR>&nbsp; &nbsp; &nbsp; &nbsp;加班很晚的时候男同事会主动把女生送到车上<BR>&nbsp; &nbsp; &nbsp; &nbsp;车开走了自己再走 </p><p>曾榛：我觉得面对客户的技术支持<BR>&nbsp; &nbsp; &nbsp; &nbsp;女性更合适客户对我提问题很柔性<BR>&nbsp; &nbsp; &nbsp; &nbsp;对男生就会严厉些<BR>&nbsp; &nbsp; &nbsp; &nbsp;但部门里90%的人都是男生 </p><p>李欣：不论男女<BR>&nbsp; &nbsp; &nbsp; &nbsp;刚工作的时候都会被人不信任或质疑我觉得更多的是把每件小事做好<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会得到信任 </p>  (责任编辑：admin)
+<img border="0" alt="我喜欢朴实简单的" src="/images/lenfeng_6992.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',6992)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',6992)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(6992);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete6554.html'>作坊主见他收益好</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/edimoprasies/contete9153.html'>作者简介包括出生年月日学位主要研究与关注方向</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=6992" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=6992&title=我喜欢朴实简单的" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=6992" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=6992" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="6992" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=6992&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '6992');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

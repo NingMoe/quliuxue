@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Qu留学注册</title>
+<link rel="stylesheet" href="/style/css/register.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 -->
+ {template "content","top"} 
+  <!-- 头部结束 --> 
+  <!--选校报告上部-->
+  <div class="reporttitle">
+    <h2>用户注册</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000">
+    <div id="content-area">
+      <form action=""  accept-charset="UTF-8" method="post" id="registration-step1-form" class="user-register">
+        <div class="form-item" id="edit-real-name-wrapper">
+          <label for="edit-real-name">我的名字：</label>
+          <div class="form-element">
+            <input type="text" maxlength="120" name="real_name" id="edit-real-name" size="60" value="" class="form-text required" />
+          </div>
+          <div  id="edit-real-name" class="description">请用拼音填写</div>
+          <div class="clear"></div>
+        </div>
+        <div class="form-item" id="edit-current-status-new-wrapper">
+          <label for="edit-current-status-new">我的学历</label>
+          <div class="form-element">
+            <input type="text" maxlength="120" name="current_status_new" id="edit-current-status-new" size="60" value="" class="form-text required" />
+            <span class="field-suffix">
+            <div id="current_status" style="display:none;">
+              <div class="triangle"></div>
+              <div class="current_status_inside">
+                <h3>请选择你当前学历</h3>
+                <ul class="nav">
+                  <li class="nav-one"><a href="#senior" class="current">高中/大学在读</a></li>
+                </ul>
+                <div class="list-wrap">
+                  <ul id="senior">
+                    <li>
+                      <div class="first-row"><a href="#">高一</a><a href="#">高二</a><a href="#">高三</a></div>
+                      <div class="second-row"><a href="#">大一</a><a href="#">大二</a><a href="#">大三</a><a href="#">大四</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </span></div>
+          <div  id="edit-current-status-new" class="description">请选择你的当前学历</div>
+          <div class="clear"></div>
+        </div>
+        <div id="reg_password">
+          <div class="form-item" id="edit-password-wrapper">
+            <label for="edit-password">登录密码: </label>
+            <div class="form-element">
+              <input type="password" name="password" id="edit-password"  maxlength="120"  size="60"  autocomplete="off" class="form-text" />
+            </div>
+            <div  id="edit-password" class="description">请输入你的登录密码</div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="reg_email">
+          <div class="form-item" id="edit-email-wrapper">
+            <label for="edit-email">电子邮件: </label>
+            <div class="form-element">
+              <input type="text" maxlength="120" name="email" id="edit-email" size="60" value="" placeholder="" class="form-text form-autocomplete" />
+            </div>
+            <div id="edit-email" class="description">用于登录账户,并在需要时接收招生官来信.</div>
+            <div class="clear"></div>
+          </div>
+          <input class="autocomplete" type="hidden" id="edit-email-autocomplete" value="http://www.zinch.cn/ichance/suggest_email_host" disabled="disabled" />
+        </div>
+        <div class="form-item" id="edit-phone-wrapper">
+          <label for="edit-phone">手机号码: </label>
+          <div class="form-element">
+            <input type="text" maxlength="120" name="phone" id="edit-phone" size="60" value="" placeholder="" class="form-text" />
+          </div>
+          <div  id="edit-phone" class="description">请输入你的常用手机号码</div>
+          <div class="clear"></div>
+        </div>
+        <div class="form-item">
+          <label for="edit-phone">验证码: </label>
+          <div class="form-element1">
+            <input type="text" maxlength="4" name="phoneyz"  size="60" value="" placeholder="" class="form-text1" />
+          </div>
+          <div class="phoneanniu"><a href="#">免费获取短信激活码</a></div>
+          <div class="clear"></div>
+        </div>
+        <p class="ty">
+          <input type="checkbox" name="accede" checked id="accede" value="1" tabindex="11">
+          我已阅读并同意<a href="#">Zinch中国服务条款</a></p>
+        <div>
+          <input type="submit" name="op" id="edit-submit" value="立即注册"  class="form-submit" />
+        </div>
+        <input type="hidden" name="form_build_id" id="form-76f8731bdf125227ee30ea88e7aa5dbc" value="form-76f8731bdf125227ee30ea88e7aa5dbc"  />
+        <input type="hidden" name="form_id" id="edit-registration-step1-form" value="registration_step1_form"  />
+      </form>
+    </div>
+    <!--右侧-->
+    <div class="zcright">
+      <h1>注册"Qu去留学"的6大理由：</h1>
+      <ul>
+        <li>- 获取美英澳加本硕选校报告</li>
+        <li>- 查找美国TOP150院校及专业信息</li>
+        <li>- 查找英国TOP45院校及专业信息</li>
+        <li>- 精选背景提升项目推送</li>
+        <li>- 国内TOP20留学中介查询</li>
+        <li>- 英澳免费申请</li>
+        <p>只需注册，全部免费！！！</p>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--尾部版权-->
+{template "content","bot"} 
+
+<!--遮罩层--> 
+{template "content","login"} 
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="js/form.js"></script> 
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","beautytips":{".beautytips":{"fill":"#F7F7F7","padding":8,"strokeStyle":"#B7B7B7","cornerRadius":0,"cssStyles":{"fontFamily":"\"lucida grande\",tahoma,verdana,arial,sans-serif","fontSize":"11px"},"cssSelect":".beautytips","list":["fill","padding","strokeStyle","cornerRadius","cssStyles"]}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)sites\/default\/files","default_image":"\/sites\/all\/modules\/contrib\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":0,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0},"zinch_signup_handler":"\/zinch-signup\/handler","trackingdata":"","shoutout_component":"user profile","user_name":"","imgHost":"http:\/\/cdm.zinch.cn","current_url":"user\/register","ajax_secure_code":"f76eaY","currentUrl":"user\/register","urlTypeActivity":"Add Extra-Curricular \u0026 Activity","OpenTitleCollege":"Add College\/Grad School","OpenTitleHigh":"Add High School","OpenTitleSibling":"Add School My Sibling Attended","urlTypeWork":"Add Work Experience"});
+//--><!]]>
+</script> 
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+   $(document).ready(function() {
+     $('#accede').parents('form').find('input.form-submit').click(function() {
+       if(!$('#accede').attr('checked')) {
+         alert('你必须同意服务条款后才能注册');
+         return false;
+       }
+     });
+});   
+//--><!]]>
+</script>
+</body>
+</html>

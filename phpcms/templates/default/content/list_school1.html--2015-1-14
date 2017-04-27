@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/school.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 --> 
+  {template "content","top"} 
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>背景项目提升</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    <!--当前位置-->
+    <div class="weizi"> {template "content","position"} </div>
+    <!--背景项目提升-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="b-left">
+        <div class="b-leftnr"> 
+          <!--轮播图-->
+          <div class="b-1">
+           
+           {template "content","lunbo21"}   
+            
+            
+            
+          </div>
+          <div class="b-2">
+            <div class="list"><span>项目：</span>
+             <p>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}" {if $_GET[leixing]==0}class="active"{/if}>全部</a>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}&leixing=1" {if $_GET[leixing]==1}class="active"{/if}>交流交换</a>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}&leixing=2" {if $_GET[leixing]==2}class="active"{/if}>实践项目</a>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}&leixing=3" {if $_GET[leixing]==3}class="active"{/if}>比赛竞赛</a>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}&leixing=4" {if $_GET[leixing]==4}class="active"{/if}>名企实习</a>
+             <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian={$_GET[didian]}&leixing=5" {if $_GET[leixing]==5}class="active"{/if}>其他</a>
+             
+             </p>
+              <div class="clear"></div>
+            </div>
+            <div class="list"><span>地点：</span>
+              <p>
+               <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&leixing={$_GET[leixing]}"  {if $_GET[didian]==0}class="active"{/if}>全部</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=1&leixing={$_GET[leixing]}" {if $_GET[didian]==1}class="active"{/if}>美国</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=2&leixing={$_GET[leixing]}" {if $_GET[didian]==2}class="active"{/if}>英国</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=3&leixing={$_GET[leixing]}" {if $_GET[didian]==3}class="active"{/if}>香港</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=4&leixing={$_GET[leixing]}" {if $_GET[didian]==4}class="active"{/if}>澳洲</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=5&leixing={$_GET[leixing]}" {if $_GET[didian]==5}class="active"{/if}>加拿大</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=6&leixing={$_GET[leixing]}" {if $_GET[didian]==6}class="active"{/if}>上海</a>
+              <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=11&didian=7&leixing={$_GET[leixing]}" {if $_GET[didian]==7}class="active"{/if}>其他</a></p>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="b-3">
+          <?php $where = 'a.id=b.id';
+            if($_GET[didian]!=''){
+            $where .= $where ?  " AND b.didian='$_GET[didian]'" : " b.didian='$_GET[didian]'";
+            }
+            if ($_GET[leixing]!=''){
+            $where .= $where ?  " AND b.xiangmuleixing='$_GET[leixing]'" : " b.xiangmuleixing='$_GET[leixing]'";
+            }
+           ?>
+           
+          
+           
+           
+            {pc:get sql="SELECT * FROM qu_xiangmu a,qu_xiangmu_data b WHERE $where ORDER BY a.listorder ASC" num="4" page="$page"   return="data"}
+             {loop $data $key $val} 
+             <?php 
+                   pc_base::load_sys_class('form', '', 0);
+		$list1=pc_base::load_model('download_model');
+                   $db = pc_base::load_model('hits_model'); 
+                   $_r = $db->get_one(array('hitsid'=>'c-'.$modelid.'-'.$val[id])); 
+                   $views = $_r[views]; 
+             ?> 
+            <div class="xxbox">
+              <div class="imgbox"><a href="{$val['url']}"><img src="{$val['thumb']}"></a>
+                <p>已有<span>{$views}</span>人关注</p>
+              </div>
+              <div class="nrbox">
+                <ul style="line-height:30px">
+                 项目名称：<a href="{$val['url']}">{$val['title']}</a>&nbsp;&nbsp;&nbsp;<br />
+
+                项目类型：<span>{if $val['xiangmuleixing']==1}交流交换{elseif $val['xiangmuleixing']==2}实践项目{elseif $val['xiangmuleixing']==3}比赛竞赛{elseif $val['xiangmuleixing']==4}名企实习{elseif $val['xiangmuleixing']==5}其他{/if}</span>&nbsp;&nbsp;&nbsp;
+
+				 项目地点：<span>{if $val['didian']==1}美国{elseif $val['didian']==2}英国{elseif $val['didian']==3}香港{elseif $val['didian']==4}澳洲{elseif $val['didian']==5}加拿大{elseif $val['didian']==6}上海{elseif $val['didian']==7}其他{/if}</span>&nbsp;&nbsp;&nbsp;
+                 费用：<span>{$val['feiyong']}</span>&nbsp;&nbsp;&nbsp;
+				  <br />
+
+                  
+                 项目时间：<span>{$val['xiangmutime']}</span>&nbsp;&nbsp;&nbsp;
+                截止时间：<span>{$val['jiezhitime']}</span>&nbsp;&nbsp;&nbsp;
+                  <li style="width:500px">主办方：<span>{$val['zhubanfang']}</span>&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="anniu"><a href="http://wpa.qq.com/msgrd?v=3&uin=3097401794&site=qq&menu=yes" target="_blank">在线咨询</a></div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+              <p class="ck"><i class="icon-caret-right"></i><a href="{$val['url']}">查看该项目详细信息>></a></p>
+              <div class="clear"></div>
+            </div>
+            {/loop} </div>
+        </div>
+        <!--分页-->
+        <div class="pages"> {$pages} </div>
+        {/pc} </div>
+      <!--右侧-->
+      <div class="s-right">
+       {pc:get sql="SELECT * FROM qu_page where catid=30"}
+{loop $data $key $val}
+{$val[content]}
+{/loop}
+{/pc}
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--轮播图--> 
+<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+</body>
+</html>

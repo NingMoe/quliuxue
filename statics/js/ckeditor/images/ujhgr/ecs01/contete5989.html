@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>即说疑虑说困惑|我的网站</title>
+<meta name="description" content=" 12%认为要改革评价方式 % % % 新课标、% % 职业道德、%% % 教师间的专题、案" />
+<meta name="keywords" content="疑虑,困惑,12%,为要,改革,评价,方式,新课标,职业道德" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatipedia/" title="网通单线传奇私服韩版">网通单线传奇私服韩版</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecosavage/" title="网通传奇私服执迷古镇">网通传奇私服执迷古镇</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/efemobilya/" title="变态英雄心法传奇私服">变态英雄心法传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebike4me/" title="纯北方网通传奇私服">纯北方网通传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edmgraphs/" title="变态网页传奇私服游戏">变态网页传奇私服游戏</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ectank/" title="变态合击传奇私服">变态合击传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecommerceforless/" title="四川新开传奇私服">四川新开传奇私服</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/dvdrduplicator/" title="新开bt传奇私服">新开bt传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/educatemymind/" title="1.76极品变态传奇私服">1.76极品变态传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eaglewingsoffreedom/" title="纯单线网通传奇私服">纯单线网通传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastcoaststormchasers/" title="复古网通传奇私服">复古网通传奇私服</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/dvkan/" title="新开传奇私服180版">新开传奇私服180版</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dzrjy/" title="新开完美封挂传奇私服">新开完美封挂传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/eduactionconnection/" title="上线满级变态传奇私服">上线满级变态传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatingcleanforweightloss/" title="北方网通超变传奇私服">北方网通超变传奇私服</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dynamitedesignstudio/" title="新开八彩传奇私服">新开八彩传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekrause/" title="传奇私服网通">传奇私服网通</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easyturfhillcountry/" title="2012最新网通传奇私服">2012最新网通传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastrochesterfloristtoday/" title="中传奇私服发布网网通">中传奇私服发布网网通</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunellenfloristtoday/" title="新开传奇私服合击皓月">新开传奇私服合击皓月</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开2.90心法传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete11360.html" target="_blank" title="以严复的达为标准">以严复的达为标准</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete10447.html" target="_blank" title="本刊经过多年努力">本刊经过多年努力</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete9762.html" target="_blank" title="网点布局不合理">网点布局不合理</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5989.html" target="_blank" title="即说疑虑说困惑">即说疑虑说困惑</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5450.html" target="_blank" title="信任是以怀疑为基础的">信任是以怀疑为基础的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5393.html" target="_blank" title="在十八大新闻中心举行的第四场记者招待会上">在十八大新闻中心举行的第四场记者招待会上</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete4778.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete4644.html" target="_blank" title="文章末尾注明详细的通讯地址电子邮箱等">文章末尾注明详细的通讯地址电子邮箱等</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete1414.html" target="_blank" title="随着拉链形态的不断创新">随着拉链形态的不断创新</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete800.html" target="_blank" title="当中国的地主阶级洋务派官员李鸿章等人搞洋务运动时">当中国的地主阶级洋务派官员李鸿章等人搞洋务</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/" title="山东地区新开传奇私服">山东地区新开传奇私服</a></h3>
+<ul>
+<li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/contete8300.html" title="注释参考文献">注释参考文献</a></li>
+<li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/contete7637.html" title="审美感悟的对象或者说内容">审美感悟的对象或者说内容</a></li>
+<li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/contete7300.html" title="图说明另纸书写">图说明另纸书写</a></li>
+<li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/contete6176.html" title="为了通过对制件图像进行轮廓匹配实现外形异常识别">为了通过对制件图像进行轮廓匹配实现外形异</a></li>
+<li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dustymop/contete2821.html" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/" title="新开传奇私服176合击">新开传奇私服176合击</a></h3>
+<ul>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/contete11415.html" title="这就是她的个人魅力">这就是她的个人魅力</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/contete9940.html" title="通过对我院学生晨练的态度的调查结果表明">通过对我院学生晨练的态度的调查结果表明</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/contete9613.html" title="以单字母方式标识以下各种参考文献类型：普通图书">以单字母方式标识以下各种参考文献类型：普</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/contete9523.html" title="参考咨询服务正逐步改变传统的文献检索模式">参考咨询服务正逐步改变传统的文献检索模式</a></li>
+<li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dundeeconeyisland/contete9360.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开2.90心法传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>即说疑虑说困惑</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 16:08</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5989&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5989">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       12%认为要改革评价方式       %       %       %       新课标、%       %       职业道德、%%       %       教师间的专题、案</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;12%认为要改革评价方式<p><BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;新课标、%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;职业道德、%%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师间的专题、案例研讨占12%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%数据显示<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师学习的特点不是单纯追求知识的积累<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是追求知识的可应用性<BR>&nbsp; &nbsp; &nbsp; &nbsp;是建立在“行”基础上的知行统一他们真正需要的是“理论与实践交融”的培训方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;这对基于专业发展的教师培训方式的选择很有启发意义 </p><p>总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;要培育农村优秀教师<BR>&nbsp; &nbsp; &nbsp; &nbsp;打造农村优质教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;需要农村小学语文教师树立终身学习的理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;坚持博览群书<BR>&nbsp; &nbsp; &nbsp; &nbsp;夯实自身的文化底蕴；更需要学校创设良好的研修氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;搭建教师专业成长的平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进教师群体奋发向上<BR>&nbsp; &nbsp; &nbsp; &nbsp;追求自我专业发展（作者单位：辽宁锦州市太和区职教中心） </p><p>【xzbu】郑重<p><BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;不足半小时的占35%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%在“订阅专业教学类报刊”回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;29%的教师不订阅教学类杂志教师了解现代教育教学理论的最主要途径<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用互联网资源占18%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%教师不爱看书或很少读书学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;是让人忧虑的问题正如著名语文教师钱梦龙先生指出的“教师的文化底蕴不足已经严重地阻碍了语文教学质量的提高” </p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;打造“教师发展共同体”要组建区域内城乡强校与薄弱学校相互支持的青年教师发展共同体城镇选取二、三所小学<BR>&nbsp; &nbsp; &nbsp; &nbsp;每个乡镇选取一所中心小学<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为“种子”学校<BR>&nbsp; &nbsp; &nbsp; &nbsp;强化“种子”学校在课程改革方面的示范引领作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;如城镇与乡中心小学之间、乡中心小学与村完小之间每学期开展两三次交流与研讨活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;或送教下乡和名师带徒活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是农村骨干教师以访问学者的身份到城镇校进行为期半年的跟岗学习与岗位实践<BR>&nbsp; &nbsp; &nbsp; &nbsp;与城镇校名师一同备课、评课<BR>&nbsp; &nbsp; &nbsp; &nbsp;一同开展课题研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高教学与科研能力返回任教学校后<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分发挥“种子”教师在教育教学方面的示范、引领和辐射作用 </p><p>四、对策与建议 充分了解了农村小学语文教师专业发展的现状需求及期望后<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们应该从以下几个方面进行改革<BR>&nbsp; &nbsp; &nbsp; &nbsp;以促进我国农村小学语文教师的专业发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;从根本上提高农村地区的教育质量 </p><p>总结研究成果”流程开展行动研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐步探索出解决问题的策略与方法如观摩特级教师孙双金的教学视频案例《送别组诗》<BR>&nbsp; &nbsp; &nbsp; &nbsp;感悟孙老师“精读一首<BR>&nbsp; &nbsp; &nbsp; &nbsp;带读一组”的古诗教学方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;体会阅读教学中如何发挥教材的“例子”功能将教师思考的问题转化为研究的微型课题<BR>&nbsp; &nbsp; &nbsp; &nbsp;如“精读课文的教学流程和教学方法的研究”等课题通过案例的反思与研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养教师的反思意识和教学研究能力 </p><p>：学历结构上<BR>&nbsp; &nbsp; &nbsp; &nbsp;%；%；%；另外分别有1名初中、高中学历教师<BR>&nbsp; &nbsp; &nbsp; &nbsp;%职称结构上<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;其他占17%在年龄结构上<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;31-40周岁占53%<BR>&nbsp; &nbsp; &nbsp; &nbsp;41-50周岁占22%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;农村小学语文教师的学历、年龄结构已日趋合理但在性别结构上不够合理<BR>&nbsp; &nbsp; &nbsp; &nbsp;农村小学语文教师以女教师为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;%在访谈中了解到<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝大多数中青年教师都是师范类院校的毕业生<BR>&nbsp; &nbsp; &nbsp; &nbsp;具备了较好的专业成长的学习与研究基础 </p><p> <BR>&nbsp; &nbsp; &nbsp; &nbsp;学校最急需解决的问题上<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择要多提供外出培训机会的教师占41%<BR>&nbsp; &nbsp; &nbsp; &nbsp;要加强校本教研占24%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%在“你认为哪些激励措施最能有效地激发教师发展”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%认为是自我发展的愿望<BR>&nbsp; &nbsp; &nbsp; &nbsp;%认为需要学习型教研组的组建<BR>&nbsp; &nbsp; &nbsp; &nbsp;%教师的专业发展需要有外部环境的支持<BR>&nbsp; &nbsp; &nbsp; &nbsp;更要有内部动力我们既要关注教师自身在专业发展方面的需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;更要为教师的专业发展营造适宜的环境 </p><p>%的学校从没开展过教研组活动教研活动后的评课<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师认为教研组评课对自己有一定的帮助；%的教师认为评课比较笼统<BR>&nbsp; &nbsp; &nbsp; &nbsp;基本无帮助；%%的教师从没参加过课题研究访谈中得知<BR>&nbsp; &nbsp; &nbsp; &nbsp;农村学校参加的课题本来就不多<BR>&nbsp; &nbsp; &nbsp; &nbsp;极少的课题大都是学校领导参加<BR>&nbsp; &nbsp; &nbsp; &nbsp;轮不上普通教师教师们感到“教科研”距离他们较远<BR>&nbsp; &nbsp; &nbsp; &nbsp;不知道如何申报课题、如何开展课题研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;教育科研能力比较薄弱 </p><p>（课表内的课时<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师在11-15节之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师在16-20节之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师在21节及以上<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师在6-10节之间校内的兼职教师中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师担任班主任工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师兼教研组长<BR>&nbsp; &nbsp; &nbsp; &nbsp;6%的教师兼年级组长<BR>&nbsp; &nbsp; &nbsp; &nbsp;%访谈得知<BR>&nbsp; &nbsp; &nbsp; &nbsp;有15位教师兼职语文、数学两门主干学科在“你认为自己最大的压力来自”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;自我发展需要占24%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%%这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师的工作任务繁重<BR>&nbsp; &nbsp; &nbsp; &nbsp;教学压力较大<BR>&nbsp; &nbsp; &nbsp; &nbsp;再加上女性教师多<BR>&nbsp; &nbsp; &nbsp; &nbsp;在照顾孩子、承担家务方面也花费了较多的精力<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些客观因素使教师很难有时间和精力再谋求个人的专业发展因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;对农村小学语文教师的专业成长而言<BR>&nbsp; &nbsp; &nbsp; &nbsp;工学矛盾是他们在专业发展中面临的最主要问题 </p><p>应建立有利于教师专业成长的经费资助、考核评价等制度对开展教学研究的教师要鼓励<BR>&nbsp; &nbsp; &nbsp; &nbsp;如开展优秀教研组、优秀教师等的评选活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;给教师以人文关怀<BR>&nbsp; &nbsp; &nbsp; &nbsp;尊重和保护教师教学研究的积极性和创造性总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;要创设良好的评价机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;努力搭建教师成长的平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进教师群体奋发向上<BR>&nbsp; &nbsp; &nbsp; &nbsp;追求自我专业发展 </p><p>教师专业发展的保障 《国家中长期教育改革和发展规划纲要（2010-2020年）》在关于加强教师队伍建设方面提出：“提高教师业务水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;完善培养培训体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;做好培养培训规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;优化队伍结构<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高教师专业水平和教学能力”因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;建议地方教育行政部门<BR>&nbsp; &nbsp; &nbsp; &nbsp;针对农村教师的业务学习、培训等方面的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;制订出合理统筹的培训规划方案<BR>&nbsp; &nbsp; &nbsp; &nbsp;多渠道筹措保障农村学校的教师培训经费和图书资料经费同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校主管部门和学校还应做好以<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/160TQ115-0.jpg" width="600px" height="400px" />下工作： </p><p>动以教研组为单位<BR>&nbsp; &nbsp; &nbsp; &nbsp;提倡组建“微型课题科研共同体”<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过教研组这个小集体的同伴互助来提升教师的教育科研能力鼓励教师在反思中确定微型课题<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照“确定研究问题</p><p>教师专业发展的平台 农村学校由于经费和工学矛盾等因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;无法为更多教师提供外出脱产学习的机会<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师的专业发展更多地靠学校的内涵式培养<BR>&nbsp; &nbsp; &nbsp; &nbsp;有赖于教研组是否发挥同伴互助的合作交流作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校是否重视开展有效的校本教研活动因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;要做好以下工作： 要引领教研组做好以下工作：第一<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用任务驱动的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;促使教师向名师教学视频案例学习小学语文教学名师<BR>&nbsp; &nbsp; &nbsp; &nbsp;如窦桂梅、于永正等<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及全国小学语文阅读大赛优秀教师的教学视频可以通过互联网随时搜集与观摩<BR>&nbsp; &nbsp; &nbsp; &nbsp;方便教师在家里学习为激发教师的学习积极性<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校要以任务驱动的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立教师网上学习、考核的研修模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;将“学会教学”与“学会反思”结合起来如开展“三个一”研修活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;即每学期规定观摩五位名师教学案例视频<BR>&nbsp; &nbsp; &nbsp; &nbsp;撰写一篇案例反思札记<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展一次案例反思交流活动引导教师开展对比式反思、专题式反思、研究式反思等如对比式反思<BR>&nbsp; &nbsp; &nbsp; &nbsp;观摩特级教师窦桂梅的《清平乐?村居》视频和全国第六届青年教师阅读教学观摩活动一等奖陈飞教师的《清平乐?村居》视频<BR>&nbsp; &nbsp; &nbsp; &nbsp;比较两位教师教学设计的异同<BR>&nbsp; &nbsp; &nbsp; &nbsp;感悟案例设计中所折射出的前沿教学理念以及教学语言和教</p><p>学方法的精妙通过名师的榜样示范<BR>&nbsp; &nbsp; &nbsp; &nbsp;使教师领悟、习得、积累优秀教师实践性知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成和发展自己的实践性知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;促使教师的理性认识得到提升<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而不断调整和优化自己的教学行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;提升教育教学实践的合理性第二<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展教研组创新说课活动特别是课前说课或校本教研中的说课<BR>&nbsp; &nbsp; &nbsp; &nbsp;更适合增加“不知道怎样教”的说课内容说说教学某环节、某些地方考虑这方面的因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样教不合适；考虑那方面的因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;那样教也不合适<BR>&nbsp; &nbsp; &nbsp; &nbsp;请教研组成员集思广益<BR>&nbsp; &nbsp; &nbsp; &nbsp;出出主意“这个环节该怎样教”即说疑虑、说困惑说教学的困惑可以为教学研究活动提供实质的问题素材<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有这样才能起到说课固有的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;回归它的出发点笔者认为“这将是说课操作中最有实效性的内容”第三<BR>&nbsp; &nbsp; &nbsp; &nbsp;教研组在“同课异构”基础上开展“辩课”研讨活动辩课是一种以教学问题为研究的主题教研方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;参与教研活动的教师在上课、评课的基础上<BR>&nbsp; &nbsp; &nbsp; &nbsp;如文本解读、重点难点、拓展延伸等专题展开讨论、辩论<BR>&nbsp; &nbsp; &nbsp; &nbsp;从不同层面、不同角度探讨教学的成败得失<BR>&nbsp; &nbsp; &nbsp; &nbsp;加深对教学问题的理解教师们在平等交流中共享他人成功的实践性知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现其专业领域内的知识拓展与智力提升 </p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师通过与其他教师研讨来解决<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师通过查找资料想办法解决<BR>&nbsp; &nbsp; &nbsp; &nbsp;自己琢磨解决的占12%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%在一堂课结束后<BR>&nbsp; &nbsp; &nbsp; &nbsp;通常采取的后续策略中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%%的教师从没写过这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;多数教师对待反思的态度是积极的<BR>&nbsp; &nbsp; &nbsp; &nbsp;反思后必须要有行为的跟进<BR>&nbsp; &nbsp; &nbsp; &nbsp;但反思后的教学行为跟进还不太理想访谈中得知<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师只有在遭遇问题时才进行反思<BR>&nbsp; &nbsp; &nbsp; &nbsp;还没有将教学反思自觉纳入到日常教学生活之中 </p><p> 为深入了解农村小学语文教师专业化发展的现状与需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔者开展了面向广西河池市五县农村学校小学语文教师的问卷调查与访谈调研工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;为提出切实可行的促进农村小学语文教师专业发展的对策提供支持 </p><p>“你当初选择教师职业的最主要原因”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择教师职业崇高、%；选择喜欢教师职业<BR>&nbsp; &nbsp; &nbsp; &nbsp;%；选择工作稳定<BR>&nbsp; &nbsp; &nbsp; &nbsp;养家糊口的占12%；%这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师当初选择教师职业源于对这一职业的热爱在“你现在对从事教师这一职业的态度”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;从事多年的教育工作后<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽然工作任务繁重<BR>&nbsp; &nbsp; &nbsp; &nbsp;但对自己当初选择的这份职业重新进行审视<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师对这一职业感到满意；%的教师产生了职业倦怠现象在“你认为教师职业价值最能体现在”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师认为教师职业价值最能体现在培养学生成才上<BR>&nbsp; &nbsp; &nbsp; &nbsp;24%的教师认为实现自己的人生价值<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师认为得到家长和学生的尊重<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师认为形成自己的教学风格这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝大多数农村小学语文教师热爱本职工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有很强的专业精神 </p><p>“你自己在业务上最大的发展期望是”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为学科带头人占18%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%这说明<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师们都有追求专业发展的积极意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;希望由外在理念的学习向内化的行为转变 </p><p>“你备课方式用得最多的是”的回答中<BR>&nbsp; &nbsp; &nbsp; &nbsp;%的教师能广泛参考<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据学生实际设计教学方案；但仍有30%的教师形成了惰性心理<BR>&nbsp; &nbsp; &nbsp; &nbsp;习惯照搬教科书和参考书<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经失去独立思考的习惯面对新的教学内容和具有主观能动性的学生<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师文化素养的缺失及惰性心理的存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;严重影响了新课程实施的质量 </p>  (责任编辑：admin)
+<img border="0" alt="即说疑虑说困惑" src="/images/lenfeng_5989.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5989)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5989)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5989);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete5450.html'>信任是以怀疑为基础的</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecs01/contete9762.html'>网点布局不合理</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5989" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5989&title=即说疑虑说困惑" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5989" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5989" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5989" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5989&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5989');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

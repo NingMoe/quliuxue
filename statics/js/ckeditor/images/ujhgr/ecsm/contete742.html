@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>读《历史追问》|我的网站</title>
+<meta name="description" content="《历史追问》用了不少篇幅介绍我国的识字写字教材论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息 是论文写作、论文投稿和论文发表的论文参考网站" />
+<meta name="keywords" content="历史追问,历史追问,用了,不少,篇幅,介绍,我国,识字,写字" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekitapmediafuar/" title="新开网通传奇私服">新开网通传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebdial/" title="全国网通传奇私服">全国网通传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebizoutlet/" title="纯千兆网通传奇私服i">纯千兆网通传奇私服i</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebikeshowcase/" title="网通新开传奇私服">网通新开传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecceuropaeu/" title="新开网通195传奇私服">新开网通195传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edlaput/" title="超超变态热血传奇私服">超超变态热血传奇私服</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dusmer/" title="传奇私服 新开超变">传奇私服 新开超变</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/economyinvesting/" title="七界传说网通传奇私服">七界传说网通传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e8utb/" title="新开传奇私服网通专线">新开传奇私服网通专线</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecoglassonline/" title="网通传奇私服鬼域冷月">网通传奇私服鬼域冷月</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/easternkyappraisalservices/" title="纯网通超变态传奇私服">纯网通超变态传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/edsindia/" title="超级变态韩版传奇私服">超级变态韩版传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/dzyhxxb/" title="新开传奇私服皓月">新开传奇私服皓月</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecityangel/" title="网通传奇私服十大法团">网通传奇私服十大法团</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecolivrel/" title="网通合计热血传奇私服">网通合计热血传奇私服</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecuadordenuncia/" title="新开变态传奇私服网站">新开变态传奇私服网站</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earningeasymoney/" title="网通1.76复古传奇私服">网通1.76复古传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/" title="新开十二生肖传奇私服">新开十二生肖传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/" title="采集系统">采集系统</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/economicalegodesign/" title="网通恶魔杀神传奇私服">网通恶魔杀神传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开蛊惑版本传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11832.html" target="_blank" title="凡采用他人学说">凡采用他人学说</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11691.html" target="_blank" title="在我国潮州汕头地区比较流行">在我国潮州汕头地区比较流行</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete11483.html" target="_blank" title="针对不同专业学生采取以人为本的柔性化方式方法">针对不同专业学生采取以人为本的柔性化方式方</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10616.html" target="_blank" title="组织学与胚胎学虽然是一门医学基础的基础课程">组织学与胚胎学虽然是一门医学基础的基础课程</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10311.html" target="_blank" title="在旋喷过程中">在旋喷过程中</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete10033.html" target="_blank" title="提高学生的创新意识和创新能力是我们面临的重要课题">提高学生的创新意识和创新能力是我们面临的重</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete9338.html" target="_blank" title="表图内文字统一用楷体">表图内文字统一用楷体</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete7191.html" target="_blank" title="也许红土场是费德勒最不愿意面对也是最为难的赛场">也许红土场是费德勒最不愿意面对也是最为难的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete7059.html" target="_blank" title="因为中国的汽车增长的太快">因为中国的汽车增长的太快</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete5656.html" target="_blank" title="那时候看电影的机会不是特别多">那时候看电影的机会不是特别多</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/" title="176网通传奇私服网">176网通传奇私服网</a></h3>
+<ul>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/qq12099.html" title="我国目前的企业组织设计要以职能化为基础">我国目前的企业组织设计要以职能化为基础</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/qq11726.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/qq11518.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/qq9721.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebuyen/qq9152.html" title="s Disease">s Disease</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/" title="daneastmidlandsbusinesscrimeportadan">daneastmidlandsbusinesscrimeportadan</a></h3>
+<ul>
+<li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/qq11879.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/qq11395.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/qq10652.html" title="相对于卷材防水:采用了网格内增强">相对于卷材防水:采用了网格内增强</a></li>
+<li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/qq9259.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/qq9222.html" title="剧中张静宜就是因为标准型剩女">剧中张静宜就是因为标准型剩女</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开蛊惑版本传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>读《历史追问》</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-18 17:05</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=742&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=742">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:《历史追问》用了不少篇幅介绍我国的识字写字教材论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息       是论文写作、论文投稿和论文发表的论文参考网站</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            《历史追问》用了不少篇幅介绍我国的识字写字教材<p>论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;是论文写作、论文投稿和论文发表的论文参考网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是科研人员论文检测和发表论文的理想平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>历史是由一些事实碎片组成的<BR>&nbsp; &nbsp; &nbsp; &nbsp;作者要把这些碎片组织成一个整体<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且要把这个整体真实地艺术地呈现给读者如果仅仅选取了最有价值、最使读者受益的史料<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不能将其合理组织<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么仍然算不上一部优秀的作品因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何将这些史实资料生动地组织起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;是对作者另一种形式的考量</p><p>中国语文教育有数千年的历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;史料浩如烟海<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择哪些进入作者的笔下<BR>&nbsp; &nbsp; &nbsp; &nbsp;这对作者是一种考量读《历史追问》,处处感受到作者在文献资料梳理选择上的严谨细密与深刻独到无论是叙写描绘的语文教育史实,还是总结概括的语文教学经验教训,也无论是阐述论证的语文教育规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是在占有大量文献资料的基础上予以进行的<BR>&nbsp; &nbsp; &nbsp; &nbsp;而这些语文教育史料的选择<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是经过作者精心甄鉴挑选的</p><p>以中编现代语文课程为例<BR>&nbsp; &nbsp; &nbsp; &nbsp;作者在史料的选择上体现出两个鲜明的特点首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;重点选择了历史转型时期语文教育史上的相关文献资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;清末民初国文课程名称的确立<BR>&nbsp; &nbsp; &nbsp; &nbsp;新文化运动前后语文性质的“形式训练”与“实质训练”之争、汉字存废之争<BR>&nbsp; &nbsp; &nbsp; &nbsp;新中国成立前后的国语运动等<BR>&nbsp; &nbsp; &nbsp; &nbsp;在中国特定的历史背景中体现波澜壮阔的语文教育发展其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;是选取一批大家所熟知的、在语文教育史上产生深远影响的教育家的言论、文章作为历史的证据<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如“现代语文课程性质的争论”一节中<BR>&nbsp; &nbsp; &nbsp; &nbsp;选取了徐特立、何仲英、穆济波等人的观点言论以及代表性文章的原文<BR>&nbsp; &nbsp; &nbsp; &nbsp;在有限的篇幅中容纳了更多的教育先进之思想<BR>&nbsp; &nbsp; &nbsp; &nbsp;全面地展示这一时期有关语文教育的精神、思想活动</p><p>读《历史追问》<BR>&nbsp; &nbsp; &nbsp; &nbsp;洋洋近四十万言<BR>&nbsp; &nbsp; &nbsp; &nbsp;丝毫不觉其冗长<BR>&nbsp; &nbsp; &nbsp; &nbsp;相反让读者产生一种轻松快适之感<BR>&nbsp; &nbsp; &nbsp; &nbsp;我想主要在于两方面的原因：一是作者选取大量丰富而有价值的文献资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;考据之功细密<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时合理地组织布局<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得结构匀称、和谐自然；二是作者将对语文教育规律的历史追问贯穿全书<BR>&nbsp; &nbsp; &nbsp; &nbsp;义理新见迭出<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时让读者感受到丰富多彩的辞章之美</p><p>《历史追问》将大量富有价值的语文教育史实以一种独特新颖而又合理匀称的结构组织在一起全书分为上中下三编<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照时间顺序分别叙述了中国古代语文教育、中国现代语文课程、中国现代语文教学作者没有采取通行的以时代为序分章节写作的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;取而代之的是灵活的专题形式选取中国语文教育历史长河中最具代表性的二十个重要的专题<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照历史发展的时序<BR>&nbsp; &nbsp; &nbsp; &nbsp;来记叙中国语文教育演变发展的进程每一个专题都有一个正标题和副标题<BR>&nbsp; &nbsp; &nbsp; &nbsp;正标题点明本专题中重要的历史事件或最具代表性的语文教育著作<BR>&nbsp; &nbsp; &nbsp; &nbsp;副标题则表明专题讲述的内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;正副标题两相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;让读者对该专题的内容和重点一目<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141018/1F51613E-0.jpg" width="600px" height="400px" />了然而本书开篇的引言部分则以年代为序<BR>&nbsp; &nbsp; &nbsp; &nbsp;综述了各个时代的语文教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;将每个时期的识字写字教学、写作教学、语文教育改革融会贯通<BR>&nbsp; &nbsp; &nbsp; &nbsp;巧妙地弥补了专题写作的不足</p><p>历史是客观存在的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但历史又是通过作者对过去的重构而呈现在读者面前的所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;在不同的作者笔下的过去是有差异的同样的一堆史料<BR>&nbsp; &nbsp; &nbsp; &nbsp;当学者们根据自己对其重要性的判断有选择性地进入文本的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;历史的差异性就产生了</p><p>我国古代的语文教育经过了漫长的历史时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;它不仅是源远流长的<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且也是丰富多彩、综合发展的上编以专题的形式分别讲述了中国古代的识字写字教学、写作教学、书院教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;全面地介绍了古代语文教育方方面面的历程<BR>&nbsp; &nbsp; &nbsp; &nbsp;而作者对于古代语文教育的历史观也自然地流露其中以古代识字写字教学为例<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于汉字是表意文字<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有形音义三要素<BR>&nbsp; &nbsp; &nbsp; &nbsp;构成了复杂的符号系统<BR>&nbsp; &nbsp; &nbsp; &nbsp;学习起来难度很大这就使语文教育在蒙学阶段特别重视识字写字教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;要求儿童在童蒙初期就要认识2000个左右的汉字<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有这样才能为进一步的读写打好基础因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;前人根据汉字的特点编写了脍炙人口的蒙学教材<BR>&nbsp; &nbsp; &nbsp; &nbsp;古代的蒙学教育就同汉语汉字的特点密切联系在一起<BR>&nbsp; &nbsp; &nbsp; &nbsp;下至清末<BR>&nbsp; &nbsp; &nbsp; &nbsp;凡是较有影响的识字课本都一一加以具体说明和评论<BR>&nbsp; &nbsp; &nbsp; &nbsp;对《仓颉篇》、《千字文》《三字经》、《百家姓》等的介绍尤为详尽<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为作者认为“前人把汉语汉字的特点充分运用于儿童的识字教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于我们来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;应该视为珍贵的遗产”古代语文教育的历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;是今天语文教育的一面镜子可借鉴就要借鉴<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为一种历史资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;起码有史学研究的价值<BR>&nbsp; &nbsp; &nbsp; &nbsp;何况这</p><p>叙史若仅仅是史料的编排引用,并不能从其中抽象概括出规律性的认知<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样的“史”,并没多大意义与价值《历史追问》不仅真实地再现了中国语文教育史的轨迹形态,且蕴涵体现着丰富的语文规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;贯穿着作者对于语文教育史的历史思考以及当今语文教育的历史追问</p><p>论文摘要：徐林祥教授主编的《历史追问：语文教育发展篇》是一部叙写描绘中国语文教育历史发展轨迹状貌的专门史该书选取大量丰富而有价值的文献资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;合理地组织布局<BR>&nbsp; &nbsp; &nbsp; &nbsp;用纵横交错的表达方式将对古今语文教育规律的历史追问贯穿于其中</p><p>由语文教育专家徐林祥教授主编的《历史追问：语文教育发展篇》（以下简称《历史追问》）一书<BR>&nbsp; &nbsp; &nbsp; &nbsp;是由山东教育出版社策划编写的语文教师成长丛书之一该书是一部叙述中国语文教育历史发展轨迹的著作<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中包含着对古今语文教育思想发展脉络及其要义精髓的剖析</p>  (责任编辑：admin)
+<img border="0" alt="读《历史追问》" src="/images/lenfeng_742.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',742)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',742)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(742);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete269.html'>在管理团队方面张必武等做了研究回顾</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/contete1612.html'>节水灌溉发展水平模型应用 仍以xx典型灌区为例</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=742" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=742&title=读《历史追问》" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=742" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=742" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="742" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=742&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '742');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

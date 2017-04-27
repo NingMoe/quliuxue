@@ -1,0 +1,47 @@
+/*****************************************************
+ * Website：http://www.mobantianxia.cn QQ：48894503  *
+ *    This Style Design Based On DedeCMS v5.7 GBK    *
+ * Name: Ymmb.Css  Finish Time:  2011.05.08  18:36   *
+ *   尊重知识产权，使用、转载请务必保留以上信息      *
+ *****************************************************/
+ 
+/*-------列表页-----*/
+#yuanma_list_tuij,.yuanmalist_bot,#yuanma_list_tuij h5{background:url(../img/yuanma_list_tuij.gif);}
+#yuanma_list_tuij h5{background-position:center top;height:39px;}
+.yuanmalist_bot{background-position:right bottom;background-repeat:no-repeat;overflow:hidden;display:block;padding:5px 12px 10px;zoom:1;}
+.yuanmalist_bot li{width:129px;float:left;text-align:center;height:100px;overflow:hidden;margin-bottom:5px;}
+.yuanmalist_bot li img{width:97px;height:67px;padding:3px;border:1px solid #d3d3d3;display:block;margin:0px auto 3px;}
+
+
+#yuanma_downlist_bg{background:url(../img/yuanma_downlist_bg.gif);}
+.yuanma_downlist_box{height:115px;display:block;overflow:hidden;padding:16px 0px;}
+.yuanma_downlist_box .pic{width:160px;height:115px;padding:0px 12px;float:left;}
+.yuanma_downlist_box .pic img{width:160px;height:115px;display:block;}
+
+.yuanma_downlist_box .geme_dl_info{width:466px;height:115px;float:left;display:block;}
+.yuanma_downlist_box .geme_dl_info h4{font-size:14px;font-weight:normal;line-height:32px;height:32px;width:466px;overflow:hidden;}
+.yuanma_downlist_box .geme_dl_info h4 strong a{color:#02369c;}
+.yuanma_downlist_box .geme_dl_info h4 span{color:#979696;padding-left:12px;}
+.yuanma_downlist_box .geme_dl_info h4 span a{color:#979696;}
+.geme_dl_info dl{overflow:hidden;zoom:1;}
+.geme_dl_info dl dd{float:left;width:351px;line-height:26px;}
+.geme_dl_info dl dd span{color:#ff4800;}
+.geme_dl_info dl dd b{float:left;font-weight:normal;}
+.geme_dl_info dl dd s{float:left;padding-top:3px;}
+.geme_dl_info dl dt{float:left;width:100px;padding-top:6px;}
+.geme_dl_info dl dt .download{background:url(../img/yuanma_downbut.gif) no-repeat;width:100px;height:36px;display:block;}
+.geme_dl_info dl dt .download:hover{background:url(../img/yuanma_downbut.gif) no-repeat right top;}
+.geme_dl_info p{line-height:26px;}
+.geme_dl_info p span{padding-right:15px;}
+.geme_dl_info p .dangtian{color:#ff4800;}
+.geme_dl_info p strong{padding-right:15px;color:#ff4800;font-weight:normal;}
+.geme_dl_info p a:link,.geme_dl_info p a:visited,.geme_dl_info p a:hover{color:#ff4800;font-weight:normal;}
+
+
+/*热门源码推荐*/
+#tuijian_yuanma,#tuijian_yuanma h5,#tuijian_yuanma ul{background:url(../img/lanm_left_title.gif);}
+#tuijian_yuanma{background-position:-1120px 0px;margin-bottom:10px;}
+#tuijian_yuanma h5{background-position:-840px 0px;height:30px;line-height:30px;padding:0px 28px 1px 28px;color:#02369c;font-size:14px;}
+#tuijian_yuanma ul{background-position:right bottom;background-repeat:no-repeat;padding:0px 10px 10px;min-height:12px;_height:12px;}
+#tuijian_yuanma ul li{background:url(../img/dian.gif) repeat-x bottom;text-align:center;padding:15px 5px 10px;}
+#tuijian_yuanma ul li img{width:175px;height:130px;display:block;margin:0px auto 3px;}

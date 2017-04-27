@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/agency.css" type="text/css"><script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部 --> 
+{template "content","top"} 
+<!-- 头部结束 --> 
+<!--留学中介上部-->
+<div class="reporttitle">
+  <h2>留学中介</h2>
+</div>
+<!--主要内容--->
+<div class="content w-1000"> 
+  <!--当前位置-->
+  <div class="weizi"> {template "content","position"} </div>
+  <!--留学中介内容页左侧-->
+  <div class="an-left"> 
+    <!--公司信息头部-->
+    <div class="an-1">
+      <h1 class="title">{$title}</h1>
+      <div class="imgbox"> <img src="{$thumb}" />
+        <p><a href="{$CATEGORYS[20]['url']}&id={$val['id']}">免费预约中介顾问</a></p>
+      </div>
+      <div class="nrbox"> {php $data=getcache(3386,'linkage');$diqu0=$data[data];  $data2=getcache(3387,'linkage');$guojia0=$data2[data];}
+        <ul class="uu">
+          <li><span class="s1">公司名称：</span>{$title}</li>
+          <!--   <li><span class="s1">公司地址：</span>{$dizhi}</li> -->
+          <li><span class="s1">分支机构：</span> 
+		  <ol>
+              <li>  {loop explode(",",$diqu) $k $v} <span>{$diqu0[$v][name]}</span> 
+              {if $n/3==0}</li>
+              <li>{/if}
+                {/loop}
+                </li>
+            </ol>
+		  </li>
+          <li><span class="s1">办理国家：</span>
+            <ol>
+              <li> {loop explode(",",$guojia) $k $v} <span>{$guojia0[$v][name]}</span> 
+              {if $n/3==0}</li>
+              <li>{/if}
+                {/loop}
+                </li>
+            </ol>
+          
+          </li>
+        </ul>
+        <ul class="u1">
+          <li>好评度：<img src="/style/images/hp{$haopin}.jpg" /><i class="icon-exclamation-sign">
+            <div class="cc">好评度是学生对留学中介满意度打分。去留学网会从服务态度、专业水平两个方面，定期回访学生对留学中介的满意度。</div>
+            </i></li>
+          <li>综合得分：{$zonghe}<i class="icon-exclamation-sign">
+            <div class="cc">综合得分是学生对去留学网推荐的中介机构在录取质量、服务态度、专业水平、办理效率等方面的累计评分结果，总分为10分。</div>
+            </i></li>
+          <!--<li>我要打分<i class="icon-exclamation-sign">
+            <div class="cc">百分制平均分，计算方式是将当前学历每门课程的期中期末考试成绩转为百分制加起来以后除以总的课程数，得出平均分。</div>
+            </i></li> -->
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <!--公司介绍-->
+    <div class="an-2">
+      <h1>公司介绍</h1>
+      {$content}
+      <div class="clear"></div>
+    </div>
+    <!--联系方式
+    <div class="an-3">
+      <h1>联系方式</h1>
+      {$lianxifangshi}
+      <div class="clear"></div>
+    </div>-->
+    <!--办公环境-->
+    <div class="an-4">
+      <h1>办公环境</h1>
+      <ul>
+        {loop $bangong $k $v}
+        <li><img src="{$v[url]}" alt="{$v[alt]}" /></li>
+        {/loop}
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--右侧-->
+  <div class="a-right">
+    <div class="an-5">
+      <h1>留学机构如何选择？</h1>
+      <ul>
+        {pc:content  action="lists" catid="35" order="id DESC" num="6"} 
+        
+        {loop $data $key $val}
+        <li><a href="{$val['url']}">{str_cut($val['title'],40)}</a></li>
+        {/loop}
+        {/pc}
+      </ul>
+    </div>
+    <!--留学保保计划-->
+    <div class="a-6">
+      <h1>“留学保保”计划</h1>
+      <p>{pc:get sql="SELECT * FROM qu_page where catid=54"}
+    {loop $data $key $val}
+    {$val[content]}
+    {/loop}
+    {/pc}</p>
+      <div class="anniu"><a href="{pc:get sql="SELECT * FROM qu_news where catid=18 order by id asc"}
+{$data[0][url]}
+{/pc}">加入留学保保计划</a></div>
+      <div class="clear"></div>
+    </div>
+    <!--我要吐嘈黑中介-->
+    <div class="a-6">
+      <h1>我要吐嘈黑中介</h1>
+      <div class="bd">
+        <ul>
+          <li> {pc:get sql="SELECT * FROM qu_tucao_data"}
+            {loop $data $key $val}
+            <p>{$val[yuanyin]}</p>
+            {/loop}
+            {/pc}</li>
+        </ul>
+      </div>
+      <div class="anniu"><a href="{$CATEGORYS[19]['url']}">我要吐嘈黑中介</a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="zxzx"><a href="tencent://message/?uin=3097401794&Site=&Menu=yes"  target="_blank"><i class="icon-circle-arrow-right"></i>在线咨询</a></div>
+    {pc:get sql="SELECT * FROM qu_page where catid=31"}
+    {loop $data $key $val}
+    {$val[content]}
+    {/loop}
+    {/pc} </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+
+<!--遮罩层--> 
+{template "content","login"} 
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--消息滚动--> 
+<script type="text/javascript">
+jQuery(".a-6").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:1,interTime:50});
+</script> <script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+</body>
+</html>

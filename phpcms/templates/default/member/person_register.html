@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link rel="stylesheet" href="/style/css/register.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部 --> 
+{template "member","person_top"} 
+<!-- 头部结束 --> 
+<!--选校报告上部-->
+<div class="reporttitle">
+  <h2>用户注册</h2>
+</div>
+<!--主要内容--->
+
+<div class="content w-1000">
+  <div id="content-area">
+    <form action=""  accept-charset="UTF-8" method="post" id="registration-step1-form" class="user-register">
+      <div class="form-item" id="edit-real-name-wrapper">
+        <label for="edit-real-name">我的名字：</label>
+        <div class="form-element">
+          <input type="text" maxlength="120" name="username" id="username" size="60" value="" class="form-text required" />
+        </div>
+        <div  id="edit-real-name" class="description">请用汉字填写</div>
+        <div class="clear"></div>
+      </div>
+      
+       <div class="form-item" id="edit-real-name-wrapper">
+        <label for="edit-real-name">英文名字：</label>
+        <div class="form-element">
+          <input type="text" maxlength="120" name="nickname" id="nickname" size="60" value="" class="form-text required" />
+        </div>
+        <div  id="edit-real-name" class="description">请用拼音填写</div>
+        <div class="clear"></div>
+      </div>
+      <div class="form-item" id="edit-current-status-new-wrapper">
+        <label for="edit-current-status-new">我的学历</label>
+        <div class="form-element">
+          <input type="text" maxlength="120" name="nianji" id="nianji" size="60" value="" class="form-text required" />
+          <span class="field-suffix">
+          <div id="current_status" style="display:none;">
+            <div class="triangle"></div>
+            <div class="current_status_inside">
+              <h3>请选择你当前学历</h3>
+              <ul class="nav">
+                <li class="nav-one"><a href="#senior" class="current">高中/大学在读</a></li>
+              </ul>
+              <div class="list-wrap">
+                <ul id="senior">
+                  <li>
+                    <div class="first-row"><a href="#">高一</a><a href="#">高二</a><a href="#">高三</a></div>
+                    <div class="second-row"><a href="#">大一</a><a href="#">大二</a><a href="#">大三</a><a href="#">大四</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </span></div>
+        <div  id="edit-current-status-new" class="description">请选择你的当前学历</div>
+        <div class="clear"></div>
+      </div>
+      <div id="reg_password">
+        <div class="form-item" id="edit-password-wrapper">
+          <label for="edit-password">登录密码: </label>
+          <div class="form-element">
+            <input type="password" name="password" id="password"  maxlength="120"  size="60"  autocomplete="off" class="form-text" />
+          </div>
+          <div  id="edit-password" class="description">请输入你的登录密码</div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div id="reg_password">
+        <div class="form-item" id="edit-password-wrapper">
+          <label for="edit-password">重复密码: </label>
+          <div class="form-element">
+            <input type="password" name="pwdconfirm" id="pwdconfirm"  maxlength="120"  size="60"  autocomplete="off" class="form-text" />
+          </div>
+          <div  id="edit-password" class="description">请重复输入你的登录密码</div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div id="reg_email">
+        <div class="form-item" id="edit-email-wrapper">
+          <label for="edit-email">电子邮件: </label>
+          <div class="form-element">
+            <input type="text" maxlength="120" name="email" id="email" size="60" value="" placeholder="" class="form-text form-autocomplete" />
+          </div>
+          <div id="edit-email" class="description">用于登录账户,并在需要时接收招生官来信.</div>
+          <div class="clear"></div>
+        </div>
+        <input class="autocomplete" type="hidden" id="edit-email-autocomplete" value="http://www.zinch.cn/ichance/suggest_email_host" disabled="disabled" />
+      </div>
+      <div class="form-item" id="edit-phone-wrapper">
+        <label for="edit-phone">手机号码: </label>
+        <div class="form-element">
+          <input type="text" maxlength="120" name="mobile" id="mobile" size="60" value="" placeholder="" class="form-text" />
+        </div>
+        <div  id="edit-phone" class="description">请输入你的常用手机号码</div>
+        <div class="clear"></div>
+      </div>
+      <div class="form-item">
+        <label for="edit-phone">验证码: </label>
+        <div class="form-element1">
+          <input type="text" maxlength="5" name="code" id="code"  size="60" value="" placeholder="" class="form-text1" />
+        </div>
+        <div class="phoneanniu"><a></a></div>
+        <div class="clear"></div>
+        
+        </div>
+     
+      <div>
+        <input type="submit" name="dosubmit" id="edit-submit" value="同意注册"  class="form-submit" />
+      </div>
+    </form>
+  </div>
+  <!--右侧-->
+  <div class="zcright">
+    <h1>注册"Qu去留学"的6大理由：</h1>
+    <ul>
+      <li>- 获取美英澳加本硕选校报告</li>
+      <li>- 查找美国TOP150院校及专业信息</li>
+      <li>- 查找英国TOP45院校及专业信息</li>
+      <li>- 精选背景提升项目推送</li>
+      <li>- 国内TOP20留学中介查询</li>
+      <li>- 英澳免费申请</li>
+      <p>只需注册，全部免费！！！</p>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+
+<!--遮罩层--> 
+{template "content","login"} 
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/form.js"></script> 
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+   $(document).ready(function() {
+     $('#accede').parents('form').find('input.form-submit').click(function() {
+       if(!$('#accede').attr('checked')) {
+         alert('你必须同意服务条款后才能注册');
+         return false;
+       }
+     });
+});   
+//--><!]]>
+</script>
+</body>
+</html>

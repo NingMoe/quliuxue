@@ -1,0 +1,58 @@
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="{dede:global.cfg_basehost/}">
+                <img src="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/default/img/logo.gif" alt="{dede:global.cfg_webname/}" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="/a/{dede:type2}[field:typename /]{/dede:type2}/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='{dede:global.cfg_cmsurl/}/'>教程</a></li>
+            {dede:channel type='top' row='9' currentstyle="<li class='hoverc'><a href='~typelink~' ~rel~>dan~typename~dan</a></li>"}
+            <li class="channel"><a href='[field:typeurl/]' [field:rel/]>dan[field:typename/]dan</a></li>
+            {/dede:channel}</ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                {dede:tag row='10' getall='1' sort='month'}
+                <li><a href='[field:link/]' target="_blank">[field:tag /]</a></li>
+                {/dede:tag}</ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->

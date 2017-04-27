@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/agency.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 --> 
+  {template "content","top"} 
+  <!-- 头部结束 --> 
+  
+  <!--主要内容--->
+  <div class="content w-1000">
+   {template "content","lunbo34"}
+    <!--滚动--> 
+    
+    {template "content","gundong"} 
+    <!--注册-->
+    <div class="loginbox">
+      <h2>免费获取3份评估方案</h2>
+      <p class="p1">三家正规中介，专业顾问为您免费服务</p>
+      <div class="gj">
+      <form action="/index.php?m=school&c=school&a=online_service&t=1" method="post">
+        <p>申请国家：</p>
+        <select name="guojia">
+          <option value="1">美国</option>
+          <option value="2">英国</option>
+          <option value="3">加拿大</option>
+          <option value="4">澳大利亚</option>
+          <option value="5">新加坡</option>
+          <option value="6">香港</option>
+        </select>
+        </div>
+        <div class="gj">
+          <p>申请目标：</p>
+          <select name="mubiao">
+		     <option value="2">硕士</option>
+            <option value="1">本科</option>
+  
+            <option value="3">博士</option>
+            <option value="4">博士后</option>
+          </select>
+        </div>
+        <p>姓名：</p>
+        <input name="name" type="text" />
+        <p>联系方式：</p>
+        <input name="phone" type="text"  />
+        <div class="anniu">
+          <input type="submit" value="立即申请" id="dosubmit" name="dosubmit" class="button">
+        </div>
+      </form>
+    </div>
+    
+    <!--挑选留学中介-->
+    <div class="a-left">
+      <div class="a-box"> 
+        <!--固定不变的层-->
+        <div class="a-1" id="a-1">
+          <h1>挑选留学中介<a name="s" id="s"></a></h1>
+          <div class="listbox"> {php $data=getcache(3386,'linkage');$diqu=$data[data];  $data2=getcache(3387,'linkage');$guojia=$data2[data];}
+            <div id="sarea" style="display:block" class="n-list"><span><i class="icon-caret-right"></i>按服务地区</span>
+              <p> <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&guojia={$_GET[guojia]}#s" {if $_GET[diqu]==''}class="active"{/if} >不限</a> {loop $diqu $k $v}
+                {if $n<=8}<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$v[linkageid]}&guojia={$_GET[guojia]}#s" {if $_GET[diqu]==$v[linkageid]}class="active"{/if} >{$v[name]}</a> {/if}
+                {if $n==9}<a href="javascript:" onclick="document.all.barea.style.display=(document.all.barea.style.display=='none')?'':'none';document.all.sarea.style.display=(document.all.sarea.style.display=='none')?'':'none'" class="bcolor">更多>></a>{/if}
+                
+                {/loop} </p>
+            </div>
+            <div id="barea" style="display:none;" class="n-list"><span><i class="icon-caret-down"></i>按服务地区</span>
+              <p> <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&guojia={$_GET[guojia]}#s" {if $_GET[diqu]==''}class="active"{/if} >不限</a> {loop $diqu $k $v} <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$v[linkageid]}&guojia={$_GET[guojia]}#s" {if $_GET[diqu]==$v[linkageid]}class="active"{/if} >{$v[name]}</a>
+                {/loop} <a href="javascript:" onclick="document.all.barea.style.display=(document.all.barea.style.display=='none')?'':'none';document.all.sarea.style.display=(document.all.sarea.style.display=='none')?'':'none'" class="bcolor">收起>></a></p>
+            </div>
+            <div id="scity" style="display:block" class="n-list"><span><i class="icon-caret-right"></i>按办理国家</span>
+              <p> <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$_GET[diqu]}#s" {if $_GET[guojia]==''}class="active"{/if} >不限</a> {loop $guojia $k $v}
+                {if $n<=8}<a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$_GET[diqu]}&guojia={$v[linkageid]}#s" {if $_GET[guojia]==$v[linkageid]}class="active"{/if} >{$v[name]}</a> {/if}
+               
+                
+                {/loop}  <a href="javascript:" onclick="document.all.bcity.style.display=(document.all.bcity.style.display=='none')?'':'none';document.all.scity.style.display=(document.all.scity.style.display=='none')?'':'none'" class="bcolor">更多>></a></p>
+            </div>
+            <div id="bcity" style="display:none;" class="n-list"><span><i class="icon-caret-down"></i>按办理国家</span>
+              <p> <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$_GET[diqu]}#s" {if $_GET[guojia]==''}class="active"{/if} >不限</a> {loop $guojia $k $v} <a href="{siteurl($siteid)}/index.php?m=content&c=index&a=lists&catid=13&diqu={$_GET[diqu]}&guojia={$v[linkageid]}#s" {if $_GET[guojia]==$v[linkageid]}class="active"{/if} >{$v[name]}</a>
+                {/loop} <a href="javascript:" onclick="document.all.bcity.style.display=(document.all.bcity.style.display=='none')?'':'none';document.all.scity.style.display=(document.all.scity.style.display=='none')?'':'none'" class="bcolor">收起>></a></p>
+            </div>
+          </div>
+          <!--排序-->
+          <div class="sort">
+            <ul class="pxu">
+              <li class="l1">排序</li>
+              <li><a href="javascript:navigate_tabs1('a','first-tab');" id="first-tab">综合</a></li>
+              <li><a href="javascript:navigate_tabs1('b','second-tab');" id="second-tab">按好评度</a></li>
+              <li><a href="javascript:navigate_tabs1('c','third-tab');" id="third-tab">按综合得分</a></li>
+            </ul>
+            
+        <form action="{APP_PATH}index.php" method="get">
+        <input type="hidden" name="m" value="content"/>
+        <input type="hidden" name="c" value="index"/>
+        <input type="hidden" name="a" value="lists"/>
+        <input type="hidden" name="catid" value="13"/><!--
+        <input type="hidden" name="diqu" value="{$_GET[diqu]}" id="diqu"/>
+        <input type="hidden" name="guojia" value="{$_GET[guojia]}" id="guojia"/> -->
+ <input id="search-txt" class="search-txt" type="text" name="keyword" value="请输入您要搜索的中介" onfocus="if(this.value=='请输入您要搜索的中介')this.value='';" onblur="if(this.value=='')this.value='请输入您要搜索的中介';" >
+              
+              <button id="search-btn" class="search-btn" type="submit" value="搜索"></button>
+            </form>
+          </div>
+        </div>
+        <!--选项卡内容--->
+        <div class="a-2">
+          <div class="a rr">
+            <?php $where = 'a.id=b.id';
+            if($_GET[diqu]!=''){
+            $where .= $where ?  " AND b.diqu like '%$_GET[diqu]%'" : " b.diqu like '%$_GET[diqu]%'";
+            }
+           
+            if ($_GET[guojia]!=''){
+            $where .= $where ?  " AND b.guojia like '%$_GET[guojia]%'" : " b.guojia like '%$_GET[guojia]%'";
+            }
+            
+            if ($_GET[keyword]!=''){
+            $where .= $where ?  " AND a.title like '%$_GET[keyword]%'" : " a.title like '%$_GET[keyword]%'";
+            }
+            
+           ?>
+            {pc:get sql="SELECT * FROM qu_intermediary a,qu_intermediary_data b WHERE $where ORDER BY a.listorder DESC" num="6" page="$page"   return="data"}
+            {loop $data $key $val}
+            <?php 
+                   pc_base::load_sys_class('form', '', 0);
+		$list1=pc_base::load_model('download_model');
+                   $db = pc_base::load_model('hits_model'); 
+                   $_r = $db->get_one(array('hitsid'=>'c-'.$modelid.'-'.$val[id])); 
+                   $views = $_r[views]; 
+             ?> 
+            <div class="zxlist">
+              <div class="imgbox"><a href="{$val['url']}"><img src="{$val['thumb']}" /></a>
+                <p>已有<span>{$views}</span>人咨询</p>
+              </div>
+              <div class="nrbox">
+                <h2><a href="{$val['url']}">{$val['title']}</a></h2>
+            <!--    <p>公司地址：<span>{$val['dizhi']}</span></p>-->
+                <p>服务地区：{loop explode(",",$val['diqu']) $k $v} <span>{$diqu[$v][name]}</span> {/loop} <?php echo(get_linkage($v['diqu'], 3386, '-',2));?></p>
+                <p>办理国家：{loop explode(",",$val['guojia']) $k $v} <span>{$guojia[$v][name]}</span> {/loop}</p>
+                <ul>
+                  <li>好评度：<img src="/style/images/hp{$val['haopin']}.jpg" /><i class="icon-exclamation-sign">
+                    <div class="cc">好评度，是留学监理网对中介机构自接受留学监理网监理之日起,在办理学生数量和监理配合度等方面累积的一个评价结果。</div>
+                    </i></li>
+                  <li>综合得分：{$val['zonghe']}<i class="icon-exclamation-sign">
+                    <div class="cc">综合得分，是学生对留学监理网推荐的中介机构在方案设计、服务态度、专业水平和办理效率等方面的累计评分结果，总分为5分。</div>
+                    </i></li>
+                  <div class="clear"></div>
+                </ul>
+                <div class="anniu"><a href="{$CATEGORYS[20]['url']}&id={$val['id']}"><i class="icon-ok"></i>免费预约中介顾问</a></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            {/loop}
+            {if count($data)<1}
+            
+            <b>未找到符合搜索条件的内容</b>(改这里)
+            
+            {/if}
+            {/pc}
+            
+             </div>
+          <div class="b rr">
+           
+            {pc:get sql="SELECT * FROM qu_intermediary a,qu_intermediary_data b WHERE $where ORDER BY b.haopin DESC" num="6" page="$page"   return="data"}
+            {loop $data $key $val}
+           <?php 
+                   pc_base::load_sys_class('form', '', 0);
+		$list1=pc_base::load_model('download_model');
+                   $db = pc_base::load_model('hits_model'); 
+                   $_r = $db->get_one(array('hitsid'=>'c-'.$modelid.'-'.$val[id])); 
+                   $views = $_r[views]; 
+             ?> 
+            <div class="zxlist">
+              <div class="imgbox"><a href="{$val['url']}"><img src="{$val['thumb']}" /></a>
+                <p>已有<span>{$views}</span>人咨询</p>
+              </div>
+              <div class="nrbox">
+                <h2><a href="{$val['url']}">{$val['title']}</a></h2>
+                <p>公司地址：<span>{$val['dizhi']}</span></p>
+                <p>服务地区：
+                  
+                  {loop explode(",",$val['diqu']) $k $v} <span>{$diqu[$v][name]}</span> {/loop} <?php echo(get_linkage($v['diqu'], 3386, '-',2));?></p>
+                <p>办理国家：{loop explode(",",$val['guojia']) $k $v} <span>{$guojia[$v][name]}</span> {/loop}</p>
+                <ul>
+                  <li>好评度：<img src="/style/images/hp{$val['haopin']}.jpg" /><i class="icon-exclamation-sign">
+                    <div class="cc">好评度，是留学监理网对中介机构自接受留学监理网监理之日起,在办理学生数量和监理配合度等方面累积的一个评价结果。</div>
+                    </i></li>
+                  <li>综合得分：{$val['zonghe']}<i class="icon-exclamation-sign">
+                    <div class="cc">综合得分，是学生对留学监理网推荐的中介机构在方案设计、服务态度、专业水平和办理效率等方面的累计评分结果，总分为5分。</div>
+                    </i></li>
+                  <div class="clear"></div>
+                </ul>
+                <div class="anniu"><a href="{$CATEGORYS[20]['url']}"><i class="icon-ok"></i>免费预约中介顾问</a></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+           {/loop}
+            {if count($data)<1}
+            
+            <b>未找到符合搜索条件的内容</b>(改这里)
+            
+            {/if}
+            {/pc}
+          </div>
+          <div class="c rr">
+            {pc:get sql="SELECT * FROM qu_intermediary a,qu_intermediary_data b WHERE $where ORDER BY b.zonghe DESC" num="6" page="$page"   return="data"}
+            {loop $data $key $val}
+           <?php 
+                   pc_base::load_sys_class('form', '', 0);
+		$list1=pc_base::load_model('download_model');
+                   $db = pc_base::load_model('hits_model'); 
+                   $_r = $db->get_one(array('hitsid'=>'c-'.$modelid.'-'.$val[id])); 
+                   $views = $_r[views]; 
+             ?> 
+            <div class="zxlist">
+              <div class="imgbox"><a href="{$val['url']}"><img src="{$val['thumb']}" /></a>
+                <p>已有<span>{$views}</span>人咨询</p>
+              </div>
+              <div class="nrbox">
+                <h2><a href="{$val['url']}">{$val['title']}</a></h2>
+                <p>公司地址：<span>{$val['dizhi']}</span></p>
+                <p>服务地区：
+                  
+                  {loop explode(",",$val['diqu']) $k $v} <span>{$diqu[$v][name]}</span> {/loop} <?php echo(get_linkage($v['diqu'], 3386, '-',2));?></p>
+                <p>办理国家：{loop explode(",",$val['guojia']) $k $v} <span>{$guojia[$v][name]}</span> {/loop}</p>
+                <ul>
+                  <li>好评度：<img src="/style/images/hp{$val['haopin']}.jpg" /><i class="icon-exclamation-sign">
+                    <div class="cc">好评度，是留学监理网对中介机构自接受留学监理网监理之日起,在办理学生数量和监理配合度等方面累积的一个评价结果。</div>
+                    </i></li>
+                  <li>综合得分：{$val['zonghe']}<i class="icon-exclamation-sign">
+                    <div class="cc">综合得分，是学生对留学监理网推荐的中介机构在方案设计、服务态度、专业水平和办理效率等方面的累计评分结果，总分为5分。</div>
+                    </i></li>
+                  <div class="clear"></div>
+                </ul>
+                <div class="anniu"><a href="{$CATEGORYS[20]['url']}"><i class="icon-ok"></i>免费预约中介顾问</a></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            {/loop}
+            {if count($data)<1}
+            
+            <b>未找到符合搜索条件的内容</b>(改这里)
+            
+            {/if}
+          </div>
+        </div>
+      </div>
+      <!--分页--> 
+      <!--分页-->
+      <div class="pages"> {$pages} </div>
+      {/pc}
+      <div class="clear"></div>
+    </div>
+    <!--右侧-->
+    <div class="a-right"> 
+      <!--留学保保计划-->
+      <div class="a-3">
+        <h1>“留学保保”计划</h1>
+        <p><?php echo anli_announce(1)?></p>
+        <div class="anniu"><a href="{pc:get sql="SELECT * FROM qu_news where catid=18 order by id asc"}
+{$data[0][url]}
+{/pc}">了解“留学保保”计划</a></div>
+        <div class="clear"></div>
+      </div>
+      <!--如何挑选-->
+      <div class="a-4">
+        <h1>如何寻找合适的中介公司？</h1>
+        <div class="type">
+          <div class="imgbox"><img src="/style/images/l-1.png"/></div>
+          <div class="nrbox">
+            <h5>看口碑</h5>
+            <p>看学生真实点评</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="type">
+          <div class="imgbox"><img src="/style/images/l-2.png"  /></div>
+          <div class="nrbox">
+            <h5>比方案</h5>
+            <p>比3套设计方案</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="type">
+          <div class="imgbox"><img src="/style/images/l-3.png"/></div>
+          <div class="nrbox">
+            <h5>比报价</h5>
+            <p>比3家公司报价</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="type">
+          <div class="imgbox"><img src="/style/images/l-4.png"/></div>
+          <div class="nrbox">
+            <h5>比保障</h5>
+            <p>比服务和保障</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="anniu"><a href="http://wpa.qq.com/msgrd?v=3&uin=3097401794&site=qq&menu=yes" target="_blank">在线咨询</a></div>
+      </div>
+      <!--好评榜-->
+      <div class="a-5">
+        <h1>留学中介好评榜</h1>
+        <p>知名留学中介</p>
+        <ul>
+        
+        {pc:get sql="SELECT * FROM qu_intermediary a,qu_intermediary_data b WHERE $where ORDER BY b.haopin DESC" num="6"   return="data"}
+            {loop $data $key $val}
+          <li><a href="{$val['url']}">{$val['title']}</a></li>
+          {/loop}
+          {/pc}
+          </ul>
+      </div>
+      <!--我要吐嘈黑中介-->
+      <div class="a-6">
+        <h1>我要吐嘈黑中介</h1>
+        <p>我是看这个中介在报纸上打的广告去报的名，报纸上说的条件很好，还说如果办留学不成功，不管怎么样都会赔偿申请人3000元。后来我们又签了个合同，合同上说如果因为中介的责任，被学校录取后导致拒签的话，中介赔偿我3000元。现在我去不了了！</p>
+        <div class="anniu"><a href="{$CATEGORYS[19]['url']}">我要吐嘈黑中介</a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--尾部版权-->
+{template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--消息滚动--> 
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
+
+jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,delayTime:700});
+</script> 
+<script type="text/javascript" src="/style/js/tab.js"></script><!--选项卡--> 
+<script type="text/javascript" ><!--固定某个层不动-->
+function menuFixed(id){
+var obj = document.getElementById(id);
+var _getHeight = obj.offsetTop;
+
+window.onscroll = function(){
+changePos(id,_getHeight);
+}
+}
+function changePos(id,height){
+var obj = document.getElementById(id);
+var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+if(scrollTop < height){
+obj.style.position = 'relative';
+}else{
+obj.style.position = 'fixed';
+}
+}
+</script> 
+<script type="text/javascript">
+window.onload = function(){
+menuFixed('a-1');
+}
+</script>
+</body>
+</html>

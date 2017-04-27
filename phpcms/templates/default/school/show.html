@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>院校资料-去留学</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+</title>
+<link rel="stylesheet" href="/style/css/search.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索-->
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层-->
+<script type="text/javascript" src="/style/js/jquery.js"></script><!--专业方向-->
+<script type="text/javascript" src="/style/js/common.js"></script>
+<script type="text/javascript" src="/style/js/tab.js"></script><!--选项卡-->
+</head>
+<body>
+<div id="wrapper">
+<!-- 头部 --> 
+{template "content","top"} 
+<!-- 头部结束 --> 
+<!--院校搜索上部-->
+<div class="reporttitle">
+  <h2>院校资料</h2>
+</div>
+<!--主要内容--->
+<div class="content w-1000">
+  <div class="sebox"> 
+    <!--左侧-->
+    <div class="s-left"> 
+      <!--学校基本信息-->
+      <div class="se-1"> 
+        <!--左侧-->
+        <div class="se-left"> 
+          <!--上-->
+          <div class="se-1-1">
+            <div class="imgbox"><img src="{$show[logo]}" /></div>
+            <div class="nrbox">
+              <h1>{$show[cnname]}</h1>
+              <p>{$show[enname]}</p>
+              <p>所在地：{$show[location]}</p>
+              <p>地理位置：{$show[position]}</p>
+            </div>
+          </div>
+          <!--下-->
+          <div class="se-1-2">
+            <h2>学校排名<span>{$show[rank]}</span></h2>
+<p><h2>官网：<a href="{$show[weburl]}" target="_BLANK">{$show[weburl]}</a></h2></p>
+         <!--    <p><span>托福成绩：{$show[toefl_scores]}</span><span>雅思成绩：{$show[ielts_score]}</span></p> -->
+            <p class="anniu"><a href="/index.php?m=content&c=index&a=lists&catid=40" target="_blank"><i class="icon-ok"></i>录取几率免费评估</a></p>
+          </div>
+        </div>
+        <!--右侧-->
+        <div class="se-right"> <img src="{$show[datu]}" /> </div>
+        <div class="clear"></div>
+      </div>
+      <!--学校信息选项卡-->
+     <div class="se-2">
+        <div class="se-left">
+          <ul>
+            <li><a href="javascript:navigate_tabs('a','first-tab');" id="first-tab"><i class="icon-star"></i>学校简介</a></li>
+            <li><a href="javascript:navigate_tabs('b','second-tab');" id="second-tab"><i class="icon-star"></i>录取要求</a></li>
+            <li><a href="javascript:navigate_tabs('c','third-tab');" id="third-tab"><i class="icon-star"></i>七嘴八舌</a></li>
+            <li><a href="javascript:navigate_tabs('d','four-tab');" id="four-tab"><i class="icon-star"></i>校园文化</a></li>
+          </ul>
+        </div>
+        <div class="se-right">
+          <div class="a rr">
+            <h1 class="xuexiao">学校简介</h1>
+            <p>{$show[school_profile]}</p>
+            <div class="clear"></div>
+          </div>
+          <div class="b rr">
+            <h1>录取要求</h1>
+            <p>{$show[requirements]}</p>
+            <div class="clear"></div>
+          </div>
+          <div class="c rr">
+            <h1>七嘴八舌</h1>
+            <p>{$show[qizuibashe]}</p>
+            <div class="clear"></div>
+          </div>
+          <div class="d rr">
+            <h1>校园文化</h1>
+            <p>{$show[culture]}</p>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--专业方向-->
+      <div class="yuanxiao_zhuanye">
+        <h1>专业方向</h1>
+        <div class="zhuanye" id="majorWrap">
+          <ul class="zhuanye_a">
+            <li><a>全部</a></li>
+            <?php 
+    foreach ($data_professional as $k_professional => $v_professional){  
+    ?>
+            <li><a><?php echo $v_professional[content]?></a></li>
+            <?php
+    }
+    ?>
+            <div class="clear"></div>
+          </ul>
+          <div class="majorItem">
+            <ul style="display: none;" class="fangxiang_a">
+    <?php 
+    foreach ($data_all as $k_all => $v_all){  
+    ?>
+              <li {if $k_all>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_all[id]?>"><?php echo $v_all[direction_enname]?>(<?php echo $v_all[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_all[direction_style]?> 专业方向：<?php echo $v_all[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+          
+              <?php 
+    foreach ($data_1 as $k_1 => $v_1){  
+    ?>
+              <li {if $k_1>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_1[id]?>"><?php echo $v_1[direction_enname]?>(<?php echo $v_1[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_1[direction_style]?> 专业方向：<?php echo $v_1[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+              <?php 
+    foreach ($data_2 as $k_2 => $v_2){  
+    ?>
+              <li {if $k_2>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_2[id]?>"><?php echo $v_2[direction_enname]?>(<?php echo $v_2[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_2[direction_style]?> 专业方向：<?php echo $v_2[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+              <?php 
+    foreach ($data_3 as $k_3 => $v_3){  
+    ?>
+              <li {if $k_3>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_3[id]?>"><?php echo $v_3[direction_enname]?>(<?php echo $v_3[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_3[direction_style]?> 专业方向：<?php echo $v_3[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            
+            <ul class="fangxiang_a" style="display: none;">
+              <?php 
+    foreach ($data_4 as $k_4 => $v_4){  
+    ?>
+              <li {if $k_4>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_4[id]?>"><?php echo $v_4[direction_enname]?>(<?php echo $v_4[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_4[direction_style]?> 专业方向：<?php echo $v_4[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_5 as $k_5 => $v_5){  
+    ?>
+              <li {if $k_5>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_5[id]?>"><?php echo $v_5[direction_enname]?>(<?php echo $v_5[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_5[direction_style]?> 专业方向：<?php echo $v_5[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                     <?php 
+    foreach ($data_6 as $k_6 => $v_6){  
+    ?>
+              <li {if $k_6>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_6[id]?>"><?php echo $v_6[direction_enname]?>(<?php echo $v_6[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_6[direction_style]?> 专业方向：<?php echo $v_6[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                     <?php 
+    foreach ($data_7 as $k_7 => $v_7){  
+    ?>
+              <li {if $k_7>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_7[id]?>"><?php echo $v_7[direction_enname]?>(<?php echo $v_7[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_7[direction_style]?> 专业方向：<?php echo $v_7[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                     <?php 
+    foreach ($data_8 as $k_8 => $v_8){  
+    ?>
+              <li {if $k_8>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_8[id]?>"><?php echo $v_8[direction_enname]?>(<?php echo $v_8[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_8[direction_style]?> 专业方向：<?php echo $v_8[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                     <?php 
+    foreach ($data_9 as $k_9 => $v_9){  
+    ?>
+              <li {if $k_9>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_9[id]?>"><?php echo $v_9[direction_enname]?>(<?php echo $v_9[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_9[direction_style]?> 专业方向：<?php echo $v_9[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_10 as $k_10 => $v_10){  
+    ?>
+              <li {if $k_10>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_10[id]?>"><?php echo $v_10[direction_enname]?>(<?php echo $v_10[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_10[direction_style]?> 专业方向：<?php echo $v_10[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_11 as $k_11 => $v_11){  
+    ?>
+              <li {if $k_11>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_11[id]?>"><?php echo $v_11[direction_enname]?>(<?php echo $v_11[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_11[direction_style]?> 专业方向：<?php echo $v_11[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                     <?php 
+    foreach ($data_12 as $k_12 => $v_12){  
+    ?>
+              <li {if $k_12>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_12[id]?>"><?php echo $v_12[direction_enname]?>(<?php echo $v_12[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_12[direction_style]?> 专业方向：<?php echo $v_12[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_13 as $k_13 => $v_13){  
+    ?>
+              <li {if $k_13>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_13[id]?>"><?php echo $v_13[direction_enname]?>(<?php echo $v_13[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_13[direction_style]?> 专业方向：<?php echo $v_13[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_14 as $k_14 => $v_14){  
+    ?>
+              <li {if $k_1>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_14[id]?>"><?php echo $v_14[direction_enname]?>(<?php echo $v_14[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_14[direction_style]?> 专业方向：<?php echo $v_14[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_15 as $k_15 => $v_15){  
+    ?>
+              <li {if $k_1>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_15[id]?>"><?php echo $v_15[direction_enname]?>(<?php echo $v_15[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_15[direction_style]?> 专业方向：<?php echo $v_15[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_16 as $k_16 => $v_16){  
+    ?>
+              <li {if $k_16>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_16[id]?>"><?php echo $v_16[direction_enname]?>(<?php echo $v_16[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_1[direction_style]?> 专业方向：<?php echo $v_1[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                       <?php 
+    foreach ($data_17 as $k_17 => $v_17){  
+    ?>
+              <li {if $k_17>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_17[id]?>"><?php echo $v_17[direction_enname]?>(<?php echo $v_17[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_17[direction_style]?> 专业方向：<?php echo $v_17[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_18 as $k_18 => $v_18){  
+    ?>
+              <li {if $k_18>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_18[id]?>"><?php echo $v_18[direction_enname]?>(<?php echo $v_18[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_18[direction_style]?> 专业方向：<?php echo $v_18[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                       <?php 
+    foreach ($data_19 as $k_19 => $v_19){  
+    ?>
+              <li {if $k_19>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_19[id]?>"><?php echo $v_19[direction_enname]?>(<?php echo $v_19[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_19[direction_style]?> 专业方向：<?php echo $v_19[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                       <?php 
+    foreach ($data_20 as $k_20 => $v_20){  
+    ?>
+              <li {if $k_20>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_20[id]?>"><?php echo $v_20[direction_enname]?>(<?php echo $v_20[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_20[direction_style]?> 专业方向：<?php echo $v_20[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_21 as $k_21 => $v_21){  
+    ?>
+              <li {if $k_21>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_21[id]?>"><?php echo $v_21[direction_enname]?>(<?php echo $v_21[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_21[direction_style]?> 专业方向：<?php echo $v_21[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="">
+                       <?php 
+    foreach ($data_22 as $k_22 => $v_22){  
+    ?>
+              <li {if $k_22>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_22[id]?>"><?php echo $v_22[direction_enname]?>(<?php echo $v_22[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_22[direction_style]?> 专业方向：<?php echo $v_22[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_23 as $k_23 => $v_23){  
+    ?>
+              <li {if $k_23>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_23[id]?>"><?php echo $v_23[direction_enname]?>(<?php echo $v_23[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_23[direction_style]?> 专业方向：<?php echo $v_23[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_24 as $k_24 => $v_24){  
+    ?>
+              <li {if $k_24>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_24[id]?>"><?php echo $v_24[direction_enname]?>(<?php echo $v_24[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_24[direction_style]?> 专业方向：<?php echo $v_24[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_25 as $k_25 => $v_25){  
+    ?>
+              <li {if $k_25>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_25[id]?>"><?php echo $v_25[direction_enname]?>(<?php echo $v_25[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_25[direction_style]?> 专业方向：<?php echo $v_25[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+            <ul class="fangxiang_a" style="display: none;">
+                      <?php 
+    foreach ($data_26 as $k_26 => $v_26){  
+    ?>
+              <li {if $k_26>8}class="majorMore majorHide"{/if}><a href="/index.php?m=school&c=show&a=show_c&id=<?php echo $_GET[id]?>&cid=<?php echo $v_26[id]?>"><?php echo $v_26[direction_enname]?>(<?php echo $v_26[direction_cnname]?>)</a><br>
+                <span>学位类型：<?php echo $v_26[direction_style]?> 专业方向：<?php echo $v_26[content]?></span></li>
+    <?php
+    }
+    ?>
+              <div class="clear"></div>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="yuanxiao_view shortMajor"> <a href="javascript:void(0);" onclick="showMoreMajor(this, 'shortMajor', 'moreMajor');" >View More</a> </div>
+        <div class="yuanxiao_view moreMajor" style="display:none;"> <a href="javascript:void(0);" onclick="showMoreMajor(this, 'moreMajor', 'shortMajor');" >Hide</a> </div>
+        <div class="view_tan"></div>
+        <script type="text/javascript">
+			jQuery("#majorWrap").SuperSlide({titCell:".zhuanye_a li",mainCell:".majorItem",titOnClassName:"zhuanye02"});
+		</script>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!--右侧-->
+    <div class="s-right">
+      {pc:get sql="SELECT * FROM qu_page where catid=29"}
+{loop $data $key $val}
+{$val[content]}
+{/loop}
+{/pc}
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权--> 
+{template "content","bot"} 
+<!--遮罩层--> 
+{template "content","login"}
+</body>
+</html>

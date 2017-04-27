@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>对环境资源的过渡使用已经严重威胁了自然环境|我的网站</title>
+<meta name="description" content=" 给城市的建设带来了一些环境污染的问题随着我国城市化进程的不断推进 城市的污染问题也成为现代社会应该重视的问题对环境资源的过渡使用已经严重威胁了自然环境 影响到了人" />
+<meta name="keywords" content="环境资源,过渡,使用,已经,严重,威胁,自然环境,城市,建设" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.happygo99.com/data/shop/jhgy/dvdb2c/" title="明日新开传奇私服网站">明日新开传奇私服网站</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/edelbuys/" title="超级变态合击传奇私服">超级变态合击传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecsm/" title="新开蛊惑版本传奇私服">新开蛊惑版本传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebonyroselabel/" title="寿光刚开网通传奇私服">寿光刚开网通传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/educaport/" title="网页版本变态传奇私服">网页版本变态传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/edwardianweddingrings/" title="传奇私服合击版超变态">传奇私服合击版超变态</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/eleveragepoint/" title="网通传奇私服网">网通传奇私服网</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/econoptimist/" title="传奇私服网通变态版">传奇私服网通变态版</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/" title="山丘">山丘</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/durhammoldremediation/" title="3月15日新开传奇私服">3月15日新开传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecocityhow/" title="网通传奇私服万劫">网通传奇私服万劫</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecmini/" title="网通传奇私服65535">网通传奇私服65535</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/" title="地精">地精</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecodesigninternational/" title="网通1.96蓝魔传奇私服">网通1.96蓝魔传奇私服</a></li><li><a href="http://www.yibotec.com/Skin/Flash/uytfd/ecitymarketing/" title="网通封挂传奇私服">网通封挂传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/easunled/" title="刚开超变网通传奇私服">刚开超变网通传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebayauctionid/" title="十年网通合击传奇私服">十年网通合击传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earthfestivals/" title="不卡网通热血传奇私服">不卡网通热血传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastislipdentalimplant/" title="网通传奇私服发布网址">网通传奇私服发布网址</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/emixsound/" title="sf999传奇私服网通">sf999传奇私服网通</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">4月6日新开传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete11253.html" target="_blank" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete11215.html" target="_blank" title="但为了方便商品的交换和流通">但为了方便商品的交换和流通</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete11009.html" target="_blank" title="长汀位于闽西边陲">长汀位于闽西边陲</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete10793.html" target="_blank" title="对环境资源的过渡使用已经严重威胁了自然环境">对环境资源的过渡使用已经严重威胁了自然环境</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete9015.html" target="_blank" title="结论:在本实验条件下">结论:在本实验条件下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete8520.html" target="_blank" title="主要反映最新的中医药科研教学成果与经验">主要反映最新的中医药科研教学成果与经验</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete8401.html" target="_blank" title="比较测量患者及模型的实际外形尺寸">比较测量患者及模型的实际外形尺寸</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete8171.html" target="_blank" title="在词学界长期存在婉约豪放之争的背景下">在词学界长期存在婉约豪放之争的背景下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete8030.html" target="_blank" title="南山景区还派出专业销售队伍">南山景区还派出专业销售队伍</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete7450.html" target="_blank" title="在信息处理中积极地利">在信息处理中积极地利</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/" title="网通传奇私服那找">网通传奇私服那找</a></h3>
+<ul>
+<li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/201512137.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/201510929.html" title="采用ELISA方法">采用ELISA方法</a></li>
+<li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/20159845.html" title="有了如此经历">有了如此经历</a></li>
+<li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/20159333.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+<li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecousedcar/20159281.html" title="他还说：如果诗歌不能让人热爱生活">他还说：如果诗歌不能让人热爱生活</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/" title="今日新开盛大传奇私服">今日新开盛大传奇私服</a></h3>
+<ul>
+<li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/contete10731.html" title="数学的优化方法和电子计算机计算技术的结合">数学的优化方法和电子计算机计算技术的结合</a></li>
+<li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/contete10452.html" title="产品不仅保持了红枣和草莓的风味和营养">产品不仅保持了红枣和草莓的风味和营养</a></li>
+<li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/contete10295.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/contete8718.html" title="常数数字运算符号和函数符号采用正体">常数数字运算符号和函数符号采用正体</a></li>
+<li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwsargent/contete8378.html" title="城市的表面就这样由柔软和硬朗的两面构成">城市的表面就这样由柔软和硬朗的两面构成</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 4月6日新开传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>对环境资源的过渡使用已经严重威胁了自然环境</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 09:51</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10793&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10793">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       给城市的建设带来了一些环境污染的问题随着我国城市化进程的不断推进       城市的污染问题也成为现代社会应该重视的问题对环境资源的过渡使用已经严重威胁了自然环境       影响到了人</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;给城市的建设带来了一些环境污染的问题<p>随着我国城市化进程的不断推进<BR>&nbsp; &nbsp; &nbsp; &nbsp;城市的污染问题也成为现代社会应该重视的问题对环境资源的过渡使用已经严重威胁了自然环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;影响到了人们的正常生活和社会可持续发展所以解决城市中的污染问题已经成为了城市规划中非常重要的一环但是我国的一些城市规划在城市环境管理上相对疏忽<BR>&nbsp; &nbsp; &nbsp; &nbsp;水污染、空气污染等问题的出现<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是因为对环境的保护力度不够而且这些城市大都都是在出现环境问题时<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不是对环境问题做提前的预防<BR>&nbsp; &nbsp; &nbsp; &nbsp;这给城市的发展造成了很大的阻力所以规划城市化初期建设的环境问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为了推动城市化进程的重点 </p><p>噪声有强弱之分<BR>&nbsp; &nbsp; &nbsp; &nbsp;低强度的噪声对人类生活不会造成伤害<BR>&nbsp; &nbsp; &nbsp; &nbsp;在很多的情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以提高人们的工作激情高强度的噪音主要来自工业机器、建筑工地的机器声、娱乐场所的喧闹声等等<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些声音都会影响人们的正常休息<BR>&nbsp; &nbsp; &nbsp; &nbsp;严重时会给人们的身体健康造成严重的损害<BR>&nbsp; &nbsp; &nbsp; &nbsp;会引起头晕、消化系统的疾病噪音的高强度刺激<BR>&nbsp; &nbsp; &nbsp; &nbsp;会降低人们的休息质量<BR>&nbsp; &nbsp; &nbsp; &nbsp;影响人们的工作效率 </p><p>综上所述<BR>&nbsp; &nbsp; &nbsp; &nbsp;本文通过对城市规划中出现环境问题的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;提出了整治环境问题的有效措施城市环境是人们生存和发展的必要条件<BR>&nbsp; &nbsp; &nbsp; &nbsp;是人类社会得以发展的重要保障在对城市进行规划时<BR>&nbsp; &nbsp; &nbsp; &nbsp;要特别注意对环境问题的预防解决<BR>&nbsp; &nbsp; &nbsp; &nbsp;要运用科学合理的方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用自然资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进社会的可持续发展</p><p>随着城市化进程的不断推进<BR>&nbsp; &nbsp; &nbsp; &nbsp;噪音污染已经成为环境污染中的主要问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;给人们的生活和工作都带来了消极的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;阻碍了城市化进程的发展 </p><p>：这是解决大气污染的重要措施工厂不宜过分集中<BR>&nbsp; &nbsp; &nbsp; &nbsp;以减少一个地区内污染物的排放量另外<BR>&nbsp; &nbsp; &nbsp; &nbsp;还应把有原料供应关系的化工厂放在一起<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过对废气的综合利用<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少废气排放量 </p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;对于城市的每个重点区域都建设废水处理厂<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用各种自然净化手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;对污水进行处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用新的科技和方法将水净化<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能让污水直接排入江河湖海中 </p><p>随着经济水平的不断提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业、交通等行业的发展也更加迅速<BR>&nbsp; &nbsp; &nbsp; &nbsp;对石油化工燃料的消耗也大幅度的增加<BR>&nbsp; &nbsp; &nbsp; &nbsp;这使得其向空气中排放了很多的污染气体大气的污染物主要包括粉尘、臭氧等等空气中含有这些物质<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会大大的降低了空气的质量<BR>&nbsp; &nbsp; &nbsp; &nbsp;严重的威胁人类的人体健康<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至会让整个城市都被这种受到污染的空气包裹住空气中的硫化物等在下雨的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;腐蚀城市建筑和环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;产生很大的经济损失 </p><p>城市生活垃圾处理的方式主要有两种：垃圾填埋和垃圾焚烧目前我国生活垃圾填埋场建设正处于稳步推进阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;在建设过程中要注意节约土地资源、减少填埋场污染、加强填埋气体回收利用垃圾焚烧处理主要适合于可燃垃圾<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于土地资源非常宝贵的东部沿海城市<BR>&nbsp; &nbsp; &nbsp; &nbsp;焚烧处理会逐步发展成为这一地区生活垃圾处理的重要手段 </p><p>：减少汽车废气污染<BR>&nbsp; &nbsp; &nbsp; &nbsp;关键在于改进发动机的燃烧设计和提高汽油的燃烧质量<BR>&nbsp; &nbsp; &nbsp; &nbsp;使油得到充分的燃烧<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而减少有害废气 </p><p>城市是人类生活、社会政治的核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着我国经济和科技的不断发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;生态环境条件也面临着前所未有的挑战和压力<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国城市经济一直是呈高速发展的趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且以往采用的高投入、高排放的发展模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;给环境带来了很多污染问题生态环境是人类了赖以生存的必要场所<BR>&nbsp; &nbsp; &nbsp; &nbsp;人口的增加、人们生活水平的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;都给原本就紧张的环境资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成了更大的压力水污染、噪音污染、废物排放等等都给人类的可持续发展造成了严重的挑战<BR>&nbsp;<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0951543b9-0.jpg" width="600px" height="400px" /> &nbsp; &nbsp; &nbsp;影响了城市化的发展进程 </p><p>据环境部门监测<BR>&nbsp; &nbsp; &nbsp; &nbsp;全国城镇每天至少有l亿吨污水未经处理直接排入水体全国七大水系中一半以上河段水质受到污染<BR>&nbsp; &nbsp; &nbsp; &nbsp;全国13的水体不适于鱼类生存<BR>&nbsp; &nbsp; &nbsp; &nbsp;1/4的水体不适于灌溉<BR>&nbsp; &nbsp; &nbsp; &nbsp;90%的城市水域污染严重<BR>&nbsp; &nbsp; &nbsp; &nbsp;50%的城镇水源不符合饮用水标准<BR>&nbsp; &nbsp; &nbsp; &nbsp;40%的水源已不能饮用<BR>&nbsp; &nbsp; &nbsp; &nbsp;南方城市总缺水量的60%</p><p>大气污染的治理应根据城市的能源结构与交通状况确定首要污染物即浓度高、危害大的污染物<BR>&nbsp; &nbsp; &nbsp; &nbsp;便于治理时有的放矢、对症下药大气污染中城市规划的治理方法主要是： </p><p>：茂密的林丛能降低风速<BR>&nbsp; &nbsp; &nbsp; &nbsp;使空气中携带的大粒灰尘下降树叶表面粗糙不平<BR>&nbsp; &nbsp; &nbsp; &nbsp;有的能分泌粘液和油脂<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此能吸附大量飘尘 </p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;鼓励城市居民重复利用废水并把不能在用的废水经过简单处理后在倒入排水管道 </p><p>城市水污染主要有几个方面：工厂排水；生活用水家庭排放量正在逐步增加<BR>&nbsp; &nbsp; &nbsp; &nbsp;50%的污水量是从家庭排放的；农业上大量使用的化肥、农药<BR>&nbsp; &nbsp; &nbsp; &nbsp;经过雨水的冲刷排到河流中污染地表水 </p><p>要：随着社会经济的不断发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们生活水平也有了很大程度的提高与此同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济的发展也带来一些环境污染的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;城市的污染问题也日益突出<BR>&nbsp; &nbsp; &nbsp; &nbsp;空气污染、固体污染等问题给人们的日常生活的带来了很多的不利影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;威胁人们身体健康本文通过对城市规划中环境问题的介绍<BR>&nbsp; &nbsp; &nbsp; &nbsp;提出了城市规划中环境保护的整治措施<BR>&nbsp; &nbsp; &nbsp; &nbsp;旨在为保护生态环境提供一些参考 </p><p>固体的废物有两重性<BR>&nbsp; &nbsp; &nbsp; &nbsp;具体的说就是在一定的时间、地点<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些用户对某些失去使用价值的东西进行丢弃<BR>&nbsp; &nbsp; &nbsp; &nbsp;使其成为了废物；但是还有一些用户在特定的条件下<BR>&nbsp; &nbsp; &nbsp; &nbsp;废物有可能还有其它的利用价值<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为了新的材料对固体废物的处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;正是利用这一点<BR>&nbsp; &nbsp; &nbsp; &nbsp;把固化的废物进行特殊的处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;使其达到再次具有使用价值的要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少对空气、土壤的污染对于那些不可在进行重复利用的废品要进行及时的处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如废电池、过期的药品等等这些废物中都含有一些有毒的成分<BR>&nbsp; &nbsp; &nbsp; &nbsp;会对土壤和水质造车一定的污染<BR>&nbsp; &nbsp; &nbsp; &nbsp;威胁人类的健康 </p><p>固体废物的污染主要是来自对生活中各种废物垃圾、工业中的固体废物和危险废物的排放除此以外<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有农业固体废物、建筑废弃材料等等有关部门如果对固体废物处理不善<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会带来空气污染、土壤污染等问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;损害人们的身体健康 </p><p>在控制室外、车间或职工长期工作的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;噪音的强度要低<BR>&nbsp; &nbsp; &nbsp; &nbsp;城市规划的时候可以分别采用隔声、消声等技术进行治理<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少噪声污染在库房或少有人去车间或空旷地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;城市规划的时候可以适当的放松要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;即建设该处的城市绿化水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少城市噪声 </p><p>【xzbu】郑重<p>城市中的空气污染源大致来自于以下方面：工厂排放的大量粉尘和co2、so2等废气；汽车尾气；加油站<BR>&nbsp; &nbsp; &nbsp; &nbsp;汽油泄露后蒸发形成的碳氢化合物是很强的致癌物质；家庭中能源的消耗；各种喷雾剂<BR>&nbsp; &nbsp; &nbsp; &nbsp;如各种空气清新剂、杀虫剂<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些化学制品增加了空气中原来没有的成分<BR>&nbsp; &nbsp; &nbsp; &nbsp;造成污染 </p>  (责任编辑：admin)
+<img border="0" alt="对环境资源的过渡使用已经严重威胁了自然环境" src="/images/lenfeng_10793.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10793)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10793)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10793);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete9015.html'>结论:在本实验条件下</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ejarida/contete11009.html'>长汀位于闽西边陲</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10793" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10793&title=对环境资源的过渡使用已经严重威胁了自然环境" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10793" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10793" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10793" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10793&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10793');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

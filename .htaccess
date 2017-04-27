@@ -1,0 +1,7 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(quliuxue\.net\.cn)(:80)? [NC]
+RewriteRule ^(.*) http://www.quliuxue.net.cn/$1 [R=301,L]
+order deny,allow

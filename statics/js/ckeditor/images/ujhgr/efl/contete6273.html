@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>保护文化遗产弘扬传统文化|我的网站</title>
+<meta name="description" content=" 在市场经济繁荣的当下 摘要：虚拟建筑漫游动画对古迹的还原展现 使我国的旅游文化迈入了数字体验式道路 它既是对现存古迹文化遗产的保护 又是对已消失古迹的还原仿真手段" />
+<meta name="keywords" content="保护,文化遗产,弘扬,传统文化,市场经济,繁荣,当下,摘要," />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.yatjyy.com/images/tree/hgjy/edwardjewelry/" title="变态传奇私服1.85合击">变态传奇私服1.85合击</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/editingkeyboards/" title="韩版靓妆变态传奇私服">韩版靓妆变态传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunnsshrimping/" title="新开1.96传奇私服">新开1.96传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecolivrel/" title="网通合计热血传奇私服">网通合计热血传奇私服</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edgeburntphoto/" title="超级变态传奇私服ip">超级变态传奇私服ip</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecothaiclub/" title="网通176合击传奇私服">网通176合击传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/economyverse/" title="网通1.76传奇私服">网通1.76传奇私服</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/edenkvincennes/" title="超级变态传奇私服发布">超级变态传奇私服发布</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebayjpy/" title="传奇私服网通轻变">传奇私服网通轻变</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/dwa1/" title="最新开无英雄传奇私服">最新开无英雄传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastendcheesecake/" title="新开山东网通传奇私服">新开山东网通传奇私服</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/eatdrinkhudsonvalley/" title="网通单线传奇私服刚开">网通单线传奇私服刚开</a></li><li><a href="http://www.luckytrade.net/count/2/hywd/xze/edigitalimagery/" title="超变态合击传奇私服服">超变态合击传奇私服服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/eductionconnexion/" title="传奇私服变态网址">传奇私服变态网址</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dxgtnm/" title="昨日新开传奇私服网站">昨日新开传奇私服网站</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecuplkaoyan/" title="变态热血传奇私服">变态热血传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e67f/" title="北方新开网通传奇私服">北方新开网通传奇私服</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunasconstruction/" title="新开龙腾传奇私服">新开龙腾传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earlycareers/" title="网通超变传奇私服网站">网通超变传奇私服网站</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/easterchocolatesale/" title="好玩辽宁网通传奇私服">好玩辽宁网通传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开裂天光明传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete12251.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete11672.html" target="_blank" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注方</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete11473.html" target="_blank" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete10601.html" target="_blank" title="长期关注理论前沿">长期关注理论前沿</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete8285.html" target="_blank" title="随着计算机网络通信技术的飞速发展">随着计算机网络通信技术的飞速发展</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete6273.html" target="_blank" title="保护文化遗产弘扬传统文化">保护文化遗产弘扬传统文化</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete6240.html" target="_blank" title="这是一首会跳舞的歌">这是一首会跳舞的歌</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete6111.html" target="_blank" title="所以从今天开始就要培养学生的民主意识">所以从今天开始就要培养学生的民主意识</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete5410.html" target="_blank" title="肯大手笔花钱买网络游戏的有钞票无脑的玩家">肯大手笔花钱买网络游戏的有钞票无脑的玩家</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete4886.html" target="_blank" title="小学语文教学实践证明">小学语文教学实践证明</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/" title="传奇私服网通转电信">传奇私服网通转电信</a></h3>
+<ul>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/qq10443.html" title="作为轴压比更大的剪力墙约束边缘构件">作为轴压比更大的剪力墙约束边缘构件</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/qq10332.html" title="我们要充分认识中国书法艺术的地位和价值">我们要充分认识中国书法艺术的地位和价值</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/qq10252.html" title="【摘要】大学作为社会法人机构">【摘要】大学作为社会法人机构</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/qq10022.html" title="这应该成为看待国美变局的主要视角">这应该成为看待国美变局的主要视角</a></li>
+<li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebooksheaven/qq6055.html" title="从云南昆明市郊蔬菜根际分离细菌">从云南昆明市郊蔬菜根际分离细菌</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/" title="新开十二生肖传奇私服">新开十二生肖传奇私服</a></h3>
+<ul>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/contete8272.html" title="本文从分析校园超市的发展现状和瓶颈">本文从分析校园超市的发展现状和瓶颈</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/contete7378.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/contete6333.html" title="要针对单位女工工作生活中出现的一些问题">要针对单位女工工作生活中出现的一些问题</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/contete1239.html" title="了解图式理论及其类别只是纸上谈兵">了解图式理论及其类别只是纸上谈兵</a></li>
+<li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dyestonegap/contete691.html" title="初结果树以长中果枝结果为主">初结果树以长中果枝结果为主</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开裂天光明传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>保护文化遗产弘扬传统文化</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 17:13</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6273&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6273">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>: 在市场经济繁荣的当下 摘要：虚拟建筑漫游动画对古迹的还原展现       使我国的旅游文化迈入了数字体验式道路       它既是对现存古迹文化遗产的保护       又是对已消失古迹的还原仿真手段</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                             </p><p>在市场经济繁荣的当下<p> 摘要：虚拟建筑漫游动画对古迹的还原展现<BR>&nbsp; &nbsp; &nbsp; &nbsp;使我国的旅游文化迈入了数字体验式道路<BR>&nbsp; &nbsp; &nbsp; &nbsp;它既是对现存古迹文化遗产的保护<BR>&nbsp; &nbsp; &nbsp; &nbsp;又是对已消失古迹的还原仿真手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;是动漫产业应用于旅游产业的新型产业交叉融合、互动促进的产业创新方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;各大产业都开始结合其他产业的优势特征共同融合发展虚拟漫游动画与旅游古迹景点的应用结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;不仅给旅游业带来了巨大的经济效益和社会效益<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也推动了动漫产业的发展和提升<BR>&nbsp; &nbsp; &nbsp; &nbsp;使人们的审美观念得到提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;体验需求也得到满足<BR>&nbsp; &nbsp; &nbsp; &nbsp;顺应了时代信息化与数字化发展的趋势一旦这种虚拟古迹漫游动画的应用发展并完善成为一种范式<BR>&nbsp; &nbsp; &nbsp; &nbsp;很可能会影响未来的旅游景点观光的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也将带动数字动漫技术行业的快速发展 </p><p>有研究人员表示：“进入数字化时代<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们可能在一定的体验要求上希望能够看到其虚拟实境的载体<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至如产生触摸感等”从计算机科学角度完成的visual reality<BR>&nbsp; &nbsp; &nbsp; &nbsp;即虚拟实境研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;注重的是被动式目镜开发和行为方式的研究但对于旅游古迹遗址的研究对象来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;无疑是要更多地运用三维建模等基本过程来实现虚拟实境在方特欢乐世界等一些游乐胜地的体验项目里<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经有了这类三维虚拟漫游动画的应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;将各国旅游古迹制作成三维影像<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过结合环幕和虚拟漫游器具等的虚拟影像输出<BR>&nbsp; &nbsp; &nbsp; &nbsp;让游览者在语言、想象和环境之间有实际的关联<BR>&nbsp; &nbsp; &nbsp; &nbsp;使游客与虚拟景观有了真实、奇妙的亲密接触<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而获得更为理想的漫游空间体验效果<BR>&nbsp; &nbsp; &nbsp; &nbsp;好似真的环游了整个世界现在已经有部分大型游乐场设立了这类虚拟漫游动画体验项目<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是借助地域空间载体将虚拟的动漫世界、历史古迹等予以真实的再现<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分利用现场实景、现场特技、动感平台等技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;综合巨幕、多自由度动感游览车、虚拟漫游器材等多项高科技技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;圆明园文化遗产的3d数字化漫游也已经开始得到</p><p>虚拟古迹漫游动画的实现首先是要进行古迹原貌的图纸绘制<BR>&nbsp; &nbsp; &nbsp; &nbsp;这基于对古迹建筑、生态等有一定考究的前提<BR>&nbsp; &nbsp; &nbsp; &nbsp;由绘图人员对古迹遗址全貌有一个统筹的绘制和科学的详细规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后将这种平面绘制效果图转换为三维视觉效果简单来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;三维古迹漫游的实现就是运用3ds max、maya等三维动画相关软件先在计算机中建立一个虚拟的世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后利用虚拟漫游器材的数据输送<BR>&nbsp; &nbsp; &nbsp; &nbsp;把建筑古迹以虚拟影像的形式真实地呈现在现实空间里在旅游业中这种方式是随着时代进步发展的产业升级趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;旅游古迹通过三维动画制作的关键技术应用与人体虚拟漫游器材的直观呈现<BR>&nbsp; &nbsp; &nbsp; &nbsp;来展示出现存古迹或是消失古迹的原貌及原有风情在放映上<BR>&nbsp; &nbsp; &nbsp; &nbsp;可分为环幕、环形或球体漫游空间等方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;让游览者不用真正亲临真实的古迹遗址也能真实、动态地游历整个历史景观情境<BR>&nbsp; &nbsp; &nbsp; &nbsp;感受历史古迹带来的独特人文气息<BR>&nbsp; &nbsp; &nbsp; &nbsp;营造一种绿色、新潮的健康旅游模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;这对古迹旅游资源有极大的宣传作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;对现存古迹资源也有一定的保护作用 </p><p>所谓虚拟古迹漫游动画是指通过现代数字技术仿真再现古迹的原有风貌<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过3d漫游动画的视觉形式将历史古迹建筑展现出来的一种虚拟影像动画数字化的古迹建筑漫游是一种给人们提供虚拟与实物触觉的计算机技术科学<BR>&nbsp; &nbsp; &nbsp; &nbsp;旅游产业中的古文化建筑则是当下极具历史意义的文化代表和建筑代表<BR>&nbsp; &nbsp; &nbsp; &nbsp;两者间的结合形成了新的融合型产业当代数字化课题<BR>&nbsp; &nbsp; &nbsp; &nbsp;是兼具原来各产业的特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;开创出了全新的商业模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;这将大大推进产业的升级换代将3d漫游动画技术应用于旅游景区的客户体验式项目<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经越来越被一些具备前瞻视野的旅游景区重视并且有了初探应用成果<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种趋势将对数字动画技术的应用和动画产业的发展有十分重要的积极影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;也将使我国的旅游产业得到更科学的优化和提升 </p><p>虚拟漫游动画在表现内容上不受时间、条件的限制<BR>&nbsp; &nbsp; &nbsp; &nbsp;能准确、具体的表达现象的本质<BR>&nbsp; &nbsp; &nbsp; &nbsp;是传递信息的强有力的手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;它能提供消失古迹的虚拟复原<BR>&nbsp; &nbsp; &nbsp; &nbsp;是数字技术、艺术思维和历史传统文化的完美结合 </p><p>保护文化遗产、弘扬传统文化<BR>&nbsp; &nbsp; &nbsp; &nbsp;历来为党和国家所重视<BR>&nbsp; &nbsp; &nbsp; &n<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1G25Rc0-0.jpg" width="600px" height="400px" />bsp;党和国家为此也做了大量工作随着我国旅游业的日益发展和兴盛<BR>&nbsp; &nbsp; &nbsp; &nbsp;旅游古迹胜地的游客量也越来越大<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽管国家和地方极力在为减小古迹建筑的耗损作出努力<BR>&nbsp; &nbsp; &nbsp; &nbsp;但对一些濒危的古老建筑来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些努力显得十分有限<BR>&nbsp; &nbsp; &nbsp; &nbsp;例如毛泽东故居近年来由于游客量的增长<BR>&nbsp; &nbsp; &nbsp; &nbsp;古宅耗损速度明显加快<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此政府不得不加大游客的参观限制程度对于那些已经无法挽回的消失古迹遗址<BR>&nbsp; &nbsp; &nbsp; &nbsp;以往人们只能通过书面、图画或是历史视频等来了解它独特的风情和意韵<BR>&nbsp; &nbsp; &nbsp; &nbsp;但这些方式显得十分局限因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;创新技术手段保护或再现古迹显得尤为重要 </p><p>数字化虚拟古迹漫游动画主要是通过数字化视觉与历史意境的共同作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;将历史古迹建筑呈现成3d影像的异地复原<BR>&nbsp; &nbsp; &nbsp; &nbsp;使用个体漫游虚拟器材、实地空间虚拟漫游和三维目镜等设备结合各种三维输入器材及适配软件<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用三维空间感受建立一个感性认识和理性认识相统一的虚拟数字场景<BR>&nbsp; &nbsp; &nbsp; &nbsp;给观众以身临其境的奇妙体验 </p><p>利用虚拟漫游动画这种新的视听形式再现我国的遗址古迹文化<BR>&nbsp; &nbsp; &nbsp; &nbsp;并将其融合成一种新的展示手段和传播手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而表现经典、促进中国古老文化的传承 </p><p>余雅师<BR>&nbsp; &nbsp; &nbsp; &nbsp;湖南长沙人<BR>&nbsp; &nbsp; &nbsp; &nbsp;湖南师范大学美术学院2012级硕士研究生<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究方向：动漫设计 </p><p>宣传片式虚拟古迹漫游动画主要是指运用3d数码制作技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;结合影视艺术的表现手法<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据景点建筑规划的蓝图、建筑的设计风格、建筑与环境的关系等进行演绎和展现的建筑宣传动画影片 </p><p>异地复原式虚拟古迹漫游动画是指将古迹遗址在计算机中进行三维建模<BR>&nbsp; &nbsp; &nbsp; &nbsp;再利用虚拟漫游显示器材将计算机中的三维影像进行输出<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般是在环幕或者球体空间里进行三维影像的投影<BR>&nbsp; &nbsp; &nbsp; &nbsp;结合三维目镜等虚拟漫游器具的辅助<BR>&nbsp; &nbsp; &nbsp; &nbsp;让游览者产生自己处于三维影像中真实空间里的错觉<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且有时会在三维视觉元素展示的同时增加更多维度的嗅觉、触觉等感受<BR>&nbsp; &nbsp; &nbsp; &nbsp;让游览者拥有真正进入实体的感受<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终个体漫游器具的运作会协助游客完成整个三维虚拟影像体验项目 </p><p>重视和研讨<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是对已经不复存在的古迹文化进行虚拟实地复原的探索<BR>&nbsp; &nbsp; &nbsp; &nbsp;是以综合的当代科技和艺术形式传播圆明园历史建筑及其爱国主义的精神的一种体现<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论对当代旅游业的发展或是历史人文主义精神的提升都极具实践价值有关虚拟阿房宫遗迹的学术研究近几年也开始被很多专业研究人士重点提出由此可见<BR>&nbsp; &nbsp; &nbsp; &nbsp;虚拟古迹漫游动画的开发应用是相当必要的<BR>&nbsp; &nbsp; &nbsp; &nbsp;它也正逐渐受到更多研究人员的关注<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐渐成为值得深挖和探究的主题 </p><p>2008 年北京奥运会场馆便开始以建筑漫游动画的形式呈现在观众面前<BR>&nbsp; &nbsp; &nbsp; &nbsp;我国的漫游动画也开始快速发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;在国内广泛传播年上海世博会<BR>&nbsp; &nbsp; &nbsp; &nbsp;当时创作出了网上世博会的漫游动画<BR>&nbsp; &nbsp; &nbsp; &nbsp;全面引入互联网的传播方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;使世博会的宣传力度极大程度增加之后又有了关于实现泉州西湖公园三维漫游动画的相关研究近年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了开发和推广各地的旅游名胜古迹<BR>&nbsp; &nbsp; &nbsp; &nbsp;各级政府开始采用景观漫游动画影片的形式来达到宣传的目的<BR>&nbsp; &nbsp; &nbsp; &nbsp;中央电视台在前几年就围绕北京的紫禁城和故宫的建筑<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过三维漫游动画宣传片来向全世界展示中国博大精深的文化和建筑特点宣传片式的虚拟漫游动画是当下运用最为广泛的一种<BR>&nbsp; &nbsp; &nbsp; &nbsp;但它属于传统的漫游动画形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;只是很直观地把建筑场景制作为三维动画影片进行展示<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有结合虚拟漫游器材或是环幕等将景观、建筑异地复原让游览者体验到身临其境的空间感受<BR>&nbsp; &nbsp; &nbsp; &nbsp;无法更好地同时从理性和感性认知方面综合地去了解场景中的文化及建筑特点 </p><p>【xzbu】郑重  (责任编辑：admin)
+<img border="0" alt="保护文化遗产弘扬传统文化" src="/images/lenfeng_6273.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',6273)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',6273)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(6273);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete6240.html'>这是一首会跳舞的歌</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/efl/contete8285.html'>随着计算机网络通信技术的飞速发展</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=6273" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=6273&title=保护文化遗产弘扬传统文化" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=6273" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=6273" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="6273" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=6273&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '6273');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

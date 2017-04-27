@@ -1,0 +1,31 @@
+       {loop $school_list $key $val}
+          <div class="xxbox">
+            <div class="imgbox"><a href="/index.php?m=school&c=show&id={$val['id']}"><img src="{$val['logo']}" /></a>
+              <p>已有{$val['dianji']}人免费评估</p>
+            </div>
+            <div class="nrbox">
+              <h2><a href="/index.php?m=school&c=show&id={$val['id']}">{$val['enname']}（{$val['cnname']}）</a></h2>
+              <p>位于：{if $val['position']!=''}{$val['position']}{else}无{/if}</p>
+              <ul>
+                <li>学校排名：<span>{if $val['country']==1}美国{elseif $val['country']==2}英国{elseif $val['country']==3} 加拿大{elseif $val['country']==4}澳大利亚{elseif $val['country']==5}新加坡{elseif $val['country']==6}香港{/if}学校排名-{if $val['rank']>0}{$val['rank']}{else}无{/if}</span></li>
+                <li>学校网址：<a ><span>{if $val['weburl']!=''}{$val['weburl']}{else}无{/if}</span></a></li>
+                <li>托福成绩：<a ><span>{if $val['toefl_scores']!=''}{$val['toefl_scores']}{else}无{/if}</span></a></li>
+                <li>雅思成绩：<a ><span>{if $val['ielts_score']!=''}{$val['ielts_score']}{else}无{/if}</span></a></li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <div class="plbox">
+              <ul>
+                <li>私立非盈利，本科学校</li>
+                <li>国家综合大学-1</li>
+                <li>学校类型：传媒</li>
+              </ul>
+              <a href="assessment.html"><i class="icon-ok"></i>录取几率免费评估</a>
+              <p>已有<span>1{$val['dianji']}</span>人评估</p>
+            </div>
+            <div class="clear"></div>
+            <p class="ck"><i class="icon-caret-right"></i><a href="#">查看更多该校信息>></a></p>
+            <div class="clear"></div>
+            <div class="clear"></div>
+          </div>
+          {/loop}

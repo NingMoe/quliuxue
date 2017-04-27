@@ -1,0 +1,21 @@
+   <div id="slideBox" class="slideBox">
+      <div class="hd">
+        <ul>
+          {pc:get sql="SELECT * FROM qu_freebanner where catid= '21' ORDER BY id DESC"  cache="3600"  num="6" return="data"}
+          
+          {loop $data $key $val}
+          <li></li>
+          {/loop}
+          {/pc}
+        </ul>
+      </div>
+      <div class="bd">
+        <ul>
+          {pc:get sql="SELECT * FROM qu_freebanner where catid= '21' ORDER BY id DESC"  cache="3600"  num="6" return="data"}
+          {loop $data $key $val}
+          <li><a href="{$val['url']}"><img src="{$val['thumb']}" alt="{$val['title']}" /></a></li>
+          {/loop}
+          {/pc}
+        </ul>
+      </div>
+    </div>

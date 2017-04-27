@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>如此不公平的机制怎能起到良好的激励效果|我的网站</title>
+<meta name="description" content=" 而现在增加到4%5%这样一个庞大的组织没有得到公安机关的报批 根据《深圳市保安服务管理条例》规定保安上岗前要经过培训并通过市级公安机关考试 将指纹等" />
+<meta name="keywords" content="如此,不公平,机制,怎能,起到,好的,激励,效果,现在,加到" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/" title="999好传奇私服新开">999好传奇私服新开</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e91cafe/" title="传奇私服网通发布网">传奇私服网通发布网</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/effgg2545/" title="新开古惑变态传奇私服">新开古惑变态传奇私服</a></li><li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyroyaltrip/" title="网通英雄合击传奇私服">网通英雄合击传奇私服</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/educationalmanagementconsultancy/" title="daneducationalmanagementconsultandan">daneducationalmanagementconsultandan</a></li><li><a href="http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/ecstaticdancewithlivemusic/" title="变态传奇私服网">变态传奇私服网</a></li><li><a href="http://www.daohangbbs.com/data/attachment/swfupload/hjgt/dyxdtz/" title="新开170金币传奇私服">新开170金币传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/efimeries/" title="超变态网页传奇私服">超变态网页传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duobletreeemoryarea/" title="新开双线传奇私服">新开双线传奇私服</a></li><li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/efesmt2/" title="变态传奇私服英雄版">变态传奇私服英雄版</a></li><li><a href="http://www.yatjyy.com/images/tree/hgjy/edwardkarr/" title="超变态天裂传奇私服">超变态天裂传奇私服</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastcobbendodontist/" title="山东纯网通传奇私服">山东纯网通传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duorlipaper/" title="新开合击传奇私服网">新开合击传奇私服网</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e8taobao/" title="新开纯网通传奇私服">新开纯网通传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/ebaylikeaboss/" title="180网通战神传奇私服">180网通战神传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echowho/" title="河南网通1.76传奇私服">河南网通1.76传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecomanner/" title="网通帝王传奇私服">网通帝王传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/eatyaselfhealthy/" title="网通1.76极品传奇私服">网通1.76极品传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/easyboatsmarket/" title="网通传奇私服1.76复古">网通传奇私服1.76复古</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ece2017/" title="新开网通传奇私服195">新开网通传奇私服195</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开传奇私服服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete10884.html" target="_blank" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投稿</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete10816.html" target="_blank" title="搞好工程造价的管理">搞好工程造价的管理</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete7679.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete5563.html" target="_blank" title="人类社会总是在一天比一天文明进步">人类社会总是在一天比一天文明进步</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete4229.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete4134.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete3997.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete3308.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete2991.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete2018.html" target="_blank" title="为了承担起化工企业家商学院的美誉和责任">为了承担起化工企业家商学院的美誉和责任</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/" title="刚开网通1区传奇私服">刚开网通1区传奇私服</a></h3>
+<ul>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/qq10099.html" title="通过对建设高层住宅的理性思索">通过对建设高层住宅的理性思索</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/qq9294.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/qq9224.html" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/qq8859.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodandgreene/qq6723.html" title="巩正旭告诉记者">巩正旭告诉记者</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://323944.com/data/js/kjhuy/educatemymind/" title="1.76极品变态传奇私服">1.76极品变态传奇私服</a></h3>
+<ul>
+<li><a href="http://323944.com/data/js/kjhuy/educatemymind/201511967.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/educatemymind/201510690.html" title="特别是民族地方的广播电视媒体">特别是民族地方的广播电视媒体</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/educatemymind/201510626.html" title="测量仪器采用全站仪和激光水准仪">测量仪器采用全站仪和激光水准仪</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/educatemymind/201510283.html" title="利用框架结构的灵活多变的特点划分建筑空间">利用框架结构的灵活多变的特点划分建筑空间</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/educatemymind/20159347.html" title="粉碎四人帮后">粉碎四人帮后</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开传奇私服服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>如此不公平的机制怎能起到良好的激励效果</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-18 18:16</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=1121&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=1121">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       而现在增加到4%&mdash;5%这样一个庞大的组织没有得到公安机关的报批       根据《深圳市保安服务管理条例》规定保安上岗前要经过培训并通过市级公安机关考试       将指纹等</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;而现在增加到4%&mdash;5%<p>这样一个庞大的组织没有得到公安机关的报批<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据《深圳市保安服务管理条例》规定保安上岗前要经过培训并通过市级公安机关考试<BR>&nbsp; &nbsp; &nbsp; &nbsp;将指纹等人体生物信息录入信息库<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能发给保安员证富士康的保安大部分没有保安证<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们更加没有限制他人人身自由、搜查他人身体的权利也许这些就是富士康半军事化管理文化的一种体现吧<BR>&nbsp; &nbsp; &nbsp; &nbsp;但这种文化使得底层员工对管理层有着较大的仇恨和怨气<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终将这些怨气转化为对公司的仇恨<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样很不利于职工与公司的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;更无法达到双赢的效果这样的企业业务链根本无法形成<BR>&nbsp; &nbsp; &nbsp; &nbsp;公司也只能在代工领域中苦苦奋斗<BR>&nbsp; &nbsp; &nbsp; &nbsp;并通过规模效应形成低成本的竞争优势来争取自己更大的生存与发展空间此外<BR>&nbsp; &nbsp; &nbsp; &nbsp;富士康与新进员工签订的《自愿加班切结书》《新干班专项培训协议》等条款也有悖于人本管理的要求试问长期在这样一种高压的环境下工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有自愿、情感等等人性管理的因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们的这些80后90后员工怎能不会因为无法宣泄长时间的身心压力而最终导致崩溃呢！深圳当代社会观察研究所所长刘开明说：&ldquo;我们很难说到底谁是压死他们的最后一根稻草<BR>&nbsp; &nbsp; &nbsp; &nbsp;有很复杂的原因<BR>&nbsp; &nbsp; &nbsp; &nbsp;各方面的原因可能都有<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是我觉得我们不能把原因归咎于他们自己对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为</p><p>果不能制定出针对绝大多数的大陆员工的激励机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么富士康的激励机制就过于狭隘了如富士康&ldquo;新春抽奖&rdquo;这一激励措施就有失透明<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一措施名为平衡员工付出与收获之间的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;实质是以内定的方式进行的一种追加物资补贴由于是淘汰的实物且还要交税<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以对员工的激励有限正因为激励机制不合理对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以造成了人员大量流失<BR>&nbsp; &nbsp; &nbsp; &nbsp;人力严重不足<BR>&nbsp; &nbsp; &nbsp; &nbsp;导致生产线上的人均劳动强度比以前增大那么<BR>&nbsp; &nbsp; &nbsp; &nbsp;因人力不足导致员工工作强度加大<BR>&nbsp; &nbsp; &nbsp; &nbsp;员工就更需要加大有效激励力度由于富士康欠缺这样的激励机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;只能造成更严重的人员流失<BR>&nbsp; &nbsp; &nbsp; &nbsp;不自觉的进入了恶性循环的怪圈</p><p>通过以上分析我们发现富士康在某些领域确实存在着不足<BR>&nbsp; &nbsp; &nbsp; &nbsp;针对以上问题我提出了如下几点对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;目的就是希望避免富士康事件的重蹈覆辙</p><p>论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;是论文写作、论文投稿和论文发表的论文参考网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是科研人员论文检测和发表论文的理想平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>3、&ldquo;人性化管理&rdquo;&ldquo;柔性管理&rdquo;&ldquo;人本管理&rdquo;这些名词越来越多的出现在全球知名企业的管理法则中<BR>&nbsp; &nbsp; &nbsp; &nbsp;纵观世界各国的百年企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;很容易发现的一条规律那就是&ldquo;充满人性的关怀&rdquo;只有把员工团结起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;真正做到员工的个人利益与公司集体利益相一致<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业才有可能在竞争激烈的环境下处于不败之地按照我国现行劳动法的规定&ldquo;用人单位应实行每日八小时工作制、每周四十小时的标准工时制度因工作性质或者生产特点的限制<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能实行以上工时制度的<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照国家有关规定<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以实行其他工作和休息办法单位由于生产经营需要对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以延长工作时间<BR>&nbsp; &nbsp; &nbsp; &nbsp;但必须经与工会和劳动者协商<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且一般每日不得超过一小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;因特殊原因需要延长工作时间的<BR>&nbsp; &nbsp; &nbsp; &nbsp;在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时每月不得超过三十六小时&rdquo;但在富士康<BR>&nbsp; &nbsp; &nbsp; &nbsp;每月加班均在60-100小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;加班乃是家常便饭<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且加班费成为员工薪酬的最主要来源这些做法不仅未从员工的身心健康考虑<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且严重违反了劳动法的相关规定其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;富士康的保安多达千名以上<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是</p><p>他们很多在16岁&mdash;19岁<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们心智还没有成熟就过早地踏入这个社会<BR>&nbsp; &nbsp; &nbsp; &nbsp;承担起为我们国家、为富士康这种大企业创造财富的重任这些年轻人迈入社会踏出第一步之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;就迎面遇上了一堵墙<BR>&nbsp; &nbsp; &nbsp; &nbsp;而我们所有的机制都是排斥他们的<BR>&nbsp; &nbsp; &nbsp; &nbsp;在富士康里所有的声音都是告诉他们<BR>&nbsp; &nbsp; &nbsp; &nbsp;你们是打工的<BR>&nbsp; &nbsp; &nbsp; &nbsp;你们不属于这里<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有信息对他们都是不利的<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有东西融合在一起<BR>&nbsp; &nbsp; &nbsp; &nbsp;就加剧了他们的这种困境这种矛盾没办法解决、克服的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么脆弱一点的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会选择自杀的形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;来克服这种困难&rdquo;</p><p>论文导读:：富士康的12连跳使国人为之震惊<BR>&nbsp; &nbsp; &nbsp; &nbsp;自杀这一行为在心理学层面上讲绝对是会传染的<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果不从根本上解决问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;只是采取一些表面的、作秀似的措施是无法有效地制止这样的连锁反应的因此这不仅需要社会、舆论的努力<BR>&nbsp; &nbsp; &nbsp; &nbsp;更需要的是企业从自身寻找问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;切实的把员工的问题解决好并且借助这次教训整改企业弊病<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而实现员工与企业的双赢</p><p>5、员工经常开玩笑说&ldquo;在富士康工作就象是一个机器<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是流水线上<BR>&nbsp; &nbsp; &nbsp; &nbsp;单调枯燥的动作要反复不停的重复着<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时候下班以后睡觉了<BR>&nbsp; &nbsp; &nbsp; &nbsp;做梦时都感觉自已的手还在拧着锣丝&rdquo;但就是这样高强度的工作也没有换来有效的激励制度在薪酬激励上其致命弱点是工资上涨速度非常慢<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般每年实际增长10%已是十分鲜见所以富士康能招到很多优秀的人才<BR>&nbsp; &nbsp; &nbsp; &nbsp;但却不能留住人才<BR>&nbsp; &nbsp; &nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141018/1Q6444303-0.jpg" width="600px" height="400px" />sp;以至被其深圳龙华一街之隔的同行竞争对手视为&ldquo;人才培训基地&rdquo;而生产电池、手机和汽车的比亚迪更是挖走其400名优秀员工<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而复制其生产线和经营模式富士康现在人员流动性比较高<BR>&nbsp; &nbsp; &nbsp; &nbsp;尤其是基层员工<BR>&nbsp; &nbsp; &nbsp; &nbsp;统计数据显示<BR>&nbsp; &nbsp; &nbsp; &nbsp;2004年、2005年每个月只有2%&mdash;3%的流失量这么高的人员流失量对于任何一个企业来说都不是一件好事在大陆籍员工和台湾籍员工这一问题上<BR>&nbsp; &nbsp; &nbsp; &nbsp;即便是资位一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;能力一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;大陆员工的薪资在台湾员工面前简直是低得吓人<BR>&nbsp; &nbsp; &nbsp; &nbsp;大概只有后者的20%&mdash;&mdash;33%如此不公平的机制怎能起到良好的激励效果<BR>&nbsp; &nbsp; &nbsp; &nbsp;富士康公司70%的员工都是大陆公民<BR>&nbsp; &nbsp; &nbsp; &nbsp;如</p><p>2、如果尚且说这样森严的等级制度是富士康独特文化的一种体现<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么富士康的沟通机制应该是没有任何狡辩的机会了企业沟通机制的好坏直接反应出企业组织结构的优良对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及办事效率的高低沟通是管理的较高境界<BR>&nbsp; &nbsp; &nbsp; &nbsp;许多企业出现的管理问题多是由于沟通不畅引起的论文参考文献格式良好的沟通<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使人际关系和谐<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以使员工顺利达到绩效目标富士康在发生跳楼事件后采取了一些补救措施<BR>&nbsp; &nbsp; &nbsp; &nbsp;但都是应急之举<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以效果不明显其应该在平时就建立起有效的、系统的沟通<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种沟通不仅包括上下级之间的沟通<BR>&nbsp; &nbsp; &nbsp; &nbsp;更包括平级之间的沟通人是社会人<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们每个人都需要别人的关心与帮助<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有增强了大家的信任感、凝聚力<BR>&nbsp; &nbsp; &nbsp; &nbsp;员工才可能在组织里得到一种归属感<BR>&nbsp; &nbsp; &nbsp; &nbsp;也才能更有效率的工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;更何况富士康雇佣的一线员工基本都是80、90后<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们不同于原来六七十年代里的廉价劳动力<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们更加的敏感、自我<BR>&nbsp; &nbsp; &nbsp; &nbsp;更需要正确的引导以及关心但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;富士康欠缺这样的沟通机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;以至于造成员工之间的冷漠、人性冷淡<BR>&nbsp; &nbsp; &nbsp; &nbsp;至使员工有很多积怨无法及时排解<BR>&nbsp; &nbsp; &nbsp; &nbsp;终于爆发</p><p>也许2010年最使国人震惊的就是在这短短不到半年的时间里富士康接连不断的员工跳楼自杀事故<BR>&nbsp; &nbsp; &nbsp; &nbsp;截止到目前为止已经发生了12跳（其中10死2伤）面对这鲜血淋漓的惨状我们不仅要问为什么会有如此之多的年轻生命选择放弃<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们在感慨生命的脆弱以及对生命亵渎的同时是否更多的思考富士康应该承担的责任<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>1、从公司内部等级制度来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;台湾管理层应该消除对大陆员工的歧视富士康要想走得更远就必须对现有的等级制度进行改革<BR>&nbsp; &nbsp; &nbsp; &nbsp;目前的等级制度是很难使员工与高层领导达成共识的<BR>&nbsp; &nbsp; &nbsp; &nbsp;想使基层员工朝着企业愿景不懈的努力必须抛弃这样硬性的管理机制论文参考文献格式</p><p>1、首先在等级制度上富士康的各级管理人员都有着十分森严的等级制度无论是流水线上的普通工人还是公司的高层领导<BR>&nbsp; &nbsp; &nbsp; &nbsp;地位都是有差距的这种地位上的差距决定着权利、奖金及各种福利的享受就拿台湾籍干部来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们的地位是高于大陆管理层的<BR>&nbsp; &nbsp; &nbsp; &nbsp;同样一个级别<BR>&nbsp; &nbsp; &nbsp; &nbsp;不仅在工资薪酬上高出许多<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且在人格上似乎也高人一等<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们可以扣罚员工的绩效奖金<BR>&nbsp; &nbsp; &nbsp; &nbsp;这点权利是大陆管理层所望尘莫及的</p><p>富士康是眼下&ldquo;中国制造&rdquo;的巅峰代表<BR>&nbsp; &nbsp; &nbsp; &nbsp;名列世界企业500强<BR>&nbsp; &nbsp; &nbsp; &nbsp;但富士康的硬性管理文化也是众所周知的下面我们从其公司内部等级制度、非人性化管理、激励机制等方面来分析富士康存在的一些问题</p><p>4、富士康的薪酬管理同样值得深思<BR>&nbsp; &nbsp; &nbsp; &nbsp;公司法定工作时间工资偏低<BR>&nbsp; &nbsp; &nbsp; &nbsp;拿钱多少主要取决于加班的多少这样的薪酬待遇与世界五百强的高大形象形成鲜明的反差富士康一直将深圳当地出台的最低工资标准作为自己雇员的最高工资<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽然富士康的薪资没有违反当地的劳动法规<BR>&nbsp; &nbsp; &nbsp; &nbsp;但据富士康员工介绍如果不加班在像深圳、上海这样高消费的大城市里还不够养活自己<BR>&nbsp; &nbsp; &nbsp; &nbsp;想赚钱就得多加班论文参考文献格式例如在生产线上最普通的一道工序是贴胶纸：在主板上贴18张胶纸<BR>&nbsp; &nbsp; &nbsp; &nbsp;两分钟内完成每个工人每天要完成220块这样的主板<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们每天10个小时的时间<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是在这样简单而又重复的工作中度过的每个工人每天都在重复着同样的动作这些工人每天工作8个小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;每个月只能拿到900元的底薪<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果他们想赚取更多的钱<BR>&nbsp; &nbsp; &nbsp; &nbsp;就不得不选择多加班<BR>&nbsp; &nbsp; &nbsp; &nbsp;不得不选择放弃自己休闲娱乐的时间<BR>&nbsp; &nbsp; &nbsp; &nbsp;进行简单而又重复的劳动富士康员工称<BR>&nbsp; &nbsp; &nbsp; &nbsp;每天加班两个小时要打工的话对策建议<BR>&nbsp; &nbsp; &nbsp; &nbsp;平时肯定喜欢多加一点班<BR>&nbsp; &nbsp; &nbsp; &nbsp;赚的钱里面<BR>&nbsp; &nbsp; &nbsp; &nbsp;加班赚的比重有一半</p>  (责任编辑：admin)
+<img border="0" alt="如此不公平的机制怎能起到良好的激励效果" src="/images/lenfeng_1121.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',1121)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',1121)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(1121);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：没有了 </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ecigarrosguate/contete2018.html'>为了承担起化工企业家商学院的美誉和责任</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=1121" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=1121&title=如此不公平的机制怎能起到良好的激励效果" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=1121" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=1121" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="1121" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=1121&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '1121');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

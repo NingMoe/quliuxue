@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>这让程副局长很没面子|我的网站</title>
+<meta name="description" content="王标得说局长发挥了一大通 既有批评程副局长的 也是拔高自己水平的意思这让程副局长很没面子 也十分的反感 好像他是个一点觉悟都没有的人笑话 连" />
+<meta name="keywords" content="副局长,面子,王标,得说,局长,发挥,大通,既有,批评,程副" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.1234cai.cn/d/file/ba/bc/uytr/earthcenterformindfulness/" title="最新网通合击传奇私服">最新网通合击传奇私服</a></li><li><a href="http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/dutchlafamilia/" title="今日四川新开传奇私服">今日四川新开传奇私服</a></li><li><a href="http://www.lingdongnet.com/UpFile/1/File/rghsd/ecologiaesaude/" title="网通英雄传奇私服">网通英雄传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/echoesnet/" title="网通传奇私服合击">网通传奇私服合击</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eglasssplashbacks/" title="超级靓装变态传奇私服">超级靓装变态传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dydy7/" title="新开传奇私服2合一">新开传奇私服2合一</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastcobbrootcanal/" title="山东网通变态传奇私服">山东网通变态传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duofenshop/" title="www.新开传奇私服.com">www.新开传奇私服.com</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e9du/" title="网通经典传奇私服">网通经典传奇私服</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eachchurcheachchildeachcommunity/" title="daneachchurcheachchildeachcommunidan">daneachchurcheachchildeachcommunidan</a></li><li><a href="http://www.car188.cn/xheditor/jquery/dsaw/dunhuazaixian/" title="新开传奇私服7点半开">新开传奇私服7点半开</a></li><li><a href="http://www.na-ke.com/fh/tihuo/jawf/xcze/edenkvincennes/" title="超级变态传奇私服发布">超级变态传奇私服发布</a></li><li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easytoscriptwrite/" title="千兆网通超变传奇私服">千兆网通超变传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/e2534/" title="每日新开网通传奇私服">每日新开网通传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duoduo518/" title="新开传奇私服传奇">新开传奇私服传奇</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/" title="武林声望">武林声望</a></li><li><a href="http://www.leng.org.cn/template/default/mobile/common/uyjh/eastmidlandsbusinesscrimeportal/" title="daneastmidlandsbusinesscrimeportadan">daneastmidlandsbusinesscrimeportadan</a></li><li><a href="http://www.happygo99.com/data/shop/jhgy/dvdpeixun/" title="新开传奇私服真龙版本">新开传奇私服真龙版本</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/eauctioning/" title="山东新开传奇私服">山东新开传奇私服</a></li><li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/" title="999好传奇私服新开">999好传奇私服新开</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">网通传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete11949.html" target="_blank" title="古籍格式：(包括校批等)">古籍格式：(包括校批等)</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete11597.html" target="_blank" title="本文在前人研究成果的基础上">本文在前人研究成果的基础上</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete10104.html" target="_blank" title="欣赏教学应该是互动的">欣赏教学应该是互动的</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete9790.html" target="_blank" title="现实生活为活动课程提供了最丰富的活动内容">现实生活为活动课程提供了最丰富的活动内容</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete8227.html" target="_blank" title="同时密钥对的实时更新保证网络持续的高连通性">同时密钥对的实时更新保证网络持续的高连通性</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete7235.html" target="_blank" title="对来稿有权作技术性和文字性修改">对来稿有权作技术性和文字性修改</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete6685.html" target="_blank" title="人人网用户较高的活跃度">人人网用户较高的活跃度</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete5134.html" target="_blank" title="这让程副局长很没面子">这让程副局长很没面子</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete2773.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete2389.html" target="_blank" title="为了做好火灾现场的保护">为了做好火灾现场的保护</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://323944.com/data/js/kjhuy/edsindia/" title="超级变态韩版传奇私服">超级变态韩版传奇私服</a></h3>
+<ul>
+<li><a href="http://323944.com/data/js/kjhuy/edsindia/20158062.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/edsindia/20154190.html" title="现代文学史料刊物">现代文学史料刊物</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/edsindia/20152705.html" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/edsindia/20151228.html" title="如应收工程款长期不能收回">如应收工程款长期不能收回</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/" title="东北地区网通传奇私服">东北地区网通传奇私服</a></h3>
+<ul>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/qq11605.html" title="上赛季开始时">上赛季开始时</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/qq10312.html" title="一个孩子成长的方方面面">一个孩子成长的方方面面</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/qq8989.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/qq6790.html" title="抱怨说避孕套把性生活麦当劳化了">抱怨说避孕套把性生活麦当劳化了</a></li>
+<li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastonskatejam/qq4537.html" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 网通传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>这让程副局长很没面子</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 13:18</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5134&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5134">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:王标得说局长发挥了一大通       既有批评程副局长的       也是拔高自己水平的意思这让程副局长很没面子       也十分的反感       好像他是个一点觉悟都没有的人笑话       连</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            王标得说<p>局长发挥了一大通<BR>&nbsp; &nbsp; &nbsp; &nbsp;既有批评程副局长的<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是拔高自己水平的意思这让程副局长很没面子<BR>&nbsp; &nbsp; &nbsp; &nbsp;也十分的反感<BR>&nbsp; &nbsp; &nbsp; &nbsp;好像他是个一点觉悟都没有的人笑话<BR>&nbsp; &nbsp; &nbsp; &nbsp;连这些简单的道理都不懂<BR>&nbsp; &nbsp; &nbsp; &nbsp;他怎么当上副局长？既然局长不同意他的看法<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长想算了<BR>&nbsp; &nbsp; &nbsp; &nbsp;不换就不换吧 </p><p>有了车子<BR>&nbsp; &nbsp; &nbsp; &nbsp;办起事来就非常方便程副局长想<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是有车好呀<BR>&nbsp; &nbsp; &nbsp; &nbsp;怪不得大家都爱买车程副局长正沉入车的乐趣中<BR>&nbsp; &nbsp; &nbsp; &nbsp;突然有一家医院反映出现了假药<BR>&nbsp; &nbsp; &nbsp; &nbsp;有病人吃了药出现身体不适<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且此药在市场上流传很广于是<BR>&nbsp; &nbsp; &nbsp; &nbsp;药监局迅速展开追查<BR>&nbsp; &nbsp; &nbsp; &nbsp;一查就查到了高秀敏的头上<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后又查此药是怎样进入市场的<BR>&nbsp; &nbsp; &nbsp; &nbsp;结果就查到了程副局长的头上程副局长心想<BR>&nbsp; &nbsp; &nbsp; &nbsp;还好他没有收受高秀敏的任何东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是连接触都很少<BR>&nbsp; &nbsp; &nbsp; &nbsp;估计问题不太程副局长蛮以为会没什么事<BR>&nbsp; &nbsp; &nbsp; &nbsp;纪检部门就找到了他<BR>&nbsp; &nbsp; &nbsp; &nbsp;请他去把问题讲清楚程副局长承认是工作上的疏漏<BR>&nbsp; &nbsp; &nbsp; &nbsp;但他没有收受药厂老板任何东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是与药厂老板接触都没有程副局长还强调说<BR>&nbsp; &nbsp; &nbsp; &nbsp;凡是有药品进入本市的医药代表、厂商<BR>&nbsp; &nbsp; &nbsp; &nbsp;他一律不接触纪检委的人说<BR>&nbsp; &nbsp; &nbsp; &nbsp;但你间接接受了药厂老板的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;50万元<BR>&nbsp; &nbsp; &nbsp; &nbsp;你只付了15万<BR>&nbsp; &nbsp; &nbsp; &nbsp;一辆本田轿车<BR>&nbsp; &nbsp; &nbsp; &nbsp;约合15万元<BR>&nbsp; &nbsp; &nbsp; &nbsp;你一分未付</p><p>程副局长上班的第二天<BR>&nbsp; &nbsp; &nbsp; &nbsp;还到其他办公室去拜访了局长及其他几位副局长同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他还注意观察了几个领导的办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们的办公室还不及他这间办公室的宽敞明亮只有局长的办公室比较大些程副局长转了一圈<BR>&nbsp; &nbsp; &nbsp; &nbsp;回到自已的办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;那几个副局长完全可以先占用这间好的办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;让他这个外来的用一间较差的但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们都没这样做<BR>&nbsp; &nbsp; &nbsp; &nbsp;思想境界还是蛮高的<BR>&nbsp; &nbsp; &nbsp; &nbsp;与这样的人相处<BR>&nbsp; &nbsp; &nbsp; &nbsp;应该不会有不太愉快的事发生 </p><p>又聊了一些鸡毛蒜皮的小事<BR>&nbsp; &nbsp; &nbsp; &nbsp;晚上为老程接风洗尘<BR>&nbsp; &nbsp; &nbsp; &nbsp;办一桌简单的酒<BR>&nbsp; &nbsp; &nbsp; &nbsp;请几个朋友坐坐程副局长想了想<BR>&nbsp; &nbsp; &nbsp; &nbsp;就答应了 </p><p>住了一年<BR>&nbsp; &nbsp; &nbsp; &nbsp;王标得没有问程副局长时么时候还房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样吧<BR>&nbsp; &nbsp; &nbsp; &nbsp;我这套房子就20万卖给你算了程副局长显得有些顾虑地想了想<BR>&nbsp; &nbsp; &nbsp; &nbsp;我考虑一下吧第二天上班<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长把自己关在办公室想了半天<BR>&nbsp; &nbsp; &nbsp; &nbsp;不知道该不该接受那套房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后他决定到庙里求一签看看利用午休时间<BR>&nbsp; &nbsp; &nbsp; &nbsp;他租了辆车子直接就去了香火旺盛的南山庙里求了一签程副局长拿着签去找解签的<BR>&nbsp; &nbsp; &nbsp; &nbsp;只见一个蓄着长髯<BR>&nbsp; &nbsp; &nbsp; &nbsp;头戴破草帽的老人坐在一张桌子后边闭目养神程副局长走近老人说<BR>&nbsp; &nbsp; &nbsp; &nbsp;先生帮忙解解签吧老头接过签<BR>&nbsp; &nbsp; &nbsp; &nbsp;缓缓道：好签<BR>&nbsp; &nbsp; &nbsp; &nbsp;签上说你近来将得到一笔横财</p><p>有了这些好感<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长的工作干劲就蛮大的<BR>&nbsp; &nbsp; &nbsp; &nbsp;见到谁都是一副笑脸但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种心情只保持了几天都荡然无存了那天<BR>&nbsp; &nbsp; &nbsp; &nbsp;他正在看一份文件<BR>&nbsp; &nbsp; &nbsp; &nbsp;进来了一位40多岁的保洁女工程副局长觉得办公室很干净<BR>&nbsp; &nbsp; &nbsp; &nbsp;没必要做卫生就对清洁工说了清洁女工说<BR>&nbsp; &nbsp; &nbsp; &nbsp;每三天就得做一次保洁工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;就得扣工资程副局长笑了一下<BR>&nbsp; &nbsp; &nbsp; &nbsp;就让清洁工做了 </p><p>程副局长看完文件<BR>&nbsp; &nbsp; &nbsp; &nbsp;突然想起什么<BR>&nbsp; &nbsp; &nbsp; &nbsp;问道：这间办公室原来是干什么用的？清洁工反问道：你不知道？程副局显得有些茫然清洁工说<BR>&nbsp; &nbsp; &nbsp; &nbsp;原来也是一位副局长的办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;那位副局长去年给逮进去了程副局长大吃一惊<BR>&nbsp; &nbsp; &nbsp; &nbsp;逮进去了<BR>&nbsp; &nbsp; &nbsp; &nbsp;犯了什么事？清洁工说<BR>&nbsp; &nbsp; &nbsp; &nbsp;被判了十年程副局长呆住了清洁工突然小声说<BR>&nbsp; &nbsp; &nbsp; &nbsp;不知道这里的事这间办公室已经闲置好久了<BR>&nbsp; &nbsp; &nbsp; &nbsp;都没有一个人肯用<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是科长们都不肯用<BR>&nbsp; &nbsp; &nbsp; &nbsp;都认为这间办公室不吉利<BR>&nbsp; &nbsp; &nbsp; &nbsp;给自己的官运带来霉气</p><p>【xzbu】郑重<p>酒宴确实很简单<BR>&nbsp; &nbsp; &nbsp; &nbsp;就几个王标得生意上的朋友<BR>&nbsp; &nbsp; &nbsp; &nbsp;只喝了饮料这场酒下来<BR>&nbsp; &nbsp; &nbsp; &nbsp;王标得就会经常到程副局长办公室坐坐自从王标得来了后<BR>&nbsp; &nbsp; &nbsp; &nbsp;这间办公室就十分古怪而神秘了<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为程副局长动不动就会看到眼前有个人影晃动<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时在睡梦中<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时在迷糊的打盹中这个人就是前任刘副局长！这个人影弄得程副局长心神不定<BR>&nbsp; &nbsp; &nbsp; &nbsp;经常弄不清自已是生活在梦中<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是现实中 </p><p>程副局长的妻子一直没调过来<BR>&nbsp; &nbsp; &nbsp; &nbsp;原因是这边单位不好找<BR>&nbsp; &nbsp; &nbsp; &nbsp;找的几个单位要么效益不好<BR>&nbsp; &nbsp; &nbsp; &nbsp;要么离住房太远程副局长的妻子天天就呆在家里玩<BR>&nbsp; &nbsp; &nbsp; &nbsp;呆在家里久了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就有点烦正好王标得打电话<BR>&nbsp; &nbsp; &nbsp; &nbsp;请程副局长一家到天海山庄休闲王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;天海山庄建在湖畔<BR>&nbsp; &nbsp; &nbsp; &nbsp;景色迷人<BR>&nbsp; &nbsp; &nbsp; &nbsp;那里可以钓鱼、登山程副局长刚想带妻子儿子出门走走<BR>&nbsp; &nbsp; &nbsp; &nbsp;就答应了 </p><p>王标得开着一辆崭新的别克轿车<BR>&nbsp; &nbsp; &nbsp; &nbsp;载着程副局长一家直往山庄而去程副局长问王标得<BR>&nbsp; &nbsp; &nbsp; &nbsp;你买新车了？上次看你开的是一辆本田雅阁吧？王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;换新车了我们这种人<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般一辆车开上一年半年<BR>&nbsp; &nbsp; &nbsp; &nbsp;就想换新车程副局长打趣地说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你这可是喜新厌旧呀王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是没办法的<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们这些人图得就是个新鲜<BR>&nbsp; &nbsp; &nbsp; &nbsp;就没劲了王标得停了一下<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长不想玩玩车？想玩的话<BR>&nbsp; &nbsp; &nbsp; &nbsp;就把那辆旧车开去玩你不想玩<BR>&nbsp; &nbsp; &nbsp; &nbsp;那我就拿去处理了程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我得想想再答复你他又跑到庙里求了一签还是那个老头<BR>&nbsp; &nbsp; &nbsp; &nbsp;依旧是那个穿扮老头说：好签<BR>&nbsp; &nbsp; &nbsp; &nbsp;好签签上说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你今年是吉年<BR>&nbsp; &nbsp; &nbsp; &nbsp;不但能当官<BR>&nbsp; &nbsp; &nbsp; &nbsp;还能发财听到这样的解释<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长笑得嘴都合不拢了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就在一只功德箱里捐了一百元临走那一刻<BR>&nbsp; &nbsp; &nbsp; &nbsp;他再次打量老头<BR>&nbsp; &nbsp; &nbsp; &nbsp;怎么看都有点像王标得<BR>&nbsp; &nbsp; &nbsp; &nbsp;只是年龄相差太远他想问<BR>&nbsp; &nbsp; &nbsp; &nbsp;又不敢问回到办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;想马上打电话给王标得要那辆车<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是过几天再说吧下午四点多钟<BR>&nbsp; &nbsp; &nbsp; &nbsp;开完漫长的局长办公会议<BR>&nbsp; &nbsp; &nbsp; &nbsp;他觉得困得要死<BR>&nbsp; &nbsp; &nbsp; &nbsp;就关上办公室的门<BR>&nbsp; &nbsp; &nbsp; &nbsp;眯了会儿眼就一会儿<BR>&nbsp; &nbsp; &nbsp; &nbsp;他又做了个梦梦中那个神秘的既像王标得又像解签者及前任刘副局长的男人又出现了<BR>&nbsp; &nbsp; &nbsp; &nbsp;又是来报喜的<BR>&nbsp; &nbsp; &nbsp; &nbsp;说程副</p><p>清洁工还说了什么<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长已经没心情听了<BR>&nbsp; &nbsp; &nbsp; &nbsp;他陷入了一种愤怒的情绪中原来以为是这里的人境界高<BR>&nbsp; &nbsp; &nbsp; &nbsp;把好的办公室让给他<BR>&nbsp; &nbsp; &nbsp; &nbsp;却原来是把有秽气的办公室留给他<BR>&nbsp; &nbsp; &nbsp; &nbsp;简直是欺人太甚程副局长平时就很迷信<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别相信运气这一说法每年春节<BR>&nbsp; &nbsp; &nbsp; &nbsp;他都要悄悄跑到庙里去烧头炷香<BR>&nbsp; &nbsp; &nbsp; &nbsp;祈求带来运气他在以前的单位里也是副局级<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是因为经常烧香拜菩萨<BR>&nbsp; &nbsp; &nbsp; &nbsp;被一个对手抓住把柄<BR>&nbsp; &nbsp; &nbsp; &nbsp;指责他政治素质低下<BR>&nbsp; &nbsp; &nbsp; &nbsp;迷信思想严重<BR>&nbsp; &nbsp; &nbsp; &nbsp;无法干下去了就找了一个老同学</p><p>程副局长回到办公室总觉得很别扭<BR>&nbsp; &nbsp; &nbsp; &nbsp;好像总有个影子在晃动<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是那个被抓走的刘副局长的影子他见过前任的照片<BR>&nbsp; &nbsp; &nbsp; &nbsp;是个与他年纪差不多的很优秀的男人<BR>&nbsp; &nbsp; &nbsp; &nbsp;一双秀气的眼睛<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是鼻子大了些<BR>&nbsp; &nbsp; &nbsp; &nbsp;显得很精干的样子可惜了<BR>&nbsp; &nbsp; &nbsp; &nbsp;后半生都不知怎么过了 </p><p>这天程副局长正在看材料<BR>&nbsp; &nbsp; &nbsp; &nbsp;突然进来了一个人<BR>&nbsp; &nbsp; &nbsp; &nbsp;是老同学王标得程副局长很奇怪<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们有十年没见面了<BR>&nbsp; &nbsp; &nbsp; &nbsp;你怎么知道我在这里？王标得笑了<BR>&nbsp; &nbsp; &nbsp; &nbsp;老同学走马上任我会不知道？我不为你接风洗尘<BR>&nbsp; &nbsp; &nbsp; &nbsp;还算是同学！程副局长很警惕地问<BR>&nbsp; &nbsp; &nbsp; &nbsp;你现在做什么生意王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我开了一家药厂程副局长马上瞪大了眼王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我的药品绝对不进入本市<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是考虑到你的工作好做听到老同学这样说<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长放心了他打量着眼前的老同学<BR>&nbsp; &nbsp; &nbsp; &nbsp;老同学有点变了突然<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长觉得王标得很像一个人！像谁呢？他在脑子里搜索<BR>&nbsp; &nbsp; &nbsp; &nbsp;蓦地就吃了一惊：王标得怎么很像这间办公室的前任主人刘副局长？程副局长突然站起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;问道：你是不是王标得？王标得被问傻了<BR>&nbsp; &nbsp; &nbsp; &nbsp;呆了片刻才说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我不是王标得是谁？程副局长重新坐下说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我怎么觉得你很像一个人像谁？王标得问程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你不认识就把话题转了 </p><p>程副局长是负责药品招标的<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽说政府还有个招标办<BR>&nbsp; &nbsp; &nbsp; &nbsp;但什么药品能进入本市医药市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;但基本上必须通过他起草的预算报告<BR>&nbsp; &nbsp; &nbsp; &nbsp;来找他的药商还是非常多但程副局长几乎都是一句：请走正规渠道<BR>&nbsp; &nbsp; &nbsp; &nbsp;到市招标办报名 </p><p>这天下午<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长赶写一份材料<BR>&nbsp; &nbsp; &nbsp; &nbsp;写了两个多小时<BR>&nbsp; &nbsp; &nbsp; &nbsp;写得头昏脑涨总算写完了<BR>&nbsp; &nbsp; &nbsp; &nbsp;他想再看一遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;却不知不觉俯在桌子上迷迷糊糊打了个盹他感到有个人从外面走来<BR>&nbsp; &nbsp; &nbsp; &nbsp;笑嘻嘻地对他说<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长你好<BR>&nbsp; &nbsp; &nbsp; &nbsp;你的运气不错<BR>&nbsp; &nbsp; &nbsp; &nbsp;坐上了这把交椅<BR>&nbsp; &nbsp; &nbsp; &nbsp;一定会飞黄腾达<BR>&nbsp; &nbsp; &nbsp; &nbsp;会有很多的银子装进你的口袋程副局长觉得此人有点陌生<BR>&nbsp; &nbsp; &nbsp<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/131Q41093-0.jpg" width="600px" height="400px" />; &nbsp;记不得在哪里见过<BR>&nbsp; &nbsp; &nbsp; &nbsp;你是谁？此人说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你不认识我？笑话<BR>&nbsp; &nbsp; &nbsp; &nbsp;全局职工都认得我<BR>&nbsp; &nbsp; &nbsp; &nbsp;你会不认识我？真是笑话说着<BR>&nbsp; &nbsp; &nbsp; &nbsp;此人就像一阵风一样飘走了 </p><p>后来<BR>&nbsp; &nbsp; &nbsp; &nbsp;老程妻子来探监对老程说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你知道王标得是什么人吗？老程摇摇头妻子说<BR>&nbsp; &nbsp; &nbsp; &nbsp;王标得是前任刘副局长的表弟王标得为了报复包副市长<BR>&nbsp; &nbsp; &nbsp; &nbsp;就对你下了本钱<BR>&nbsp; &nbsp; &nbsp; &nbsp;非把你送进监狱不可老程不解其中奥妙<BR>&nbsp; &nbsp; &nbsp; &nbsp;问为什么？妻子说<BR>&nbsp; &nbsp; &nbsp; &nbsp;刘副局长是包副市长亲自抓的腐败案<BR>&nbsp; &nbsp; &nbsp; &nbsp;而你又是包副市长的同学<BR>&nbsp; &nbsp; &nbsp; &nbsp;刚好又在刘副局长原来的位置上他们想拱下你后<BR>&nbsp; &nbsp; &nbsp; &nbsp;再带出包副市长<BR>&nbsp; &nbsp; &nbsp; &nbsp;这叫拔出萝卜带出泥好在包副市长与你没有太多的往来 </p><p>从这天后<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长就心情恶劣了<BR>&nbsp; &nbsp; &nbsp; &nbsp;总觉得这间办公室怪怪的<BR>&nbsp; &nbsp; &nbsp; &nbsp;他想了好几天<BR>&nbsp; &nbsp; &nbsp; &nbsp;想找局长谈谈自己的想法但他又怕局长说他觉悟不高<BR>&nbsp; &nbsp; &nbsp; &nbsp;有迷信思想因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;他顾虑重重但是却越想越不是滋味<BR>&nbsp; &nbsp; &nbsp; &nbsp;越觉得自己不另搬一间办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;哪天也会像上一任的刘副局长一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;被请进大牢去基于这些想法<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长就决定非找局长谈谈不可于是<BR>&nbsp; &nbsp; &nbsp; &nbsp;他进了局长办公室程副局长也不拐弯了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就谈了那间办公室的事局长听他这样说<BR>&nbsp; &nbsp; &nbsp; &nbsp;想不到年纪不大的程副局长还有这种想法<BR>&nbsp; &nbsp; &nbsp; &nbsp;这很要不得呀<BR>&nbsp; &nbsp; &nbsp; &nbsp;怎么能有这种不健康的思想呢？前面那个刘副局长出了事<BR>&nbsp; &nbsp; &nbsp; &nbsp;原因在哪里？是他平时不注意政治学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;什么钱能拿<BR>&nbsp; &nbsp; &nbsp; &nbsp;什么钱不能拿<BR>&nbsp; &nbsp; &nbsp; &nbsp;这会不知道？作为一个干部<BR>&nbsp; &nbsp; &nbsp; &nbsp;要有一个底线<BR>&nbsp; &nbsp; &nbsp; &nbsp;任何时候都不能突破这个底线没有这个底线<BR>&nbsp; &nbsp; &nbsp; &nbsp;思想上又不设防<BR>&nbsp; &nbsp; &nbsp; &nbsp;怎么会不犯错误呢？反过来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;思想上有了认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;穿上了防弹衣<BR>&nbsp; &nbsp; &nbsp; &nbsp;还怕沾染邪气？！俗话说<BR>&nbsp; &nbsp; &nbsp; &nbsp;脚正不怕鞋歪<BR>&nbsp; &nbsp; &nbsp; &nbsp;树正不怕影子歪<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要自己正了</p><p>这是一处四室二厅的大房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;装修的十分讲究<BR>&nbsp; &nbsp; &nbsp; &nbsp;与五星级酒店相差无几程副局长在房间里走走看看<BR>&nbsp; &nbsp; &nbsp; &nbsp;装修的这么好<BR>&nbsp; &nbsp; &nbsp; &nbsp;不住人简直是浪费<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是没办法的事<BR>&nbsp; &nbsp; &nbsp; &nbsp;住不过来租给别人住<BR>&nbsp; &nbsp; &nbsp; &nbsp;又怕弄旧弄脏了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就只得空着王标得突然说<BR>&nbsp; &nbsp; &nbsp; &nbsp;明天有空没有<BR>&nbsp; &nbsp; &nbsp; &nbsp;请你去山庄休闲钓鱼程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;明天妻子儿子要来玩<BR>&nbsp; &nbsp; &nbsp; &nbsp;我得陪他们王标得问：老婆儿子一起来？住哪？程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;房子还没解决<BR>&nbsp; &nbsp; &nbsp; &nbsp;就挤我的单身宿舍王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;那不是很挤呀程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;过些时候就能解决了王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;那你还不如住我这里来<BR>&nbsp; &nbsp; &nbsp; &nbsp;反正空着也是空着程副局长说<BR>&nbsp; &nbsp; &nbsp; &nbsp;那怎么好意思王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;老同学说这个话<BR>&nbsp; &nbsp; &nbsp; &nbsp;就见外了不是程副局长想了想<BR>&nbsp; &nbsp; &nbsp; &nbsp;就搬过去住了 </p><p>程副局长是从外地调来的程副局长走进办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;打量了周围的环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;冬暖夏凉<BR>&nbsp; &nbsp; &nbsp; &nbsp;前后都有一个阳台前阳台能看到整个机关宿舍的全貌<BR>&nbsp; &nbsp; &nbsp; &nbsp;能俯视半个城市的面貌程副局长想<BR>&nbsp; &nbsp; &nbsp; &nbsp;这间办公室不错<BR>&nbsp; &nbsp; &nbsp; &nbsp;还能站在阳台上一睹全市的风貌办公室里的配置也很齐全<BR>&nbsp; &nbsp; &nbsp; &nbsp;电脑<BR>&nbsp; &nbsp; &nbsp; &nbsp;两台电话<BR>&nbsp; &nbsp; &nbsp; &nbsp;一张宽大的老板桌<BR>&nbsp; &nbsp; &nbsp; &nbsp;一张大班椅办公桌上有一个颇具现代感的笔筒<BR>&nbsp; &nbsp; &nbsp; &nbsp;里面插满了各种笔<BR>&nbsp; &nbsp; &nbsp; &nbsp;透明胶<BR>&nbsp; &nbsp; &nbsp; &nbsp;一应俱全有这么好的办公条件<BR>&nbsp; &nbsp; &nbsp; &nbsp;一坐进办公椅<BR>&nbsp; &nbsp; &nbsp; &nbsp;就可以办公了<BR>&nbsp; &nbsp; &nbsp; &nbsp;真是无可挑剔了 </p><p>程副局长从梦中醒来<BR>&nbsp; &nbsp; &nbsp; &nbsp;感到非常惊奇<BR>&nbsp; &nbsp; &nbsp; &nbsp;就这么一会儿工夫<BR>&nbsp; &nbsp; &nbsp; &nbsp;居然就做了个梦？！刚才那人是谁呢？程副局长想了半天<BR>&nbsp; &nbsp; &nbsp; &nbsp;突然一个激灵闪过<BR>&nbsp; &nbsp; &nbsp; &nbsp;刚才梦中的那人就是这间办公室的前任刘副局长！天呀<BR>&nbsp; &nbsp; &nbsp; &nbsp;他怎么出现了？程副局长吓出一身冷汗 </p><p>程副局长顿时心花怒放<BR>&nbsp; &nbsp; &nbsp; &nbsp;急忙递给老头一张百元的票子程副局长没有马上离开<BR>&nbsp; &nbsp; &nbsp; &nbsp;似乎还有话要问老头<BR>&nbsp; &nbsp; &nbsp; &nbsp;但见老头又闭上眼睛<BR>&nbsp; &nbsp; &nbsp; &nbsp;打起了瞌睡程副局长只得起身离去<BR>&nbsp; &nbsp; &nbsp; &nbsp;转身的那一刻<BR>&nbsp; &nbsp; &nbsp; &nbsp;他感觉这老头似乎有点面熟<BR>&nbsp; &nbsp; &nbsp; &nbsp;好像在哪里见过走了几步<BR>&nbsp; &nbsp; &nbsp; &nbsp;突然觉得老头很像前任刘副局长<BR>&nbsp; &nbsp; &nbsp; &nbsp;或者说有点像王标得程副局长再回头打量老头<BR>&nbsp; &nbsp; &nbsp; &nbsp;老头已把头垂下来了<BR>&nbsp; &nbsp; &nbsp; &nbsp;看不清楚而程副局长已毛发悚然<BR>&nbsp; &nbsp; &nbsp; &nbsp;背上出了层汗回到办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;离上班时间还早<BR>&nbsp; &nbsp; &nbsp; &nbsp;他就靠在高靠背椅上想这件事迷糊中<BR>&nbsp; &nbsp; &nbsp; &nbsp;有个人推门进来<BR>&nbsp; &nbsp; &nbsp; &nbsp;笑嘻嘻地对他说<BR>&nbsp; &nbsp; &nbsp; &nbsp;恭喜老兄近来运交华盖<BR>&nbsp; &nbsp; &nbsp; &nbsp;财源广进呀程副局长觉得此人面生<BR>&nbsp; &nbsp; &nbsp; &nbsp;就问你是谁？来人说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你不认识我？真是装蒜<BR>&nbsp; &nbsp; &nbsp; &nbsp;我可是大名鼎鼎的</p><p>从梦境中醒来<BR>&nbsp; &nbsp; &nbsp; &nbsp;程副局长没有再犹豫<BR>&nbsp; &nbsp; &nbsp; &nbsp;就打电话给老同学说<BR>&nbsp; &nbsp; &nbsp; &nbsp;既然你要把那辆车当废品处理了<BR>&nbsp; &nbsp; &nbsp; &nbsp;那就让我玩玩吧 </p><p>程副局长从梦中醒来<BR>&nbsp; &nbsp; &nbsp; &nbsp;一时竟想不起来梦中给他报喜的是谁下午上班时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他突然想起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;梦中给他报喜的就是庙里为他解签者<BR>&nbsp; &nbsp; &nbsp; &nbsp;但也很像是前任刘副局长！刘副局长大汗淋漓<BR>&nbsp; &nbsp; &nbsp; &nbsp;一时拿不准是谁<BR>&nbsp; &nbsp; &nbsp; &nbsp;但可以肯定是来给他报喜的<BR>&nbsp; &nbsp; &nbsp; &nbsp;于是他就收下了那套房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;他只付了15万<BR>&nbsp; &nbsp; &nbsp; &nbsp;就没再付给老同学了程副局长觉得很过意不去<BR>&nbsp; &nbsp; &nbsp; &nbsp;他对王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你有没有事要我帮助<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要不是你的药品进入本市<BR>&nbsp; &nbsp; &nbsp; &nbsp;其他都好说王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我的药绝对不会进入本市<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一点你尽可以放心王标得想了想<BR>&nbsp; &nbsp; &nbsp; &nbsp;要不你进一批一个姓高的药品吧这个姓高的跟我是生意上的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;我欠了她十几万的款<BR>&nbsp; &nbsp; &nbsp; &nbsp;她知道是我的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;就不好意思催款了程副局长想了一下<BR>&nbsp; &nbsp; &nbsp; &nbsp;就答应了于是<BR>&nbsp; &nbsp; &nbsp; &nbsp;姓高的药品就源源不断地进了本地医药市场高姓药厂老板是个五十多岁的女人<BR>&nbsp; &nbsp; &nbsp; &nbsp;全名叫高秀敏<BR>&nbsp; &nbsp; &nbsp; &nbsp;该女人一看就是个生意场上的老手<BR>&nbsp; &nbsp; &nbsp; &nbsp;长得小巧玲珑<BR>&nbsp; &nbsp; &nbsp; &nbsp;身材不胖不瘦<BR>&nbsp; &nbsp; &nbsp; &nbsp;目光锐利而敏捷<BR>&nbsp; &nbsp; &nbsp; &nbsp;很有点眼观六路耳听八方的手段程副局长接触了几次<BR>&nbsp; &nbsp; &nbsp; &nbsp;就感到此人还是远离一点好些<BR>&nbsp; &nbsp; &nbsp; &nbsp;太厉害了 </p><p>这天晚上<BR>&nbsp; &nbsp; &nbsp; &nbsp;王标得打电话邀请程副局长出去玩玩<BR>&nbsp; &nbsp; &nbsp; &nbsp;散散心程副局长在办公室关了一天<BR>&nbsp; &nbsp; &nbsp; &nbsp;也想出去走走<BR>&nbsp; &nbsp; &nbsp; &nbsp;就按王标得的电话上说的地址找到了一处花园社区王标得已经在此候着程副局长问老同学到这里干什么？王标得说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这里有我买的一处房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经买了好几年<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直没有来住因为没有人气<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些设施很容易损坏<BR>&nbsp; &nbsp; &nbsp; &nbsp;抽水马桶漏水<BR>&nbsp; &nbsp; &nbsp; &nbsp;灯泡烧毁他今天就是来看看抽水马桶换好没有 </p><p>程副局长头上开始冒汗了<BR>&nbsp; &nbsp; &nbsp; &nbsp;这跟高秀敏没关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;是我一个老同学的纪检委的人说<BR>&nbsp; &nbsp; &nbsp; &nbsp;你的老同学王标得与高秀敏是什么关系你知道吗？高秀敏是王标得的大姨子<BR>&nbsp; &nbsp; &nbsp; &nbsp;她的药品全部是通过王标得再通过你进入市场的</p>  (责任编辑：admin)
+<img border="0" alt="这让程副局长很没面子" src="/images/lenfeng_5134.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5134)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5134)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5134);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete2773.html'>期刊几乎涵盖所有学术领域</a> </li>
+                                        <li>下一篇：<a href='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/ekirtasiyeciniz/contete6685.html'>人人网用户较高的活跃度</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5134" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5134&title=这让程副局长很没面子" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5134" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5134" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5134" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5134&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5134');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

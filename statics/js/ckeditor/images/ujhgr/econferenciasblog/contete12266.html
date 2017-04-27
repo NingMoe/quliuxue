@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>最后介绍了逆变电阻焊机主电源|我的网站</title>
+<meta name="description" content=" 在国内汽车学术界具有一定的权威性和影响7、来稿文责自负所有作者应对稿件内容和署名无异议 稿件内容不得抄袭或重复发表对来稿有权作技术性和文字性修改 杂志一个版面25" />
+<meta name="keywords" content="最后,介绍了,逆变,电阻,机主,电源,国内,汽车,学术界,具" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.car188.cn/xheditor/jquery/dsaw/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.cn-autoparts.cn/adminkc2008/images/ukjh/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.yibotec.com/Skin/Flash/uytfd/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.lingdongnet.com/UpFile/1/File/rghsd/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.1234cai.cn/d/file/ba/bc/uytr/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.leng.org.cn/template/default/mobile/common/uyjh/'  rel='dropmenu399'>任务系统</a></li>
+            
+            <li class="channel"><a href='http://www.bainus.com/admin/SouthidcEditor/UploadFile/gfi/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            
+            <li class="channel"><a href='http://www.sztlxzs.com/data/adtool/fla/mx/tyhgf/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.xykndl.com/Pictures/online/image/20140326/wefd/eezww/" title="变态幻想大陆传奇私服">变态幻想大陆传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/ecaryards/" title="找网通专线的传奇私服">找网通专线的传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/eastwoodbarbershop/" title="刚开网通传奇私服">刚开网通传奇私服</a></li><li><a href="http://www.wsqxjt.com/data/cache/json/ujhuy/easyeservice/" title="网通1.80火龙传奇私服">网通1.80火龙传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwztgs/" title="新开国战传奇私服">新开国战传奇私服</a></li><li><a href="http://www.realy.cn/AdminManage/blogs/kjht/eccsupply/" title="轻便网通传奇私服">轻便网通传奇私服</a></li><li><a href="http://www.nbszwy.com/admin/Databackup/jhgre/easyrentarizona/" title="网通传奇私服176合击">网通传奇私服176合击</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/eagletractorparts/" title="最大网通传奇私服网">最大网通传奇私服网</a></li><li><a href="http://www.sjjszj.com/uploads/100415/hgiu/e8taobao/" title="新开纯网通传奇私服">新开纯网通传奇私服</a></li><li><a href="http://www.xzhkkj.com/Compiler/user/images/ghdfe/effectivesocialsolutions/" title="变态满级传奇私服">变态满级传奇私服</a></li><li><a href="http://vendorlau.qqlew.com/admin/content/Cache/site/order/redew/dynamind/" title="新开雷霆顶级传奇私服">新开雷霆顶级传奇私服</a></li><li><a href="http://www.hafala.com/pd/images/favicon/juies/eatnowph/" title="网通线路微变传奇私服">网通线路微变传奇私服</a></li><li><a href="http://www.cn-autoparts.cn/adminkc2008/images/ukjh/earningeasymoney/" title="网通1.76复古传奇私服">网通1.76复古传奇私服</a></li><li><a href="http://www.cnpudu.com/PublicFiles/eWebEditor/UploadFile/tyhgfe/duobletreeemoryarea/" title="新开双线传奇私服">新开双线传奇私服</a></li><li><a href="http://www.hbzmmy.com/data/images/iujk/ebizcontractor/" title="靓装网通不卡传奇私服">靓装网通不卡传奇私服</a></li><li><a href="http://323944.com/data/js/kjhuy/edmurdoch/" title="变态传奇私服超牛b">变态传奇私服超牛b</a></li><li><a href="http://www.ynshq.com/8888/Upload/gd123/hgfyt/eggdonorsandsurrogates/" title="变态网页传奇私服">变态网页传奇私服</a></li><li><a href="http://www.hansen.com.cn/hansen/edit/SysImage/bg/jawqzs/ebookgadgets/" title="超变网通传奇私服">超变网通传奇私服</a></li><li><a href="http://www.musicyang.com/data/attachment/temp/ytuy/dwenxue/" title="4月14号新开传奇私服">4月14号新开传奇私服</a></li><li><a href="http://www.lyggsdq.com/data/cache/yrew/xczwe/esaga/" title="网通变态传奇私服">网通变态传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">999好传奇私服新开相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete12266.html" target="_blank" title="最后介绍了逆变电阻焊机主电源">最后介绍了逆变电阻焊机主电源</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete12157.html" target="_blank" title="只听总经理严肃而沉重地说：各位同仁">只听总经理严肃而沉重地说：各位同仁</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete11808.html" target="_blank" title="推广最新科技成果">推广最新科技成果</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete11094.html" target="_blank" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete11019.html" target="_blank" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序排</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete10409.html" target="_blank" title="我国目前规模越小的企业从银行得到贷款的难度越大">我国目前规模越小的企业从银行得到贷款的难度</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete9948.html" target="_blank" title="如果教师不具备良好的心理素质">如果教师不具备良好的心理素质</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete9070.html" target="_blank" title="重点稿件将送同行专家审阅">重点稿件将送同行专家审阅</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete7334.html" target="_blank" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.quliuxue.net.cn/statics/js/ckeditor/images/ujhgr/econferenciasblog/contete6948.html" target="_blank" title="白金是在黄金中加入了镍">白金是在黄金中加入了镍</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://323944.com/data/js/kjhuy/eduardoproduction/" title="变态传奇私服装备补丁">变态传奇私服装备补丁</a></h3>
+<ul>
+<li><a href="http://323944.com/data/js/kjhuy/eduardoproduction/201510913.html" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eduardoproduction/20159278.html" title="为加大药物经济学的宣传力度">为加大药物经济学的宣传力度</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eduardoproduction/20159187.html" title="创新性科学性">创新性科学性</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eduardoproduction/20159117.html" title="我哇哇大哭：你要是喜欢它">我哇哇大哭：你要是喜欢它</a></li>
+<li><a href="http://323944.com/data/js/kjhuy/eduardoproduction/20158274.html" title="作为一个煤炭资源型城市">作为一个煤炭资源型城市</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/" title="传奇私服刚开一秒网通">传奇私服刚开一秒网通</a></h3>
+<ul>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq11433.html" title="题目关键词单位等同时译成英文">题目关键词单位等同时译成英文</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq11223.html" title="对其进行研究">对其进行研究</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq10418.html" title="在材料进工地时">在材料进工地时</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq9384.html" title="中国科技期刊全文收据库全文收录">中国科技期刊全文收据库全文收录</a></li>
+<li><a href="http://www.86band.com/data/cache/qrcode/000/01/06/jkiu/easywebbies/qq9251.html" title="文稿一经发表">文稿一经发表</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 999好传奇私服新开- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>最后介绍了逆变电阻焊机主电源</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 14:44</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=12266&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=12266">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       在国内汽车学术界具有一定的权威性和影响7、来稿文责自负所有作者应对稿件内容和署名无异议       稿件内容不得抄袭或重复发表对来稿有权作技术性和文字性修改       杂志一个版面25</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;在国内汽车学术界具有一定的权威性和影响<p>7、来稿文责自负所有作者应对稿件内容和署名无异议<BR>&nbsp; &nbsp; &nbsp; &nbsp;稿件内容不得抄袭或重复发表对来稿有权作技术性和文字性修改<BR>&nbsp; &nbsp; &nbsp; &nbsp;杂志一个版面2500字<BR>&nbsp; &nbsp; &nbsp; &nbsp;二个版面5000字左右作者需要安排版面数<BR>&nbsp; &nbsp; &nbsp; &nbsp;是否加急等情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;请在邮件投稿时作特别说明</p><p>本文以汽车车身上的典型零件轿车拼焊板门内板零件作为研究对象,运用dynaform软件零件进行成形性分析,研究板厚差、压边力及初始焊缝位置等因素对拼焊板成形性及焊缝移动的影响,结合生产实践,找出零件成形及焊缝移动的规律讨论拼焊板门内板零件成形特点,提出可行的工艺预处理方案,研究控制门内板拉延成形后的焊缝移动,研究几何尺.</p><p>5、参考文献的著录格式采用顺序编码制<BR>&nbsp; &nbsp; &nbsp; &nbsp;请按文中出现的先后顺序编号所引文献必须是作者直接阅读参考过的、公开出版文献未公开发表的、且很有必要引用的<BR>&nbsp; &nbsp; &nbsp; &nbsp;请采用脚注方式标明<BR>&nbsp; &nbsp; &nbsp; &nbsp;参考文献不少于3条</p><p>6、来稿勿一稿多投收到稿件之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;5个工作日内审稿<BR>&nbsp; &nbsp; &nbsp; &nbsp;电子邮件回复作者重点稿件将送同行专家审阅如果10日内没有收到拟用稿通知（特别需要者可寄送纸质录用通知）<BR>&nbsp; &nbsp; &nbsp; &nbsp;则请与本部联系确认</p><p>2、论文摘要尽量写成报道性文摘<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括目的、结论4方面内容（100字左右）<BR>&nbsp; &nbsp; &nbsp; &nbsp;应具有独立性与自含性<BR>&nbsp; &nbsp; &nbsp; &nbsp;关键词选择贴近文义的规范性单词或组合词</p><p>中国论文网致力于学术杂志信息整理收录和投稿<BR>&nbsp; &nbsp; &nbsp; &nbsp;本站非汽车工程杂志社编辑部官方网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;查询稿件的朋友可以直接联系杂志社的编辑部</p><p>随着逆变焊机和其他类似的逆变电源(如不停电供电电源ups、通讯开关型电源)等使用越来越多、越来越普及,导致供电系统损耗增大,供电质量下降,已经引起了国家有关方面的重视本文对逆变焊机的功率因数问题作了分析,对有源功率因数校正器的控制原理和电路设计作了介绍</p><p>为了适应油气田井网密度小、井间距离大的各单井油气站的开采作业,设计了nc5311tyj型压缩机车,本文介绍了它的工作原理、使用效果以及它与目前采用的撬装固定式压缩机组的优缺点</p><p>主要刊登汽车理论的探讨、试验研究成果以及汽车设计、新材料使用、技术管理等方面的学术论文</p><p>3、文稿篇幅一般不超过5000字<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个版面2500字内文中量和单位的使用请参照中华人民共和国法定计量单位最新标准外文字符必须分清大、白体<BR>&nbsp; &nbsp;<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/1444044E7-0.jpg" width="600px" height="400px" /> &nbsp; &nbsp;上下角标应区别明显</p><p>本刊由中国汽车工程学会主办<BR>&nbsp; &nbsp; &nbsp; &nbsp;创刊于1979年<BR>&nbsp; &nbsp; &nbsp; &nbsp;从创刊至今受到了国内外的重视主要刊登汽车理论的探讨、试验研究成果以及汽车设计、新材料使用、技术管理等方面的学术论文；汽车工业宏观分析研究的理论论述；汽车及其相关行业的新技术、新趋势等本刊的主要读者对象为汽车及其相关行业的工程技术人员、高校研究生及相关企业的高级管理人员</p><p>1、来稿要求论点明确、逻辑严密、文字精炼<BR>&nbsp; &nbsp; &nbsp; &nbsp;每篇论文必须包括题目、作者单位、单位所在地及邮政编码、摘要和关键词、参考文献和第一作者及通讯作者简介（包括姓名、出生年月、目前主要从事的工作和研究方向）<BR>&nbsp; &nbsp; &nbsp; &nbsp;在文稿的首页地脚处注明论文属何项目、何基金资助<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有的不注明</p><p>提出了新型双丝旁路耦合电弧mig高效焊接方法,理论分析证明其有利于高效焊接过程,但焊接试验表明该方法在开环情况下焊接过程极不稳定,焊缝成型差采用基于xpc实时目标机技术建立了双丝旁路耦合电弧控制硬件系统,运用matlab/simulink工具开发了其控制系统的快速原型结果表明模糊控制器的控制效果可以满足稳定焊接的要.</p><p>随着埋弧焊工艺的发展,双丝埋弧焊以其高效、优质的特点得到越来越广泛的应用针对双丝埋弧焊的工艺要求,以时代双丝双弧埋弧焊设备的特点及其应用为例,阐明该设备在高效焊接作业中,能够满足现代化工业制造多方面的要求,具有良好的应用前景</p><p>本文中将介绍数字化焊机的概念,国外典型数字化焊机的特点,分析了我国数字化焊机的发展状况,并提出了几点思考和建议,以便起到抛砖引玉的作用</p><p>随着逆变焊机的技术的快速发展,通过选择合适的拓扑结构,降低逆变开关管的电流,这对于逆变电源无疑是一个重大的</p><p>【xzbu】郑重<p>本文详细描述了逆变电阻焊的特点:焊接控制精度提高,电极使用寿命延长,功率因数提高,生产成本降低并概述了其在汽车工业中的应用及与焊接机器人配合应用的情况最后介绍了逆变电阻焊机主电源,微机控制系统,质量控制技术的发展现状</p><p>本文介绍了纳米材料的内涵、主要特性和发展历程;阐述了纳米塑料、纳米润滑剂、纳米涂料、纳米橡胶等纳米材料在汽车节能减排方面的应用情况;对纳米材料在汽车领域应用的前景进行了展望</p><p>通过采用一种不对称拓扑方案及控制方法,实现了空载、满载等全负载范围内的软开关技术的应用,同时解决了关断损耗的问题,显著提高了逆变焊机的可靠性、效率和功率等级</p><p>10、请在文稿后面注明稿件联系人的姓名、详细联系地址、邮编等信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便联系有关事宜</p>  (责任编辑：admin)
+<img border="0" alt="最后介绍了逆变电阻焊机主电源" src="/images/lenfeng_12266.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                 

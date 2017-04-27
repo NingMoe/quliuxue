@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我要吐嘈黑中介</title>
+<meta name="keywords" content="{$SEO['keyword']}">
+<meta name="description" content="{$SEO['description']}">
+<link rel="stylesheet" href="/style/css/form.css" type="text/css">
+<link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- 头部 -->
+ {template "content","top"}
+  <!-- 头部结束 --> 
+  <!--院校搜索上部-->
+  <div class="reporttitle">
+    <h2>我要吐嘈黑中介</h2>
+  </div>
+  <!--主要内容--->
+  <div class="content w-1000"> 
+    <!--当前位置-->
+    <div class="weizi">
+      {template "content","position"}
+    </div>
+    <!--我要吐嘈黑中介-->
+    <div  class="b-box"> 
+      <!--左侧-->
+      <div class="b-left">
+        <div class="m-form">
+          <h1>我要吐嘈黑中介</h1>
+          <p>您正在通过"Qu留学“网吐嘈<span></span></p>
+          <form action="/index.php?m=school&c=school&a=online_tucao&t=1" name="form1" id="form1" method="post"  onsubmit="return checkData()" >
+            <ul>
+         <!--   <li><span>选择中介：</span>
+              {pc:content  action="lists" catid="13" order="id DESC" num="20"} 
+                  <select name="zhongjie">
+                  {loop $data $key $val}
+                     <option value="{$val['title']}">{$val['title']}</option>
+                   {/loop}
+      
+              </select>
+             {/pc}
+             </li> -->
+              <li><span>吐嘈原因：</span>
+                <textarea name="yuanyin" id="textarea" cols="45" style="height:100px;" rows="5" onclick="this.innerHTML='';"
+				  
+				   onfocus="if (value =='请输入您要吐槽的内容或者中介'){value =''}" onblur="if (value ==''){value='请输入您要吐槽的内容或者中介'}"		  
+				  >请输入您要吐槽的内容或者中介</textarea>
+
+</textarea>
+                <div class="clear"></div>
+              </li>
+     <!--          <li><span>姓名：</span>
+                <input type="text" name="name" />
+                <div class="clear"></div>
+              </li>
+              <li><span>电话：</span>
+                <input type="text" name="phone" />
+                <div class="clear"></div>
+              </li> -->
+              <li><span>验证码：</span>
+                <input type="text" name="code"  class="input1"/>
+                <a class="anniu">{form::checkcode('code_img', '3', '14', 150, 33)}</a>
+                <div class="clear"></div>
+              </li>
+              <li class="l1">
+              <input type="submit" value="立即吐嘈" id="dosubmit" name="dosubmit" onclick="return checkData()" class="button">
+            
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--右侧-->
+      <div class="s-right">
+           {pc:get sql="SELECT * FROM qu_page where catid=31"}
+{loop $data $key $val}
+{$val[content]}
+{/loop}
+{/pc}
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--尾部版权-->
+{template "content","bot"}
+<!--遮罩层-->
+{template "content","login"}
+<script type="text/javascript" src="/style/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/style/js/search.js"></script><!--搜索--> 
+<script type="text/javascript" src="/style/js/cover.js"></script><!--遮罩层--> 
+<script type="text/javascript" src="/style/js/jquery.SuperSlide.js"></script><!--轮播图--> 
+<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+
+		function checkData() {
+    for (var i = 0; i < document.form1.length; i++) {
+        if (document.form1.elements[i].type == "text" && document.form1.elements[i].value == "") {
+            alert("请完善所要填写的信息!");
+          			 return false;
+        }
+    }
+    }
+
+
+
+</script>
+</body>
+</html>

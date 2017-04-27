@@ -1,0 +1,176 @@
+<?php
+
+defined('IN_PHPCMS') or exit('No permission resources.');
+
+class show {
+
+	
+
+	public function init() {                                               //默认方法		
+
+	    pc_base::load_sys_class('form', '', 0);
+
+		$list=pc_base::load_model('school_data_model');
+
+        $list1=pc_base::load_model('professional_data_model');
+
+		$list2=pc_base::load_model('school_professional_data_model');
+
+		$where=array('id'=>$_GET[id]);
+
+        $show=$list->get_one($where);
+
+       	
+
+        $where_zy="professional_pid='0'";	
+
+		$data_professional = $list1->listinfo($where_zy,'id asc',$_GET['page'],$pages = '30');
+
+        
+
+        $rs_all = $list2->query("SELECT a.content,b.id,b.direction_cnname,b.direction_enname,b.direction_style FROM qu_professional_data a,qu_school_professional_data b where a.professional_id=b.direction_pid  and b.direction_school_id='".$_GET[id]."'  ORDER BY b.id DESC");
+
+        $data_all = $list2->fetch_array($rs_all);
+
+        
+
+        $data_1=$this->common($_GET[id],1);
+
+        //print_r($data_1);
+
+        $data_2=$this->common($_GET[id],2);
+
+        $data_3=$this->common($_GET[id],3);
+
+        $data_4=$this->common($_GET[id],4);
+
+        $data_5=$this->common($_GET[id],5);
+
+        $data_6=$this->common($_GET[id],6);
+
+        $data_7=$this->common($_GET[id],7);
+
+        $data_8=$this->common($_GET[id],8);
+
+        $data_9=$this->common($_GET[id],9);
+
+        $data_10=$this->common($_GET[id],10);
+
+        $data_11=$this->common($_GET[id],11);
+
+        $data_12=$this->common($_GET[id],12);
+
+        $data_13=$this->common($_GET[id],13);
+
+        $data_14=$this->common($_GET[id],14);
+
+        $data_15=$this->common($_GET[id],15);
+
+        $data_16=$this->common($_GET[id],16);
+
+        $data_17=$this->common($_GET[id],17);
+
+        $data_18=$this->common($_GET[id],18);
+
+        $data_19=$this->common($_GET[id],19);
+
+        $data_20=$this->common($_GET[id],20);
+
+        $data_21=$this->common($_GET[id],21);
+
+        $data_22=$this->common($_GET[id],22);
+
+        $data_23=$this->common($_GET[id],23);
+
+        $data_24=$this->common($_GET[id],24);
+
+        $data_25=$this->common($_GET[id],25);
+
+        $data_26=$this->common($_GET[id],26);
+
+        
+
+
+
+		include template('school', 'show');                    	
+
+	}
+
+    public function common($sid,$pid) {
+
+        pc_base::load_sys_class('form','',0);
+
+        $list1=pc_base::load_model('professional_data_model');
+
+		$list2=pc_base::load_model('school_professional_data_model');
+
+		$rs = $list2->query("SELECT  a.content,b.id,b.direction_cnname,b.direction_enname,b.direction_style  FROM qu_professional_data a,qu_school_professional_data b where a.professional_id=b.direction_pid and a.professional_pid='".$pid."' and b.direction_school_id='".$sid."'  ORDER BY b.id DESC");
+
+        $data = $list2->fetch_array($rs);
+
+        
+
+        return $data;
+
+    }
+
+    public function show_c() {
+
+        pc_base::load_sys_class('form','',0);
+
+        $list=pc_base::load_model('professional_data_model'); 
+
+        $list1=pc_base::load_model('school_data_model');
+
+        
+
+        $list2=pc_base::load_model('school_professional_data_model');
+
+		$where1=array('id'=>$_GET[id]);
+
+        $show1=$list1->get_one($where1);	
+
+       
+
+        
+
+        $where2=array('id'=>$_GET[cid]);//
+
+        $show2=$list2->get_one($where2);//获取方向id
+
+        $where3=array('professional_id'=>$show2[direction_pid]);
+
+        $z_id=$list->get_one($where3);//获取专业id，七嘴八舌用
+
+        $zid=$z_id[professional_pid];
+
+        //print_r($zid);
+
+        //print_r($showc);
+
+        if($_GET[cid]!=''){
+
+            include template('school', 'showc'); 
+
+        }else{
+
+            showmessage(L('无此专业'), '/index.php?m=content&c=index&a=lists&catid=22');
+
+         
+
+        }
+
+        }
+
+
+
+
+
+    
+
+	
+
+}   
+
+?>
+
