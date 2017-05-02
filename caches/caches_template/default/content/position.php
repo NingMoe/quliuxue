@@ -1,0 +1,1 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><p>当前位置：<a href="/">Qu去留学首页</a> > <?php echo catpos($catid);?></p>

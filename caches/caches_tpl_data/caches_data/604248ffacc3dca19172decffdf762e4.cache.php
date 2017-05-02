@@ -1,0 +1,36 @@
+<?php
+return array (
+  0 => 
+  array (
+    'id' => '35',
+    'readpoint' => '0',
+    'groupids_view' => '',
+    'paginationtype' => '0',
+    'maxcharperpage' => '0',
+    'template' => '',
+    'paytype' => '0',
+    'allow_comment' => '1',
+    'relation' => '',
+    'cnname' => '罗切斯特大学',
+    'enname' => 'University of Rochester',
+    'location' => 'Rochester（罗切斯特）',
+    'position' => 'New York（纽约州）',
+    'rank' => '33',
+    'weburl' => 'http://www.rochester.edu/',
+    'country' => '1',
+    'toefl_scores' => '100',
+    'ielts_score' => '7.0',
+    'school_profile' => '罗切斯特大学（简称<span lang="EN-US">U of R</span>）是美国一所综合性私立大学。该校的<span lang="EN-US">7</span>位学者是美国国家科学院院士，<span lang="EN-US">18</span>位学者是美国文理研究院院士；在它的教师和校友中有<span lang="EN-US">8</span>名教授是诺贝尔奖金获得者，<span lang="EN-US">12</span>名学者获普利策文学奖。罗切斯特大学有<span lang="EN-US">6</span>个学院，共开设超过<span lang="EN-US">175</span>门学位课程（含学士、硕士和博士<span lang="EN-US">3</span>种学位），其中英语、音乐、历史、政治学、心理学、数学、生物医学工程和光学等专业素享盛誉。罗彻斯特大学处于纽约州的罗彻斯特市，四季变化明显，春、秋是最好的季节，气候宜人；夏季的六至八月也不太炎热，几乎不用冷气或空调。一年之中约有半年是冬季，从十二月到四月都有可能会下雪。该市曾多次被选为全美最适合居住的城市之一，交通上几乎不会塞车。加之罗彻斯特大学优越的学术条件，是个非常适合读书及工作的地方。',
+    'requirements' => '',
+    'qizuibashe' => '',
+    'culture' => '',
+    'logo' => 'http://www.quliuxue.net.cn/uploadfile/2015/0115/20150115034659400.jpg',
+    'professional' => '10027,10028,10029,10030,10032,10040,10262,10215,10258,10047,10048,10050,10053,10062,10063,10227,10228,10195,10199',
+    'degree' => '1,2',
+    'odds' => '',
+    'recommend' => '1',
+    'dianji' => '344',
+    'datu' => 'http://www.quliuxue.net.cn/uploadfile/2015/0115/20150115032016834.jpg',
+  ),
+);
+?>

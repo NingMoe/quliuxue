@@ -1,6 +1,6 @@
 $(function(){
 
-	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"#\" class=\"btn1 btn-qq ycqq\"></a><div class=\"btn1 btn-wx\"><img class=\"pic\" src=\"/style/images/weixin.png\" onclick=\"window.location.href=\'#'\"/></div><div class=\"btn1 btn-phone\"><div class=\"phone\">400-180-5505</div></div><div class=\"btn1 btn-top\"></div></div>";
+	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://message/?uin=1746295647&Site=www.cnclcy&Menu=yes\" class=\"btn1 btn-qq ycqq\"></a><div class=\"btn1 btn-wx\"><img class=\"pic\" src=\"/style/images/weixin.png\" onclick=\"window.location.href=\'#'\"/></div><div class=\"btn1 btn-phone\"><div class=\"phone\">400-1816-180</div></div><div class=\"btn1 btn-top\"></div></div>";
 	$("#kefu").html(tophtml);
 	$("#izl_rmenu").each(function(){
 		$(this).find(".btn-wx").mouseenter(function(){
@@ -41,12 +41,12 @@ $(function(){
 });
 
 
-//¿ØÖÆ¿Û¿Ûµ¯³ö²ã
+//ï¿½ï¿½ï¿½Æ¿Û¿Ûµï¿½ï¿½ï¿½ï¿½ï¿½
 $(function(){
-	$(".ycqq").click(function(){
-		$(".zcqq").show();
-		});
-	$(".zcqq ul li a").click(function(){
-		$(".zcqq").hide();
-		});
+	//$(".ycqq").click(function(){
+	//	$(".zcqq").show();
+	//	});
+	//$(".zcqq ul li a").click(function(){
+	//	$(".zcqq").hide();
+	//	});
 	})
